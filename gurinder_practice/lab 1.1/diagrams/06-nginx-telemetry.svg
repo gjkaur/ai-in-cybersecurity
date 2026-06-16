@@ -1,32 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 220" role="img" aria-label="nginx telemetry flow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" role="img" aria-label="nginx telemetry flow">
   <defs>
-    <marker id="ngxArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <path d="M0,0 L9,3 L0,6 Z" fill="#334155"/>
-    </marker>
+    <marker id="na" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8Z" fill="#475569"/></marker>
   </defs>
-  <rect width="820" height="220" rx="14" fill="#F8FAFC"/>
-  <text x="410" y="32" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="15" font-weight="700" fill="#0F172A">HTTP Request to Telemetry Pipeline</text>
-  <circle cx="95" cy="110" r="22" fill="#2563EB"/>
-  <text x="95" y="115" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="14" font-weight="700" fill="#FFFFFF">1</text>
-  <rect x="40" y="148" width="110" height="52" rx="8" fill="#DBEAFE" stroke="#2563EB"/>
-  <text x="95" y="172" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="10" font-weight="600" fill="#1E40AF">Browser / curl</text>
-  <text x="95" y="188" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="9" fill="#64748B">HTTP GET /</text>
-  <line x1="150" y1="110" x2="195" y2="110" stroke="#334155" stroke-width="2" marker-end="url(#ngxArrow)"/>
-  <circle cx="265" cy="110" r="22" fill="#D97706"/>
-  <text x="265" y="115" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="14" font-weight="700" fill="#FFFFFF">2</text>
-  <rect x="210" y="148" width="110" height="52" rx="8" fill="#FFGapic" stroke="#F59E0B"/>
-  <text x="265" y="172" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="10" font-weight="600" fill="#92400E">nginx :80</text>
-  <text x="265" y="188" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="9" fill="#78350F">serves HTML</text>
-  <line x1="320" y1="110" x2="365" y2="110" stroke="#334155" stroke-width="2" marker-end="url(#ngxArrow)"/>
-  <circle cx="410" cy="110" r="22" fill="#64748B"/>
-  <text x="410" y="115" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="14" font-weight="700" fill="#FFFFFF">3</text>
-  <rect x="345" y="148" width="130" height="52" rx="8" fill="#F1F5F9" stroke="#64748B"/>
-  <text x="410" y="172" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="10" font-weight="600" fill="#334155">access.log</text>
-  <text x="410" y="188" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="9" fill="#64748B">one line / request</text>
-  <line x1="475" y1="110" x2="520" y2="110" stroke="#334155" stroke-width="2" marker-end="url(#ngxArrow)"/>
-  <circle cx="590" cy="110" r="22" fill="#16A34A"/>
-  <text x="590" y="115" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="14" font-weight="700" fill="#FFFFFF">4</text>
-  <rect x="525" y="148" width="130" height="52" rx="8" fill="#DCFCE7" stroke="#22C55E"/>
-  <text x="590" y="172" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="10" font-weight="600" fill="#166534">Lab 1.2+</text>
-  <text x="590" y="188" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="9" fill="#15803D">AI detection</text>
+  <rect width="880" height="300" fill="#F8FAFC"/>
+  <text x="440" y="36" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="18" font-weight="700" fill="#0F172A">HTTP Request to Telemetry</text>
+  <text x="440" y="58" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="12" fill="#64748B">Each web request creates a log line for future AI detection labs</text>
+
+  <circle cx="100" cy="130" r="24" fill="#2563EB"/>
+  <text x="100" y="136" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="16" font-weight="700" fill="#FFF">1</text>
+  <rect x="50" y="168" width="100" height="56" rx="8" fill="#DBEAFE" stroke="#2563EB"/>
+  <text x="100" y="192" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="600" fill="#1E40AF">Browser</text>
+  <text x="100" y="210" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">HTTP GET /</text>
+
+  <line x1="124" y1="130" x2="176" y2="130" stroke="#475569" stroke-width="2" marker-end="url(#na)"/>
+
+  <circle cx="240" cy="130" r="24" fill="#D97706"/>
+  <text x="240" y="136" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="16" font-weight="700" fill="#FFF">2</text>
+  <rect x="190" y="168" width="100" height="56" rx="8" fill="#FFF7ED" stroke="#F59E0B"/>
+  <text x="240" y="192" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="600" fill="#92400E">nginx</text>
+  <text x="240" y="210" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#78350F">port 80</text>
+
+  <line x1="264" y1="130" x2="316" y2="130" stroke="#475569" stroke-width="2" marker-end="url(#na)"/>
+
+  <circle cx="380" cy="130" r="24" fill="#64748B"/>
+  <text x="380" y="136" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="16" font-weight="700" fill="#FFF">3</text>
+  <rect x="320" y="168" width="120" height="56" rx="8" fill="#F1F5F9" stroke="#64748B"/>
+  <text x="380" y="192" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="600" fill="#334155">access.log</text>
+  <text x="380" y="210" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">1 line / hit</text>
+
+  <line x1="404" y1="130" x2="456" y2="130" stroke="#475569" stroke-width="2" marker-end="url(#na)"/>
+
+  <circle cx="520" cy="130" r="24" fill="#16A34A"/>
+  <text x="520" y="136" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="16" font-weight="700" fill="#FFF">4</text>
+  <rect x="460" y="168" width="120" height="56" rx="8" fill="#DCFCE7" stroke="#22C55E"/>
+  <text x="520" y="192" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="600" fill="#166534">Lab 1.2+</text>
+  <text x="520" y="210" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#15803D">AI detection</text>
+
+  <rect x="620" y="108" width="220" height="116" rx="10" fill="#FFF" stroke="#CBD5E1"/>
+  <text x="730" y="132" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="600" fill="#334155">Sample log line</text>
+  <text x="730" y="158" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748B">192.0.2.1 - - [date] "GET /"</text>
+  <text x="730" y="176" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748B">200 612 "-" "Mozilla/..."</text>
+  <text x="730" y="204" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">IP · time · request · status</text>
+
+  <rect x="40" y="252" width="800" height="36" rx="8" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="440" y="274" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" fill="#1E40AF">Telemetry = observable data from your system · nginx access.log is your first detection data source</text>
 </svg>

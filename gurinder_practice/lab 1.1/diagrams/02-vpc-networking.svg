@@ -1,24 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" role="img" aria-label="VPC networking">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" role="img" aria-label="VPC networking">
   <defs>
-    <marker id="vpcArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <path d="M0,0 L9,3 L0,6 Z" fill="#334155"/>
-    </marker>
+    <marker id="va" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8Z" fill="#334155"/></marker>
   </defs>
-  <rect width="780" height="340" rx="14" fill="#F8FAFC"/>
-  <text x="390" y="36" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="15" font-weight="700" fill="#0F172A">VPC — Virtual Private Cloud</text>
-  <text x="390" y="56" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="11" fill="#64748B">Your isolated network inside AWS</text>
-  <rect x="40" y="80" width="340" height="220" rx="12" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
-  <text x="210" y="108" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="12" font-weight="600" fill="#334155">Subnet</text>
-  <rect x="68" y="128" width="284" height="152" rx="10" fill="#FEF4444" stroke="#DC2626" stroke-width="2"/>
-  <text x="210" y="158" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="12" font-weight="700" fill="#991B1B">Security Group (SG)</text>
-  <text x="210" y="182" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="10" fill="#7F1D1D">Ingress: allow TCP 22, TCP 80</text>
-  <text x="210" y="200" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="10" fill="#7F1D1D">Default: deny all other traffic</text>
-  <rect x="420" y="120" width="320" height="120" rx="12" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
-  <text x="580" y="158" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="13" font-weight="700" fill="#166534">EC2 Instance</text>
-  <text x="580" y="182" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="10" fill="#15803D">Traffic allowed only if SG rules match</text>
-  <text x="580" y="200" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="10" fill="#15803D">Attached at launch — acts as virtual firewall</text>
-  <line x1="380" y1="180" x2="415" y2="180" stroke="#334155" stroke-width="2.5" marker-end="url(#vpcArrow)"/>
-  <rect x="40" y="268" width="700" height="52" rx="8" fill="#EFF6FF" stroke="#BFDBFE"/>
-  <text x="390" y="292" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="10" fill="#1E40AF">Think of SG as a bouncer: only listed ports get in; everything else is blocked.</text>
-  <text x="390" y="308" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, san-serif" font-size="10" fill="#64748B">SG = Security Group · TCP = Transmission Control Protocol</text>
+  <rect width="820" height="400" fill="#F8FAFC"/>
+  <text x="410" y="36" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="18" font-weight="700" fill="#0F172A">VPC — Virtual Private Cloud</text>
+  <text x="410" y="58" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="12" fill="#64748B">Your isolated network boundary inside AWS</text>
+
+  <rect x="40" y="80" width="740" height="240" rx="14" fill="#FFF" stroke="#64748B" stroke-width="2"/>
+  <text x="410" y="108" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="13" font-weight="600" fill="#475569">Subnet (network slice inside VPC)</text>
+
+  <rect x="80" y="128" width="300" height="168" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="230" y="158" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="14" font-weight="700" fill="#991B1B">Security Group</text>
+  <text x="230" y="182" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" fill="#7F1D1D">Virtual firewall rules</text>
+  <rect x="110" y="198" width="110" height="28" rx="6" fill="#DC2626"/>
+  <text x="165" y="217" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" font-weight="600" fill="#FFF">ALLOW TCP 22</text>
+  <rect x="230" y="198" width="110" height="28" rx="6" fill="#DC2626"/>
+  <text x="285" y="217" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" font-weight="600" fill="#FFF">ALLOW TCP 80</text>
+  <rect x="110" y="238" width="230" height="28" rx="6" fill="#64748B"/>
+  <text x="225" y="257" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" font-weight="600" fill="#FFF">DENY all other traffic</text>
+
+  <rect x="440" y="148" width="300" height="128" rx="12" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="590" y="188" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="15" font-weight="700" fill="#166534">EC2 Instance</text>
+  <text x="590" y="212" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" fill="#15803D">Traffic must match SG rules</text>
+  <text x="590" y="232" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" fill="#15803D">Attached at launch</text>
+  <line x1="380" y1="212" x2="435" y2="212" stroke="#334155" stroke-width="3" marker-end="url(#va)"/>
+  <text x="408" y="200" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" font-weight="600" fill="#334155">Ingress</text>
+
+  <rect x="40" y="336" width="740" height="48" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="410" y="358" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="12" fill="#1E40AF">Think of the Security Group as a bouncer — only listed ports enter.</text>
+  <text x="410" y="376" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" fill="#64748B">SG = Security Group · TCP = Transmission Control Protocol · Ingress = incoming traffic</text>
 </svg>
