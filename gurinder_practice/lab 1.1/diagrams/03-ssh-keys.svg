@@ -1,20 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" role="img" aria-label="SSH key authentication">
-  <defs><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
-  <rect width="760" height="260" fill="#F8FAFC"/>
-  <text x="380" y="36" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="18" font-weight="700" fill="#0F172A">SSH Key Authentication</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" role="img" aria-label="SSH key authentication">
+  <defs>
+    
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="k" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 2 L10 6 L1 10" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="860" height="300" fill="#F1F5F9"/>
+  <text x="430" y="40" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="20" font-weight="700" fill="#0F172A">SSH Key Authentication</text>
+  <text x="430" y="62" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="12" fill="#64748B">Private key on your PC matches public key on the server</text>
 
-  <rect x="40" y="72" width="220" height="140" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
-  <text x="150" y="100" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="13" font-weight="700" fill="#1E40AF">Your PC</text>
-  <rect x="68" y="116" width="164" height="44" rx="6" fill="#FFF" stroke="#93C5FD"/>
-  <text x="150" y="144" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="12" font-weight="600" fill="#334155">soc-lab-key.pem</text>
-  <text x="150" y="176" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">Private key — keep secret</text>
+  <g filter="url(#sh)">
+    <rect x="48" y="96" width="240" height="160" rx="14" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  </g>
+  <text x="168" y="128" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="14" font-weight="700" fill="#1E40AF">Your PC</text>
+  <rect x="76" y="144" width="184" height="52" rx="8" fill="#FFF" stroke="#93C5FD" stroke-width="2"/>
+  <path d="M96 168 L96 184 L108 184 L108 176 L120 188 L132 176 L132 184 L144 184" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <text x="168" y="176" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="600" fill="#334155">soc-lab-key.pem</text>
+  <text x="168" y="216" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">Private key (secret)</text>
+  <text x="168" y="234" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#DC2626" font-weight="600">Never share this file</text>
 
-  <rect x="500" y="72" width="220" height="140" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
-  <text x="610" y="100" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="13" font-weight="700" fill="#166534">EC2</text>
-  <rect x="528" y="116" width="164" height="44" rx="6" fill="#FFF" stroke="#86EFAC"/>
-  <text x="610" y="144" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="600" fill="#334155">authorized_keys</text>
-  <text x="610" y="176" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">Login: ec2-user</text>
+  <g filter="url(#sh)">
+    <rect x="572" y="96" width="240" height="160" rx="14" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  </g>
+  <text x="692" y="128" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="14" font-weight="700" fill="#166534">EC2 Server</text>
+  <rect x="600" y="144" width="184" height="52" rx="8" fill="#FFF" stroke="#86EFAC" stroke-width="2"/>
+  <rect x="620" y="160" width="28" height="36" rx="4" fill="none" stroke="#16A34A" stroke-width="2"/>
+  <path d="M634 188 L634 200" fill="none" stroke="#16A34A" stroke-width="2"/>
+  <text x="692" y="176" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" font-weight="600" fill="#334155">authorized_keys</text>
+  <text x="692" y="216" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">Public key (from AWS)</text>
+  <text x="692" y="234" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">Login: ec2-user</text>
 
-  <line x1="260" y1="142" x2="500" y2="142" stroke="#2563EB" stroke-width="3" marker-end="url(#b)"/>
-  <text x="380" y="132" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="600" fill="#2563EB">Encrypted · port 22</text>
+  <!-- Key pair link -->
+  <rect x="320" y="132" width="220" height="88" rx="12" fill="#FFF" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <text x="430" y="158" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="12" font-weight="600" fill="#2563EB">Encrypted tunnel</text>
+  <text x="430" y="178" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" fill="#64748B">Port 22 · no password</text>
+  <text x="430" y="198" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">VS Code Remote-SSH</text>
+
+  <path d="M288 176 L318 176" fill="none" stroke="#2563EB" stroke-width="2.5" marker-end="url(#k)"/>
+  <path d="M542 176 L572 176" fill="none" stroke="#2563EB" stroke-width="2.5" marker-end="url(#k)"/>
 </svg>
