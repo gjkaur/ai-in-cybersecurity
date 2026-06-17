@@ -9,3 +9,7 @@ gurinder_practice/**/lab * screenshots/**
 # Keys and sensitive local artifacts
 **/*.pem
 gurinder_practice/**/output.txt
+gurinder_practice/**/soc_triage.py
+.env
+.env.*
+**/.env.local
