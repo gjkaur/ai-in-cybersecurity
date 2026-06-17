@@ -1,3 +1,7 @@
 outline.md
 day1.md
 day2.md
+
+# Personal lab screenshots (local only — never commit to GitHub)
+gurinder_practice/**/lab * screenshots/
+gurinder_practice/**/lab * screenshots/**
