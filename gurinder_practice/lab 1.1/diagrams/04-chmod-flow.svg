@@ -1,37 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 240" role="img" aria-label="chmod flow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" role="img">
   <defs>
-    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.10"/>
-    </filter><marker id="f" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 2 L10 6 L1 10" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
-  <rect width="860" height="240" fill="#F8FAFC"/>
-  <text x="430" y="32" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="18" font-weight="700" fill="#0F172A">chmod +x — Make a Script Runnable</text>
+    <filter id="sh" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="aws" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9900"/><stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <marker id="m-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 2 L9 5 L1 8" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round"/></marker>
+    <marker id="m-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 2 L9 5 L1 8" fill="none" stroke="#16A34A" stroke-width="1.8" stroke-linecap="round"/></marker>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/></marker>
+    <marker id="m-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 2 L9 5 L1 8" fill="none" stroke="#D97706" stroke-width="1.8" stroke-linecap="round"/></marker>
+    <marker id="m-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 2 L9 5 L1 8" fill="none" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round"/></marker>
+  </defs>
+  <rect width="960" height="340" fill="#F8FAFC"/>
+  <text x="480" y="36" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0F172A">chmod +x</text>
+  <text x="480" y="56" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#64748B">Make a script executable, then run it</text>
+  <path d="M168 178 H196" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#m-slate)"/>
+  <path d="M336 178 H364" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#m-slate)"/>
+  <path d="M504 178 H532" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#m-slate)"/>
+  <rect x="149" y="148" width="66" height="20" rx="10" fill="#FFF" stroke="#2563EB" stroke-width="1"/>
+  <text x="182" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="600" fill="#2563EB">chmod +x</text>
+  <rect x="311" y="148" width="78" height="20" rx="10" fill="#FFF" stroke="#7C3AED" stroke-width="1"/>
+  <text x="350" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="600" fill="#7C3AED">./hello.sh</text>
+  <circle cx="97" cy="126" r="14" fill="#D97706"/>
+  <text x="97" y="131" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#FFF">1</text>
+  <rect x="48" y="138" width="120" height="88" rx="12" fill="#FEF3C7" stroke="#D97706" stroke-width="2" filter="url(#sh)"/>
+  <text x="108" y="170" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#D97706">hello.sh</text>
+  <text x="108" y="190" text-anchor="middle" font-family="Consolas, monospace" font-size="10" font-weight="400" fill="#D97706">-rw-r--r--</text>
+  <text x="108" y="210" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#64748B">not executable</text>
+  <circle cx="265" cy="126" r="14" fill="#2563EB"/>
+  <text x="265" y="131" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#FFF">2</text>
+  <rect x="196" y="138" width="140" height="88" rx="12" fill="#ECFDF5" stroke="#86EFAC" stroke-width="2" filter="url(#sh)"/>
+  <text x="266" y="170" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#16A34A">hello.sh</text>
+  <text x="266" y="190" text-anchor="middle" font-family="Consolas, monospace" font-size="10" font-weight="400" fill="#16A34A">-rwxr-xr-x</text>
+  <text x="266" y="210" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#64748B">x = execute</text>
+  <circle cx="433" cy="126" r="14" fill="#7C3AED"/>
+  <text x="433" y="131" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#FFF">3</text>
+  <rect x="364" y="138" width="140" height="88" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2" filter="url(#sh)"/>
+  <text x="434" y="178" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">Hello SOC</text>
+  <text x="434" y="198" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#64748B">script runs</text>
+  <text x="434" y="212" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#64748B">in terminal</text>
+  <rect x="540" y="118" width="380" height="130" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="730" y="140" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0F172A">Permission bits (rwx)</text>
+  <text x="570" y="166" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748B">r = read</text>
+  <text x="570" y="184" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748B">w = write</text>
+  <text x="570" y="202" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748B">x = execute</text>
+  <text x="780" y="176" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748B">owner   group   other</text>
+  <text x="780" y="196" text-anchor="middle" font-family="Consolas, monospace" font-size="10" font-weight="600" fill="#0F172A">-rw-    r--     r-x</text>
+  <text x="730" y="228" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748B">chmod +x adds execute (x) for owner, group, and other</text>
+  <rect x="48" y="268" width="130" height="22" rx="5" fill="#FFF" stroke="#2563EB"/>
+  <text x="113" y="283" text-anchor="middle" font-family="Consolas, monospace" font-size="9" font-weight="600" fill="#2563EB">chmod +x hello.sh</text>
+  <rect x="196" y="268" width="110" height="22" rx="5" fill="#FFF" stroke="#7C3AED"/>
+  <text x="251" y="283" text-anchor="middle" font-family="Consolas, monospace" font-size="9" font-weight="600" fill="#7C3AED">./hello.sh</text>
+  <rect x="48" y="302" width="864" height="28" rx="6" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <text x="480" y="320" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748B">Without +x the shell cannot run the file as a program</text>
 
-  <path d="M152 148 L168 148" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#f)"/>
-  <path d="M292 148 L308 148" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#f)"/>
-  <path d="M432 148 L448 148" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#f)"/>
-
-  <rect x="42" y="118" width="110" height="60" rx="10" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2" filter="url(#sh)"/>
-  <text x="97" y="142" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="700" fill="#92400E">hello.sh</text>
-  <text x="97" y="162" text-anchor="middle" font-family="monospace" font-size="10" fill="#78350F">-rw-r--r--</text>
-
-  <rect x="168" y="136" width="68" height="24" rx="12" fill="#2563EB"/>
-  <text x="202" y="152" text-anchor="middle" font-family="monospace" font-size="10" font-weight="600" fill="#FFF">chmod +x</text>
-
-  <rect x="236" y="118" width="110" height="60" rx="10" fill="#DCFCE7" stroke="#22C55E" stroke-width="2" filter="url(#sh)"/>
-  <text x="291" y="142" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="700" fill="#166534">hello.sh</text>
-  <text x="291" y="162" text-anchor="middle" font-family="monospace" font-size="10" fill="#15803D">-rwxr-xr-x</text>
-
-  <rect x="308" y="136" width="72" height="24" rx="12" fill="#7C3AED"/>
-  <text x="344" y="152" text-anchor="middle" font-family="monospace" font-size="10" font-weight="600" fill="#FFF">./hello.sh</text>
-
-  <rect x="380" y="118" width="110" height="60" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" filter="url(#sh)"/>
-  <text x="435" y="152" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="13" font-weight="700" fill="#1E40AF">Hello SOC</text>
-
-  <rect x="520" y="100" width="300" height="88" rx="10" fill="#FFF" stroke="#E2E8F0" filter="url(#sh)"/>
-  <text x="670" y="122" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="11" font-weight="700" fill="#334155">Permission bits</text>
-  <text x="548" y="142" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">r = read</text>
-  <text x="548" y="158" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">w = write</text>
-  <text x="548" y="174" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">x = execute</text>
-  <text x="680" y="150" text-anchor="middle" font-family="monospace" font-size="10" fill="#92400E">-rw-  r--  r-x</text>
-  <text x="680" y="172" text-anchor="middle" font-family="Arial, Helvetica, Sans-serif" font-size="10" fill="#64748B">+x adds run permission</text>
 </svg>
