@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 452" role="img" aria-label="Human-in-the-Loop Principle">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="452" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Human-in-the-Loop Principle</text>
+  <rect x="220" y="60" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">AI</text>
+  <line x1="280" y1="104" x2="280" y2="114" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="205" y="120" width="151" height="110" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="280" y="148" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">Analyze</text>
+  <text x="229" y="182" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Summarize</text>
+  <text x="229" y="204" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Prioritize</text>
+  <text x="229" y="226" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Human Analyst</text>
+  <rect x="220" y="242" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="274" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Human Analyst</text>
+  <line x1="280" y1="286" x2="280" y2="296" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="212" y="302" width="137" height="110" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="280" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">Validate</text>
+  <text x="236" y="364" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Investigate</text>
+  <text x="236" y="386" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Decide</text>
+  <text x="236" y="408" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Respond</text>
+</svg>

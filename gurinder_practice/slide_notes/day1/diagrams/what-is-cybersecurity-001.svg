@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468 284" role="img" aria-label="Whiteboard Diagram">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="468" height="284" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Diagram</text>
+  <rect x="220" y="60" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Cybersecurity</text>
+  <line x1="280" y1="104" x2="280" y2="116" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="88" y1="130" x2="473" y2="130" stroke="#475569" stroke-width="2"/>
+  <line x1="154" y1="130" x2="154" y2="144" stroke="#475569" stroke-width="2"/>
+  <rect x="88" y="144" width="133" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="154" y="176" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Confidentiality</text>
+  <line x1="291" y1="130" x2="291" y2="144" stroke="#475569" stroke-width="2"/>
+  <rect x="237" y="144" width="108" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="291" y="176" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Integrity</text>
+  <line x1="417" y1="130" x2="417" y2="144" stroke="#475569" stroke-width="2"/>
+  <rect x="361" y="144" width="112" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="417" y="176" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Availability</text>
+  <rect x="74" y="200" width="112" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="130" y="232" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Private Data</text>
+  <rect x="200" y="200" width="119" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="259" y="232" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Accurate Data</text>
+  <rect x="333" y="200" width="154" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="410" y="232" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Accessible Systems</text>
+</svg>

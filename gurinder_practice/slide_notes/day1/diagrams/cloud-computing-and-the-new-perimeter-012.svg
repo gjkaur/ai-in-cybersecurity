@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 384" role="img" aria-label="Castle-and-Moat Security">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="384" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Castle-and-Moat Security</text>
+  <rect x="220" y="60" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Internet</text>
+  <rect x="220" y="104" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="136" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Firewall</text>
+  <line x1="280" y1="148" x2="280" y2="160" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="145" y1="174" x2="416" y2="174" stroke="#475569" stroke-width="2"/>
+  <line x1="218" y1="174" x2="218" y2="188" stroke="#475569" stroke-width="2"/>
+  <rect x="145" y="188" width="147" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="218" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">| Company Network</text>
+  <line x1="362" y1="174" x2="362" y2="188" stroke="#475569" stroke-width="2"/>
+  <rect x="308" y="188" width="108" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="362" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">|</text>
+  <rect x="177" y="244" width="96" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="225" y="276" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">| Servers</text>
+  <rect x="287" y="244" width="96" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="335" y="276" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">|</text>
+  <rect x="173" y="300" width="105" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="225" y="332" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">| Employees</text>
+  <rect x="292" y="300" width="96" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="340" y="332" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">|</text>
+</svg>

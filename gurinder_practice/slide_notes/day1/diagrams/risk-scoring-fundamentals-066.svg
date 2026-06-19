@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 508" role="img" aria-label="Example Risk Scoring Workflow">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="508" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Example Risk Scoring Workflow</text>
+  <rect x="214" y="60" width="133" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Security Events</text>
+  <line x1="280" y1="104" x2="280" y2="114" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="214" y="120" width="133" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="152" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Detection Rules</text>
+  <line x1="280" y1="164" x2="280" y2="174" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="196" y="180" width="168" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="212" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Assign Event Weights</text>
+  <line x1="280" y1="224" x2="280" y2="234" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="200" y="240" width="161" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="272" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Aggregate by Entity</text>
+  <line x1="280" y1="284" x2="280" y2="294" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="193" y="300" width="175" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="332" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Calculate Total Score</text>
+  <line x1="280" y1="344" x2="280" y2="354" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="217" y="360" width="126" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="392" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Apply Severity</text>
+  <text x="280" y="408" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Threshold</text>
+  <line x1="280" y1="420" x2="280" y2="430" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="193" y="436" width="175" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="468" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Analyst Investigation</text>
+</svg>

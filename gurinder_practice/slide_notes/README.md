@@ -6,7 +6,9 @@ Personal study notes from the **Cybersecurity in AI** course slides.
 
 **Deck:** `Cybersecurity-AI-day1/` (96 slides)
 
-→ [Day 1 index — all slides](day1/README.md)
+→ **[Day 1 — Refined Instructor Notes](day1/README.md)** *(single file, full coverage)*
+
+Organized from [`day1_notes.md`](day1_notes.md): table of contents, 30 topic parts, SVG diagrams (ASCII preserved in collapsible sources).
 
 | Section | Slides | Topics |
 |---------|--------|--------|
@@ -25,19 +27,15 @@ Personal study notes from the **Cybersecurity in AI** course slides.
 | Pop quizzes | 90–95 | Security Hub, MFA, security groups |
 | Lab 1.4 | 96 | Security posture baseline |
 
-## How notes are organized
+### Source notes (raw)
 
-Each slide has its own folder under `day1/`:
+[`day1_notes.md`](day1_notes.md)
 
+Regenerate the refined file after editing the source:
+
+```bash
+python gurinder_practice/slide_notes/day1/build_refined_notes.py
 ```
-slide_notes/day1/slide-NN-<title-slug>/README.md
-```
-
-Each README includes:
-- Slide title (from deck heading)
-- Link to source JPG
-- Key bullet points from the slide
-- Related lab guide (where applicable)
 
 ---
 
