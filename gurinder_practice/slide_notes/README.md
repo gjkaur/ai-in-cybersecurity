@@ -8,7 +8,7 @@ Personal study notes from the **Cybersecurity in AI** course slides.
 
 → **[Day 1 — Instructor Notes](day1/day1_instructor_notes.md)** *(compact single file, full coverage)*
 
-Organized from [`day1_notes.md`](day1_notes.md): table of contents, 30 topic parts, SVG diagrams inline.
+Organized from [`day1_notes.md`](day1_notes.md): table of contents, 30 topic parts, diagrams as click-to-open SVG links.
 
 | Section | Slides | Topics |
 |---------|--------|--------|
@@ -33,7 +33,7 @@ Organized from [`day1_notes.md`](day1_notes.md): table of contents, 30 topic par
 
 → **[Day 2 — Instructor Notes](day2/day2_instructor_notes.md)** *(compact single file, full coverage)*
 
-Organized from [`day2_notes.md`](day2_notes.md): table of contents, 22 topic parts, SVG diagrams inline.
+Organized from [`day2_notes.md`](day2_notes.md): table of contents, 22 topic parts, diagrams as click-to-open SVG links.
 
 | Block | Topics |
 |-------|--------|

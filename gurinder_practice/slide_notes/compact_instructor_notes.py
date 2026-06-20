@@ -16,11 +16,10 @@ FILLER_LINE_PATTERNS = (
     r"^Since this course is AI in Cybersecurity, connect immediately\.?$",
 )
 
-# Max chars per bullet item to allow inline join
-SHORT_ITEM_MAX = 52
-
 
 def extract_text_blocks(md: str) -> str:
+    """Convert ```text blocks to bullet lists (readable, not inline joins)."""
+
     def repl(match: re.Match[str]) -> str:
         body = match.group(1).strip("\n")
         non_empty = [ln.strip() for ln in body.splitlines() if ln.strip()]
@@ -31,8 +30,6 @@ def extract_text_blocks(md: str) -> str:
             if len(line) <= 80 and not line.startswith("http"):
                 return f" `{line}`"
             return f" {line}"
-        if len(non_empty) >= 2 and all(len(x) <= SHORT_ITEM_MAX for x in non_empty):
-            return " " + " · ".join(non_empty)
         return "\n" + "\n".join(f"- {ln}" for ln in non_empty)
 
     return re.sub(r"```text\n(.*?)```", repl, md, flags=re.DOTALL)
@@ -47,7 +44,7 @@ def compact_diagrams(md: str) -> str:
     def repl(match: re.Match[str]) -> str:
         alt = match.group(1).strip() or "Diagram"
         path = match.group(2)
-        return f"→ [{alt}]({path})"
+        return f"\n→ [{alt}]({path})\n"
 
     return re.sub(r"!\[([^\]]*)\]\(([^)]+\.svg)\)", repl, md)
 
@@ -86,107 +83,61 @@ def compact_preamble(md: str) -> str:
     return md.strip() + "\n\n"
 
 
-def compact_h4_sections(md: str) -> str:
-    # Empty h4 title-only headers
-    md = re.sub(r"^#### ([^\n]+)\n+(?=#### )", r"**\1** · ", md, flags=re.MULTILINE)
-    md = re.sub(r"^#### ([^\n]+)\n+(?=## )", r"**\1**\n", md, flags=re.MULTILINE)
-
-    def repl(match: re.Match[str]) -> str:
-        label = match.group(1).strip()
-        body = match.group(2).strip()
-        if not body:
-            return f"**{label}**"
-        body_lines = [
-            ln.strip()
-            for ln in body.splitlines()
-            if ln.strip() and not re.match(r"^#{1,4} ", ln)
-        ]
-        if not body_lines:
-            return f"**{label}**"
-        if len(body_lines) == 1 and not body_lines[0].startswith(("*", "-", "→")):
-            if body_lines[0].endswith(":") and len(body_lines[0]) < 24:
-                return f"**{label}**\n{body_lines[0]}\n"
-            return f"**{label}:** {body_lines[0]}"
-        if label.startswith("Q:"):
-            return f"**{label}** {body_lines[0]}"
-        if all(len(x) <= SHORT_ITEM_MAX for x in body_lines):
-            return f"**{label}:** " + " · ".join(body_lines)
-        return f"**{label}**\n" + "\n".join(body_lines)
-
-    return re.sub(
-        r"^#### (.+?)\n+((?:(?!^#{1,4} ).+?(?:\n|$))+)",
-        repl,
+def compact_qa_blocks(md: str) -> str:
+    md = re.sub(r"\*\*Q:\*\*\s*\n+", "**Q:** ", md)
+    md = re.sub(r"\*\*Answer:\*\*\s*\n+", "\n\n**Answer:** ", md)
+    # Split inline Q/A: **Q: ...?:** Answer
+    md = re.sub(
+        r"^\*\*Q: (.+?)\?\*\*: (.+)$",
+        r"**Q:** \1?\n\n**Answer:** \2",
         md,
         flags=re.MULTILINE,
     )
-
-
-def compact_qa_blocks(md: str) -> str:
-    md = re.sub(r"\*\*Q:\*\*\s*\n+", "**Q:** ", md)
-    md = re.sub(r"\*\*Answer:\*\*\s*\n+", "**Answer:** ", md)
-    md = re.sub(r"\*\*Student Question\*\*\s*\n+", "**Student Question** ", md)
+    # Blank line between Student Question label and Q
+    md = re.sub(
+        r"(^## Student Questions?\s*\n)\*\*Q:",
+        r"\1\n**Q:",
+        md,
+        flags=re.MULTILINE,
+    )
+    md = re.sub(
+        r"(^\*\*Student Question\*\*\s*\n)\*\*Q:",
+        r"\1\n**Q:",
+        md,
+        flags=re.MULTILINE,
+    )
     return md
 
 
-def _join_bullet_items(items: list[str]) -> str:
-    return " · ".join(items)
-
-
-def compact_short_bullet_blocks(md: str) -> str:
-    """Merge consecutive short * / - bullets into one line."""
-    lines = md.splitlines()
-    out: list[str] = []
-    i = 0
-    bullet_re = re.compile(r"^([\*\-]|\d+\.)\s+(.+)$")
-
-    while i < len(lines):
-        m = bullet_re.match(lines[i].strip())
-        if not m:
-            out.append(lines[i])
-            i += 1
-            continue
-
-        items: list[str] = []
-        j = i
-        while j < len(lines):
-            bm = bullet_re.match(lines[j].strip())
-            if not bm:
-                break
-            items.append(bm.group(2).strip())
-            j += 1
-
-        if len(items) >= 2 and all(len(it) <= SHORT_ITEM_MAX for it in items):
-            joined = _join_bullet_items(items)
-            prev = out[-1].strip() if out else ""
-            if prev.endswith(":") and not prev.startswith("#"):
-                out[-1] = out[-1].rstrip() + " " + joined
-            elif re.match(r"^\*\*.+\*\*:?$", prev) and not prev.startswith("#"):
-                out[-1] = out[-1].rstrip().rstrip(":") + ": " + joined
-            else:
-                out.append(joined)
-            i = j
-            continue
-
-        for k in range(i, j):
-            out.append(lines[k])
-        i = j
-
-    return "\n".join(out)
-
-
 def compact_blockquotes(md: str) -> str:
-    """Remove blank lines between blockquote lines; keep labels on separate lines."""
+    """Clean blockquotes: drop blank gaps and empty '>' separator lines."""
     lines = md.splitlines()
     out: list[str] = []
     i = 0
     while i < len(lines):
-        if not lines[i].startswith(">"):
-            out.append(lines[i])
+        line = lines[i]
+        if not line.startswith(">"):
+            out.append(line)
             i += 1
             continue
-        while i < len(lines) and lines[i].startswith(">"):
-            out.append(lines[i])
-            i += 1
+
+        # Collect a blockquote run (skip blank lines and lone '>' between quote lines)
+        quote_lines: list[str] = []
+        while i < len(lines):
+            cur = lines[i]
+            if cur.startswith(">"):
+                content = cur[1:].strip()
+                if content:
+                    quote_lines.append(f"> {content}")
+                i += 1
+                continue
+            if not cur.strip():
+                i += 1
+                continue
+            break
+
+        out.extend(quote_lines)
+
     return "\n".join(out)
 
 
@@ -199,60 +150,57 @@ def compact_part_headers(md: str) -> str:
     )
 
 
-def remove_redundant_rules(md: str) -> str:
-    lines = md.splitlines()
-    out: list[str] = []
-    for i, line in enumerate(lines):
-        if line.strip() != "---":
-            out.append(line)
-            continue
-        nxt = next((lines[j] for j in range(i + 1, min(i + 4, len(lines))) if lines[j].strip()), "")
-        prev = out[-1].strip() if out else ""
-        if nxt.startswith("## ") and "{#part-" in nxt:
-            out.append(line)
-        elif "Day" in prev and "content" in prev.lower():
-            out.append(line)
-    return "\n".join(out)
-
-
-def remove_label_gaps(md: str) -> str:
-    """Join label lines with following inline content (not blockquotes)."""
-    return re.sub(
-        r"^([A-Za-z][^\n:]{0,60}:)\n+(?=[`\*\-0-9]|→ )",
-        r"\1 ",
-        md,
-        flags=re.MULTILINE,
-    )
-
-
-def ultra_collapse_blanks(md: str) -> str:
-    """Single newlines; blank line only before part anchor headers."""
-    lines = [ln.rstrip() for ln in md.splitlines()]
-    out: list[str] = []
-    for line in lines:
-        if not line.strip():
-            continue
-        if line.startswith("## ") and "{#part-" in line and out and out[-1].strip():
-            out.append("")
-        out.append(line)
-    return "\n".join(out)
-
-
-def fix_header_collisions(md: str) -> str:
-    """Prevent 'Known as:## Title' and similar merges."""
+def fix_content_corruption(md: str) -> str:
+    """Fix known merge/corruption artifacts from earlier compaction passes."""
     md = re.sub(
-        r"This slide introduces:\s*\n*#### Confidentiality\s*\n*\*\*Integrity\*\*\s*\*\*Availability:\*\* Known as:\s*\n*## CIA Triad",
-        "This slide introduces: **Confidentiality** · **Integrity** · **Availability**\nKnown as:\n\n## CIA Triad",
+        r"This slide introduces:\s*\n+\s*#### Confidentiality\s*\n+\s*\*\*Integrity\*\*\s*\n*\*\*Availability:\*\* Known as:## CIA Triad",
+        "This slide introduces:\n\n- **Confidentiality**\n- **Integrity**\n- **Availability**\n\nKnown as the **CIA Triad**.",
         md,
         flags=re.IGNORECASE,
     )
     md = re.sub(
-        r"This slide introduces: \*\*Confidentiality:\*\* \*\*Integrity\*\* · \*\*Availability:\*\* Known as:",
-        "This slide introduces: **Confidentiality** · **Integrity** · **Availability**\nKnown as:",
+        r"\*\*Availability:\*\* Known as:## CIA Triad",
+        "**Availability**\n\nKnown as the **CIA Triad**.",
         md,
     )
-    md = re.sub(r"([.:!?])(## )", r"\1\n\n\2", md)
+    # Sentence glued to next heading: "...compromise.## Linux Permissions"
+    md = re.sub(r"([.!?])(## )", r"\1\n\n\2", md)
     return md
+
+
+def preserve_section_spacing(md: str) -> str:
+    """Keep one blank line before major breaks; never collapse to a wall of text."""
+    lines = [ln.rstrip() for ln in md.splitlines()]
+    out: list[str] = []
+
+    def needs_blank_before(line: str) -> bool:
+        s = line.strip()
+        if not s:
+            return False
+        if s == "---":
+            return True
+        if line.startswith("## ") and "{#part-" in line:
+            return True
+        if line.startswith("## ") or line.startswith("### "):
+            return True
+        if line.startswith("|"):
+            return True
+        if line.startswith(">"):
+            return True
+        if line.startswith("→ ["):
+            return True
+        return False
+
+    for line in lines:
+        if not line.strip():
+            if out and out[-1].strip():
+                out.append("")
+            continue
+        if out and out[-1].strip() and needs_blank_before(line):
+            out.append("")
+        out.append(line)
+
+    return "\n".join(out)
 
 
 def collapse_blank_lines(md: str) -> str:
@@ -267,15 +215,11 @@ def compact_markdown(md: str) -> str:
     body = extract_text_blocks(body)
     body = compact_diagrams(body)
     body = remove_filler_lines(body)
-    body = compact_h4_sections(body)
+    body = fix_content_corruption(body)
     body = compact_qa_blocks(body)
-    body = compact_short_bullet_blocks(body)
     body = compact_blockquotes(body)
     body = compact_part_headers(body)
-    body = remove_label_gaps(body)
-    body = remove_redundant_rules(body)
-    body = ultra_collapse_blanks(body)
-    body = fix_header_collisions(body)
+    body = preserve_section_spacing(body)
     body = collapse_blank_lines(body)
     preamble = compact_preamble(preamble)
     return (preamble + body).strip() + "\n"
