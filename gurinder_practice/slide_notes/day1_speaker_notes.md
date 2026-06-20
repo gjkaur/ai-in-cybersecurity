@@ -287,7 +287,7 @@ Like a medieval castle.
 
 
 
-<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-016.svg" width="480" alt="Castle-and-Moat Security">
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-016.svg" width="220" alt="Castle-and-Moat Security">
 
 
 
@@ -307,7 +307,7 @@ Old model:
 
 
 
-<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-018.svg" width="480" alt="Identity is the New Firewall">
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-018.svg" width="220" alt="Identity is the New Firewall">
 
 
 
@@ -317,7 +317,7 @@ Modern model:
 
 
 
-<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-019.svg" width="480" alt="Identity is the New Firewall">
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-019.svg" width="220" alt="Identity is the New Firewall">
 
 
 
@@ -329,7 +329,7 @@ Imagine a company in 2005.
 
 
 
-<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-013.svg" width="480" alt="Traditional Office">
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-013.svg" width="220" alt="Traditional Office">
 
 
 
@@ -339,7 +339,7 @@ Security looked like a castle.
 
 
 
-<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-014.svg" width="480" alt="Traditional Office">
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-014.svg" width="220" alt="Traditional Office">
 
 
 
@@ -485,7 +485,7 @@ Example:
 
 
 
-<img src="day1_diagrams/aws-and-cloud-infrastructure-024.svg" width="480" alt="Availability Zones (AZs)">
+<img src="day1_diagrams/aws-and-cloud-infrastructure-024.svg" width="220" alt="Availability Zones (AZs)">
 
 
 
@@ -554,7 +554,7 @@ Draw this on the whiteboard:
 
 
 
-<img src="day1_diagrams/aws-regions-availability-zones-iam-vpc-and-ec2-027.svg" width="480" alt="Connecting Everything Together">
+<img src="day1_diagrams/aws-regions-availability-zones-iam-vpc-and-ec2-027.svg" width="220" alt="Connecting Everything Together">
 
 
 
@@ -564,7 +564,7 @@ Draw this on the whiteboard:
 
 
 
-<img src="day1_diagrams/aws-regions-availability-zones-iam-vpc-and-ec2-028.svg" width="480" alt="Where is the resource?">
+<img src="day1_diagrams/aws-regions-availability-zones-iam-vpc-and-ec2-028.svg" width="220" alt="Where is the resource?">
 
 
 
@@ -861,7 +861,7 @@ This is extremely important in AWS.
 
 
 
-<img src="day1_diagrams/linux-file-permissions-053.svg" width="480" alt="Q: What does rwx mean?">
+<img src="day1_diagrams/linux-file-permissions-053.svg" width="220" alt="Q: What does rwx mean?">
 
 
 
@@ -1195,7 +1195,7 @@ AI helps with that decision-making process.
 
 
 
-<img src="day1_diagrams/the-modern-threat-landscape-012.svg" width="480" alt="Whiteboard Diagram">
+<img src="day1_diagrams/the-modern-threat-landscape-012.svg" width="220" alt="Whiteboard Diagram">
 
 
 
@@ -1386,7 +1386,7 @@ Example:
 
 
 
-<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-020.svg" width="480" alt="Detect Privilege Escalation">
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-020.svg" width="220" alt="Detect Privilege Escalation">
 
 
 
@@ -1402,7 +1402,7 @@ Most attacks follow this pattern:
 
 
 
-<img src="day1_diagrams/privilege-escalation-mitre-attck-t1548-096.svg" width="480" alt="PRIVILEGE ESCALATION (MITRE ATT&amp;amp;amp;CK T1548)">
+<img src="day1_diagrams/privilege-escalation-mitre-attck-t1548-096.svg" width="220" alt="PRIVILEGE ESCALATION (MITRE ATT&amp;amp;amp;CK T1548)">
 
 
 
@@ -1714,7 +1714,7 @@ Common cybersecurity use cases:
 
 
 
-<img src="day1_diagrams/risk-scoring-fundamentals-108.svg" width="480" alt="Example Security Automation Workflow">
+<img src="day1_diagrams/risk-scoring-fundamentals-108.svg" width="220" alt="Example Security Automation Workflow">
 
 
 
@@ -2378,7 +2378,7 @@ The most effective security model combines:
 
 
 
-<img src="day1_diagrams/risk-scoring-fundamentals-111.svg" width="480" alt="Human-in-the-Loop Security">
+<img src="day1_diagrams/risk-scoring-fundamentals-111.svg" width="220" alt="Human-in-the-Loop Security">
 
 
 
@@ -2394,7 +2394,7 @@ The most effective model is:
 
 
 
-<img src="day1_diagrams/risk-scoring-fundamentals-116.svg" width="480" alt="Human-in-the-Loop Principle">
+<img src="day1_diagrams/risk-scoring-fundamentals-116.svg" width="220" alt="Human-in-the-Loop Principle">
 
 
 
@@ -2608,7 +2608,7 @@ Example:
 
 
 
-<img src="day1_diagrams/cloud-security-posture-management-cspm-159.svg" width="480" alt="The CSPM Lifecycle">
+<img src="day1_diagrams/cloud-security-posture-management-cspm-159.svg" width="220" alt="The CSPM Lifecycle">
 
 
 
@@ -3049,7 +3049,7 @@ CloudTrail primarily supports integrity and accountability.
 
 
 
-<img src="day1_diagrams/cloud-security-posture-management-cspm-160.svg" width="480" alt="Finding Prioritization">
+<img src="day1_diagrams/cloud-security-posture-management-cspm-160.svg" width="220" alt="Finding Prioritization">
 
 
 
@@ -3128,7 +3128,7 @@ Example:
 
 
 
-<img src="day1_diagrams/cloud-security-posture-management-cspm-238.svg" width="480" alt="Why Controlled Remediation Matters">
+<img src="day1_diagrams/cloud-security-posture-management-cspm-238.svg" width="220" alt="Why Controlled Remediation Matters">
 
 
 
@@ -3138,7 +3138,7 @@ Instead:
 
 
 
-<img src="day1_diagrams/cloud-security-posture-management-cspm-239.svg" width="480" alt="Why Controlled Remediation Matters">
+<img src="day1_diagrams/cloud-security-posture-management-cspm-239.svg" width="220" alt="Why Controlled Remediation Matters">
 
 
 
@@ -3248,7 +3248,7 @@ Controlled remediation:
 
 
 
-<img src="day1_diagrams/cloud-security-posture-management-cspm-245.svg" width="480" alt="Finding">
+<img src="day1_diagrams/cloud-security-posture-management-cspm-245.svg" width="220" alt="Finding">
 
 
 

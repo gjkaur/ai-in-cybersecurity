@@ -34,7 +34,7 @@ The following components were established on Day 1:
 
 
 
-<img src="day2_diagrams/from-detection-to-investigation-day-2-overview-001.svg" width="480" alt="Day 1 Foundation">
+<img src="day2_diagrams/from-detection-to-investigation-day-2-overview-001.svg" width="220" alt="Day 1 Foundation">
 
 
 
@@ -58,7 +58,7 @@ Day 2 connects these building blocks into a complete investigation pipeline.
 
 
 
-<img src="day2_diagrams/from-detection-to-investigation-day-2-overview-002.svg" width="480" alt="Day 2 Focus Areas">
+<img src="day2_diagrams/from-detection-to-investigation-day-2-overview-002.svg" width="220" alt="Day 2 Focus Areas">
 
 
 
@@ -164,7 +164,7 @@ Without a SIEM:
 
 
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-009.svg" width="480" alt="Why SIEM Systems Exist">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-009.svg" width="220" alt="Why SIEM Systems Exist">
 
 
 
@@ -174,7 +174,7 @@ With a SIEM:
 
 
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-010.svg" width="480" alt="Why SIEM Systems Exist">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-010.svg" width="220" alt="Why SIEM Systems Exist">
 
 
 
@@ -186,7 +186,7 @@ With a SIEM:
 
 
 
-<img src="day2_diagrams/what-you-will-build-today-006.svg" width="480" alt="Architecture">
+<img src="day2_diagrams/what-you-will-build-today-006.svg" width="220" alt="Architecture">
 
 
 
@@ -221,7 +221,7 @@ Suppose an attacker gains access to an AWS account.
 
 
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-014.svg" width="480" alt="SIEM in the SOC Workflow">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-014.svg" width="220" alt="SIEM in the SOC Workflow">
 
 
 
@@ -283,7 +283,7 @@ As organizations move workloads from on-premises data centers to the cloud, secu
 
 
 
-<img src="day2_diagrams/siem-security-information-and-event-management-025.svg" width="480" alt="SIEM Architecture">
+<img src="day2_diagrams/siem-security-information-and-event-management-025.svg" width="220" alt="SIEM Architecture">
 
 
 
@@ -323,7 +323,7 @@ Amazon CloudWatch is AWS's native observability platform that provides monitorin
 
 
 
-<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-041.svg" width="480" alt="CloudWatch Architecture">
+<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-041.svg" width="220" alt="CloudWatch Architecture">
 
 
 
@@ -393,7 +393,7 @@ Without the CloudWatch Agent:
 
 
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-050.svg" width="480" alt="Why the CloudWatch Agent Exists">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-050.svg" width="220" alt="Why the CloudWatch Agent Exists">
 
 
 
@@ -594,7 +594,7 @@ This enables consistent searching and reporting.
 
 
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-045.svg" width="480" alt="Example">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-045.svg" width="220" alt="Example">
 
 
 
@@ -639,7 +639,7 @@ Log Events:
 
 
 
-<img src="day2_diagrams/cloudwatch-logs-insights-query-language-070.svg" width="480" alt="Human-in-the-Loop Model">
+<img src="day2_diagrams/cloudwatch-logs-insights-query-language-070.svg" width="220" alt="Human-in-the-Loop Model">
 
 
 
@@ -655,7 +655,7 @@ Agent forwards new log entries.
 
 
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-052.svg" width="480" alt="Step 3">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-052.svg" width="220" alt="Step 3">
 
 
 
@@ -729,7 +729,7 @@ For example, if multiple failed SSH logins are detected:
 
 
 
-<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-077.svg" width="480" alt="AI Investigation Process">
+<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-077.svg" width="220" alt="AI Investigation Process">
 
 
 
@@ -760,7 +760,7 @@ Instead of showing only logs, AI provides possible explanations supported by evi
 
 
 
-<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-080.svg" width="480" alt="High-Level Investigation Pipeline">
+<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-080.svg" width="220" alt="High-Level Investigation Pipeline">
 
 
 
@@ -979,7 +979,7 @@ Pipeline:
 
 
 
-<img src="day2_diagrams/detection-strategy-148.svg" width="480" alt="Example Detection Workflow">
+<img src="day2_diagrams/detection-strategy-148.svg" width="220" alt="Example Detection Workflow">
 
 
 
@@ -1647,7 +1647,7 @@ With AI Operations:
 
 
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-140.svg" width="480" alt="Automated AI Workflow">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-140.svg" width="220" alt="Automated AI Workflow">
 
 
 
@@ -1669,7 +1669,7 @@ Traditional SOC workflow:
 
 
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-139.svg" width="480" alt="Why Connect Alarms to AI Operations?">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-139.svg" width="220" alt="Why Connect Alarms to AI Operations?">
 
 
 
@@ -2057,7 +2057,7 @@ Same concept applies to security events.
 
 
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-054.svg" width="480" alt="Detection Pipeline">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-054.svg" width="220" alt="Detection Pipeline">
 
 
 
@@ -2354,7 +2354,7 @@ Detection engineering follows the same principle as software development:
 
 
 
-<img src="day2_diagrams/the-three-panel-soc-dashboard-166.svg" width="480" alt="The Detection Engineering Mindset">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-166.svg" width="220" alt="The Detection Engineering Mindset">
 
 
 
@@ -2389,7 +2389,7 @@ Apply structured response procedures:
 
 
 
-<img src="day2_diagrams/from-detection-to-investigation-day-2-overview-003.svg" width="480" alt="Incident Response">
+<img src="day2_diagrams/from-detection-to-investigation-day-2-overview-003.svg" width="220" alt="Incident Response">
 
 
 
@@ -2772,7 +2772,7 @@ Each catalog entry follows the same process:
 
 
 
-<img src="day2_diagrams/detection-engineering-vs-incident-response-196.svg" width="480" alt="Threat-to-Detection Workflow">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-196.svg" width="220" alt="Threat-to-Detection Workflow">
 
 
 

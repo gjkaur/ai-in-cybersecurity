@@ -58,4 +58,10 @@ Merge short prose and inline compact bullet lists into paragraphs (also runs aut
 python gurinder_practice/slide_notes/compact_paragraphs.py
 ```
 
-Diagrams render inline in GitHub as `<img src="day1_diagrams/*.svg" width="480">` (max display width 480px).
+Re-apply diagram display width after changing `DIAGRAM_DISPLAY_WIDTH` in `diagram_embed.py`:
+
+```bash
+python gurinder_practice/slide_notes/diagram_embed.py
+```
+
+Diagrams render inline in GitHub as `<img src="day1_diagrams/*.svg" width="220">` (max display width 220px).
