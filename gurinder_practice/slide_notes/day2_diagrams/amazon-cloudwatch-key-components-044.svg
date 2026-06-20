@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 168" width="220" height="130" role="img" aria-label="Example Structure">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 83" width="144" height="83" role="img" aria-label="Example Structure">
   <defs>
     <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
@@ -7,12 +7,12 @@
       <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
     </marker>
   </defs>
-  <rect width="284" height="168" fill="#F8FAFC"/>
-  <text x="211" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Example Structure</text>
-  <rect x="141" y="44" width="140" height="96" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
-  <text x="211" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#2563EB">Log Group</text>
-  <text x="158" y="90" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• └── /soc-lab/secure</text>
-  <text x="158" y="106" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• ├── EC2-Server-01</text>
-  <text x="158" y="122" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• ├── EC2-Server-02</text>
-  <text x="158" y="138" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• └── EC2-Server-03</text>
+  <rect width="144" height="83" fill="#F8FAFC"/>
+  <text x="106" y="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="5" font-weight="700" fill="#0F172A">Example Structure</text>
+  <rect x="66" y="22" width="80" height="47" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="106" y="32" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="5" font-weight="700" fill="#2563EB">Log Group</text>
+  <text x="75" y="45" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• └── /soc-lab/secure</text>
+  <text x="75" y="53" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• ├── EC2-Server-01</text>
+  <text x="75" y="61" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• ├── EC2-Server-02</text>
+  <text x="75" y="69" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• └── EC2-Server-03</text>
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 486" width="220" height="376" role="img" aria-label="AWS Example">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 241" width="144" height="241" role="img" aria-label="AWS Example">
   <defs>
     <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
@@ -7,33 +7,33 @@
       <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
     </marker>
   </defs>
-  <rect width="284" height="486" fill="#F8FAFC"/>
-  <text x="211" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0F172A">AWS Example</text>
-  <rect x="144" y="44" width="135" height="112" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
-  <text x="211" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#2563EB">CloudTrail</text>
-  <text x="161" y="90" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• VPC Flow Logs</text>
-  <text x="161" y="106" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• CloudWatch Metrics</text>
-  <text x="161" y="122" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• Security Hub</text>
-  <text x="161" y="138" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• GuardDuty</text>
-  <text x="161" y="154" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• AWS Config</text>
-  <rect x="165" y="165" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="211" y="187" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">AWS Config</text>
-  <line x1="211" y1="198" x2="211" y2="203" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <line x1="211" y1="209" x2="211" y2="215" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="163" y="221" width="96" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="211" y="243" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">CloudWatch Logs</text>
-  <line x1="211" y1="254" x2="211" y2="259" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <line x1="211" y1="265" x2="211" y2="271" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="154" y="277" width="115" height="80" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
-  <text x="211" y="298" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#2563EB">Logs Insights</text>
-  <text x="171" y="323" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• AI Operations</text>
-  <text x="171" y="339" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• Metric Filters</text>
-  <text x="171" y="355" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• Alarms</text>
-  <rect x="165" y="366" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="211" y="388" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Alarms</text>
-  <line x1="211" y1="399" x2="211" y2="404" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <line x1="211" y1="410" x2="211" y2="416" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="165" y="422" width="92" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="211" y="444" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Dashboards &amp;</text>
-  <text x="211" y="456" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Investigations</text>
+  <rect width="144" height="241" fill="#F8FAFC"/>
+  <text x="106" y="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="5" font-weight="700" fill="#0F172A">AWS Example</text>
+  <rect x="68" y="22" width="77" height="55" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="106" y="32" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="5" font-weight="700" fill="#2563EB">CloudTrail</text>
+  <text x="77" y="45" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• VPC Flow Logs</text>
+  <text x="77" y="53" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• CloudWatch Metrics</text>
+  <text x="77" y="61" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• Security Hub</text>
+  <text x="77" y="69" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• GuardDuty</text>
+  <text x="77" y="77" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• AWS Config</text>
+  <rect x="83" y="81" width="46" height="17" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="106" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">AWS Config</text>
+  <line x1="106" y1="98" x2="106" y2="97" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="106" y1="103" x2="106" y2="103" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="78" y="109" width="56" height="17" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="106" y="120" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">CloudWatch Logs</text>
+  <line x1="106" y1="126" x2="106" y2="125" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="106" y1="131" x2="106" y2="131" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="74" y="137" width="65" height="39" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="106" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="5" font-weight="700" fill="#2563EB">Logs Insights</text>
+  <text x="83" y="160" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• AI Operations</text>
+  <text x="83" y="168" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• Metric Filters</text>
+  <text x="83" y="176" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#0F172A">• Alarms</text>
+  <rect x="83" y="180" width="46" height="17" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="106" y="191" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Alarms</text>
+  <line x1="106" y1="197" x2="106" y2="196" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="106" y1="202" x2="106" y2="202" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="80" y="208" width="53" height="23" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="106" y="219" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Dashboards &amp;</text>
+  <text x="106" y="225" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Investigations</text>
 </svg>

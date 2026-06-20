@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 296" width="220" height="229" role="img" aria-label="Detecting Credential Harvesting">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 149" width="144" height="149" role="img" aria-label="Detecting Credential Harvesting">
   <defs>
     <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
@@ -7,23 +7,23 @@
       <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
     </marker>
   </defs>
-  <rect width="284" height="296" fill="#F8FAFC"/>
-  <text x="211" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Detecting Credential Harvesting</text>
-  <rect x="165" y="44" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="211" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Initial Access</text>
-  <line x1="211" y1="77" x2="211" y2="82" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="151" y="88" width="121" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="211" y="104" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Privilege</text>
-  <text x="211" y="116" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Escalation</text>
-  <line x1="211" y1="121" x2="211" y2="126" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="163" y="132" width="96" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="211" y="154" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Read Credential</text>
-  <text x="211" y="166" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Files</text>
-  <line x1="211" y1="177" x2="211" y2="182" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="161" y="188" width="101" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="211" y="210" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Extract Password</text>
-  <text x="211" y="222" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Hashes</text>
-  <line x1="211" y1="233" x2="211" y2="238" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="161" y="244" width="101" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="211" y="266" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Lateral Movement</text>
+  <rect width="144" height="149" fill="#F8FAFC"/>
+  <text x="106" y="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="5" font-weight="700" fill="#0F172A">Detecting Credential Harvesting</text>
+  <rect x="80" y="22" width="53" height="17" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="106" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Initial Access</text>
+  <line x1="106" y1="39" x2="106" y2="38" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="71" y="44" width="71" height="17" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="106" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Privilege</text>
+  <text x="106" y="58" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Escalation</text>
+  <line x1="106" y1="61" x2="106" y2="60" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="78" y="66" width="56" height="23" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="106" y="77" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Read Credential</text>
+  <text x="106" y="83" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Files</text>
+  <line x1="106" y1="89" x2="106" y2="88" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="77" y="94" width="59" height="23" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="106" y="105" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Extract Password</text>
+  <text x="106" y="111" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Hashes</text>
+  <line x1="106" y1="117" x2="106" y2="116" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="77" y="122" width="59" height="17" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="106" y="133" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="4" font-weight="600" fill="#0F172A">Lateral Movement</text>
 </svg>

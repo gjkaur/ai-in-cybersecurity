@@ -1,23 +1,10 @@
 # Day 2 — Speaker Notes
 
-Use with **Cybersecurity-AI-day2.pdf**. Each section matches one slide (from slide 2).
+Use with **Cybersecurity-AI-day2.pdf**. One section per slide (from slide 2).
 
 ---
 
 ## Slide 2 — From Detection To Investigation
-
-**On slide:**
-
-- — DAY 2 OVERVIEW
-- Day 1 built the foundation: a running EC2
-- instance, structured log evidence, AI-assisted
-- scripting, and a cloud security posture
-- baseline.
-- Day 2 connects those pieces into a live
-- detection and investigation pipeline using
-- AWS-native AI tooling.
-
-**Speaker notes:**
 
 ### From Detection to Investigation — Day 2 Overview
 
@@ -34,7 +21,6 @@ The following components were established on Day 1:
 
 
 
-<img src="day2_diagrams/from-detection-to-investigation-day-2-overview-001.svg" width="220" alt="Day 1 Foundation">
 
 
 
@@ -58,34 +44,17 @@ Day 2 connects these building blocks into a complete investigation pipeline.
 
 
 
-<img src="day2_diagrams/from-detection-to-investigation-day-2-overview-002.svg" width="220" alt="Day 2 Focus Areas">
 
 
 
+
+---
 
 ---
 
 ---
 
 ## Slide 3 — From Detection To Investigation
-
-**On slide:**
-
-- — DAY 2 OVERVIEW
-- What you will build today:
-- Lab 2.2 — Query security logs with
-- natural language and run AI-assisted
-- investigations using CloudWatch AI
-- Operations
-- Lab 2.3 — Build a real-time SOC
-- dashboard with metric filters, alarms,
-- and automated investigation triggers
-- Lab 2.4 — Choose a real attack
-- technique, simulate it, build the full
-- detection pipeline independently, and
-- write a structured incident report
-
-**Speaker notes:**
 
 ### What You Will Build Today
 
@@ -111,24 +80,9 @@ By the end of Day 2, participants will be able to:
 
 ---
 
+---
+
 ## Slide 4 — What Is A Security Information And
-
-**On slide:**
-
-- EVENT MANAGEMENT SYSTEM?
-- A Security Information and Event Management (SIEM) system collects, normalizes, and correlates log data
-- from across an environment to surface security-relevant events in one place.
-- SIEMs are the central tool in most SOC workflows. Analysts spend the majority of their time working within
-- or alongside one.
-- Core SIEM functions:
-- Log aggregation — collect events from endpoints, network devices, cloud services, and applications
-- Normalization — convert heterogeneous log formats into a consistent schema for querying
-- Correlation rules — detect patterns across multiple event sources that no single source would surface
-- alone
-- Alerting — notify analysts when correlation rules or thresholds trigger
-- Search and investigation — allow analysts to query historical data during incident response
-
-**Speaker notes:**
 
 ### What is a Security Information and Event Management (SIEM) System?
 
@@ -164,7 +118,6 @@ Without a SIEM:
 
 
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-009.svg" width="220" alt="Why SIEM Systems Exist">
 
 
 
@@ -174,7 +127,6 @@ With a SIEM:
 
 
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-010.svg" width="220" alt="Why SIEM Systems Exist">
 
 
 
@@ -186,16 +138,15 @@ With a SIEM:
 
 
 
-<img src="day2_diagrams/what-you-will-build-today-006.svg" width="220" alt="Architecture">
 
 
 
 
 ---
 
-## Slide 5 — Untitled
+---
 
-**Speaker notes:**
+## Slide 5 — Untitled
 
 ### Example SIEM Investigation
 
@@ -221,7 +172,6 @@ Suppose an attacker gains access to an AWS account.
 
 
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-014.svg" width="220" alt="SIEM in the SOC Workflow">
 
 
 
@@ -232,45 +182,9 @@ Security analysts spend much of their day working within this workflow.
 
 ---
 
+---
+
 ## Slide 6 — Cloud-Native Monitoring Vs.
-
-**On slide:**
-
-- TRADITIONAL SIEMS
-- Traditional SIEMs were designed for on-premises
-- environments where logs had to be shipped over the
-- network from physical devices.
-- Cloud-native monitoring takes a different approach,
-- logs are generated, stored, and analyzed within the
-- same cloud infrastructure.
-- Dimension
-- Traditional SIEM
-- Cloud-Native
-- (CloudWatch)
-- Log collection
-- Agent-based, network
-- push
-- Native service
-- integration
-- Scaling
-- Manual capacity
-- planning
-- Automatic
-- Query language
-- SPL, KQL, vendor-
-- specific
-- CloudWatch Logs
-- Insights
-- Cost model
-- License +
-- infrastructure
-- Pay per
-- ingestion/query
-- AI integration
-- Add-on or third-party
-- Built into the service
-
-**Speaker notes:**
 
 ### Cloud-Native Monitoring vs. Traditional SIEMs
 
@@ -283,7 +197,6 @@ As organizations move workloads from on-premises data centers to the cloud, secu
 
 
 
-<img src="day2_diagrams/siem-security-information-and-event-management-025.svg" width="220" alt="SIEM Architecture">
 
 
 
@@ -296,21 +209,9 @@ Cloud-native monitoring services are integrated directly into cloud infrastructu
 
 ---
 
+---
+
 ## Slide 7 — Architecture Overview
-
-**On slide:**
-
-- CloudWatch is AWS's native
-- observability service.
-- It collects metrics (numerical
-- time-series data) and logs
-- (text events) from AWS
-- services and custom sources,
-- then provides query,
-- alerting, and visualization
-- tools on top of them.
-
-**Speaker notes:**
 
 ### Amazon CloudWatch — Architecture Overview
 
@@ -323,32 +224,17 @@ Amazon CloudWatch is AWS's native observability platform that provides monitorin
 
 
 
-<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-041.svg" width="220" alt="CloudWatch Architecture">
 
 
 
+
+---
 
 ---
 
 ---
 
 ## Slide 8 — Architecture Overview
-
-**On slide:**
-
-- Key components:
-- Log groups — containers for related log streams (e.g., /soc-
-- lab/secure for endpoint auth events)
-- Log streams — individual sequences of log events from a
-- single source (e.g., one EC2 instance)
-- Metrics — numerical measurements over time (e.g.,
-- CPUUtilization, or custom SudoFailedAttempts)
-- Alarms — monitors a metric against a threshold; triggers
-- actions when breached
-- Dashboards — configurable visualization panels combining
-- metrics and log queries
-
-**Speaker notes:**
 
 ### CloudWatch for Security Operations
 
@@ -367,18 +253,9 @@ Common detection scenarios:
 
 ---
 
+---
+
 ## Slide 9 — The Cloudwatch Agent And Log
-
-**On slide:**
-
-- INGESTION
-- The CloudWatch agent is a software process that runs
-- on an EC2 instance and continuously ships log data to
-- CloudWatch.
-- Without it, CloudWatch has no visibility into the host,
-- only into AWS-managed services.
-
-**Speaker notes:**
 
 ### The CloudWatch Agent and Log Ingestion
 
@@ -393,7 +270,6 @@ Without the CloudWatch Agent:
 
 
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-050.svg" width="220" alt="Why the CloudWatch Agent Exists">
 
 
 
@@ -427,22 +303,9 @@ Its purpose is to collect:
 
 ---
 
+---
+
 ## Slide 10 — The Cloudwatch Agent And Log
-
-**On slide:**
-
-- INGESTION
-- How log ingestion works:
-- The agent runs on the EC2 instance as a system service
-- A configuration file tells it which log files to watch and
-- which log group to send them to
-- The agent tails configured files and forwards new entries to
-- CloudWatch in near real time
-- Entries land in a log stream named after the instance ID
-- All streams within one log group can be searched together
-- via Logs Insights
-
-**Speaker notes:**
 
 ### Log Group and Log Stream Organization
 
@@ -450,22 +313,9 @@ CloudWatch stores logs using:
 
 ---
 
+---
+
 ## Slide 11 — Cloudwatch Logs Insights — Query
-
-**On slide:**
-
-- LANGUAGE
-- Logs Insights is the query engine for CloudWatch log
-- data. It uses a structured query language purpose-built
-- for log analysis. It is simpler than SQL, but powerful
-- enough for most SOC investigation tasks.
-- Common query patterns:
-- fields — select which columns to display
-- filter — apply conditions (supports regex with like /pattern/)
-- stats — aggregate; count(), sum(), avg()
-- sort and limit — control output order and volume
-
-**Speaker notes:**
 
 ### Logs
 
@@ -547,25 +397,9 @@ Learn how to investigate findings using:
 
 ---
 
+---
+
 ## Slide 12 — Ai-Powered Query Generation In
-
-**On slide:**
-
-- CLOUDWATCH
-- CloudWatch Log Analytics includes
-- an AI interface that converts plain
-- English questions into Logs Insights
-- query syntax. This lowers the barrier
-- to log analysis for analysts who
-- don't know the query language.
-- This does not replace query
-- knowledge, it accelerates writing the
-- first draft. Analysts still need to
-- validate that the generated query
-- matches the actual log structure in
-- their environment.
-
-**Speaker notes:**
 
 ### CloudWatch
 
@@ -594,7 +428,6 @@ This enables consistent searching and reporting.
 
 
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-045.svg" width="220" alt="Example">
 
 
 
@@ -611,35 +444,15 @@ Log Events:
 
 ---
 
+---
+
 ## Slide 13 — Ai-Powered Query Generation In
-
-**On slide:**
-
-- CLOUDWATCH
-- 1.
-- You type a natural language
-- prompt: *"Find failed SSH attempts
-- in the last hour"*
-- 2.
-- The AI generates a complete Logs
-- Insights query targeting the fields it
-- infers are relevant
-- 3.
-- You review the generated query
-- before running it — the AI output is
-- editable
-- 4.
-- Results appear in the same interface
-- as a manually written query
-
-**Speaker notes:**
 
 ### Human-in-the-Loop Model
 
 
 
 
-<img src="day2_diagrams/cloudwatch-logs-insights-query-language-070.svg" width="220" alt="Human-in-the-Loop Model">
 
 
 
@@ -655,29 +468,17 @@ Agent forwards new log entries.
 
 
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-052.svg" width="220" alt="Step 3">
 
 
 
+
+---
 
 ---
 
 ---
 
 ## Slide 14 — Cloudwatch Ai Operations —
-
-**On slide:**
-
-- WHAT IT IS
-- AI Operations is a new CloudWatch feature that
-- runs structured investigations over your log and
-- metric data using AI.
-- Unlike a simple query, an investigation forms
-- multiple hypotheses, evaluates evidence across
-- data sources, and presents conclusions for analyst
-- review.
-
-**Speaker notes:**
 
 ### CloudWatch AI Operations
 
@@ -691,28 +492,9 @@ CloudWatch collects and processes:
 
 ---
 
+---
+
 ## Slide 15 — Cloudwatch Ai Operations —
-
-**On slide:**
-
-- WHAT IT IS
-- AI Operations is not a black box:
-- Every hypothesis includes the
-- evidence the AI cited
-- The analyst reviews and accepts,
-- rejects, or escalates each finding
-- Investigations can be triggered
-- manually or automatically by a
-- CloudWatch alarm
-- Each investigation has a
-- configurable retention period
-- (deleted after expiry)
-- The AI may conclude that an event
-- is *not* a threat — ruling
-- something out is a legitimate
-- analytical outcome
-
-**Speaker notes:**
 
 ### CloudWatch AI Operations — Investigation Hypotheses and Analyst Review
 
@@ -729,7 +511,6 @@ For example, if multiple failed SSH logins are detected:
 
 
 
-<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-077.svg" width="220" alt="AI Investigation Process">
 
 
 
@@ -740,27 +521,15 @@ Instead of showing only logs, AI provides possible explanations supported by evi
 
 ---
 
+---
+
 ## Slide 16 — How Ai Investigations Work
-
-**On slide:**
-
-- An AI Operations investigation follows a
-- structured pipeline. The analyst sets the
-- scope, the AI runs the analysis, and the
-- analyst reviews the output to make a
-- final call.
-- The analyst is always the decision-maker.
-- AI provides a starting hypothesis, not a
-- verdict.
-
-**Speaker notes:**
 
 ### High-Level Investigation Pipeline
 
 
 
 
-<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-080.svg" width="220" alt="High-Level Investigation Pipeline">
 
 
 
@@ -788,29 +557,9 @@ CloudWatch Agent monitors the log file.
 
 ---
 
+---
+
 ## Slide 17 — How Ai Investigations Work
-
-**On slide:**
-
-- 1.
-- Scope — define the log group, time range, and
-- starting query
-- 2.
-- Analysis — AI runs the query, examines the
-- matching events, and evaluates patterns
-- 3.
-- Hypothesis generation — AI produces one or
-- more theories about what the activity
-- represents
-- 4.
-- Evidence citation — each hypothesis cites
-- specific log events supporting the conclusion
-- 5.
-- Analyst review — confirm, challenge, or
-- escalate based on what you know about the
-- environment
-
-**Speaker notes:**
 
 ### Human-in-the-Loop Review
 
@@ -827,21 +576,9 @@ Possible actions:
 
 ---
 
+---
+
 ## Slide 18 — Signal Vs. Noise In Log Data
-
-**On slide:**
-
-- A high-volume production environment can
-- generate tens of millions of log events per day.
-- The challenge for a SOC analyst is not finding
-- logs. It is finding the events that matter within an
-- ocean of routine activity.
-- AI-assisted investigation helps by grouping similar
-- events, identifying patterns, and surfacing the
-- highest-anomaly items first, reducing the manual
-- filtering burden significantly.
-
-**Speaker notes:**
 
 ### Noise
 
@@ -861,21 +598,9 @@ Most log data falls into this category.
 
 ---
 
+---
+
 ## Slide 19 — Signal Vs. Noise In Log Data
-
-**On slide:**
-
-- Noise sources that overwhelm raw log analysis:
-- Scheduled jobs and automated health checks
-- generating repeated identical entries
-- Infrastructure-level retries and timeouts that are
-- expected and benign
-- Background internet scanner activity probing open
-- ports continuously
-- Verbose application debug logging enabled
-- unintentionally in production
-
-**Speaker notes:**
 
 ### Signal vs. Noise in Log Data — Common Sources of Noise
 
@@ -901,21 +626,9 @@ Effective security monitoring is not about collecting more logs—it is about re
 
 ---
 
+---
+
 ## Slide 20 — Mitre Att&Ck Mapping In
-
-**On slide:**
-
-- INVESTIGATIONS
-- Mapping detected events to ATT&CK
-- techniques gives investigations a
-- structured language and connects
-- findings to known adversary behaviors.
-- It also helps analysts prioritize. A
-- confirmed T1078 (Valid Accounts abuse)
-- demands different urgency than a
-- routine T1059 (script execution).
-
-**Speaker notes:**
 
 ### Why ATT&CK Mapping Helps
 
@@ -923,25 +636,9 @@ ATT&CK provides:
 
 ---
 
+---
+
 ## Slide 21 — Mitre Att&Ck Mapping In
-
-**On slide:**
-
-- INVESTIGATIONS
-- T1110 — Brute Force: repeated failed SSH
-- login events from a single source
-- T1087 — Account Discovery: enumeration
-- commands that appear in audit logs
-- T1059 — Command and Scripting Interpreter:
-- shell commands executed on the host
-- T1078 — Valid Accounts: authentication with
-- legitimate credentials at unexpected times or
-- locations
-- T1526 — Cloud Service Discovery:
-- enumeration of IAM, S3, and EC2 resources
-- via API
-
-**Speaker notes:**
 
 ### Techniques
 
@@ -979,26 +676,17 @@ Pipeline:
 
 
 
-<img src="day2_diagrams/detection-strategy-148.svg" width="220" alt="Example Detection Workflow">
 
 
 
+
+---
 
 ---
 
 ---
 
 ## Slide 22 — Iam Roles For Cloudwatch Access
-
-**On slide:**
-
-- CloudWatch AI Operations and the CloudWatch
-- agent both require IAM permissions to function.
-- Configuring these permissions correctly is a
-- prerequisite. Without them, the agent cannot ship
-- logs and AI Operations cannot read them.
-
-**Speaker notes:**
 
 ### IAM Role
 
@@ -1015,23 +703,9 @@ For CloudWatch monitoring, IAM roles are preferred.
 
 ---
 
+---
+
 ## Slide 23 — Iam Roles For Cloudwatch Access
-
-**On slide:**
-
-- EC2 instance profile — attached to the instance;
-- grants the CloudWatch agent permission to write
-- logs (CloudWatchAgentServerPolicy)
-- AI Operations role — an account-level role that
-- CloudWatch assumes to read logs, metrics, and
-- alarms when running an investigation
-- Both roles should follow least privilege — the AI
-- Operations role needs read access, not write access,
-- to your resources
-- Auto-creating the AI Operations role is the safe
-- default in a lab environment
-
-**Speaker notes:**
 
 ### IAM Roles for CloudWatch Access — Required Roles
 
@@ -1043,18 +717,9 @@ Always grant only the permissions required.
 
 ---
 
+---
+
 ## Slide 24 — Log Retention And Investigation
-
-**On slide:**
-
-- RETENTION
-- Logs and investigations stored indefinitely cost
-- money and create data management risk.
-- Setting appropriate retention periods for both is a
-- standard part of configuring any monitoring
-- environment.
-
-**Speaker notes:**
 
 ### Investigation Retention
 
@@ -1096,40 +761,17 @@ Organizations should define retention policies that balance:
 
 ---
 
+---
+
 ## Slide 25 — Log Retention And Investigation
-
-**On slide:**
-
-- RETENTION
-- Default: indefinite (logs are never deleted automatically —
-- you pay for all stored data)
-- Configurable per log group: 1 day to 10 years
-- Typical SOC practice: 90 days hot (immediately queryable),
-- archive to S3 for long-term compliance retention
-- AI Operations investigation retention:
-- Configurable at the account level: default 7 days in a lab
-- environment is appropriate
-- Expired investigations are deleted automatically — no
-- manual cleanup needed
 
 **Speaker notes:** Expand on the on-slide bullets using your own examples.
 
 ---
 
+---
+
 ## Slide 26 — Evaluating Ai-Generated
-
-**On slide:**
-
-- HYPOTHESES
-- An AI hypothesis is a starting point, not a
-- conclusion. Evaluating it correctly requires the
-- analyst to apply domain knowledge about the
-- environment, the activity that generated the logs,
-- and the plausibility of the AI's interpretation.
-- A hypothesis you cannot verify with evidence
-- should not be escalated
-
-**Speaker notes:**
 
 ### Generated Hypotheses
 
@@ -1145,23 +787,9 @@ Organizations should define retention policies that balance:
 
 ---
 
+---
+
 ## Slide 27 — Evaluating Ai-Generated
-
-**On slide:**
-
-- HYPOTHESES
-- Questions to ask when reviewing a hypothesis:
-- What evidence did the AI cite? Can you locate those
-- specific log events yourself?
-- Is the conclusion consistent with the data? Or is the
-- AI pattern-matching on surface features?
-- Is the activity expected? A "suspicious" event may be
-- routine if you know what generated it
-- What did the AI not consider? Investigations are
-- bounded by the query scope — related signals
-- outside that scope are invisible to the AI
-
-**Speaker notes:**
 
 ### Generate
 
@@ -1198,71 +826,37 @@ Never assume the generated query is accurate without validation.
 
 ---
 
+---
+
 ## Slide 28 — Pop Quiz:
 
-**On slide:**
-
-- An AI Operations investigation concludes: *"This activity is consistent with
-- a routine automated health check, not an active threat."* How should an
-- analyst respond?
-- A. Discard the finding immediately — if the AI says it is safe, no further action is needed
-- B. Escalate the finding regardless of the AI's conclusion, because AI tools cannot be trusted to rule out threats
-- C. Review the evidence the AI cited, confirm it aligns with your knowledge of expected environment behavior, then
-- close the investigation with a documented rationale
-- D. Re-run the investigation with a broader query scope to force a different result
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 29 — Pop Quiz:
 
-**On slide:**
-
-- An AI Operations investigation concludes: *"This activity is consistent with
-- a routine automated health check, not an active threat."* How should an
-- analyst respond?
-- A. Discard the finding immediately — if the AI says it is safe, no further action is needed
-- B. Escalate the finding regardless of the AI's conclusion, because AI tools cannot be trusted to rule out threats
-- C. Review the evidence the AI cited, confirm it aligns with your knowledge of expected environment
-- behavior, then close the investigation with a documented rationale
-- D. Re-run the investigation with a broader query scope to force a different result
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 30 — Pop Quiz:
 
-**On slide:**
-
-- A student opens CloudWatch and finds the /soc-lab/secure log group is
-- empty. Which of the following is the most likely cause and correct first
-- remediation step?
-- A. The log group does not exist yet — create it manually in the CloudWatch console
-- B. The CloudWatch agent on the EC2 instance is not running or has lost its configuration — restart it with `sudo
-- systemctl restart amazon-cloudwatch-agent`
-- C. The IAM policy attached to the analyst's user does not include `logs:GetLogEvents` — update the policy
-- D. CloudWatch Logs Insights requires a 30-minute warm-up period before new log groups become queryable
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 31 — Pop Quiz:
 
-**On slide:**
-
-- A student opens CloudWatch and finds the /soc-lab/secure log group is
-- empty. Which of the following is the most likely cause and correct first
-- remediation step?
-- A. The log group does not exist yet — create it manually in the CloudWatch console
-- B. The CloudWatch agent on the EC2 instance is not running or has lost its configuration — restart it with
-- `sudo systemctl restart amazon-cloudwatch-agent`
-- C. The IAM policy attached to the analyst's user does not include `logs:GetLogEvents` — update the policy
-- D. CloudWatch Logs Insights requires a 30-minute warm-up period before new log groups become queryable
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
@@ -1272,21 +866,9 @@ Never assume the generated query is accurate without validation.
 
 ---
 
+---
+
 ## Slide 33 — What Is A Soc Dashboard?
-
-**On slide:**
-
-- A SOC dashboard is a visual workspace
-- that displays the most important security
-- signals in one place, allowing an analyst
-- to assess the current threat picture at a
-- glance without running queries from
-- scratch.
-- Good dashboards are designed around
-- analyst workflows, not technical
-- capabilities.
-
-**Speaker notes:**
 
 ### Speaker Notes – What is a SOC Dashboard?
 
@@ -1303,25 +885,9 @@ Never assume the generated query is accurate without validation.
 
 ---
 
+---
+
 ## Slide 34 — What Is A Soc Dashboard?
-
-**On slide:**
-
-- Actionable signals — every widget should
-- lead to a decision or investigation
-- Time-range consistency — all widgets
-- should show the same window for
-- meaningful comparison
-- Layered views — high-level counts on top;
-- event detail available on drill-down
-- Alert integration — surface active alarms
-- directly on the dashboard, not in a
-- separate tab
-- Dashboards that display everything
-- simultaneously are as useless as
-- dashboards that display nothing
-
-**Speaker notes:**
 
 ### The Three-Panel SOC Dashboard
 
@@ -1338,22 +904,9 @@ For today's lab environment, the most useful design includes:
 
 ---
 
+---
+
 ## Slide 35 — Metric Filters — Turning Log Events
-
-**On slide:**
-
-- INTO NUMBERS
-- A CloudWatch metric filter reads a log group and increments a custom metric counter each
-- time a log entry matches a specified pattern. This converts unstructured log text into a
-- time-series number that can be graphed, alarmed on, and analyzed over time.
-- Why this matters for detection:
-- Raw log events cannot be alarmed on directly, they must first become a metric
-- A metric filter creates a countable signal: "how many sudo failures occurred in the last minute?"
-- Custom metrics live in a namespace you define (e.g., SOCLab)
-- Metric filters are the bridge between log data and the rest of the CloudWatch alerting ecosystem
-- One metric filter can feed multiple alarms and dashboard widgets simultaneously
-
-**Speaker notes:**
 
 ### Metric Filter
 
@@ -1391,13 +944,9 @@ Use when:
 
 ---
 
+---
+
 ## Slide 36 — Metric Filters — Turning Log Events
-
-**On slide:**
-
-- INTO NUMBERS
-
-**Speaker notes:**
 
 ### Speaker Notes – Metric Filters: Turning Log Events into Numbers
 
@@ -1431,25 +980,9 @@ Result:
 
 ---
 
+---
+
 ## Slide 37 — Writing Effective Metric Filter
-
-**On slide:**
-
-- PATTERNS
-- Test your pattern against real log data in the Test
-- pattern step of the metric filter wizard before
-- saving.
-- Pattern syntax:
-- Literal string — exe="/usr/bin/sudo" matches
-- any log entry containing that exact string
-- AND logic — [a, b] or space-separated terms:
-- exe="/usr/bin/sudo" res=failed
-- Wildcard — % matches zero or more characters
-- within a term
-- Field-based — for JSON logs: { $.eventType =
-- "AuthenticationFailure" }
-
-**Speaker notes:**
 
 ### Speaker Notes – Writing Effective Metric Filter Patterns
 
@@ -1479,18 +1012,9 @@ Create filters for:
 
 ---
 
+---
+
 ## Slide 38 — Configuration And Thresholds
-
-**On slide:**
-
-- A CloudWatch alarm monitors a single metric and
-- transitions between states based on whether the
-- metric value crosses a defined threshold.
-- State transitions can trigger actions notifications,
-- Lambda invocations, or AI Operations
-- investigations.
-
-**Speaker notes:**
 
 ### Alarm
 
@@ -1514,25 +1038,9 @@ Example:
 
 ---
 
+---
+
 ## Slide 39 — Configuration And Thresholds
-
-**On slide:**
-
-- Alarm states:
-- OK — metric is within the acceptable range
-- In alarm — metric has crossed the threshold
-- Insufficient data — not enough data points yet to evaluate
-- Key configuration decisions:
-- Statistic — Sum for counting security events; Average for
-- rate or latency metrics
-- Period — the evaluation window; 1 minute is appropriate
-- for near-real-time security alerting
-- Threshold — >= 1 for security events: any single match
-- should trigger the alarm
-- Alarm actions — what happens when the alarm fires (the
-- most important field for a SOC pipeline)
-
-**Speaker notes:**
 
 ### Key Configuration Decision #1: Statistic
 
@@ -1564,20 +1072,9 @@ A good process is:
 
 ---
 
+---
+
 ## Slide 40 — Alert Runbooks & Documentation
-
-**On slide:**
-
-- All alerts should be documented in a centralized wiki
-- with an associated runbook. This ensures consistent
-- response and reduces time to investigate incidents.
-- Each alert links to a runbook
-- Where to look: dashboards, logs, metrics
-- Suggested remediation steps
-- Clear escalation path
-- Notes on common causes / patterns
-
-**Speaker notes:**
 
 ### OK
 
@@ -1618,21 +1115,9 @@ Start by explaining:
 
 ---
 
+---
+
 ## Slide 41 — Connecting Alarms To Ai
-
-**On slide:**
-
-- INVESTIGATIONS
-- Wiring a CloudWatch alarm to an AI
-- Operations investigation creates an
-- automatic triage pipeline:
-- A suspicious event occurs, the metric
-- increments, the alarm fires, and an
-- investigation starts without analyst
-- intervention. An analyst will review,
-- investigate and act on the results.
-
-**Speaker notes:**
 
 ### Speaker Notes – Connecting Alarms to AI Investigations
 
@@ -1647,7 +1132,6 @@ With AI Operations:
 
 
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-140.svg" width="220" alt="Automated AI Workflow">
 
 
 
@@ -1669,7 +1153,6 @@ Traditional SOC workflow:
 
 
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-139.svg" width="220" alt="Why Connect Alarms to AI Operations?">
 
 
 
@@ -1684,20 +1167,9 @@ The problem:
 
 ---
 
+---
+
 ## Slide 42 — Privilege Escalation Detection —
-
-**On slide:**
-
-- `SUDO` AND `SU`
-- Privilege escalation is one of the highest-priority
-- attack categories because success may gives an
-- attacker the same power as a system
-- administrator.
-- Detecting failed attempts is critical. It reveals that
-- escalation is being actively attempted even before
-- it succeeds.
-
-**Speaker notes:**
 
 ### Example: Privilege Escalation Detection
 
@@ -1740,26 +1212,9 @@ The command runs with root permissions even though the user is not logged in as 
 
 ---
 
+---
+
 ## Slide 43 — Privilege Escalation Detection —
-
-**On slide:**
-
-- `SUDO` AND `SU`
-- Detection signals in auditd:
-- Failed sudo — exe="/usr/bin/sudo" res=failed in
-- /var/log/audit/audit.log
-- Failed su — exe="/usr/bin/su" res=failed
-- Sudoers modification — write access to /etc/sudoers
-- or /etc/sudoers.d/
-- Unexpected SUID execution — a binary with SetUID
-- bit run by a low-privilege user
-- MITRE ATT&CK mapping:
-- T1548.003 — Abuse Elevation Control Mechanism:
-- sudo
-- T1548.001 — Abuse Elevation Control Mechanism:
-- SetUID
-
-**Speaker notes:**
 
 ### Signal
 
@@ -1802,24 +1257,9 @@ Most privilege escalation attempts leave evidence in audit logs even if they fai
 
 ---
 
+---
+
 ## Slide 44 — Red And Purple Team
-
-**On slide:**
-
-- Red and Purple Teams are used to test and improve an
-- organization’s security posture through simulated
-- attacks and collaboration.
-- Red Team: Simulates real attackers (offensive
-- security)
-- Focuses on exploitation, evasion, and bypassing
-- controls
-- Tests people, processes, and technology
-- Purple Team: Collaboration between Red & Blue
-- teams
-- Improves detection, alerting, and response
-- Focuses on learning and continuous improvement
-
-**Speaker notes:**
 
 ### What is a Red Team?
 
@@ -1867,18 +1307,9 @@ instead of simply measuring success or failure.
 
 ---
 
+---
+
 ## Slide 45 — Creating A Test Attacker Account
-
-**On slide:**
-
-- To safely simulate attacks without risking the
-- integrity of your lab environment, a dedicated
-- low-privilege test account is used for attack
-- simulation steps.
-- This mirrors real red team / purple team exercise
-- practices.
-
-**Speaker notes:**
 
 ### Speaker Notes – Creating a Test Attacker Account
 
@@ -1917,22 +1348,9 @@ Use CloudWatch AI Operations and natural language queries to analyze cloud secur
 
 ---
 
+---
+
 ## Slide 46 — Dashboard Design For Security
-
-**On slide:**
-
-- OPERATIONS
-- A well-designed SOC dashboard is an
-- analyst's first stop, not their last. It
-- should answer the most common
-- questions immediately without requiring
-- the analyst to build queries from scratch
-- each time they sit down.
-- Each widget should have a clear, specific
-- Logs Insights query behind it. Not a
-- broad "show me everything" query.
-
-**Speaker notes:**
 
 ### Security
 
@@ -1943,24 +1361,9 @@ Use CloudWatch AI Operations and natural language queries to analyze cloud secur
 
 ---
 
+---
+
 ## Slide 47 — Dashboard Design For Security
-
-**On slide:**
-
-- OPERATIONS
-- What to include in a SOC dashboard:
-- Event volume over time — a line chart showing total
-- auth events per 5-minute window
-- Failed auth by source — a ranked table of IPs with
-- the most failures
-- Privilege escalation attempts — a counter or time-
-- series for sudo/su failures
-- Active alarms — current alarm state for all security
-- metrics
-- Recent raw events — a log table showing the last 20
-- matching events for quick context
-
-**Speaker notes:**
 
 ### Good Dashboard Design Principles
 
@@ -1991,38 +1394,9 @@ Same concept applies to security events.
 
 ---
 
+---
+
 ## Slide 48 — Cloudwatch Dashboard Widgets
-
-**On slide:**
-
-- CloudWatch dashboards support multiple
-- widget types. Choosing the right type for each
-- signal makes the difference between a
-- dashboard that accelerates decision-making
-- and one that just looks busy.
-- For a SOC lab dashboard, a combination of a line
-- chart (trend), a logs table (event detail), and an
-- alarm status widget (current alert state) gives an
-- analyst the most useful three-panel view.
-- Widget Type
-- Best For
-- Line chart
-- Event counts over time; trend
-- detection
-- Number widget
-- Current alarm count; total findings
-- today
-- Logs table
-- Showing raw recent events with
-- @timestamp and @message
-- Alarm status
-- At-a-glance current state of all
-- configured alarms
-- Bar chart
-- Comparing counts across discrete
-- categories (e.g., by source IP)
-
-**Speaker notes:**
 
 ### CloudWatch Dashboard
 
@@ -2038,26 +1412,15 @@ Same concept applies to security events.
 
 ---
 
+---
+
 ## Slide 49 — The Full Detection Pipeline
-
-**On slide:**
-
-- Building a detection pipeline means
-- connecting every component from raw
-- host activity through to analyst action.
-- Understanding the full chain helps you
-- diagnose failures. If an alarm never
-- fires, you need to know which link
-- broke.
-
-**Speaker notes:**
 
 ### Detection Pipeline
 
 
 
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-054.svg" width="220" alt="Detection Pipeline">
 
 
 
@@ -2094,44 +1457,9 @@ The log group is essentially the evidence repository.
 
 ---
 
+---
+
 ## Slide 50 — Att&Ck Techniques In The Lab
-
-**On slide:**
-
-- ENVIRONMENT
-- Mapping your detection to ATT&CK validates coverage
-- and identifies gaps.
-- A few techniques not yet covered (gap):
-- T1053 — Scheduled Task/Job (cron) →no metric filter
-- exists yet
-- T1136 — Create Account →ADD_USER event not yet
-- alerted
-- Technique
-- ID
-- Detection Signal
-- Brute Force
-- T1110
-- Failed SSH auth
-- events
-- Valid Accounts —
-- abuse
-- T1078
-- Auth from
-- unexpected
-- accounts
-- Abuse Elevation:
-- sudo
-- T1548.003
-- exe="/usr/bin/sud
-- o" res=failed
-- Command and
-- Scripting
-- T1059
-- Shell command
-- execution in audit
-- log
-
-**Speaker notes:**
 
 ### Technique
 
@@ -2153,18 +1481,9 @@ Participants may choose:
 
 ---
 
+---
+
 ## Slide 51 — Testing And Validating
-
-**On slide:**
-
-- DETECTION RULES
-- A detection rule that has never fired is not a
-- tested rule, it is a hypothesis.
-- Every metric filter and alarm must be validated by
-- generating known test events and confirming the
-- pipeline responds as expected.
-
-**Speaker notes:**
 
 ### Speaker Notes – Testing and Validating Detection Rules
 
@@ -2181,25 +1500,9 @@ Example workflow:
 
 ---
 
+---
+
 ## Slide 52 — Testing And Validating
-
-**On slide:**
-
-- DETECTION RULES
-- Generate test events — run the action the rule
-- should detect (controlled and documented)
-- Verify log entry — confirm the expected log line
-- appears in CloudWatch within 60 seconds
-- Verify metric increment — confirm the custom metric
-- value increased in the CloudWatch console
-- Verify alarm state — confirm the alarm transitions to
-- "In alarm"
-- Verify investigation — confirm an AI Operations
-- investigation was automatically created
-- Clean up — remove test artifacts (e.g., sudo userdel -
-- r testattacker) after validation
-
-**Speaker notes:**
 
 ### Speaker Notes – Testing and Validating Detection Rules (Validation Workflow)
 
@@ -2222,96 +1525,53 @@ Always test alarms using real events before production deployment.
 
 ---
 
+---
+
 ## Slide 53 — Pop Quiz:
 
-**On slide:**
-
-- You want to create a metric filter that counts failed sudo attempts from the
-- auditd log. Which filter pattern is correct for auditd log entries?
-- A. `Failed sudo attempt`
-- B. `{ $.result = "FAILED" && $.command = "sudo" }`
-- C. `exe="/usr/bin/sudo" res=failed`
-- D. `sudo: authentication failure`
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 54 — Pop Quiz:
 
-**On slide:**
-
-- You want to create a metric filter that counts failed sudo attempts from the
-- auditd log. Which filter pattern is correct for auditd log entries?
-- A. `Failed sudo attempt`
-- B. `{ $.result = "FAILED" && $.command = "sudo" }`
-- C. `exe="/usr/bin/sudo" res=failed`
-- D. `sudo: authentication failure`
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 55 — Pop Quiz:
 
-**On slide:**
-
-- You are configuring a CloudWatch alarm to detect sudo privilege
-- escalation attempts. Which configuration is most appropriate?
-- A. Statistic: Average, Period: 1 hour, Threshold: greater than 100
-- B. Statistic: Sum, Period: 1 minute, Threshold: greater than or equal to 1
-- C. Statistic: Minimum, Period: 5 minutes, Threshold: less than 1
-- D. Statistic: Sum, Period: 24 hours, Threshold: greater than 1000
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 56 — Pop Quiz:
 
-**On slide:**
-
-- You are configuring a CloudWatch alarm to detect sudo privilege
-- escalation attempts. Which configuration is most appropriate?
-- A. Statistic: Average, Period: 1 hour, Threshold: greater than 100
-- B. Statistic: Sum, Period: 1 minute, Threshold: greater than or equal to 1
-- C. Statistic: Minimum, Period: 5 minutes, Threshold: less than 1
-- D. Statistic: Sum, Period: 24 hours, Threshold: greater than 1000
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 57 — Pop Quiz:
 
-**On slide:**
-
-- A student generates failed sudo attempts on their EC2 instance but the
-- CloudWatch alarm never fires. Assuming the alarm and metric filter are
-- configured correctly, which component is the most likely point of failure?
-- A. The CloudWatch alarm has not been given enough time — alarms take up to 24 hours to activate after creation
-- B. The CloudWatch agent on the EC2 instance is not running or is not configured to ship `/var/log/audit/audit.log`
-- C. The metric filter pattern is too specific — it should use a wildcard to match more events
-- D. The IAM role attached to the alarm does not have permission to read the audit log file
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 58 — Pop Quiz:
 
-**On slide:**
-
-- A student generates failed sudo attempts on their EC2 instance but the
-- CloudWatch alarm never fires. Assuming the alarm and metric filter are
-- configured correctly, which component is the most likely point of failure?
-- A. The CloudWatch alarm has not been given enough time — alarms take up to 24 hours to activate after creation
-- B. The CloudWatch agent on the EC2 instance is not running or is not configured to ship
-- `/var/log/audit/audit.log`
-- C. The metric filter pattern is too specific — it should use a wildcard to match more events
-- D. The IAM role attached to the alarm does not have permission to read the audit log file
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
@@ -2321,20 +1581,9 @@ Always test alarms using real events before production deployment.
 
 ---
 
+---
+
 ## Slide 60 — Detection Engineering — What
-
-**On slide:**
-
-- IT IS
-- Detection engineering is the discipline of building,
-- testing, and maintaining the rules and pipelines
-- that alert analysts to adversary behavior. It sits at
-- the intersection of threat intelligence, log analysis,
-- and software development.
-- Detection engineering is not a one-time task. It is
-- an ongoing operational discipline.
-
-**Speaker notes:**
 
 ### Detection
 
@@ -2354,7 +1603,6 @@ Detection engineering follows the same principle as software development:
 
 
 
-<img src="day2_diagrams/the-three-panel-soc-dashboard-166.svg" width="220" alt="The Detection Engineering Mindset">
 
 
 
@@ -2365,22 +1613,9 @@ A rule without testing is equivalent to software that was never executed.
 
 ---
 
+---
+
 ## Slide 61 — Detection Engineering — What
-
-**On slide:**
-
-- IT IS
-- A detection engineer:
-- Translates threat intelligence and ATT&CK
-- techniques into actionable detection logic
-- Tests rules against both real attack data and benign
-- activity to calibrate false positive rates
-- Maintains and tunes detections as the environment
-- and attacker techniques evolve
-- Documents every rule: what it detects, what evidence
-- it needs, and what the analyst should do when it fires
-
-**Speaker notes:**
 
 ### Incident Response
 
@@ -2389,7 +1624,6 @@ Apply structured response procedures:
 
 
 
-<img src="day2_diagrams/from-detection-to-investigation-day-2-overview-003.svg" width="220" alt="Incident Response">
 
 
 
@@ -2404,22 +1638,9 @@ Apply structured response procedures:
 
 ---
 
+---
+
 ## Slide 62 — Choosing What To Detect
-
-**On slide:**
-
-- Not every possible attacker technique can be
-- detected with the same signal quality. A practical
-- detection strategy starts with the techniques most
-- likely to target your environment and the
-- techniques where you have reliable, high-fidelity
-- log data.
-- For a Linux EC2 environment with auditd and
-- CloudWatch: SSH brute force, privilege escalation,
-- new account creation, and sensitive file access all
-- score high on all four dimensions.
-
-**Speaker notes:**
 
 ### Speaker Notes – Choosing What to Detect
 
@@ -2435,22 +1656,9 @@ Privilege escalation techniques receive higher attention.
 
 ---
 
+---
+
 ## Slide 63 — Choosing What To Detect
-
-**On slide:**
-
-- Prioritization framework:
-- Signal fidelity — does the technique produce a
-- distinctive, low-noise log event?
-- ATT&CK prevalence — how commonly is this
-- technique used in real-world attacks against your
-- type of environment?
-- Detection gap — is this technique currently
-- unmonitored?
-- Blast radius — if this technique succeeds undetected,
-- how severe is the impact?
-
-**Speaker notes:**
 
 ### Speaker Notes – Choosing What to Detect (Prioritization Framework)
 
@@ -2470,62 +1678,9 @@ Teams can identify:
 
 ---
 
+---
+
 ## Slide 64 — Linux Endpoint Threat Catalog
-
-**On slide:**
-
-- Five specific threat techniques are relevant to the
-- lab environment.
-- Each produces a distinctive auditd log signature
-- and maps to a documented ATT&CK technique.
-- Threat
-- What Happens
-- auditd Signal
-- ATT&CK
-- SSH brute
-- force
-- Repeated failed
-- SSH logins
-- from one
-- source
-- exe="/usr/sbin/
-- sshd"
-- res=failed
-- T1110
-- New account
-- backdoor
-- useradd
-- creates a
-- persistence
-- account
-- type=ADD_US
-- ER
-- T1136
-- Sensitive file
-- access
-- Read attempt
-- on /etc/shadow
-- name="/etc/sha
-- dow"
-- T1003
-- su abuse
-- Repeated failed
-- su - root
-- attempts
-- exe="/usr/bin/s
-- u" res=failed
-- T1548
-- Cron
-- persistence
-- Cron job
-- installed by
-- non-root user
-- crontab
-- keyword in
-- audit log
-- T1053
-
-**Speaker notes:**
 
 ### Linux
 
@@ -2539,23 +1694,9 @@ Teams can identify:
 
 ---
 
+---
+
 ## Slide 65 — Auditd — The Linux Audit Daemon
-
-**On slide:**
-
-- auditd is the kernel-level auditing
-- system for Linux. It records system
-- calls, file accesses, and process
-- execution events at a level of detail
-- no userspace logging tool can
-- match.
-- Since it runs in the kernel, it is
-- extremely difficult for a user-level
-- attacker to suppress without root
-- access.
-- ^^  Audit reads to a file
-
-**Speaker notes:**
 
 ### Step 2 – auditd Captures the Event
 
@@ -2593,24 +1734,9 @@ Without logging, detection is impossible.
 
 ---
 
+---
+
 ## Slide 66 — Auditd — The Linux Audit Daemon
-
-**On slide:**
-
-- Audit rules — configured with auditctl;
-- define what events to record
-- Keys — labels attached to rules (e.g., -
-- k shadow-access) for filtering with
-- ausearch
-- /var/log/audit/audit.log — the primary
-- output file; plain-text key-value format
-- auditd must be installed and running:
-- sudo systemctl enable --now auditd
-- The CloudWatch agent ships this file
-- to the /soc-lab/secure log group
-- ^^  Audit “chmod” and related commands
-
-**Speaker notes:**
 
 ### Missing Audit Rules
 
@@ -2620,27 +1746,9 @@ Event never logged.
 
 ---
 
+---
+
 ## Slide 67 — File Permission & Access Monitoring
-
-**On slide:**
-
-- (ATT&CK MAPPING)
-- Monitoring file permission changes and access events helps
-- detect privilege escalation and credential theft. Changes like
-- setUID/setGID and sensitive file reads are strong indicators of
-- malicious activity.
-- chmod Monitoring (setUID / setGID)
-- Detects privilege escalation via modified binaries
-- Example: chmod u+s /usr/bin/bash
-- Maps to: MITRE ATT&CK T1548 – Abuse Elevation
-- Control Mechanism
-- Sensitive File Access Monitoring
-- Tracks reads of /etc/passwd, /etc/shadow, SSH keys
-- Detects credential harvesting activity
-- Maps to: MITRE ATT&CK T1003 – OS Credential
-- Dumping
-
-**Speaker notes:**
 
 ### Speaker Notes – File Permission & Access Monitoring (ATT&CK Mapping)
 
@@ -2669,13 +1777,9 @@ Unauthorized access to these files is a strong indicator of compromise.
 
 ---
 
+---
+
 ## Slide 68 — File Permission & Access Monitoring
-
-**On slide:**
-
-- (ATT&CK MAPPING)
-
-**Speaker notes:**
 
 ### Why Permission Changes Matter
 
@@ -2715,17 +1819,9 @@ Analysts need to know exactly what systems and files were involved.
 
 ---
 
+---
+
 ## Slide 69 — Designing A Detection — From
-
-**On slide:**
-
-- TECHNIQUE TO RULE
-- Building a detection for a specific ATT&CK
-- technique requires working backwards from the
-- observable behavior to the log event it produces,
-- then writing the filter that matches it precisely.
-
-**Speaker notes:**
 
 ### Speaker Notes – Designing a Detection: From Technique to Rule
 
@@ -2741,23 +1837,9 @@ Are metric filters matching?
 
 ---
 
+---
+
 ## Slide 70 — Designing A Detection — From
-
-**On slide:**
-
-- TECHNIQUE TO RULE
-- Example: detecting su abuse (T1548)
-- 1. Technique: attacker runs su - root with a wrong
-- password to attempt privilege escalation
-- 2. System behavior: su calls PAM, PAM fails, auditd
-- records the failure
-- 3. Log entry: type=USER_AUTH msg=audit(...):
-- exe="/usr/bin/su" res=failed
-- 4. Filter pattern: exe="/usr/bin/su" res=failed
-- 5. Metric: SuAbuse in the SOCLab namespace
-- 6. Alarm: >= 1 occurrences in 1 minute
-
-**Speaker notes:**
 
 ### Speaker Notes – Designing a Detection: From Technique to Rule (Example: Detecting `su` Abuse)
 
@@ -2772,7 +1854,6 @@ Each catalog entry follows the same process:
 
 
 
-<img src="day2_diagrams/detection-engineering-vs-incident-response-196.svg" width="220" alt="Threat-to-Detection Workflow">
 
 
 
@@ -2783,19 +1864,9 @@ This creates consistency across all detections.
 
 ---
 
+---
+
 ## Slide 71 — Simulating Attacks Safely
-
-**On slide:**
-
-- Attack simulation in a lab is controlled, documented,
-- and scoped to an isolated environment. The goal is to
-- generate the same log events a real attacker would
-- produce, without doing any actual damage.
-- This approach mirrors a purple team exercise: the
-- attacker and defender role are played by the same
-- person, with full visibility into both sides.
-
-**Speaker notes:**
 
 ### Speaker Notes – Simulating Attacks Safely
 
@@ -2811,22 +1882,9 @@ This creates consistency across all detections.
 
 ---
 
+---
+
 ## Slide 72 — Simulating Attacks Safely
-
-**On slide:**
-
-- Run attack commands only on your own lab instance,
-- never against any other system
-- Use the testattacker account for steps that require a non-
-- privileged user
-- Steps requiring sudo must be run as ec2-user —
-- testattacker has no sudo
-- Document what you ran, when, and what log events it
-- produced
-- Clean up test artifacts after validation: remove test
-- accounts, cron entries, and audit rules
-
-**Speaker notes:**
 
 ### Speaker Notes – Simulating Attacks Safely (Lab Rules & Operational Guidelines)
 
@@ -2836,19 +1894,9 @@ This creates consistency across all detections.
 
 ---
 
+---
+
 ## Slide 73 — Reading Auditd Log Entries
-
-**On slide:**
-
-- auditd log entries are dense but
-- follow a consistent key-value
-- format. Learning to read them is
-- a prerequisite for writing accurate
-- filter patterns and validating that
-- your detection rules fire on the
-- right events.
-
-**Speaker notes:**
 
 ### Read
 
@@ -2865,23 +1913,9 @@ This creates consistency across all detections.
 
 ---
 
+---
+
 ## Slide 74 — Reading Auditd Log Entries
-
-**On slide:**
-
-- Example entry — failed su attempt:
-- Key fields:
-- exe — the binary that triggered the
-- event
-- res — success or failed
-- acct — the account being targeted
-- auid — the audit UID of the user
-- who initiated the action
-- type — the event category
-- (USER_AUTH, ADD_USER, SYSCALL,
-- etc.)
-
-**Speaker notes:**
 
 ### Speaker Notes – Reading auditd Log Entries
 
@@ -2891,20 +1925,9 @@ This creates consistency across all detections.
 
 ---
 
+---
+
 ## Slide 75 — Incident Reporting — Structure
-
-**On slide:**
-
-- AND PURPOSE
-- An incident report is the formal record
-- of a security event from initial detection
-- through closure.
-- It serves as documentation for the
-- current event, an artifact for compliance,
-- and a learning record for improving
-- future detections.
-
-**Speaker notes:**
 
 ### Reporting
 
@@ -2924,26 +1947,9 @@ Each participant will produce a professional incident report containing:
 
 ---
 
+---
+
 ## Slide 76 — Incident Reporting — Structure
-
-**On slide:**
-
-- AND PURPOSE
-- Incident summary — one paragraph: what
-- happened, when, and how it was detected
-- Timeline — ordered list of key events with
-- UTC timestamps
-- Attack details — which technique, which
-- account or source, what was targeted
-- Detection details — which metric filter and
-- alarm fired; what the AI investigation
-- concluded
-- Analyst assessment — do you agree with the
-- AI hypothesis? What did you verify?
-- Closure — confirmed mitigated, confirmed
-- false positive, or escalated for further action
-
-**Speaker notes:**
 
 ### Speaker Notes – Incident Reporting: Structure and Purpose
 
@@ -2965,9 +1971,9 @@ Each participant will produce a professional incident report containing:
 
 ---
 
-## Slide 77 — Untitled
+---
 
-**Speaker notes:**
+## Slide 77 — Untitled
 
 ### Final Message
 
@@ -3006,27 +2012,9 @@ Analysts determine:
 
 ---
 
+---
+
 ## Slide 78 — Ai Hypothesis Triage
-
-**On slide:**
-
-- An AI Operations investigation may generate multiple
-- competing hypotheses for the same set of events. Deciding
-- which is most credible requires applying analyst judgment
-- to the AI's evidence citations.
-- Read all hypotheses before accepting any. AI may have
-- found something more important than the first item
-- listed
-- Locate the cited evidence in the raw log data
-- Apply environment context. Is this activity expected
-- given what you know about the system?
-- Identify the most specific hypothesis. A hypothesis that
-- cites a specific account, IP, and technique is more
-- actionable than a vague "unusual activity" conclusion
-- Document your decision, even if you close the
-- investigation as a false positive
-
-**Speaker notes:**
 
 ### Hypothesis
 
@@ -3044,22 +2032,9 @@ Analysts determine:
 
 ---
 
+---
+
 ## Slide 79 — Detection Coverage And Gaps
-
-**On slide:**
-
-- Building one detection rule is the start, not the
-- end. A mature detection program maps every
-- monitored technique against the full ATT&CK
-- matrix to understand what is covered, what is
-- partial, and what is a complete blind spot.
-- For the lab environment after Lab 2.4: you will
-- have coverage for 3-5 techniques. Identifying the
-- remaining gaps and explaining what data source
-- and rule would close each one is a core detection
-- engineering skill.
-
-**Speaker notes:**
 
 ### Speaker Notes – Detection Coverage and Gaps
 
@@ -3086,20 +2061,9 @@ Detection gaps often become the path attackers choose.
 
 ---
 
+---
+
 ## Slide 80 — Detection Coverage And Gaps
-
-**On slide:**
-
-- Which ATT&CK techniques affect my environment
-- and have no detection rule at all?
-- Which detections exist but have never been tested
-- with real attack data?
-- Which detections fire frequently but rarely result in
-- confirmed true positives (noise)?
-- Which techniques require data sources that are not
-- yet collected?
-
-**Speaker notes:**
 
 ### Better Detection Coverage
 
@@ -3123,51 +2087,9 @@ This helps guide future detection engineering efforts.
 
 ---
 
+---
+
 ## Slide 81 — Closing An Investigation —
-
-**On slide:**
-
-- DECISION FRAMEWORK
-- Every investigation must be formally closed with a
-- documented decision. Leaving investigations
-- open or marking everything as "resolved" without
-- review is as bad as having no detection in the first
-- place.
-- Always document *why* you made the decision,
-- not just what it was. This record is the input for
-- tuning the detection rule to reduce future false
-- positives.
-- Decision
-- Meaning
-- Required
-- documentation
-- True Positive
-- Real attack
-- activity confirmed
-- Timeline,
-- technique, impact,
-- remediation taken
-- False Positive
-- Expected or
-- benign activity
-- Why the alert
-- fired, why it is not
-- a threat
-- Inconclusive
-- Evidence is
-- ambiguous
-- What was
-- checked, what
-- additional data is
-- needed
-- Escalated
-- Requires higher-
-- tier analyst
-- What was found,
-- why escalation is
-- needed
-
-**Speaker notes:**
 
 ### Speaker Notes – Closing an Investigation: Decision Framework
 
@@ -3185,103 +2107,53 @@ Document:
 
 ---
 
+---
+
 ## Slide 82 — Pop Quiz:
 
-**On slide:**
-
-- You want to detect read attempts against /etc/shadow using a
-- CloudWatch metric filter on the auditd log. Which filter pattern is correct?
-- A. `shadow file read detected`
-- B. `name="/etc/shadow"`
-- C. `{ $.file = "/etc/shadow" && $.action = "read" }`
-- D. `cat /etc/shadow`
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 83 — Pop Quiz:
 
-**On slide:**
-
-- You want to detect read attempts against /etc/shadow using a
-- CloudWatch metric filter on the auditd log. Which filter pattern is correct?
-- A. `shadow file read detected`
-- B. `name="/etc/shadow"`
-- C. `{ $.file = "/etc/shadow" && $.action = "read" }`
-- D. `cat /etc/shadow`
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 84 — Pop Quiz:
 
-**On slide:**
-
-- A detection engineer wants to build a rule for T1136. Create Account (an
-- attacker runs useradd to create a backdoor persistence account). Which
-- approach correctly implements this detection?
-- A. Create a metric filter on the sshd log group for the pattern `new user created`
-- B. Create a metric filter on `/soc-lab/secure` for the auditd pattern `type=ADD_USER`, then create an alarm
-- triggering on `>= 1` in 1 minute
-- C. Set a CloudWatch alarm on the EC2 `CPUUtilization` metric, which spikes when `useradd` runs
-- D. Install a third-party agent on the EC2 instance — auditd cannot detect account creation events
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 85 — Pop Quiz:
 
-**On slide:**
-
-- A detection engineer wants to build a rule for T1136 — Create Account (an attacker
-- runs useradd to create a backdoor persistence account). Which approach correctly
-- implements this detection?
-- A. Create a metric filter on the sshd log group for the pattern `new user created`
-- B. Create a metric filter on `/soc-lab/secure` for the auditd pattern `type=ADD_USER`, then create an alarm
-- triggering on `>= 1` in 1 minute
-- C. Set a CloudWatch alarm on the EC2 `CPUUtilization` metric, which spikes when `useradd` runs
-- D. Install a third-party agent on the EC2 instance — auditd cannot detect account creation events
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 86 — Pop Quiz:
 
-**On slide:**
-
-- An AI Operations investigation was automatically triggered by a sudo failure alarm.
-- The investigation concludes the failed attempt was made by ec2-user running a
-- mistyped command. You confirm this by reviewing the raw audit log. What is the
-- correct closure decision and documentation?
-- A. True Positive — escalate to Tier 2 for further investigation of the `ec2-user` account
-- B. False Positive — document that the alarm fired on an expected user running a mistyped command, and consider
-- tuning the alarm to exclude `ec2-user`
-- C. Inconclusive — close without documentation since it was clearly benign
-- D. Escalated — all `sudo` failures involving `ec2-user` must be sent to the security team regardless of context
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
 ## Slide 87 — Pop Quiz:
 
-**On slide:**
-
-- An AI Operations investigation was automatically triggered by a sudo failure alarm. The
-- investigation concludes the failed attempt was made by ec2-user running a mistyped
-- command. You confirm this by reviewing the raw audit log. What is the correct closure decision
-- and documentation?
-- A. True Positive — escalate to Tier 2 for further investigation of the `ec2-user` account
-- B. False Positive — document that the alarm fired on an expected user running a mistyped command, and
-- consider tuning the alarm to exclude `ec2-user`
-- C. Inconclusive — close without documentation since it was clearly benign
-- D. Escalated — all `sudo` failures involving `ec2-user` must be sent to the security team regardless of context
-
 **Speaker notes:** Discuss the question; reveal answer after student responses.
+
+---
 
 ---
 
@@ -3291,24 +2163,9 @@ Document:
 
 ---
 
+---
+
 ## Slide 89 — Congratulations
-
-**On slide:**
-
-- Over two days you built a complete, working
-- security detection and investigation pipeline on
-- AWS with an automated AI-assisted investigations
-- triggered by real attack simulations.
-- The skills you practiced here, telemetry
-- configuration, detection engineering, AI
-- hypothesis evaluation, and structured incident
-- closure, are the same skills used in production
-- SOC environments every day.
-- Take the pipeline you built, adapt it to your own
-- log sources, and keep expanding your ATT&CK
-- coverage one detection at a time.
-
-**Speaker notes:**
 
 ### Speaker Notes – Course Conclusion / Congratulations
 

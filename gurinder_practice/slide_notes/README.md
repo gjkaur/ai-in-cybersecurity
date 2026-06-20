@@ -13,6 +13,8 @@ Personal **self-study** notes from the **Cybersecurity in AI** course.
 
 Speaker notes align to `Cybersecurity-AI-day1.pdf` (from slide 6) and `Cybersecurity-AI-day2.pdf` (from slide 2).
 
+Study notes use the same slide headings (`## Slide N — Title`) with self-study content grouped underneath.
+
 ## Folder layout
 
 ```
