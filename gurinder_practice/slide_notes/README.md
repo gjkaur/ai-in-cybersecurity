@@ -6,7 +6,7 @@ Personal study notes from the **Cybersecurity in AI** course slides.
 
 **Deck:** `Cybersecurity-AI-day1/` (96 slides)
 
-→ **[Day 1 — Refined Instructor Notes](day1/README.md)** *(single file, full coverage)*
+→ **[Day 1 — Instructor Notes](day1/day1_instructor_notes.md)** *(compact single file, full coverage)*
 
 Organized from [`day1_notes.md`](day1_notes.md): table of contents, 30 topic parts, SVG diagrams inline.
 
@@ -31,7 +31,7 @@ Organized from [`day1_notes.md`](day1_notes.md): table of contents, 30 topic par
 
 **Deck:** Day 2 — From Detection to Investigation
 
-→ **[Day 2 — Refined Instructor Notes](day2/README.md)** *(single file, full coverage)*
+→ **[Day 2 — Instructor Notes](day2/day2_instructor_notes.md)** *(compact single file, full coverage)*
 
 Organized from [`day2_notes.md`](day2_notes.md): table of contents, 22 topic parts, SVG diagrams inline.
 
@@ -49,11 +49,12 @@ Organized from [`day2_notes.md`](day2_notes.md): table of contents, 22 topic par
 - [`day1_notes.md`](day1_notes.md)
 - [`day2_notes.md`](day2_notes.md)
 
-Regenerate the refined files after editing the source:
+Regenerate after editing the source, then compact:
 
 ```bash
 python gurinder_practice/slide_notes/day1/build_refined_notes.py
 python gurinder_practice/slide_notes/day2/build_refined_notes.py
+python gurinder_practice/slide_notes/compact_instructor_notes.py
 ```
 
 ---

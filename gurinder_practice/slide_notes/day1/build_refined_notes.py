@@ -657,12 +657,21 @@ def build_doc_intro(section_meta: list[tuple[int, str, str]]) -> str:
 
 
 def compress_markdown(md: str) -> str:
-    """Tighten spacing: collapse blank lines and remove redundant horizontal rules."""
+    """Tighten spacing; delegate to shared instructor-notes compactor when available."""
+    try:
+        import importlib.util
+        compact_path = Path(__file__).resolve().parent.parent / "compact_instructor_notes.py"
+        if compact_path.exists():
+            spec = importlib.util.spec_from_file_location("compact_notes", compact_path)
+            mod = importlib.util.module_from_spec(spec)
+            assert spec.loader is not None
+            spec.loader.exec_module(mod)
+            return mod.compact_markdown(md)
+    except Exception:
+        pass
     md = md.replace("\r\n", "\n").replace("\r", "\n")
     md = re.sub(r"[ \t]+\n", "\n", md)
-    # Remove --- before subsection headings (### and deeper)
     md = re.sub(r"\n---\n+(?=#{3,6} )", "\n\n", md)
-    # Remove --- before non-part ## headings (keep part dividers with {#part-})
     md = re.sub(r"\n---\n+(?=## (?!.*\{#part-))", "\n\n", md)
     md = re.sub(r"\n{3,}", "\n\n", md)
     return md.strip() + "\n"
