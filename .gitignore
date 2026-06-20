@@ -2,6 +2,21 @@ outline.md
 day1.md
 day2.md
 
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Raw slide exports (local rebuild input — regenerate study notes from these)
+gurinder_practice/slide_notes/day1_notes.md
+gurinder_practice/slide_notes/day2_notes.md
+
+# Personal / sensitive (never commit)
+vms.md
+VMs-info.xlsx
+WELLS-FARGO-INTRO-MEETING.md
+README.pdf
+**/*roster*.xlsx
+
 # Personal lab screenshots (local only — never commit to GitHub)
 gurinder_practice/**/lab * screenshots/
 gurinder_practice/**/lab * screenshots/**

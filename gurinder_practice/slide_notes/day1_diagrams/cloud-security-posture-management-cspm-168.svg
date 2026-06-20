@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 648" role="img" aria-label="AWS Security Architecture">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="648" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">AWS Security Architecture</text>
+  <rect x="220" y="60" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">AWS Resources</text>
+  <line x1="280" y1="104" x2="280" y2="114" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="120" x2="280" y2="132" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="214" y="138" width="133" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="170" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">CloudTrail Logs</text>
+  <line x1="280" y1="182" x2="280" y2="192" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="198" x2="280" y2="210" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="210" y="216" width="140" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="248" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">GuardDuty Threat</text>
+  <text x="280" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Detection</text>
+  <line x1="280" y1="276" x2="280" y2="286" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="292" x2="280" y2="304" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="220" y="310" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Security Hub</text>
+  <line x1="280" y1="354" x2="280" y2="364" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="370" x2="280" y2="382" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="200" y="388" width="161" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">AWS Config Findings</text>
+  <line x1="280" y1="432" x2="280" y2="442" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="448" x2="280" y2="460" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="214" y="466" width="133" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="498" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Inspector</text>
+  <text x="280" y="514" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Vulnerabilities</text>
+  <line x1="280" y1="526" x2="280" y2="536" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="542" x2="280" y2="554" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="200" y="560" width="161" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="592" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">IAM Access Analyzer</text>
+  <text x="280" y="608" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Findings</text>
+</svg>

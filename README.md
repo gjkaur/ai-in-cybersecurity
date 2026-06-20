@@ -307,16 +307,12 @@ This course uses **controlled, non-destructive simulations** in dedicated traini
 
 ```
 AI-in-Cybersecurity-main/
-├── README.md                 ← This file
-├── labs/
-│   ├── 1.1-Instance-Setup.md
-│   ├── 1.2-Suspicious-Activity-Simulation-and-AI-Triage.md
-│   ├── 1.3-AWS-AI-Powered-Threat-Detection.md
-│   ├── 2.1-CloudWatch-Log-Streaming-and-AI-Investigation.md
-│   ├── 2.2-Security-Monitoring-Dashboard-and-Automated-Detection.md
-│   ├── 2.3-Attack-and-Detect-Capstone.md
-│   └── glossary.md           ← Key terms and AWS service definitions
-└── slides/                   ← Course slide deck (instructor materials)
+├── README.md
+├── labs/                     ← Official lab guides (6 labs + glossary)
+├── slides/                   ← Course slide PDFs
+└── gurinder_practice/        ← Personal study notes and enhanced lab guides
+    ├── slide_notes/          ← Day 1 & 2 self-study notes + diagrams
+    └── lab */                ← Step-by-step lab walkthroughs
 ```
 
 ---

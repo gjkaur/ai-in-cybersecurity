@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 938" role="img" aria-label="CloudWatch Architecture">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="938" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">CloudWatch Architecture</text>
+  <rect x="159" y="60" width="242" height="242" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="280" y="88" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">AWS SERVICES</text>
+  <text x="183" y="122" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ──────────────────────────</text>
+  <text x="183" y="144" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• EC2</text>
+  <text x="183" y="166" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• S3</text>
+  <text x="183" y="188" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• RDS</text>
+  <text x="183" y="210" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Lambda</text>
+  <text x="183" y="232" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• VPC</text>
+  <text x="183" y="254" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• CloudTrail</text>
+  <text x="183" y="276" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• GuardDuty</text>
+  <text x="183" y="298" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Config</text>
+  <rect x="220" y="314" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="346" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Config</text>
+  <line x1="280" y1="358" x2="280" y2="368" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="210" y="374" width="140" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="406" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">│ Metrics &amp; Logs</text>
+  <line x1="280" y1="418" x2="280" y2="428" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="159" y="434" width="242" height="198" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="280" y="462" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">AMAZON CLOUDWATCH</text>
+  <text x="183" y="496" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ──────────────────────────</text>
+  <text x="183" y="518" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Metrics</text>
+  <text x="183" y="540" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Logs</text>
+  <text x="183" y="562" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Dashboards</text>
+  <text x="183" y="584" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Alarms</text>
+  <text x="183" y="606" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Logs Insights</text>
+  <text x="183" y="628" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• AI Operations</text>
+  <rect x="220" y="644" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="676" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">AI Operations</text>
+  <line x1="280" y1="688" x2="280" y2="698" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="704" x2="280" y2="716" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="159" y="722" width="242" height="176" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="280" y="750" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">OPERATIONS</text>
+  <text x="183" y="784" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ──────────────────────────</text>
+  <text x="183" y="806" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Visualization</text>
+  <text x="183" y="828" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Alerting</text>
+  <text x="183" y="850" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Investigation</text>
+  <text x="183" y="872" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Automation</text>
+  <text x="183" y="894" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Incident Response</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 210" role="img" aria-label="SIEM Example">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="210" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">SIEM Example</text>
+  <rect x="205" y="60" width="151" height="110" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="280" y="88" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">Windows Logs</text>
+  <text x="229" y="122" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Firewall Logs</text>
+  <text x="229" y="144" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• AWS Logs</text>
+  <text x="229" y="166" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Linux Logs</text>
+</svg>

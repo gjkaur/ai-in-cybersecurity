@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 600" role="img" aria-label="Diagram 75">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="600" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Diagram 75</text>
+  <rect x="207" y="60" width="147" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Incident Detected</text>
+  <line x1="280" y1="104" x2="280" y2="114" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="120" x2="280" y2="132" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="210" y="138" width="140" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="170" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Collect Evidence</text>
+  <line x1="280" y1="182" x2="280" y2="192" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="198" x2="280" y2="210" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="193" y="216" width="175" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="248" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Analyze Relationships</text>
+  <line x1="280" y1="260" x2="280" y2="270" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="276" x2="280" y2="288" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="200" y="294" width="161" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="326" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Generate Hypotheses</text>
+  <line x1="280" y1="338" x2="280" y2="348" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="354" x2="280" y2="366" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="196" y="372" width="168" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="404" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Rank Possible Causes</text>
+  <line x1="280" y1="416" x2="280" y2="426" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="432" x2="280" y2="444" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="210" y="450" width="140" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="482" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Present Findings</text>
+  <line x1="280" y1="494" x2="280" y2="504" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="280" y1="510" x2="280" y2="522" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="217" y="528" width="126" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="560" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Analyst Review</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 342" role="img" aria-label="Linux Directory Structure">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="342" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Linux Directory Structure</text>
+  <rect x="216" y="60" width="128" height="242" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="280" y="88" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">/</text>
+  <text x="240" y="122" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── bin</text>
+  <text x="240" y="144" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── etc</text>
+  <text x="240" y="166" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── home</text>
+  <text x="240" y="188" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── var</text>
+  <text x="240" y="210" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── usr</text>
+  <text x="240" y="232" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── tmp</text>
+  <text x="240" y="254" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── dev</text>
+  <text x="240" y="276" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── proc</text>
+  <text x="240" y="298" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• └── boot</text>
+</svg>
