@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 636" role="img" aria-label="Typical SIEM Architecture">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="636" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Typical SIEM Architecture</text>
+  <rect x="194" y="60" width="172" height="132" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="280" y="88" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">CloudTrail</text>
+  <text x="218" y="122" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Windows Logs</text>
+  <text x="218" y="144" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Linux Logs</text>
+  <text x="218" y="166" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Firewall Logs</text>
+  <text x="218" y="188" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Application Logs</text>
+  <rect x="210" y="204" width="140" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="236" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Application Logs</text>
+  <line x1="280" y1="248" x2="280" y2="258" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="196" y="264" width="168" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="296" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Log Collection Layer</text>
+  <line x1="280" y1="308" x2="280" y2="318" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="220" y="324" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="356" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Normalization</text>
+  <line x1="280" y1="368" x2="280" y2="378" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="220" y="384" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="416" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Storage</text>
+  <line x1="280" y1="428" x2="280" y2="438" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="207" y="444" width="147" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="476" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Correlation Rules</text>
+  <line x1="280" y1="488" x2="280" y2="498" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="220" y="504" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="536" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Alerts</text>
+  <line x1="280" y1="548" x2="280" y2="558" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="220" y="564" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="596" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">SOC Analysts</text>
+</svg>

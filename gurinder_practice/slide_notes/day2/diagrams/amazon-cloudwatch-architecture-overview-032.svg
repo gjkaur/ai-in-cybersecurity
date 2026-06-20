@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 314" role="img" aria-label="Step 1: Collect">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="314" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Step 1: Collect</text>
+  <rect x="208" y="60" width="144" height="110" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="280" y="88" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">EC2</text>
+  <text x="232" y="122" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Lambda</text>
+  <text x="232" y="144" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• CloudTrail</text>
+  <text x="232" y="166" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• Applications</text>
+  <rect x="220" y="182" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="214" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Applications</text>
+  <line x1="280" y1="226" x2="280" y2="236" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="220" y="242" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="280" y="274" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">CloudWatch</text>
+</svg>

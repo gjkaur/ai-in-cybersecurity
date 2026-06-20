@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 548" role="img" aria-label="Coverage Matrix Example">
+  <defs>
+    <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="m-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="376" height="548" fill="#F8FAFC"/>
+  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Coverage Matrix Example</text>
+  <rect x="177" y="60" width="96" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="225" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Technique</text>
+  <rect x="287" y="60" width="96" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="335" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Status</text>
+  <rect x="159" y="128" width="133" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="225" y="160" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">SSH Brute Force</text>
+  <rect x="306" y="128" width="96" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="354" y="160" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Covered</text>
+  <rect x="141" y="184" width="168" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="225" y="216" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Sensitive File Reads</text>
+  <rect x="323" y="184" width="96" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="371" y="216" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Covered</text>
+  <rect x="155" y="240" width="140" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="225" y="272" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Account Creation</text>
+  <rect x="309" y="240" width="96" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="357" y="272" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Covered</text>
+  <rect x="155" y="296" width="140" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="225" y="328" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Cron Persistence</text>
+  <rect x="309" y="296" width="96" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="357" y="328" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Partial</text>
+  <rect x="155" y="352" width="140" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="225" y="384" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Service Creation</text>
+  <rect x="309" y="352" width="96" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="357" y="384" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Partial</text>
+  <rect x="147" y="408" width="147" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="220" y="440" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Data Exfiltration</text>
+  <rect x="308" y="408" width="105" height="44" rx="10" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="360" y="440" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Not Covered</text>
+  <rect x="151" y="464" width="140" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="221" y="496" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Lateral Movement</text>
+  <rect x="305" y="464" width="105" height="44" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="357" y="496" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Not Covered</text>
+</svg>

@@ -8,7 +8,7 @@ Personal study notes from the **Cybersecurity in AI** course slides.
 
 → **[Day 1 — Refined Instructor Notes](day1/README.md)** *(single file, full coverage)*
 
-Organized from [`day1_notes.md`](day1_notes.md): table of contents, 30 topic parts, SVG diagrams (ASCII preserved in collapsible sources).
+Organized from [`day1_notes.md`](day1_notes.md): table of contents, 30 topic parts, SVG diagrams inline.
 
 | Section | Slides | Topics |
 |---------|--------|--------|
@@ -27,16 +27,35 @@ Organized from [`day1_notes.md`](day1_notes.md): table of contents, 30 topic par
 | Pop quizzes | 90–95 | Security Hub, MFA, security groups |
 | Lab 1.4 | 96 | Security posture baseline |
 
+## Day 2
+
+**Deck:** Day 2 — From Detection to Investigation
+
+→ **[Day 2 — Refined Instructor Notes](day2/README.md)** *(single file, full coverage)*
+
+Organized from [`day2_notes.md`](day2_notes.md): table of contents, 22 topic parts, SVG diagrams inline.
+
+| Block | Topics |
+|-------|--------|
+| Day 2 overview | Detection → investigation, labs preview |
+| SIEM & cloud monitoring | SIEM, cloud-native vs traditional SIEM |
+| Amazon CloudWatch | Architecture, agent, Logs Insights |
+| CloudWatch AI Operations | AI investigations, signal vs noise |
+| Labs 2.2–2.4 | SOC dashboard, detection pipeline capstone |
+| Detection engineering | ATT&CK, purple team, detection-as-code |
+
 ### Source notes (raw)
 
-[`day1_notes.md`](day1_notes.md)
+- [`day1_notes.md`](day1_notes.md)
+- [`day2_notes.md`](day2_notes.md)
 
-Regenerate the refined file after editing the source:
+Regenerate the refined files after editing the source:
 
 ```bash
 python gurinder_practice/slide_notes/day1/build_refined_notes.py
+python gurinder_practice/slide_notes/day2/build_refined_notes.py
 ```
 
 ---
 
-*Generated from `Cybersecurity-AI-day1` slide images.*
+*Generated from course slide images.*
