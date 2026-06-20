@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 328" role="img" aria-label="Investigation Flow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 252" width="284" height="252" role="img" aria-label="Investigation Flow">
   <defs>
     <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
@@ -7,18 +7,20 @@
       <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
     </marker>
   </defs>
-  <rect width="376" height="328" fill="#F8FAFC"/>
-  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Investigation Flow</text>
-  <rect x="220" y="60" width="120" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">CloudWatch AI</text>
-  <text x="280" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Operations</text>
-  <line x1="280" y1="120" x2="280" y2="130" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="200" y="136" width="161" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="168" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Assume Service Role</text>
-  <line x1="280" y1="180" x2="280" y2="190" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="220" y="196" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="228" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Read Evidence</text>
-  <line x1="280" y1="240" x2="280" y2="250" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="189" y="256" width="182" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="288" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Generate Investigation</text>
+  <rect width="284" height="252" fill="#F8FAFC"/>
+  <text x="211" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Investigation Flow</text>
+  <rect x="165" y="44" width="92" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">CloudWatch AI</text>
+  <text x="211" y="78" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Operations</text>
+  <line x1="211" y1="89" x2="211" y2="94" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="153" y="100" width="116" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="116" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Assume Service</text>
+  <text x="211" y="128" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Role</text>
+  <line x1="211" y1="133" x2="211" y2="138" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="165" y="144" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="166" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Read Evidence</text>
+  <line x1="211" y1="177" x2="211" y2="182" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="165" y="188" width="92" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="210" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Generate</text>
+  <text x="211" y="222" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Investigation</text>
 </svg>

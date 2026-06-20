@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 332" role="img" aria-label="What is the CIA Triad?">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324 243" width="324" height="243" role="img" aria-label="What is the CIA Triad?">
   <defs>
     <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
@@ -7,24 +7,24 @@
       <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
     </marker>
   </defs>
-  <rect width="440" height="332" fill="#F8FAFC"/>
-  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">What is the CIA Triad?</text>
-  <rect x="220" y="60" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Cybersecurity</text>
-  <line x1="280" y1="104" x2="280" y2="114" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="158" y="120" width="245" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="152" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">┌──────────────┼──────────────┐</text>
-  <rect x="220" y="164" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="196" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">│ │ │</text>
-  <line x1="280" y1="208" x2="280" y2="220" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <line x1="88" y1="234" x2="473" y2="234" stroke="#475569" stroke-width="2"/>
-  <line x1="154" y1="234" x2="154" y2="248" stroke="#475569" stroke-width="2"/>
-  <rect x="88" y="248" width="133" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="154" y="280" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Confidentiality</text>
-  <line x1="291" y1="234" x2="291" y2="248" stroke="#475569" stroke-width="2"/>
-  <rect x="237" y="248" width="108" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="291" y="280" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Integrity</text>
-  <line x1="417" y1="234" x2="417" y2="248" stroke="#475569" stroke-width="2"/>
-  <rect x="361" y="248" width="112" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="417" y="280" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Availability</text>
+  <rect width="324" height="243" fill="#F8FAFC"/>
+  <text x="211" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0F172A">What is the CIA Triad?</text>
+  <rect x="165" y="44" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Cybersecurity</text>
+  <line x1="211" y1="77" x2="211" y2="82" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="123" y="88" width="176" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="110" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">┌──────────────┼──────────────┐</text>
+  <rect x="165" y="121" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="143" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">│ │ │</text>
+  <line x1="211" y1="154" x2="211" y2="160" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="68" y1="171" x2="354" y2="171" stroke="#475569" stroke-width="2"/>
+  <line x1="116" y1="171" x2="116" y2="182" stroke="#475569" stroke-width="2"/>
+  <rect x="68" y="182" width="96" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="116" y="204" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Confidentiality</text>
+  <line x1="217" y1="171" x2="217" y2="182" stroke="#475569" stroke-width="2"/>
+  <rect x="175" y="182" width="84" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="217" y="204" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Integrity</text>
+  <line x1="312" y1="171" x2="312" y2="182" stroke="#475569" stroke-width="2"/>
+  <rect x="270" y="182" width="84" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="312" y="204" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Availability</text>
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 436" role="img" aria-label="What Is the Root Account?">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 316" width="284" height="316" role="img" aria-label="What Is the Root Account?">
   <defs>
     <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
@@ -7,22 +7,22 @@
       <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
     </marker>
   </defs>
-  <rect width="376" height="436" fill="#F8FAFC"/>
-  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">What Is the Root Account?</text>
-  <rect x="220" y="60" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">AWS Account</text>
-  <line x1="280" y1="104" x2="280" y2="114" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <line x1="280" y1="120" x2="280" y2="132" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="220" y="138" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="170" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Root User</text>
-  <line x1="280" y1="182" x2="280" y2="192" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="184" y="198" width="193" height="198" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
-  <text x="280" y="226" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2563EB">├── Billing</text>
-  <text x="208" y="260" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── IAM</text>
-  <text x="208" y="282" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── S3</text>
-  <text x="208" y="304" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── EC2</text>
-  <text x="208" y="326" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── RDS</text>
-  <text x="208" y="348" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── Lambda</text>
-  <text x="208" y="370" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• ├── Organizations</text>
-  <text x="208" y="392" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F172A">• └── Account Closure</text>
+  <rect width="284" height="316" fill="#F8FAFC"/>
+  <text x="211" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0F172A">What Is the Root Account?</text>
+  <rect x="165" y="44" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">AWS Account</text>
+  <line x1="211" y1="77" x2="211" y2="82" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="211" y1="88" x2="211" y2="94" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="165" y="100" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="122" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Root User</text>
+  <line x1="211" y1="133" x2="211" y2="138" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="141" y="144" width="140" height="144" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#sh)"/>
+  <text x="211" y="165" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#2563EB">├── Billing</text>
+  <text x="158" y="190" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• ├── IAM</text>
+  <text x="158" y="206" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• ├── S3</text>
+  <text x="158" y="222" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• ├── EC2</text>
+  <text x="158" y="238" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• ├── RDS</text>
+  <text x="158" y="254" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• ├── Lambda</text>
+  <text x="158" y="270" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• ├── Organizations</text>
+  <text x="158" y="286" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F172A">• └── Account Closure</text>
 </svg>

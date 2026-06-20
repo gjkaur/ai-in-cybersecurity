@@ -30,6 +30,7 @@ slide_notes/
 ├── build_day1_speaker_notes.py
 ├── build_day2_speaker_notes.py
 ├── compact_notes.py
+├── compact_paragraphs.py
 ├── refine_self_study_notes.py
 └── speaker_notes_core.py
 ```
@@ -51,4 +52,10 @@ Re-apply self-study tone only:
 python gurinder_practice/slide_notes/refine_self_study_notes.py
 ```
 
-Diagrams render inline in GitHub and Markdown preview as `![title](day1_diagrams/*.svg)`.
+Merge short prose and inline compact bullet lists into paragraphs (also runs automatically at the end of `compact_notes.py`):
+
+```bash
+python gurinder_practice/slide_notes/compact_paragraphs.py
+```
+
+Diagrams render inline in GitHub as `<img src="day1_diagrams/*.svg" width="480">` (max display width 480px).

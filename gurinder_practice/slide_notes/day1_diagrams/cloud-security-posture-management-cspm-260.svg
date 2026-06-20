@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 432" role="img" aria-label="Configuration Drift">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 330" width="284" height="330" role="img" aria-label="Configuration Drift">
   <defs>
     <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
@@ -7,23 +7,24 @@
       <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
     </marker>
   </defs>
-  <rect width="376" height="432" fill="#F8FAFC"/>
-  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Configuration Drift</text>
-  <rect x="220" y="60" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Day 1</text>
-  <rect x="207" y="104" width="147" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="136" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">S3 Bucket Private</text>
-  <line x1="280" y1="148" x2="280" y2="158" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="220" y="164" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="196" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Day 20</text>
-  <rect x="207" y="208" width="147" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="240" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Developer Changes</text>
-  <text x="280" y="256" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Policy</text>
-  <line x1="280" y1="268" x2="280" y2="278" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="193" y="284" width="175" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="316" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Bucket Becomes Public</text>
-  <line x1="280" y1="328" x2="280" y2="338" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="210" y="344" width="140" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="376" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Security Finding</text>
-  <text x="280" y="392" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Reappears</text>
+  <rect width="284" height="330" fill="#F8FAFC"/>
+  <text x="211" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Configuration Drift</text>
+  <rect x="165" y="44" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Day 1</text>
+  <rect x="158" y="77" width="106" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="99" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">S3 Bucket Private</text>
+  <line x1="211" y1="110" x2="211" y2="115" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="165" y="121" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="143" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Day 20</text>
+  <rect x="158" y="154" width="106" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="176" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Developer Changes</text>
+  <text x="211" y="188" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Policy</text>
+  <line x1="211" y1="199" x2="211" y2="204" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="165" y="210" width="92" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="232" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Bucket Becomes</text>
+  <text x="211" y="244" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Public</text>
+  <line x1="211" y1="255" x2="211" y2="260" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="161" y="266" width="101" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="288" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Security Finding</text>
+  <text x="211" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Reappears</text>
 </svg>

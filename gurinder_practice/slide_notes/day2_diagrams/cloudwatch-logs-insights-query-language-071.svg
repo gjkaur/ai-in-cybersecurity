@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 398" role="img" aria-label="Step-by-Step Workflow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 288" width="284" height="288" role="img" aria-label="Step-by-Step Workflow">
   <defs>
     <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
@@ -7,22 +7,23 @@
       <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
     </marker>
   </defs>
-  <rect width="376" height="398" fill="#F8FAFC"/>
-  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">Step-by-Step Workflow</text>
-  <rect x="210" y="60" width="140" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Natural Language</text>
-  <text x="280" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Prompt</text>
-  <line x1="280" y1="120" x2="280" y2="130" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <line x1="280" y1="136" x2="280" y2="148" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="200" y="154" width="161" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="186" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">AI Query Generation</text>
-  <line x1="280" y1="198" x2="280" y2="208" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <line x1="280" y1="214" x2="280" y2="226" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="217" y="232" width="126" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Analyst Review</text>
-  <line x1="280" y1="276" x2="280" y2="286" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <line x1="280" y1="292" x2="280" y2="304" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="200" y="310" width="161" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Run Query &amp; Analyze</text>
-  <text x="280" y="358" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Results</text>
+  <rect width="284" height="288" fill="#F8FAFC"/>
+  <text x="211" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Step-by-Step Workflow</text>
+  <rect x="161" y="44" width="101" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Natural Language</text>
+  <text x="211" y="78" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Prompt</text>
+  <line x1="211" y1="89" x2="211" y2="94" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="211" y1="100" x2="211" y2="106" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="153" y="112" width="116" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="128" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">AI Query</text>
+  <text x="211" y="140" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Generation</text>
+  <line x1="211" y1="145" x2="211" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="211" y1="156" x2="211" y2="162" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="165" y="168" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="190" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Analyst Review</text>
+  <line x1="211" y1="201" x2="211" y2="206" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <line x1="211" y1="212" x2="211" y2="218" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="153" y="224" width="116" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="246" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Run Query &amp;</text>
+  <text x="211" y="258" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Analyze Results</text>
 </svg>

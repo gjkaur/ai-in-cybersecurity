@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 704" role="img" aria-label="High-Level Investigation Pipeline">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 516" width="284" height="516" role="img" aria-label="High-Level Investigation Pipeline">
   <defs>
     <filter id="sh" x="-12%" y="-12%" width="124%" height="124%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.1"/>
@@ -7,37 +7,38 @@
       <path d="M1 2 L9 5 L1 8" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
     </marker>
   </defs>
-  <rect width="376" height="704" fill="#F8FAFC"/>
-  <text x="280" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0F172A">High-Level Investigation Pipeline</text>
-  <rect x="217" y="60" width="126" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Security Event</text>
-  <line x1="280" y1="104" x2="280" y2="114" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="220" y="120" width="120" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="152" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Investigation</text>
-  <text x="280" y="168" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Triggered</text>
-  <line x1="280" y1="180" x2="280" y2="190" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="220" y="196" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="228" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Define Scope</text>
-  <line x1="280" y1="240" x2="280" y2="250" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="210" y="256" width="140" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="288" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Collect Evidence</text>
-  <line x1="280" y1="300" x2="280" y2="310" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="200" y="316" width="161" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="348" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Generate Hypotheses</text>
-  <line x1="280" y1="360" x2="280" y2="370" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="210" y="376" width="140" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="408" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Analyze Evidence</text>
-  <line x1="280" y1="420" x2="280" y2="430" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="220" y="436" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="468" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Rank Findings</text>
-  <line x1="280" y1="480" x2="280" y2="490" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="210" y="496" width="140" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="528" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Generate Summary</text>
-  <line x1="280" y1="540" x2="280" y2="550" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="217" y="556" width="126" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="588" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Analyst Review</text>
-  <line x1="280" y1="600" x2="280" y2="610" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
-  <rect x="207" y="616" width="147" height="60" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="280" y="648" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Accept / Reject /</text>
-  <text x="280" y="664" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Escalate</text>
+  <rect width="284" height="516" fill="#F8FAFC"/>
+  <text x="211" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0F172A">High-Level Investigation Pipeline</text>
+  <rect x="165" y="44" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Security Event</text>
+  <line x1="211" y1="77" x2="211" y2="82" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="165" y="88" width="92" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="110" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Investigation</text>
+  <text x="211" y="122" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Triggered</text>
+  <line x1="211" y1="133" x2="211" y2="138" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="165" y="144" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="166" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Define Scope</text>
+  <line x1="211" y1="177" x2="211" y2="182" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="161" y="188" width="101" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="210" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Collect Evidence</text>
+  <line x1="211" y1="221" x2="211" y2="226" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="153" y="232" width="116" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="248" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Generate</text>
+  <text x="211" y="260" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Hypotheses</text>
+  <line x1="211" y1="265" x2="211" y2="270" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="161" y="276" width="101" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="298" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Analyze Evidence</text>
+  <line x1="211" y1="309" x2="211" y2="314" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="165" y="320" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Rank Findings</text>
+  <line x1="211" y1="353" x2="211" y2="358" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="161" y="364" width="101" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="386" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Generate Summary</text>
+  <line x1="211" y1="397" x2="211" y2="402" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="165" y="408" width="92" height="33" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Analyst Review</text>
+  <line x1="211" y1="441" x2="211" y2="446" stroke="#475569" stroke-width="2" marker-end="url(#m-slate)"/>
+  <rect x="158" y="452" width="106" height="45" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="211" y="474" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Accept / Reject /</text>
+  <text x="211" y="486" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0F172A">Escalate</text>
 </svg>

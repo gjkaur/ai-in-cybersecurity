@@ -284,7 +284,13 @@ This slide explains **why cloud computing fundamentally changed security**.
 
 Like a medieval castle.
 
-![Castle-and-Moat Security](day1_diagrams/cloud-computing-and-the-new-perimeter-016.svg)
+
+
+
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-016.svg" width="480" alt="Castle-and-Moat Security">
+
+
+
 
 The firewall was the moat.
 
@@ -298,21 +304,45 @@ This phrase appears everywhere in cloud security.
 
 Old model:
 
-![Identity is the New Firewall](day1_diagrams/cloud-computing-and-the-new-perimeter-018.svg)
+
+
+
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-018.svg" width="480" alt="Identity is the New Firewall">
+
+
+
 
 Modern model:
 
-![Identity is the New Firewall](day1_diagrams/cloud-computing-and-the-new-perimeter-019.svg)
+
+
+
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-019.svg" width="480" alt="Identity is the New Firewall">
+
+
+
 
 ### Traditional Office
 
 Imagine a company in 2005.
 
-![Traditional Office](day1_diagrams/cloud-computing-and-the-new-perimeter-013.svg)
+
+
+
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-013.svg" width="480" alt="Traditional Office">
+
+
+
 
 Security looked like a castle.
 
-![Traditional Office](day1_diagrams/cloud-computing-and-the-new-perimeter-014.svg)
+
+
+
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-014.svg" width="480" alt="Traditional Office">
+
+
+
 
 Everything important was inside.
 
@@ -452,7 +482,13 @@ Each region contains multiple AZs.
 
 Example:
 
-![Availability Zones (AZs)](day1_diagrams/aws-and-cloud-infrastructure-024.svg)
+
+
+
+<img src="day1_diagrams/aws-and-cloud-infrastructure-024.svg" width="480" alt="Availability Zones (AZs)">
+
+
+
 
 Purpose:
 
@@ -515,11 +551,23 @@ Most responsibility.
 
 Draw this on the whiteboard:
 
-![Connecting Everything Together](day1_diagrams/aws-regions-availability-zones-iam-vpc-and-ec2-027.svg)
+
+
+
+<img src="day1_diagrams/aws-regions-availability-zones-iam-vpc-and-ec2-027.svg" width="480" alt="Connecting Everything Together">
+
+
+
 
 ### Where is the resource?
 
-![Where is the resource?](day1_diagrams/aws-regions-availability-zones-iam-vpc-and-ec2-028.svg)
+
+
+
+<img src="day1_diagrams/aws-regions-availability-zones-iam-vpc-and-ec2-028.svg" width="480" alt="Where is the resource?">
+
+
+
 
 ---
 
@@ -810,7 +858,13 @@ This is extremely important in AWS.
 
 ### Q: What does rwx mean?
 
-![Q: What does rwx mean?](day1_diagrams/linux-file-permissions-053.svg)
+
+
+
+<img src="day1_diagrams/linux-file-permissions-053.svg" width="480" alt="Q: What does rwx mean?">
+
+
+
 
 ---
 
@@ -1138,7 +1192,13 @@ AI helps with that decision-making process.
 
 ---
 
-![Whiteboard Diagram](day1_diagrams/the-modern-threat-landscape-012.svg)
+
+
+
+<img src="day1_diagrams/the-modern-threat-landscape-012.svg" width="480" alt="Whiteboard Diagram">
+
+
+
 
 ### How SOC Teams Use SSH Logs
 
@@ -1323,7 +1383,13 @@ This is one of the most common real-world attacks and a favorite topic in cybers
 
 Example:
 
-![Detect Privilege Escalation](day1_diagrams/cloud-computing-and-the-new-perimeter-020.svg)
+
+
+
+<img src="day1_diagrams/cloud-computing-and-the-new-perimeter-020.svg" width="480" alt="Detect Privilege Escalation">
+
+
+
 
 AI identifies unusual behavior.
 
@@ -1333,7 +1399,13 @@ This is one of the most important concepts in cybersecurity because attackers ra
 
 Most attacks follow this pattern:
 
-![PRIVILEGE ESCALATION (MITRE ATT&CK T1548)](day1_diagrams/privilege-escalation-mitre-attck-t1548-096.svg)
+
+
+
+<img src="day1_diagrams/privilege-escalation-mitre-attck-t1548-096.svg" width="480" alt="PRIVILEGE ESCALATION (MITRE ATT&amp;amp;amp;CK T1548)">
+
+
+
 
 A great statement for class:
 
@@ -1639,7 +1711,13 @@ Common cybersecurity use cases:
 
 ### Example Security Automation Workflow
 
-![Example Security Automation Workflow](day1_diagrams/risk-scoring-fundamentals-108.svg)
+
+
+
+<img src="day1_diagrams/risk-scoring-fundamentals-108.svg" width="480" alt="Example Security Automation Workflow">
+
+
+
 
 ### Scoring Is a Triage Tool, Not a Verdict
 
@@ -2297,7 +2375,13 @@ Examples:
 
 The most effective security model combines:
 
-![Human-in-the-Loop Security](day1_diagrams/risk-scoring-fundamentals-111.svg)
+
+
+
+<img src="day1_diagrams/risk-scoring-fundamentals-111.svg" width="480" alt="Human-in-the-Loop Security">
+
+
+
 
 AI assists.
 
@@ -2307,7 +2391,13 @@ Humans remain accountable for security decisions.
 
 The most effective model is:
 
-![Human-in-the-Loop Principle](day1_diagrams/risk-scoring-fundamentals-116.svg)
+
+
+
+<img src="day1_diagrams/risk-scoring-fundamentals-116.svg" width="480" alt="Human-in-the-Loop Principle">
+
+
+
 
 The analyst remains responsible for final decisions.
 
@@ -2515,7 +2605,13 @@ Example:
 
 ### The CSPM Lifecycle
 
-![The CSPM Lifecycle](day1_diagrams/cloud-security-posture-management-cspm-159.svg)
+
+
+
+<img src="day1_diagrams/cloud-security-posture-management-cspm-159.svg" width="480" alt="The CSPM Lifecycle">
+
+
+
 
 CSPM is not a one-time audit—it is an ongoing process.
 
@@ -2950,7 +3046,13 @@ CloudTrail primarily supports integrity and accountability.
 
 ### Finding Prioritization
 
-![Finding Prioritization](day1_diagrams/cloud-security-posture-management-cspm-160.svg)
+
+
+
+<img src="day1_diagrams/cloud-security-posture-management-cspm-160.svg" width="480" alt="Finding Prioritization">
+
+
+
 
 ### Severity Thresholds
 
@@ -3023,11 +3125,23 @@ A poorly executed fix can be more damaging than the original security issue.
 
 Example:
 
-![Why Controlled Remediation Matters](day1_diagrams/cloud-security-posture-management-cspm-238.svg)
+
+
+
+<img src="day1_diagrams/cloud-security-posture-management-cspm-238.svg" width="480" alt="Why Controlled Remediation Matters">
+
+
+
 
 Instead:
 
-![Why Controlled Remediation Matters](day1_diagrams/cloud-security-posture-management-cspm-239.svg)
+
+
+
+<img src="day1_diagrams/cloud-security-posture-management-cspm-239.svg" width="480" alt="Why Controlled Remediation Matters">
+
+
+
 
 ### 5. Remediation Guidance
 
@@ -3131,7 +3245,13 @@ Possible impact:
 
 Controlled remediation:
 
-![Finding](day1_diagrams/cloud-security-posture-management-cspm-245.svg)
+
+
+
+<img src="day1_diagrams/cloud-security-posture-management-cspm-245.svg" width="480" alt="Finding">
+
+
+
 
 ### Building a Security Findings Baseline
 

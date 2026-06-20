@@ -5,11 +5,20 @@ import re
 import shutil
 from pathlib import Path
 
+from diagram_embed import DIAGRAM_DISPLAY_WIDTH, LAYOUT_SCALE, add_svg_display_size, format_diagram_embed
+
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "day1_notes.md"
 DIAGRAMS = ROOT / "day1_diagrams"
 DIAGRAM_REL = "day1_diagrams"
 OUTPUT = ROOT / "day1_study_notes.md"
+
+S = LAYOUT_SCALE
+
+
+def sc(n: int | float) -> int:
+    return max(1, int(round(n * S)))
+
 
 FONT = "Arial, Helvetica, sans-serif"
 MONO = "Consolas, monospace"
@@ -202,7 +211,7 @@ def split_columns(line: str) -> list[str] | None:
     return None
 
 
-def wrap_label(text: str, max_chars: int = 22) -> list[str]:
+def wrap_label(text: str, max_chars: int = 20) -> list[str]:
     words = text.split()
     if not words:
         return [text]
@@ -221,10 +230,10 @@ def wrap_label(text: str, max_chars: int = 22) -> list[str]:
     return lines or [text]
 
 
-def box_dims(label: str, min_w: int = 96, pad: int = 28) -> tuple[int, int]:
+def box_dims(label: str, min_w: int = 84, pad: int = 24) -> tuple[int, int]:
     wrapped = wrap_label(label)
-    w = max(min_w, max(len(line) for line in wrapped) * 7 + pad)
-    h = 28 + len(wrapped) * 16
+    w = max(sc(min_w), max(len(line) for line in wrapped) * sc(6) + sc(pad))
+    h = sc(24) + len(wrapped) * sc(14)
     return w, h
 
 
@@ -234,11 +243,11 @@ def render_box(x: int, y: int, w: int, h: int, label: str, fill: str, stroke: st
         f'  <rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" '
         f'fill="{fill}" stroke="{stroke}" stroke-width="1.8" filter="url(#sh)"/>\n'
     )
-    start_y = y + 18 + (h - len(wrapped) * 16) // 2
+    start_y = y + sc(14) + (h - len(wrapped) * sc(14)) // 2
     for i, line in enumerate(wrapped):
         inner += (
-            f'  <text x="{x + w // 2}" y="{start_y + i * 16}" text-anchor="middle" '
-            f'font-family="{FONT}" font-size="12" font-weight="600" fill="{C["text"]}">{esc(line)}</text>\n'
+            f'  <text x="{x + w // 2}" y="{start_y + i * sc(14)}" text-anchor="middle" '
+            f'font-family="{FONT}" font-size="{sc(10)}" font-weight="600" fill="{C["text"]}">{esc(line)}</text>\n'
         )
     return inner
 
@@ -255,21 +264,21 @@ def render_tree_branches(
     cx: int, y: int, root_w: int, children: list[str], fill: str, stroke: str
 ) -> tuple[str, int, int]:
     """Draw root fan-out to a row of child boxes. Returns (svg, new_y, row_width)."""
-    child_sizes = [box_dims(c, min_w=108) for c in children]
-    gap = 16
+    child_sizes = [box_dims(c, min_w=96) for c in children]
+    gap = sc(12)
     row_w = sum(w for w, _ in child_sizes) + gap * (len(children) - 1)
     row_h = max(h for _, h in child_sizes)
     start_x = cx - row_w // 2
-    stem = 18
+    stem = sc(14)
     inner = render_arrow_down(cx, y, stem)
     y += stem
-    bar_y = y + 8
+    bar_y = y + sc(6)
     inner += (
         f'  <line x1="{start_x}" y1="{bar_y}" x2="{start_x + row_w}" y2="{bar_y}" '
         f'stroke="{C["slate"]}" stroke-width="2"/>\n'
     )
     x = start_x
-    box_y = bar_y + 14
+    box_y = bar_y + sc(12)
     for i, (child, (cw, ch)) in enumerate(zip(children, child_sizes)):
         child_cx = x + cw // 2
         inner += (
@@ -282,8 +291,8 @@ def render_tree_branches(
 
 
 def render_row(labels: list[str], cx: int, y: int, fill: str, stroke: str) -> tuple[str, int, int]:
-    sizes = [box_dims(lbl, min_w=96) for lbl in labels]
-    gap = 14
+    sizes = [box_dims(lbl, min_w=84) for lbl in labels]
+    gap = sc(12)
     row_w = sum(w for w, _ in sizes) + gap * (len(labels) - 1)
     row_h = max(h for _, h in sizes)
     x = cx - row_w // 2
@@ -308,26 +317,26 @@ def svg_defs() -> str:
 
 def render_group_panel(items: list[str], cx: int, y: int) -> tuple[str, int, int]:
     """Stack items in a bordered panel (section header + bullet list)."""
-    pad_x, pad_y = 16, 12
-    line_h = 22
+    pad_x, pad_y = sc(14), sc(10)
+    line_h = sc(18)
     inner_w = max(box_dims(h)[0] for h in items)
     panel_w = inner_w + pad_x * 2
-    panel_h = pad_y * 2 + 20 + max(0, len(items) - 1) * line_h
+    panel_h = pad_y * 2 + sc(16) + max(0, len(items) - 1) * line_h
     x = cx - panel_w // 2
     out = (
         f'  <rect x="{x}" y="{y}" width="{panel_w}" height="{panel_h}" rx="12" '
         f'fill="{C["panel"]}" stroke="{C["border"]}" stroke-width="2" filter="url(#sh)"/>\n'
     )
     out += (
-        f'  <text x="{cx}" y="{y + pad_y + 16}" text-anchor="middle" font-family="{FONT}" '
-        f'font-size="13" font-weight="700" fill="{C["blue"]}">{esc(items[0])}</text>\n'
+        f'  <text x="{cx}" y="{y + pad_y + sc(14)}" text-anchor="middle" font-family="{FONT}" '
+        f'font-size="{sc(11)}" font-weight="700" fill="{C["blue"]}">{esc(items[0])}</text>\n'
     )
-    cy = y + pad_y + 28
+    cy = y + pad_y + sc(24)
     for child in items[1:]:
         cy += line_h
         out += (
-            f'  <text x="{x + pad_x + 8}" y="{cy}" font-family="{FONT}" '
-            f'font-size="12" fill="{C["text"]}">• {esc(child)}</text>\n'
+            f'  <text x="{x + pad_x + sc(6)}" y="{cy}" font-family="{FONT}" '
+            f'font-size="{sc(10)}" fill="{C["text"]}">• {esc(child)}</text>\n'
         )
     return out, y + panel_h, panel_w
 
@@ -375,21 +384,21 @@ def render_text_diagram(text: str, title: str = "") -> tuple[str, int, int]:
         compact.append(row)
     rows = compact
 
-    margin = 28
-    gap = 12
+    margin = sc(22)
+    gap = sc(10)
     inner: list[str] = []
-    y = margin + (32 if title else 0)
-    cx = 280
-    max_x = cx + 160
-    min_x = cx - 160
+    y = margin + (sc(28) if title else 0)
+    cx = sc(240)
+    max_x = cx + sc(140)
+    min_x = cx - sc(140)
 
     if title:
         clean = title if title.lower() not in {"draw", "diagram", "whiteboard diagram"} else "Diagram"
         inner.append(
-            f'  <text x="{cx}" y="{margin + 14}" text-anchor="middle" font-family="{FONT}" '
-            f'font-size="15" font-weight="700" fill="{C["text"]}">{esc(clean)}</text>\n'
+            f'  <text x="{cx}" y="{margin + sc(12)}" text-anchor="middle" font-family="{FONT}" '
+            f'font-size="{sc(12)}" font-weight="700" fill="{C["text"]}">{esc(clean)}</text>\n'
         )
-        y = margin + 32
+        y = margin + sc(28)
 
     i = 0
     while i < len(rows):
@@ -399,8 +408,8 @@ def render_text_diagram(text: str, title: str = "") -> tuple[str, int, int]:
             i += 1
             continue
         if row == "ARROW":
-            inner.append(render_arrow_down(cx, y, 18))
-            y += 18
+            inner.append(render_arrow_down(cx, y, sc(14)))
+            y += sc(14)
             i += 1
             continue
 
@@ -439,7 +448,7 @@ def render_text_diagram(text: str, title: str = "") -> tuple[str, int, int]:
             continue
 
         label = run[0] if run else str(row)
-        w, h = box_dims(label, min_w=120)
+        w, h = box_dims(label, min_w=104)
         inner.append(render_box(cx - w // 2, y, w, h, label, C["panel"], C["border"]))
         min_x = min(min_x, cx - w // 2)
         max_x = max(max_x, cx + w // 2)
@@ -448,8 +457,8 @@ def render_text_diagram(text: str, title: str = "") -> tuple[str, int, int]:
         nxt = rows[i + 1] if i + 1 < len(rows) else None
 
         if nxt == "GAP" and i + 2 < len(rows) and isinstance(rows[i + 2], list):
-            inner.append(render_arrow_down(cx, y, 16))
-            y += 16
+            inner.append(render_arrow_down(cx, y, sc(12)))
+            y += sc(12)
             children = rows[i + 2]
             assert isinstance(children, list)
             part, y, row_w = render_tree_branches(cx, y, w, children, C["panel"], C["border"])
@@ -484,15 +493,15 @@ def render_text_diagram(text: str, title: str = "") -> tuple[str, int, int]:
             continue
 
         if nxt == "ARROW":
-            inner.append(render_arrow_down(cx, y, 16))
-            y += 16
+            inner.append(render_arrow_down(cx, y, sc(12)))
+            y += sc(12)
             i += 2
             continue
 
         i += 1
 
-    width = max(300, max_x - min_x + margin * 2)
-    height = max(100, y + margin)
+    width = max(sc(260), max_x - min_x + margin * 2)
+    height = max(sc(80), y + margin)
     body = "".join(inner)
     svg = (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
@@ -501,6 +510,7 @@ def render_text_diagram(text: str, title: str = "") -> tuple[str, int, int]:
         f'  <rect width="{width}" height="{height}" fill="{C["bg"]}"/>\n'
         f"{body}</svg>\n"
     )
+    svg = add_svg_display_size(svg)
     return svg, width, height
 
 
@@ -598,12 +608,14 @@ def process_diagrams(md: str, section_slug: str, counter: list[int]) -> str:
         if diag_title.lower().startswith("draw"):
             diag_title = "Diagram"
 
-        svg, _, _ = render_text_diagram(text, diag_title)
+        svg, vb_w, _ = render_text_diagram(text, diag_title)
+        svg = add_svg_display_size(svg)
         svg_path = DIAGRAMS / f"{diag_id}.svg"
         svg_path.write_text(svg, encoding="utf-8")
 
         rel = f"{DIAGRAM_REL}/{diag_id}.svg"
-        return f"\n![{diag_title}]({rel})\n"
+        display_w = int(min(vb_w, DIAGRAM_DISPLAY_WIDTH))
+        return format_diagram_embed(diag_title, rel, display_w)
 
     return pattern.sub(replacer, md)
 

@@ -5,6 +5,8 @@ import re
 import sys
 from pathlib import Path
 
+from diagram_embed import DIAGRAM_DISPLAY_WIDTH, convert_svg_markdown, format_diagram_embed
+
 # Lines removed as instructor filler (not substantive content)
 FILLER_LINE_PATTERNS = (
     r"^Let's expand\.?$",
@@ -165,7 +167,7 @@ def compact_diagrams(md: str) -> str:
     def repl(match: re.Match[str]) -> str:
         alt = match.group(1).strip() or "Diagram"
         path = match.group(2)
-        return f"\n![{alt}]({path})\n"
+        return format_diagram_embed(alt, path, DIAGRAM_DISPLAY_WIDTH)
 
     md = re.sub(r"!\[([^\]]*)\]\(([^)]+\.svg)\)", repl, md)
     md = re.sub(r"→ \[([^\]]*)\]\(([^)]+\.svg)\)", repl, md)
@@ -417,7 +419,19 @@ def compact_markdown(md: str) -> str:
             mod = importlib.util.module_from_spec(spec)
             assert spec.loader is not None
             spec.loader.exec_module(mod)
-            return mod.refine_to_self_study(combined)
+            combined = mod.refine_to_self_study(combined)
+        except Exception:
+            pass
+    paragraphs_path = Path(__file__).resolve().parent / "compact_paragraphs.py"
+    if paragraphs_path.exists():
+        try:
+            import importlib.util
+
+            spec = importlib.util.spec_from_file_location("compact_paragraphs", paragraphs_path)
+            mod = importlib.util.module_from_spec(spec)
+            assert spec.loader is not None
+            spec.loader.exec_module(mod)
+            combined = mod.compact_paragraphs(combined)
         except Exception:
             pass
     return combined
