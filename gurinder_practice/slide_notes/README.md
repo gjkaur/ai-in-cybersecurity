@@ -23,7 +23,7 @@ slide_notes/
 ├── day2_study_notes.md
 ├── day2_speaker_notes.md
 ├── day2_diagrams/
-├── day1_notes.md          ← raw source
+├── day1_notes.md          ← local rebuild source (gitignored)
 ├── day2_notes.md
 ├── build_day1_study_notes.py
 ├── build_day2_study_notes.py
