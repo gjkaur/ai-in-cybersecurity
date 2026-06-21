@@ -513,7 +513,7 @@ AWS does not patch your EC2 instance.
 
 Examples:
 - Security Groups
-- Network ACLs
+- Network ACLs (Network Access Control List)
 
 Misconfigured security groups cause many breaches.
 
