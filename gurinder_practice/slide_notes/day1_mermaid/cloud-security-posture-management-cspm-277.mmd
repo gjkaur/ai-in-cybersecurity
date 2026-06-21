@@ -1,0 +1,15 @@
+flowchart TB
+    n1_UsingSecurityHubforBasel["Using Security Hub for Baselines"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_UsingSecurityHubforBasel fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityHub["Security Hub"]
+    style n2_SecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ExportFindings["Export Findings"]
+    style n3_ExportFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CSVJSONBaseline["CSV / JSON Baseline"]
+    style n4_CSVJSONBaseline fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ArchiveSnapshot["Archive Snapshot"]
+    style n5_ArchiveSnapshot fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityHub --> n3_ExportFindings
+    n3_ExportFindings --> n4_CSVJSONBaseline
+    n4_CSVJSONBaseline --> n5_ArchiveSnapshot

@@ -1,0 +1,15 @@
+flowchart TB
+    n1_Finding["Finding"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Finding fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ConfirmAccessMethod["Confirm Access Method"]
+    style n2_ConfirmAccessMethod fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ImplementSessionManager["Implement Session Manager"]
+    style n3_ImplementSessionManager fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TestConnectivity["Test Connectivity"]
+    style n4_TestConnectivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RemovePublicSSH["Remove Public SSH"]
+    style n5_RemovePublicSSH fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ConfirmAccessMethod --> n3_ImplementSessionManager
+    n3_ImplementSessionManager --> n4_TestConnectivity
+    n4_TestConnectivity --> n5_RemovePublicSSH

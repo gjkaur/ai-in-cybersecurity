@@ -1,0 +1,17 @@
+flowchart TB
+    n1_OperatingSystemEvents["Operating System Events"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_OperatingSystemEvents fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Boot["Boot"]
+    style n3_Boot fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Shutdown["Shutdown"]
+    style n4_Shutdown fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Restart["Restart"]
+    style n5_Restart fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_KernelMessages["Kernel Messages"]
+    style n6_KernelMessages fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Boot --> n4_Shutdown
+        n4_Shutdown --> n5_Restart
+        n5_Restart --> n6_KernelMessages
+    end

@@ -1,0 +1,15 @@
+flowchart TB
+    n1_TraditionalSIEM["Traditional SIEM"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TraditionalSIEM fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Server["Server"]
+    style n2_Server fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Agent["Agent"]
+    style n3_Agent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Collector["Collector"]
+    style n4_Collector fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SIEM["SIEM"]
+    style n5_SIEM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Server --> n3_Agent
+    n3_Agent --> n4_Collector
+    n4_Collector --> n5_SIEM

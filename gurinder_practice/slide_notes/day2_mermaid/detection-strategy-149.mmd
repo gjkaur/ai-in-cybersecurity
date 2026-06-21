@@ -1,0 +1,15 @@
+flowchart TB
+    n1_InstructorDemonstration["Instructor Demonstration"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_InstructorDemonstration fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudWatchLogs["CloudWatch Logs"]
+    style n2_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MetricFilter["Metric Filter"]
+    style n3_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Alarm["Alarm"]
+    style n4_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AIInvestigation["AI Investigation"]
+    style n5_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudWatchLogs --> n3_MetricFilter
+    n3_MetricFilter --> n4_Alarm
+    n4_Alarm --> n5_AIInvestigation

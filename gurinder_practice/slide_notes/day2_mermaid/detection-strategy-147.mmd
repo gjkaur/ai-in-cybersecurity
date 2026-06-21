@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyAttackersLoveSetUID["Why Attackers Love SetUID"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyAttackersLoveSetUID fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LowPrivilegeUser["Low Privilege User"]
+    style n2_LowPrivilegeUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_RunVulnerableBinary["Run Vulnerable Binary"]
+    style n3_RunVulnerableBinary fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RootShell["Root Shell"]
+    style n4_RootShell fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LowPrivilegeUser --> n3_RunVulnerableBinary
+    n3_RunVulnerableBinary --> n4_RootShell

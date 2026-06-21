@@ -1,0 +1,15 @@
+flowchart TB
+    n1_AIOperations["AI Operations"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AIOperations fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Alert["Alert"]
+    style n2_Alert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Investigationautocreated["Investigation auto-created"]
+    style n3_Investigationautocreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Evidencecorrelated["Evidence correlated"]
+    style n4_Evidencecorrelated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Hypothesesgenerated["Hypotheses generated"]
+    style n5_Hypothesesgenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Alert --> n3_Investigationautocreated
+    n3_Investigationautocreated --> n4_Evidencecorrelated
+    n4_Evidencecorrelated --> n5_Hypothesesgenerated

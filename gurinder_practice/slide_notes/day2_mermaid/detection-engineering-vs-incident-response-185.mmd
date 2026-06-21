@@ -1,0 +1,21 @@
+flowchart TB
+    n1_InOurLabEnvironment["In Our Lab Environment"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_InOurLabEnvironment fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_auditdLogs["auditd Logs"]
+    style n2_auditdLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchLogGroup["CloudWatch Log Group"]
+    style n3_CloudWatchLogGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_MetricFilter["Metric Filter"]
+    style n4_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CustomMetric["Custom Metric"]
+    style n5_CustomMetric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Alarm["Alarm"]
+    style n6_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AIInvestigation["AI Investigation"]
+    style n7_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_auditdLogs --> n3_CloudWatchLogGroup
+    n3_CloudWatchLogGroup --> n4_MetricFilter
+    n4_MetricFilter --> n5_CustomMetric
+    n5_CustomMetric --> n6_Alarm
+    n6_Alarm --> n7_AIInvestigation

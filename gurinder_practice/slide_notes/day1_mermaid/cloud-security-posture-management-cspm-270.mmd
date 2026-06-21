@@ -1,0 +1,15 @@
+flowchart TB
+    n1_SecurityGroupExposure["Security Group Exposure"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SecurityGroupExposure fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Port22OpenedtoInternet["Port 22 Opened to Internet"]
+    style n2_Port22OpenedtoInternet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ConfigRuleTriggered["Config Rule Triggered"]
+    style n3_ConfigRuleTriggered fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_HighSeverityFinding["High Severity Finding"]
+    style n4_HighSeverityFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SecurityTeamNotified["Security Team Notified"]
+    style n5_SecurityTeamNotified fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Port22OpenedtoInternet --> n3_ConfigRuleTriggered
+    n3_ConfigRuleTriggered --> n4_HighSeverityFinding
+    n4_HighSeverityFinding --> n5_SecurityTeamNotified

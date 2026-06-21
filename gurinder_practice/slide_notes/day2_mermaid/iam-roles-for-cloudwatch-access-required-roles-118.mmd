@@ -1,0 +1,18 @@
+flowchart TB
+    n1_Visualization["Visualization"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Visualization fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogEvents["Log Events"]
+    style n2_LogEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MetricFilter["Metric Filter"]
+    style n3_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CustomMetric["Custom Metric"]
+    style n4_CustomMetric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CloudWatchAlarm["CloudWatch Alarm"]
+    style n5_CloudWatchAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_SNSEmailDashboard["SNS / Email / Dashboard"]
+    style n6_SNSEmailDashboard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogEvents --> n3_MetricFilter
+    n3_MetricFilter --> n4_CustomMetric
+    n4_CustomMetric --> n5_CloudWatchAlarm
+    n5_CloudWatchAlarm --> n6_SNSEmailDashboard

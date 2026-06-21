@@ -1,0 +1,12 @@
+flowchart TB
+    n1_APIsEverywhere["APIs Everywhere"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_APIsEverywhere fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_BankingApp["Banking App"]
+    style n2_BankingApp fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_API["API"]
+    style n3_API fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_BankDatabase["Bank Database"]
+    style n4_BankDatabase fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_BankingApp --> n3_API
+    n3_API --> n4_BankDatabase

@@ -1,0 +1,24 @@
+flowchart TB
+    n1_RiskBasedRemediationWork["Risk-Based Remediation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RiskBasedRemediationWork fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityFinding["Security Finding"]
+    style n2_SecurityFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DetermineExposure["Determine Exposure"]
+    style n3_DetermineExposure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AssessImpact["Assess Impact"]
+    style n4_AssessImpact fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AssignSeverity["Assign Severity"]
+    style n5_AssignSeverity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_PrioritizeRemediation["Prioritize Remediation"]
+    style n6_PrioritizeRemediation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_VerifyFix["Verify Fix"]
+    style n7_VerifyFix fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_CloseFinding["Close Finding"]
+    style n8_CloseFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityFinding --> n3_DetermineExposure
+    n3_DetermineExposure --> n4_AssessImpact
+    n4_AssessImpact --> n5_AssignSeverity
+    n5_AssignSeverity --> n6_PrioritizeRemediation
+    n6_PrioritizeRemediation --> n7_VerifyFix
+    n7_VerifyFix --> n8_CloseFinding

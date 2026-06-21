@@ -1,0 +1,21 @@
+flowchart TB
+    n1_ExampleScenario["Example Scenario"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleScenario fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogEventCreated["Log Event Created"]
+    style n2_LogEventCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MetricIncremented["Metric Incremented"]
+    style n3_MetricIncremented fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AlarmTriggered["Alarm Triggered"]
+    style n4_AlarmTriggered fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AIInvestigationCreated["AI Investigation Created"]
+    style n5_AIInvestigationCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_HypothesisGenerated["Hypothesis Generated"]
+    style n6_HypothesisGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AnalystReviewsResults["Analyst Reviews Results"]
+    style n7_AnalystReviewsResults fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogEventCreated --> n3_MetricIncremented
+    n3_MetricIncremented --> n4_AlarmTriggered
+    n4_AlarmTriggered --> n5_AIInvestigationCreated
+    n5_AIInvestigationCreated --> n6_HypothesisGenerated
+    n6_HypothesisGenerated --> n7_AnalystReviewsResults

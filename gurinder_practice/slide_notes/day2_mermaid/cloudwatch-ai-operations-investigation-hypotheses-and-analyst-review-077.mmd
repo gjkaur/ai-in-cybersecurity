@@ -1,0 +1,21 @@
+flowchart TB
+    n1_AIInvestigationProcess["AI Investigation Process"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AIInvestigationProcess fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AlertTriggered["Alert Triggered"]
+    style n2_AlertTriggered fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CollectEvidence["Collect Evidence"]
+    style n3_CollectEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_GenerateHypotheses["Generate Hypotheses"]
+    style n4_GenerateHypotheses fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_EvaluateEvidence["Evaluate Evidence"]
+    style n5_EvaluateEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RankLikelihood["Rank Likelihood"]
+    style n6_RankLikelihood fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_PresentFindings["Present Findings"]
+    style n7_PresentFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AlertTriggered --> n3_CollectEvidence
+    n3_CollectEvidence --> n4_GenerateHypotheses
+    n4_GenerateHypotheses --> n5_EvaluateEvidence
+    n5_EvaluateEvidence --> n6_RankLikelihood
+    n6_RankLikelihood --> n7_PresentFindings

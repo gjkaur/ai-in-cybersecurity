@@ -1,0 +1,51 @@
+flowchart TB
+    n1_BigPicture["Big Picture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_BigPicture fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ATTACKERSIDE["ATTACKER SIDE"]
+    style n2_ATTACKERSIDE fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Recon["Recon"]
+    style n3_Recon fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Weaponize["Weaponize"]
+    style n4_Weaponize fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Deliver["Deliver"]
+    style n5_Deliver fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Exploit["Exploit"]
+    style n6_Exploit fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Install["Install"]
+    style n7_Install fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_CommandControl["Command & Control"]
+    style n8_CommandControl fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_AchieveGoal["Achieve Goal"]
+    style n9_AchieveGoal fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_DEFENDERSIDE["DEFENDER SIDE"]
+    style n10_DEFENDERSIDE fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_Detect["Detect"]
+    style n11_Detect fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n12_Block["Block"]
+    style n12_Block fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n13_Detect["Detect"]
+    style n13_Detect fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n14_Block["Block"]
+    style n14_Block fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n15_Detect["Detect"]
+    style n15_Detect fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n16_Block["Block"]
+    style n16_Block fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n17_Detect["Detect"]
+    style n17_Detect fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ATTACKERSIDE --> n3_Recon
+    n3_Recon --> n4_Weaponize
+    n4_Weaponize --> n5_Deliver
+    n5_Deliver --> n6_Exploit
+    n6_Exploit --> n7_Install
+    n7_Install --> n8_CommandControl
+    n8_CommandControl --> n9_AchieveGoal
+    n9_AchieveGoal --> n10_DEFENDERSIDE
+    n10_DEFENDERSIDE --> n11_Detect
+    n11_Detect --> n12_Block
+    n12_Block --> n13_Detect
+    n13_Detect --> n14_Block
+    n14_Block --> n15_Detect
+    n15_Detect --> n16_Block
+    n16_Block --> n17_Detect

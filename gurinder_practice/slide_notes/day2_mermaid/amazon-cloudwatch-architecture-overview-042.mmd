@@ -1,0 +1,20 @@
+flowchart TB
+    n1_4CloudWatchDashboards["4. CloudWatch Dashboards"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_4CloudWatchDashboards fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_FailedLogins["Failed Logins"]
+    style n3_FailedLogins fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SSHAttempts["SSH Attempts"]
+    style n4_SSHAttempts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CPUUtilization["CPU Utilization"]
+    style n5_CPUUtilization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_SecurityFindings["Security Findings"]
+    style n6_SecurityFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_OpenIncidents["Open Incidents"]
+    style n7_OpenIncidents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_FailedLogins --> n4_SSHAttempts
+        n4_SSHAttempts --> n5_CPUUtilization
+        n5_CPUUtilization --> n6_SecurityFindings
+        n6_SecurityFindings --> n7_OpenIncidents
+    end

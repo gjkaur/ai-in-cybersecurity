@@ -1,0 +1,43 @@
+flowchart TB
+    n1_ExampleCleanupWorkflow["Example Cleanup Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleCleanupWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_UserReview["User Review"]
+    style n2_UserReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Active["Active?"]
+    style n3_Active fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_node["┌───────────┐"]
+    style n4_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_UserReview --> n3_Active
+    n3_Active --> n4_node
+    n5_node["│"]
+    n6_Yes["Yes"]
+    n7_Keep["│ → Keep"]
+    style n5_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n6_Yes fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n7_Keep fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_node --> n5_node
+    n4_node --> n6_Yes
+    n4_node --> n7_Keep
+    n8_node["└───────────┘"]
+    style n8_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_node["┌───────────┐"]
+    style n9_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_node --> n9_node
+    n10_node["│"]
+    n11_No["No"]
+    n12_node["│"]
+    style n10_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n11_No fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n12_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_node --> n10_node
+    n9_node --> n11_No
+    n9_node --> n12_node
+    n13_node["└───────────┘"]
+    style n13_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n14_Disable["Disable"]
+    style n14_Disable fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n15_Delete["Delete"]
+    style n15_Delete fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n13_node --> n14_Disable
+    n14_Disable --> n15_Delete

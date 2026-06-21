@@ -1,0 +1,12 @@
+flowchart TB
+    n1_FindingPrioritization["Finding Prioritization"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_FindingPrioritization fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ThousandsofFindings["Thousands of Findings"]
+    style n2_ThousandsofFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIRiskRanking["AI Risk Ranking"]
+    style n3_AIRiskRanking fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TopFindingsFirst["Top Findings First"]
+    style n4_TopFindingsFirst fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ThousandsofFindings --> n3_AIRiskRanking
+    n3_AIRiskRanking --> n4_TopFindingsFirst

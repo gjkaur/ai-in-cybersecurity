@@ -1,0 +1,27 @@
+flowchart TB
+    n1_SecurityHubArchitecture["Security Hub Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SecurityHubArchitecture fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AWSResources["AWS Resources"]
+    style n2_AWSResources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SecurityControls["Security Controls"]
+    style n3_SecurityControls fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AWSServices["AWS Services"]
+    style n4_AWSServices fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_GuardDutyInspector["(GuardDuty, Inspector,"]
+    style n5_GuardDutyInspector fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_ConfigAccessAnalyzer["Config, Access Analyzer)"]
+    style n6_ConfigAccessAnalyzer fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SecurityHub["Security Hub"]
+    style n7_SecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_FindingsDashboard["Findings Dashboard"]
+    style n8_FindingsDashboard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_SecurityTeam["Security Team"]
+    style n9_SecurityTeam fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AWSResources --> n3_SecurityControls
+    n3_SecurityControls --> n4_AWSServices
+    n4_AWSServices --> n5_GuardDutyInspector
+    n5_GuardDutyInspector --> n6_ConfigAccessAnalyzer
+    n6_ConfigAccessAnalyzer --> n7_SecurityHub
+    n7_SecurityHub --> n8_FindingsDashboard
+    n8_FindingsDashboard --> n9_SecurityTeam

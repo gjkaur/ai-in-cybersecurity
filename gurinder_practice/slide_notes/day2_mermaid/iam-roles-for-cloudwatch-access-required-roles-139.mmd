@@ -1,0 +1,18 @@
+flowchart TB
+    n1_WhyConnectAlarmstoAIOper["Why Connect Alarms to AI Operations?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyConnectAlarmstoAIOper fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AlertFires["Alert Fires"]
+    style n2_AlertFires fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AnalystReceivesAlert["Analyst Receives Alert"]
+    style n3_AnalystReceivesAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AnalystOpensLogs["Analyst Opens Logs"]
+    style n4_AnalystOpensLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AnalystRunsQueries["Analyst Runs Queries"]
+    style n5_AnalystRunsQueries fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AnalystBeginsInvestigati["Analyst Begins Investigation"]
+    style n6_AnalystBeginsInvestigati fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AlertFires --> n3_AnalystReceivesAlert
+    n3_AnalystReceivesAlert --> n4_AnalystOpensLogs
+    n4_AnalystOpensLogs --> n5_AnalystRunsQueries
+    n5_AnalystRunsQueries --> n6_AnalystBeginsInvestigati

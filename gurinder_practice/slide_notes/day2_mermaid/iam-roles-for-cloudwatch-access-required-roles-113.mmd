@@ -1,0 +1,21 @@
+flowchart TB
+    n1_ExampleSOCWorkflow["Example SOC Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleSOCWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_DashboardAlert["Dashboard Alert"]
+    style n2_DashboardAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_FailedSSHAttemptsSpike["Failed SSH Attempts Spike"]
+    style n3_FailedSSHAttemptsSpike fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_OpenInvestigation["Open Investigation"]
+    style n4_OpenInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ReviewEvidence["Review Evidence"]
+    style n5_ReviewEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_DetermineThreatLevel["Determine Threat Level"]
+    style n6_DetermineThreatLevel fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_RespondorClose["Respond or Close"]
+    style n7_RespondorClose fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_DashboardAlert --> n3_FailedSSHAttemptsSpike
+    n3_FailedSSHAttemptsSpike --> n4_OpenInvestigation
+    n4_OpenInvestigation --> n5_ReviewEvidence
+    n5_ReviewEvidence --> n6_DetermineThreatLevel
+    n6_DetermineThreatLevel --> n7_RespondorClose

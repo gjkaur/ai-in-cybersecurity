@@ -1,0 +1,12 @@
+flowchart TB
+    n1_HighRiskMisconfiguration["High-Risk Misconfiguration #4: Public Administrative Interfaces"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HighRiskMisconfiguration fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AdminPanels["Admin Panels"]
+    style n2_AdminPanels fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DefaultCredentials["Default Credentials"]
+    style n3_DefaultCredentials fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SystemCompromise["System Compromise"]
+    style n4_SystemCompromise fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AdminPanels --> n3_DefaultCredentials
+    n3_DefaultCredentials --> n4_SystemCompromise

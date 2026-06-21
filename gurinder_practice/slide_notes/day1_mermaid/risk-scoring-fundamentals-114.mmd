@@ -1,0 +1,24 @@
+flowchart TB
+    n1_Diagram114["Diagram 114"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Diagram114 fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ThreatReport["Threat Report"]
+    style n2_ThreatReport fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIExtraction["AI Extraction"]
+    style n3_AIExtraction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_IPs["IPs"]
+    style n4_IPs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Domains["Domains"]
+    style n5_Domains fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Hashes["Hashes"]
+    style n6_Hashes fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Techniques["Techniques"]
+    style n7_Techniques fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_SOCEnrichment["SOC Enrichment"]
+    style n8_SOCEnrichment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ThreatReport --> n3_AIExtraction
+    n3_AIExtraction --> n4_IPs
+    n4_IPs --> n5_Domains
+    n5_Domains --> n6_Hashes
+    n6_Hashes --> n7_Techniques
+    n7_Techniques --> n8_SOCEnrichment

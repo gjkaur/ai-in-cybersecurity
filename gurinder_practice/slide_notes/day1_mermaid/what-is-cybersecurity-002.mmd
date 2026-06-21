@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhereAIFitsIntoCybersecu["Where AI Fits Into Cybersecurity"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhereAIFitsIntoCybersecu fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_MillionsofLogs["Millions of Logs"]
+    style n2_MillionsofLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIAnalysis["AI Analysis"]
+    style n3_AIAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PrioritizedAlerts["Prioritized Alerts"]
+    style n4_PrioritizedAlerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_HumanReview["Human Review"]
+    style n5_HumanReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_MillionsofLogs --> n3_AIAnalysis
+    n3_AIAnalysis --> n4_PrioritizedAlerts
+    n4_PrioritizedAlerts --> n5_HumanReview

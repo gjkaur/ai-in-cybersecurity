@@ -1,0 +1,12 @@
+flowchart TB
+    n1_SlackTeams["Slack / Teams"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SlackTeams fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Alarm["Alarm"]
+    style n2_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SNS["SNS"]
+    style n3_SNS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SlackChannel["Slack Channel"]
+    style n4_SlackChannel fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Alarm --> n3_SNS
+    n3_SNS --> n4_SlackChannel

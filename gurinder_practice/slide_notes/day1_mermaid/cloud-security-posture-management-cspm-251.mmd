@@ -1,0 +1,9 @@
+flowchart TB
+    n1_AWSConfig["AWS Config"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AWSConfig fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ComplianceCheck["Compliance Check"]
+    style n2_ComplianceCheck fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Compliant["Compliant"]
+    style n3_Compliant fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ComplianceCheck --> n3_Compliant

@@ -1,0 +1,18 @@
+flowchart TB
+    n1_ManagementFunctions["Management Functions"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ManagementFunctions fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ThreatDetected["Threat Detected"]
+    style n2_ThreatDetected fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AlertGenerated["Alert Generated"]
+    style n3_AlertGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CaseCreated["Case Created"]
+    style n4_CaseCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AnalystAssigned["Analyst Assigned"]
+    style n5_AnalystAssigned fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Investigation["Investigation"]
+    style n6_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ThreatDetected --> n3_AlertGenerated
+    n3_AlertGenerated --> n4_CaseCreated
+    n4_CaseCreated --> n5_AnalystAssigned
+    n5_AnalystAssigned --> n6_Investigation

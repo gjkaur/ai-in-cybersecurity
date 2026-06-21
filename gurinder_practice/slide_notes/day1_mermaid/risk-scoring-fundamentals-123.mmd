@@ -1,0 +1,17 @@
+flowchart TB
+    n1_User["User"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_User fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_DeveloperUser["Developer User"]
+    style n3_DeveloperUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ConsoleLogin["├── Console Login"]
+    style n4_ConsoleLogin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AccessKeyID["├── Access Key ID"]
+    style n5_AccessKeyID fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_SecretAccessKey["└── Secret Access Key"]
+    style n6_SecretAccessKey fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_DeveloperUser --> n4_ConsoleLogin
+        n4_ConsoleLogin --> n5_AccessKeyID
+        n5_AccessKeyID --> n6_SecretAccessKey
+    end

@@ -1,0 +1,21 @@
+flowchart TB
+    n1_Internet["Internet"]
+    style n1_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityGroup["Security Group"]
+    style n2_SecurityGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SSHMyIPOnly["(SSH My IP Only)"]
+    style n3_SSHMyIPOnly fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_EC2Instance["EC2 Instance"]
+    style n4_EC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_IAMRole["IAM Role"]
+    style n5_IAMRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_ReadOnly["(Read Only)"]
+    style n6_ReadOnly fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_S3Bucket["S3 Bucket"]
+    style n7_S3Bucket fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_Internet --> n2_SecurityGroup
+    n2_SecurityGroup --> n3_SSHMyIPOnly
+    n3_SSHMyIPOnly --> n4_EC2Instance
+    n4_EC2Instance --> n5_IAMRole
+    n5_IAMRole --> n6_ReadOnly
+    n6_ReadOnly --> n7_S3Bucket

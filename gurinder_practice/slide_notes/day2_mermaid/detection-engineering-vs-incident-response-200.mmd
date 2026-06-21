@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyAttackersAbusesetUID["Why Attackers Abuse setUID"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyAttackersAbusesetUID fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Lowprivilegeduser["Low-privileged user"]
+    style n2_Lowprivilegeduser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Launchesmodifiedbinary["Launches modified binary"]
+    style n3_Launchesmodifiedbinary fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Obtainselevatedprivilege["Obtains elevated privileges"]
+    style n4_Obtainselevatedprivilege fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Lowprivilegeduser --> n3_Launchesmodifiedbinary
+    n3_Launchesmodifiedbinary --> n4_Obtainselevatedprivilege

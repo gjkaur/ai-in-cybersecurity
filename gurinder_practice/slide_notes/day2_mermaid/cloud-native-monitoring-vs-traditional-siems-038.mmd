@@ -1,0 +1,18 @@
+flowchart TB
+    n1_TraditionalSOCWorkflow["Traditional SOC Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TraditionalSOCWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Alert["Alert"]
+    style n2_Alert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_OpenSIEM["Open SIEM"]
+    style n3_OpenSIEM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_WriteQuery["Write Query"]
+    style n4_WriteQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AnalyzeResults["Analyze Results"]
+    style n5_AnalyzeResults fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Investigate["Investigate"]
+    style n6_Investigate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Alert --> n3_OpenSIEM
+    n3_OpenSIEM --> n4_WriteQuery
+    n4_WriteQuery --> n5_AnalyzeResults
+    n5_AnalyzeResults --> n6_Investigate

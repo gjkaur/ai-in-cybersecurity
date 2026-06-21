@@ -1,0 +1,21 @@
+flowchart TB
+    n1_Architecture["Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Architecture fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudTrail["CloudTrail"]
+    style n2_CloudTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchLogs["CloudWatch Logs"]
+    style n3_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_MetricFilters["Metric Filters"]
+    style n4_MetricFilters fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CloudWatchMetrics["CloudWatch Metrics"]
+    style n5_CloudWatchMetrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Alarms["Alarms"]
+    style n6_Alarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Dashboard["Dashboard"]
+    style n7_Dashboard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudTrail --> n3_CloudWatchLogs
+    n3_CloudWatchLogs --> n4_MetricFilters
+    n4_MetricFilters --> n5_CloudWatchMetrics
+    n5_CloudWatchMetrics --> n6_Alarms
+    n6_Alarms --> n7_Dashboard

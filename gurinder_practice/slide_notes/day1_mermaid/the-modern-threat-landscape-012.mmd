@@ -1,0 +1,35 @@
+flowchart TB
+    n1_ModernOrganization["Modern Organization"]
+    style n1_ModernOrganization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Employees["Employees"]
+    n3_Cloud["Cloud"]
+    n4_APIs["APIs"]
+    n5_SaaS["SaaS"]
+    n6_Mobile["Mobile"]
+    style n2_Employees fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n3_Cloud fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n4_APIs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n5_SaaS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n6_Mobile fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_ModernOrganization --> n2_Employees
+    n1_ModernOrganization --> n3_Cloud
+    n1_ModernOrganization --> n4_APIs
+    n1_ModernOrganization --> n5_SaaS
+    n1_ModernOrganization --> n6_Mobile
+    n7_node["↑      ↑      ↑"]
+    style n7_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_AttackersAttackersAttack["Attackers Attackers Attackers"]
+    style n8_AttackersAttackersAttack fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Ransomware["Ransomware"]
+    style n9_Ransomware fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_CredentialTheft["Credential Theft"]
+    style n10_CredentialTheft fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_SupplyChainAttacks["Supply Chain Attacks"]
+    style n11_SupplyChainAttacks fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n12_Misconfigurations["Misconfigurations"]
+    style n12_Misconfigurations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_node --> n8_AttackersAttackersAttack
+    n8_AttackersAttackersAttack --> n9_Ransomware
+    n9_Ransomware --> n10_CredentialTheft
+    n10_CredentialTheft --> n11_SupplyChainAttacks
+    n11_SupplyChainAttacks --> n12_Misconfigurations

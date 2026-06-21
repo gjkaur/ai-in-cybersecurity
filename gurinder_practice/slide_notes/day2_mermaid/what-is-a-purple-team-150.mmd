@@ -1,0 +1,21 @@
+flowchart TB
+    n1_RealAttackLifecycle["Real Attack Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RealAttackLifecycle fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_UserAccount["User Account"]
+    style n2_UserAccount fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CredentialAccess["Credential Access"]
+    style n3_CredentialAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PrivilegeEscalation["Privilege Escalation"]
+    style n4_PrivilegeEscalation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Persistence["Persistence"]
+    style n5_Persistence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_LateralMovement["Lateral Movement"]
+    style n6_LateralMovement fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Impact["Impact"]
+    style n7_Impact fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_UserAccount --> n3_CredentialAccess
+    n3_CredentialAccess --> n4_PrivilegeEscalation
+    n4_PrivilegeEscalation --> n5_Persistence
+    n5_Persistence --> n6_LateralMovement
+    n6_LateralMovement --> n7_Impact

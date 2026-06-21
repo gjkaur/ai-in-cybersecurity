@@ -1,0 +1,14 @@
+flowchart TB
+    n1_TopRow["Top Row"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TopRow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_ActiveAlarms["Active Alarms"]
+    style n3_ActiveAlarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_OpenInvestigations["Open Investigations"]
+    style n4_OpenInvestigations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CriticalEvents["Critical Events"]
+    style n5_CriticalEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_ActiveAlarms --> n4_OpenInvestigations
+        n4_OpenInvestigations --> n5_CriticalEvents
+    end

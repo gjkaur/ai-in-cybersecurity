@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Factor3Visibility["Factor 3: Visibility"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Factor3Visibility fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AttackOccurs["Attack Occurs"]
+    style n2_AttackOccurs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_NoLogsGenerated["No Logs Generated"]
+    style n3_NoLogsGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_NoDetectionPossible["No Detection Possible"]
+    style n4_NoDetectionPossible fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AttackOccurs --> n3_NoLogsGenerated
+    n3_NoLogsGenerated --> n4_NoDetectionPossible

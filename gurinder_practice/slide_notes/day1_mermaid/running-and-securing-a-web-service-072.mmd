@@ -1,0 +1,9 @@
+flowchart TB
+    n1_SecurityGroupExample["Security Group Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SecurityGroupExample fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SSH22AdminIP["SSH 22 → Admin IP"]
+    style n2_SSH22AdminIP fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_HTTPS443Internet["HTTPS 443 → Internet"]
+    style n3_HTTPS443Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SSH22AdminIP --> n3_HTTPS443Internet

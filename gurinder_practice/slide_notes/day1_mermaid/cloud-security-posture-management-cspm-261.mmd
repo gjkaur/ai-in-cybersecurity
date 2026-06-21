@@ -1,0 +1,21 @@
+flowchart TB
+    n1_AWSContinuousMonitoringA["AWS Continuous Monitoring Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AWSContinuousMonitoringA fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AWSResources["AWS Resources"]
+    style n2_AWSResources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AWSConfig["AWS Config"]
+    style n3_AWSConfig fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityHub["Security Hub"]
+    style n4_SecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_GuardDuty["GuardDuty"]
+    style n5_GuardDuty fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CloudWatchSNSAlerts["CloudWatch / SNS Alerts"]
+    style n6_CloudWatchSNSAlerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SecurityTeam["Security Team"]
+    style n7_SecurityTeam fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AWSResources --> n3_AWSConfig
+    n3_AWSConfig --> n4_SecurityHub
+    n4_SecurityHub --> n5_GuardDuty
+    n5_GuardDuty --> n6_CloudWatchSNSAlerts
+    n6_CloudWatchSNSAlerts --> n7_SecurityTeam

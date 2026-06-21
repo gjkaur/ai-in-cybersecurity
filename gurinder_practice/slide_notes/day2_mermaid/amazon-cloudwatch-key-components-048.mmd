@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ExampleSecurityWorkflow["Example Security Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleSecurityWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SSHBruteForceAttack["SSH Brute Force Attack"]
+    style n2_SSHBruteForceAttack fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchLogs["CloudWatch Logs"]
+    style n3_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_MetricFilter["Metric Filter"]
+    style n4_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_FailedLoginAttemptsMetri["FailedLoginAttempts Metric"]
+    style n5_FailedLoginAttemptsMetri fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Alarm["Alarm"]
+    style n6_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SNSNotification["SNS Notification"]
+    style n7_SNSNotification fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_SOCInvestigation["SOC Investigation"]
+    style n8_SOCInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SSHBruteForceAttack --> n3_CloudWatchLogs
+    n3_CloudWatchLogs --> n4_MetricFilter
+    n4_MetricFilter --> n5_FailedLoginAttemptsMetri
+    n5_FailedLoginAttemptsMetri --> n6_Alarm
+    n6_Alarm --> n7_SNSNotification
+    n7_SNSNotification --> n8_SOCInvestigation

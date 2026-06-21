@@ -1,0 +1,35 @@
+flowchart TB
+    n1_LinuxDirectoryStructure["Linux Directory Structure"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_LinuxDirectoryStructure fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_node["/"]
+    style n3_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_bin["├── bin"]
+    style n4_bin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_etc["├── etc"]
+    style n5_etc fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_home["├── home"]
+    style n6_home fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_var["├── var"]
+    style n7_var fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_usr["├── usr"]
+    style n8_usr fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_tmp["├── tmp"]
+    style n9_tmp fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_dev["├── dev"]
+    style n10_dev fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_proc["├── proc"]
+    style n11_proc fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n12_boot["└── boot"]
+    style n12_boot fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_node --> n4_bin
+        n4_bin --> n5_etc
+        n5_etc --> n6_home
+        n6_home --> n7_var
+        n7_var --> n8_usr
+        n8_usr --> n9_tmp
+        n9_tmp --> n10_dev
+        n10_dev --> n11_proc
+        n11_proc --> n12_boot
+    end

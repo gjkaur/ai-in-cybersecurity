@@ -1,0 +1,33 @@
+flowchart TB
+    n1_ControlledRemediationWor["Controlled Remediation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ControlledRemediationWor fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityFinding["Security Finding"]
+    style n2_SecurityFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Prioritize["Prioritize"]
+    style n3_Prioritize fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AssessImpact["Assess Impact"]
+    style n4_AssessImpact fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_DevelopFix["Develop Fix"]
+    style n5_DevelopFix fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Test["Test"]
+    style n6_Test fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Approve["Approve"]
+    style n7_Approve fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Deploy["Deploy"]
+    style n8_Deploy fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Validate["Validate"]
+    style n9_Validate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_Document["Document"]
+    style n10_Document fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_CloseFinding["Close Finding"]
+    style n11_CloseFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityFinding --> n3_Prioritize
+    n3_Prioritize --> n4_AssessImpact
+    n4_AssessImpact --> n5_DevelopFix
+    n5_DevelopFix --> n6_Test
+    n6_Test --> n7_Approve
+    n7_Approve --> n8_Deploy
+    n8_Deploy --> n9_Validate
+    n9_Validate --> n10_Document
+    n10_Document --> n11_CloseFinding

@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyRootAccountSecurityMa["Why Root Account Security Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyRootAccountSecurityMa fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CompromisedRootUser["Compromised Root User"]
+    style n2_CompromisedRootUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_FullAdministrativeContro["Full Administrative Control"]
+    style n3_FullAdministrativeContro fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CompleteAccountTakeover["Complete Account Takeover"]
+    style n4_CompleteAccountTakeover fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CompromisedRootUser --> n3_FullAdministrativeContro
+    n3_FullAdministrativeContro --> n4_CompleteAccountTakeover

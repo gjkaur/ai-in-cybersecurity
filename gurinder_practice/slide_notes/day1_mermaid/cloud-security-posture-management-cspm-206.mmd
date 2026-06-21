@@ -1,0 +1,12 @@
+flowchart TB
+    n1_AWSConfig["AWS Config"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AWSConfig fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityGroupChanges["Security Group Changes"]
+    style n2_SecurityGroupChanges fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ConfigurationHistory["Configuration History"]
+    style n3_ConfigurationHistory fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ComplianceEvaluation["Compliance Evaluation"]
+    style n4_ComplianceEvaluation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityGroupChanges --> n3_ConfigurationHistory
+    n3_ConfigurationHistory --> n4_ComplianceEvaluation

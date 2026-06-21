@@ -1,0 +1,15 @@
+flowchart TB
+    n1_CorrelatedSequence["Correlated Sequence"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CorrelatedSequence fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_FailedLoginAttempts["Failed Login Attempts"]
+    style n2_FailedLoginAttempts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SuccessfulLogin["Successful Login"]
+    style n3_SuccessfulLogin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AdminPrivilegeGranted["Admin Privilege Granted"]
+    style n4_AdminPrivilegeGranted fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SensitiveDataAccess["Sensitive Data Access"]
+    style n5_SensitiveDataAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_FailedLoginAttempts --> n3_SuccessfulLogin
+    n3_SuccessfulLogin --> n4_AdminPrivilegeGranted
+    n4_AdminPrivilegeGranted --> n5_SensitiveDataAccess

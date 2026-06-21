@@ -1,0 +1,12 @@
+flowchart TB
+    n1_CommonMistake["Common Mistake"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CommonMistake fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_MoreAlerts["More Alerts"]
+    style n2_MoreAlerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MoreInvestigations["More Investigations"]
+    style n3_MoreInvestigations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_MoreNoise["More Noise"]
+    style n4_MoreNoise fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_MoreAlerts --> n3_MoreInvestigations
+    n3_MoreInvestigations --> n4_MoreNoise

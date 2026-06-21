@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Diagram216["Diagram 216"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Diagram216 fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_VPN["VPN"]
+    style n2_VPN fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AdminNetwork["Admin Network"]
+    style n3_AdminNetwork fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ManagementConsole["Management Console"]
+    style n4_ManagementConsole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_VPN --> n3_AdminNetwork
+    n3_AdminNetwork --> n4_ManagementConsole

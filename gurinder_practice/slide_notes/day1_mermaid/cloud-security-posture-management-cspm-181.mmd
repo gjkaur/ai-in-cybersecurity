@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyRootAccountSecurityMa["Why Root Account Security Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyRootAccountSecurityMa fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CompromisedIAMUser["Compromised IAM User"]
+    style n2_CompromisedIAMUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LimitedPermissions["Limited Permissions"]
+    style n3_LimitedPermissions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_LimitedDamage["Limited Damage"]
+    style n4_LimitedDamage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CompromisedIAMUser --> n3_LimitedPermissions
+    n3_LimitedPermissions --> n4_LimitedDamage

@@ -1,0 +1,20 @@
+flowchart TB
+    n1_InboundTraffic["Inbound Traffic"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_InboundTraffic fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_SSH["SSH"]
+    style n3_SSH fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_HTTPS["HTTPS"]
+    style n4_HTTPS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_HTTP["HTTP"]
+    style n5_HTTP fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RDP["RDP"]
+    style n6_RDP fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_DatabaseConnections["Database Connections"]
+    style n7_DatabaseConnections fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_SSH --> n4_HTTPS
+        n4_HTTPS --> n5_HTTP
+        n5_HTTP --> n6_RDP
+        n6_RDP --> n7_DatabaseConnections
+    end

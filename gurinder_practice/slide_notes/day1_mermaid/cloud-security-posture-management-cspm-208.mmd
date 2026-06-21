@@ -1,0 +1,14 @@
+flowchart TB
+    n1_ExampleSecureArchitectur["Example Secure Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleSecureArchitectur fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_443Internet["443 → Internet"]
+    style n3_443Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_8080WebTierOnly["8080 → Web Tier Only"]
+    style n4_8080WebTierOnly fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_3306AppTierOnly["3306 → App Tier Only"]
+    style n5_3306AppTierOnly fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_443Internet --> n4_8080WebTierOnly
+        n4_8080WebTierOnly --> n5_3306AppTierOnly
+    end

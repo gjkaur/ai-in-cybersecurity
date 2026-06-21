@@ -1,0 +1,27 @@
+flowchart TB
+    n1_CloudWatchSOCDashboardEx["CloudWatch SOC Dashboard Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CloudWatchSOCDashboardEx fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_FailedLoginTrend["Failed Login Trend"]
+    style n2_FailedLoginTrend fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LineChart["(Line Chart)"]
+    style n3_LineChart fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TopSourceIPs["Top Source IPs"]
+    style n4_TopSourceIPs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_BarChart["(Bar Chart)"]
+    style n5_BarChart fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RecentFailedEvents["Recent Failed Events"]
+    style n6_RecentFailedEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_LogsTable["(Logs Table)"]
+    style n7_LogsTable fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_AuthenticationAlarm["Authentication Alarm"]
+    style n8_AuthenticationAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_AlarmStatus["(Alarm Status)"]
+    style n9_AlarmStatus fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_FailedLoginTrend --> n3_LineChart
+    n3_LineChart --> n4_TopSourceIPs
+    n4_TopSourceIPs --> n5_BarChart
+    n5_BarChart --> n6_RecentFailedEvents
+    n6_RecentFailedEvents --> n7_LogsTable
+    n7_LogsTable --> n8_AuthenticationAlarm
+    n8_AuthenticationAlarm --> n9_AlarmStatus

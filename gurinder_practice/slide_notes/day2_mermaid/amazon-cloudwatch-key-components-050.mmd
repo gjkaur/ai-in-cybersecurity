@@ -1,0 +1,21 @@
+flowchart TB
+    n1_WhytheCloudWatchAgentExi["Why the CloudWatch Agent Exists"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhytheCloudWatchAgentExi fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_EC2Instance["EC2 Instance"]
+    style n2_EC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ApplicationLogs["├─ Application Logs"]
+    style n3_ApplicationLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AuthLogs["├─ Auth Logs"]
+    style n4_AuthLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SystemLogs["├─ System Logs"]
+    style n5_SystemLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CustomMetrics["└─ Custom Metrics"]
+    style n6_CustomMetrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CloudWatchCannotSeeThese["CloudWatch ❌ Cannot See These"]
+    style n7_CloudWatchCannotSeeThese fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_EC2Instance --> n3_ApplicationLogs
+    n3_ApplicationLogs --> n4_AuthLogs
+    n4_AuthLogs --> n5_SystemLogs
+    n5_SystemLogs --> n6_CustomMetrics
+    n6_CustomMetrics --> n7_CloudWatchCannotSeeThese

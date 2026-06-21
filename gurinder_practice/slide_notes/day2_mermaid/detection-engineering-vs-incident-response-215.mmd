@@ -1,0 +1,24 @@
+flowchart TB
+    n1_DetectionEngineerWorkflo["Detection Engineer Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_DetectionEngineerWorkflo fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_GenerateActivity["Generate Activity"]
+    style n2_GenerateActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_InspectauditdLogs["Inspect auditd Logs"]
+    style n3_InspectauditdLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_IdentifyKeyFields["Identify Key Fields"]
+    style n4_IdentifyKeyFields fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_BuildFilter["Build Filter"]
+    style n5_BuildFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CreateMetric["Create Metric"]
+    style n6_CreateMetric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CreateAlarm["Create Alarm"]
+    style n7_CreateAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_ValidateDetection["Validate Detection"]
+    style n8_ValidateDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_GenerateActivity --> n3_InspectauditdLogs
+    n3_InspectauditdLogs --> n4_IdentifyKeyFields
+    n4_IdentifyKeyFields --> n5_BuildFilter
+    n5_BuildFilter --> n6_CreateMetric
+    n6_CreateMetric --> n7_CreateAlarm
+    n7_CreateAlarm --> n8_ValidateDetection

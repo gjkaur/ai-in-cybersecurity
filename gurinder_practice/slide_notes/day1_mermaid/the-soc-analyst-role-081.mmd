@@ -1,0 +1,17 @@
+flowchart TB
+    n1_SIEMExample["SIEM Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SIEMExample fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_WindowsLogs["Windows Logs"]
+    style n3_WindowsLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_FirewallLogs["Firewall Logs"]
+    style n4_FirewallLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AWSLogs["AWS Logs"]
+    style n5_AWSLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_LinuxLogs["Linux Logs"]
+    style n6_LinuxLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_WindowsLogs --> n4_FirewallLogs
+        n4_FirewallLogs --> n5_AWSLogs
+        n5_AWSLogs --> n6_LinuxLogs
+    end

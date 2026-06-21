@@ -1,0 +1,27 @@
+flowchart TB
+    n1_AnalystInvestigationWork["Analyst Investigation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AnalystInvestigationWork fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_EnumerateIAMUsersRoles["Enumerate IAM Users & Roles"]
+    style n2_EnumerateIAMUsersRoles fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ReviewAttachedPolicies["Review Attached Policies"]
+    style n3_ReviewAttachedPolicies fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_IdentifyWildcards["Identify Wildcards"]
+    style n4_IdentifyWildcards fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ReviewTrustRelationships["Review Trust Relationships"]
+    style n5_ReviewTrustRelationships fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CheckKeyAgeMFA["Check Key Age & MFA"]
+    style n6_CheckKeyAgeMFA fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ValidateActualUsage["Validate Actual Usage"]
+    style n7_ValidateActualUsage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_DocumentFindings["Document Findings"]
+    style n8_DocumentFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_RecommendLeastPrivilegeF["Recommend Least Privilege Fixes"]
+    style n9_RecommendLeastPrivilegeF fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_EnumerateIAMUsersRoles --> n3_ReviewAttachedPolicies
+    n3_ReviewAttachedPolicies --> n4_IdentifyWildcards
+    n4_IdentifyWildcards --> n5_ReviewTrustRelationships
+    n5_ReviewTrustRelationships --> n6_CheckKeyAgeMFA
+    n6_CheckKeyAgeMFA --> n7_ValidateActualUsage
+    n7_ValidateActualUsage --> n8_DocumentFindings
+    n8_DocumentFindings --> n9_RecommendLeastPrivilegeF

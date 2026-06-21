@@ -1,0 +1,24 @@
+flowchart TB
+    n1_AWSSecurityArchitecture["AWS Security Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AWSSecurityArchitecture fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AWSResources["AWS Resources"]
+    style n2_AWSResources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudTrailLogs["CloudTrail Logs"]
+    style n3_CloudTrailLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_GuardDutyThreatDetection["GuardDuty Threat Detection"]
+    style n4_GuardDutyThreatDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SecurityHub["Security Hub"]
+    style n5_SecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AWSConfigFindings["AWS Config Findings"]
+    style n6_AWSConfigFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_InspectorVulnerabilities["Inspector Vulnerabilities"]
+    style n7_InspectorVulnerabilities fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_IAMAccessAnalyzerFinding["IAM Access Analyzer Findings"]
+    style n8_IAMAccessAnalyzerFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AWSResources --> n3_CloudTrailLogs
+    n3_CloudTrailLogs --> n4_GuardDutyThreatDetection
+    n4_GuardDutyThreatDetection --> n5_SecurityHub
+    n5_SecurityHub --> n6_AWSConfigFindings
+    n6_AWSConfigFindings --> n7_InspectorVulnerabilities
+    n7_InspectorVulnerabilities --> n8_IAMAccessAnalyzerFinding

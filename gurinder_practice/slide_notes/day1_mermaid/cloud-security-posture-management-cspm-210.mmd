@@ -1,0 +1,15 @@
+flowchart TB
+    n1_HighRiskMisconfiguration["High-Risk Misconfiguration #1: SSH Open to the Internet"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HighRiskMisconfiguration fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Internet["Internet"]
+    style n2_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Port22Open["Port 22 Open"]
+    style n3_Port22Open fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SSHService["SSH Service"]
+    style n4_SSHService fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_PasswordKeyAttacks["Password / Key Attacks"]
+    style n5_PasswordKeyAttacks fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Internet --> n3_Port22Open
+    n3_Port22Open --> n4_SSHService
+    n4_SSHService --> n5_PasswordKeyAttacks

@@ -1,0 +1,12 @@
+flowchart TB
+    n1_SSHSolvedThisProblem["SSH Solved This Problem"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SSHSolvedThisProblem fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Laptop["Laptop"]
+    style n2_Laptop fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EncryptedTunnel["Encrypted Tunnel"]
+    style n3_EncryptedTunnel fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Server["Server"]
+    style n4_Server fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Laptop --> n3_EncryptedTunnel
+    n3_EncryptedTunnel --> n4_Server

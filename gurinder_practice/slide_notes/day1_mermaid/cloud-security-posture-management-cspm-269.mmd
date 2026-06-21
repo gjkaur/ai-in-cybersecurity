@@ -1,0 +1,18 @@
+flowchart TB
+    n1_PublicS3BucketDetection["Public S3 Bucket Detection"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_PublicS3BucketDetection fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_BucketPolicyModified["Bucket Policy Modified"]
+    style n2_BucketPolicyModified fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AWSConfigDetectsChange["AWS Config Detects Change"]
+    style n3_AWSConfigDetectsChange fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RuleFails["Rule Fails"]
+    style n4_RuleFails fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SecurityHubFinding["Security Hub Finding"]
+    style n5_SecurityHubFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AlertSent["Alert Sent"]
+    style n6_AlertSent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_BucketPolicyModified --> n3_AWSConfigDetectsChange
+    n3_AWSConfigDetectsChange --> n4_RuleFails
+    n4_RuleFails --> n5_SecurityHubFinding
+    n5_SecurityHubFinding --> n6_AlertSent

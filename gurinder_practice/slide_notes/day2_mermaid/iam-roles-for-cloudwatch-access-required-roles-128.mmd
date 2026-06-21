@@ -1,0 +1,18 @@
+flowchart TB
+    n1_WhereAlarmsFit["Where Alarms Fit"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhereAlarmsFit fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Logs["Logs"]
+    style n2_Logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MetricFilters["Metric Filters"]
+    style n3_MetricFilters fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Metrics["Metrics"]
+    style n4_Metrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Alarms["Alarms"]
+    style n5_Alarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_NotificationsAutomation["Notifications / Automation"]
+    style n6_NotificationsAutomation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Logs --> n3_MetricFilters
+    n3_MetricFilters --> n4_Metrics
+    n4_Metrics --> n5_Alarms
+    n5_Alarms --> n6_NotificationsAutomation

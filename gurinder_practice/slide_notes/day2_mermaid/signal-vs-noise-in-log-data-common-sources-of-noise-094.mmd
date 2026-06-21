@@ -1,0 +1,17 @@
+flowchart TB
+    n1_WhyIAMMattersforCloudWat["Why IAM Matters for CloudWatch"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyIAMMattersforCloudWat fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_CloudWatchAgentCannotsen["CloudWatch Agent → Cannot send logs"]
+    style n3_CloudWatchAgentCannotsen fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchCannotaccessre["CloudWatch → Cannot access resources"]
+    style n4_CloudWatchCannotaccessre fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AIOperationsCannotinvest["AI Operations → Cannot investigate data"]
+    style n5_AIOperationsCannotinvest fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AnalystsCannotviewresult["Analysts → Cannot view results"]
+    style n6_AnalystsCannotviewresult fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_CloudWatchAgentCannotsen --> n4_CloudWatchCannotaccessre
+        n4_CloudWatchCannotaccessre --> n5_AIOperationsCannotinvest
+        n5_AIOperationsCannotinvest --> n6_AnalystsCannotviewresult
+    end

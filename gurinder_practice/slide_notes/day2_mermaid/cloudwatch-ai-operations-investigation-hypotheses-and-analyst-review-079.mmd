@@ -1,0 +1,24 @@
+flowchart TB
+    n1_TheTraditionalInvestigat["The Traditional Investigation Problem"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TheTraditionalInvestigat fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AlertReceived["Alert Received"]
+    style n2_AlertReceived fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_OpenLogs["Open Logs"]
+    style n3_OpenLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SearchEvents["Search Events"]
+    style n4_SearchEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CorrelateEvidence["Correlate Evidence"]
+    style n5_CorrelateEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_FormHypothesis["Form Hypothesis"]
+    style n6_FormHypothesis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_DetermineImpact["Determine Impact"]
+    style n7_DetermineImpact fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_DecideResponse["Decide Response"]
+    style n8_DecideResponse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AlertReceived --> n3_OpenLogs
+    n3_OpenLogs --> n4_SearchEvents
+    n4_SearchEvents --> n5_CorrelateEvidence
+    n5_CorrelateEvidence --> n6_FormHypothesis
+    n6_FormHypothesis --> n7_DetermineImpact
+    n7_DetermineImpact --> n8_DecideResponse

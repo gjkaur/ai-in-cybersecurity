@@ -1,0 +1,21 @@
+flowchart TB
+    n1_OverPermissionedExample["Over-Permissioned Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_OverPermissionedExample fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_DeveloperRole["Developer Role"]
+    style n2_DeveloperRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AdministratorAccess["AdministratorAccess"]
+    style n3_AdministratorAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CanmodifyIAM["Can modify IAM"]
+    style n4_CanmodifyIAM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CandeleteS3buckets["Can delete S3 buckets"]
+    style n5_CandeleteS3buckets fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CanterminateEC2instances["Can terminate EC2 instances"]
+    style n6_CanterminateEC2instances fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Candisablelogging["Can disable logging"]
+    style n7_Candisablelogging fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_DeveloperRole --> n3_AdministratorAccess
+    n3_AdministratorAccess --> n4_CanmodifyIAM
+    n4_CanmodifyIAM --> n5_CandeleteS3buckets
+    n5_CandeleteS3buckets --> n6_CanterminateEC2instances
+    n6_CanterminateEC2instances --> n7_Candisablelogging

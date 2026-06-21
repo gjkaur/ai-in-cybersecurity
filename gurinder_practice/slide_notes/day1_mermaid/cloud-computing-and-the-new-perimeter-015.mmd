@@ -1,0 +1,29 @@
+flowchart TB
+    n1_WhatAboutToday["What About Today?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatAboutToday fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_AWS["AWS"]
+    style n3_AWS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Azure["Azure"]
+    style n4_Azure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_GoogleCloud["Google Cloud"]
+    style n5_GoogleCloud fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_EmployeesatHome["Employees at Home"]
+    style n6_EmployeesatHome fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_MobileDevices["Mobile Devices"]
+    style n7_MobileDevices fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_SaaSApplications["SaaS Applications"]
+    style n8_SaaSApplications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_APIs["APIs"]
+    style n9_APIs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_Partners["Partners"]
+    style n10_Partners fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_AWS --> n4_Azure
+        n4_Azure --> n5_GoogleCloud
+        n5_GoogleCloud --> n6_EmployeesatHome
+        n6_EmployeesatHome --> n7_MobileDevices
+        n7_MobileDevices --> n8_SaaSApplications
+        n8_SaaSApplications --> n9_APIs
+        n9_APIs --> n10_Partners
+    end

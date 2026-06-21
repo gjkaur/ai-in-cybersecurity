@@ -1,0 +1,17 @@
+flowchart TB
+    n1_Definition["Definition"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Definition fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_useast1["us-east-1"]
+    style n3_useast1 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_useast1a["├── us-east-1a"]
+    style n4_useast1a fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_useast1b["├── us-east-1b"]
+    style n5_useast1b fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_useast1c["├── us-east-1c"]
+    style n6_useast1c fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_useast1 --> n4_useast1a
+        n4_useast1a --> n5_useast1b
+        n5_useast1b --> n6_useast1c
+    end

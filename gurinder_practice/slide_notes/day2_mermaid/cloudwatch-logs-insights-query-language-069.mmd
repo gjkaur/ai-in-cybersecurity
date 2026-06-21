@@ -1,0 +1,18 @@
+flowchart TB
+    n1_HowAIQueryGenerationWork["How AI Query Generation Works"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HowAIQueryGenerationWork fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_NaturalLanguagePrompt["Natural Language Prompt"]
+    style n2_NaturalLanguagePrompt fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AWSAIModel["AWS AI Model"]
+    style n3_AWSAIModel fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_LogsInsightsQuery["Logs Insights Query"]
+    style n4_LogsInsightsQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AnalystReview["Analyst Review"]
+    style n5_AnalystReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RunQuery["Run Query"]
+    style n6_RunQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_NaturalLanguagePrompt --> n3_AWSAIModel
+    n3_AWSAIModel --> n4_LogsInsightsQuery
+    n4_LogsInsightsQuery --> n5_AnalystReview
+    n5_AnalystReview --> n6_RunQuery

@@ -1,0 +1,18 @@
+flowchart TB
+    n1_RiskyPolicy["Risky Policy"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RiskyPolicy fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_IdentifyActualUsage["Identify Actual Usage"]
+    style n2_IdentifyActualUsage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CreateScopedPolicy["Create Scoped Policy"]
+    style n3_CreateScopedPolicy fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Test["Test"]
+    style n4_Test fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Deploy["Deploy"]
+    style n5_Deploy fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Monitor["Monitor"]
+    style n6_Monitor fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_IdentifyActualUsage --> n3_CreateScopedPolicy
+    n3_CreateScopedPolicy --> n4_Test
+    n4_Test --> n5_Deploy
+    n5_Deploy --> n6_Monitor

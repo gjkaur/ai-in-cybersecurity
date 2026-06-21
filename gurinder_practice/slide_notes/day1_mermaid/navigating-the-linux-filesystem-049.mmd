@@ -1,0 +1,37 @@
+flowchart TB
+    n1_node["/"]
+    style n1_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_etc["├── etc"]
+    n3_Config["(Config)"]
+    style n2_etc fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n3_Config fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_node --> n2_etc
+    n1_node --> n3_Config
+    n4_home["├── home"]
+    n5_Users["(Users)"]
+    style n4_home fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n5_Users fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n2_etc --> n4_home
+    n3_Config --> n5_Users
+    n6_var["├── var"]
+    n7_Logs["(Logs)"]
+    style n6_var fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n7_Logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_var --- n7_Logs
+    n8_tmp["├── tmp"]
+    n9_TemporaryFiles["(Temporary Files)"]
+    style n8_tmp fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n9_TemporaryFiles fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n6_var --> n8_tmp
+    n7_Logs --> n9_TemporaryFiles
+    n10_proc["├── proc"]
+    n11_Processes["(Processes)"]
+    style n10_proc fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n11_Processes fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_proc --- n11_Processes
+    n12_boot["└── boot"]
+    n13_StartupFiles["(Startup Files)"]
+    style n12_boot fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n13_StartupFiles fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n10_proc --> n12_boot
+    n11_Processes --> n13_StartupFiles

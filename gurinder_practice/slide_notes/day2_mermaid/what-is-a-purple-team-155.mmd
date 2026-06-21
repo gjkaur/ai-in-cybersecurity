@@ -1,0 +1,18 @@
+flowchart TB
+    n1_ExampleDashboardArchitec["Example Dashboard Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleDashboardArchitec fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ExecutiveSummary["Executive Summary"]
+    style n2_ExecutiveSummary fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ThreatOverview["Threat Overview"]
+    style n3_ThreatOverview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AlertStatistics["Alert Statistics"]
+    style n4_AlertStatistics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_TopAttackSources["Top Attack Sources"]
+    style n5_TopAttackSources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_InvestigationDetail["Investigation Detail"]
+    style n6_InvestigationDetail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ExecutiveSummary --> n3_ThreatOverview
+    n3_ThreatOverview --> n4_AlertStatistics
+    n4_AlertStatistics --> n5_TopAttackSources
+    n5_TopAttackSources --> n6_InvestigationDetail

@@ -1,0 +1,15 @@
+flowchart TB
+    n1_3AlwaysHaveaRollbackPlan["3. Always Have a Rollback Plan"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_3AlwaysHaveaRollbackPlan fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CurrentStateSaved["Current State Saved"]
+    style n2_CurrentStateSaved fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ChangeApplied["Change Applied"]
+    style n3_ChangeApplied fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Problem["Problem?"]
+    style n4_Problem fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Rollback["Rollback"]
+    style n5_Rollback fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CurrentStateSaved --> n3_ChangeApplied
+    n3_ChangeApplied --> n4_Problem
+    n4_Problem --> n5_Rollback

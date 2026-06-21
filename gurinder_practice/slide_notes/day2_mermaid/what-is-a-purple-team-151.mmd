@@ -1,0 +1,15 @@
+flowchart TB
+    n1_RedTeamPerspective["Red Team Perspective"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RedTeamPerspective fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_GainAccess["Gain Access"]
+    style n2_GainAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EnumerateEnvironment["Enumerate Environment"]
+    style n3_EnumerateEnvironment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_FindWeaknesses["Find Weaknesses"]
+    style n4_FindWeaknesses fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_EscalatePrivileges["Escalate Privileges"]
+    style n5_EscalatePrivileges fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_GainAccess --> n3_EnumerateEnvironment
+    n3_EnumerateEnvironment --> n4_FindWeaknesses
+    n4_FindWeaknesses --> n5_EscalatePrivileges

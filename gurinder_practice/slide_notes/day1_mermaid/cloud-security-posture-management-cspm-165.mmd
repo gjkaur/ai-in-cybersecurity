@@ -1,0 +1,18 @@
+flowchart TB
+    n1_CombinedArchitecture["Combined Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CombinedArchitecture fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AWSResources["AWS Resources"]
+    style n2_AWSResources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AWSConfigRules["AWS Config Rules"]
+    style n3_AWSConfigRules fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityFindings["Security Findings"]
+    style n4_SecurityFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AWSSecurityHub["AWS Security Hub"]
+    style n5_AWSSecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_DashboardAlerts["Dashboard & Alerts"]
+    style n6_DashboardAlerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AWSResources --> n3_AWSConfigRules
+    n3_AWSConfigRules --> n4_SecurityFindings
+    n4_SecurityFindings --> n5_AWSSecurityHub
+    n5_AWSSecurityHub --> n6_DashboardAlerts

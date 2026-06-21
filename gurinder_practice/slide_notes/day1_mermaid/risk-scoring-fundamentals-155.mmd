@@ -1,0 +1,24 @@
+flowchart TB
+    n1_HumanintheLoopLifecycle["Human-in-the-Loop Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HumanintheLoopLifecycle fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Prompt["Prompt"]
+    style n2_Prompt fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIGeneratesOutput["AI Generates Output"]
+    style n3_AIGeneratesOutput fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_HumanReview["Human Review"]
+    style n4_HumanReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Testing["Testing"]
+    style n5_Testing fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_SecurityValidation["Security Validation"]
+    style n6_SecurityValidation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Documentation["Documentation"]
+    style n7_Documentation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_ApprovalDeployment["Approval / Deployment"]
+    style n8_ApprovalDeployment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Prompt --> n3_AIGeneratesOutput
+    n3_AIGeneratesOutput --> n4_HumanReview
+    n4_HumanReview --> n5_Testing
+    n5_Testing --> n6_SecurityValidation
+    n6_SecurityValidation --> n7_Documentation
+    n7_Documentation --> n8_ApprovalDeployment

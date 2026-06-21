@@ -1,0 +1,18 @@
+flowchart TB
+    n1_RestrictingAccesstoaSpec["Restricting Access to a Specific Folder"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RestrictingAccesstoaSpec fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_trainingdata["training-data"]
+    style n2_trainingdata fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_reports["├── reports/"]
+    style n3_reports fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_finance["├── finance/"]
+    style n4_finance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_backups["├── backups/"]
+    style n5_backups fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_logs["└── logs/"]
+    style n6_logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_trainingdata --> n3_reports
+    n3_reports --> n4_finance
+    n4_finance --> n5_backups
+    n5_backups --> n6_logs

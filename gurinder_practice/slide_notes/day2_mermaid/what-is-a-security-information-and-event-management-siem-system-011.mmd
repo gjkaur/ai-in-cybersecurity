@@ -1,0 +1,12 @@
+flowchart TB
+    n1_1LogAggregation["1. Log Aggregation"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_1LogAggregation fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogSources["Log Sources"]
+    style n2_LogSources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SIEM["SIEM"]
+    style n3_SIEM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CentralRepository["Central Repository"]
+    style n4_CentralRepository fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogSources --> n3_SIEM
+    n3_SIEM --> n4_CentralRepository

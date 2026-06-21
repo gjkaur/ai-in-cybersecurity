@@ -1,0 +1,9 @@
+flowchart TB
+    n1_TestingforFalseNegatives["Testing for False Negatives"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TestingforFalseNegatives fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_MaliciousActivity["Malicious Activity"]
+    style n2_MaliciousActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_NoDetection["No Detection"]
+    style n3_NoDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_MaliciousActivity --> n3_NoDetection

@@ -1,0 +1,9 @@
+flowchart TB
+    n1_WhyRawLogsCannotTriggerA["Why Raw Logs Cannot Trigger Alarms"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyRawLogsCannotTriggerA fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogEntry["Log Entry"]
+    style n2_LogEntry fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_StoredOnly["Stored Only"]
+    style n3_StoredOnly fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogEntry --> n3_StoredOnly

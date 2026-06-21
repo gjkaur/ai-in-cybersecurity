@@ -1,0 +1,27 @@
+flowchart TB
+    n1_ExampleSecurityAutomatio["Example Security Automation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleSecurityAutomatio fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityLogs["Security Logs"]
+    style n2_SecurityLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ReadFiles["Read Files"]
+    style n3_ReadFiles fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ParseJSON["Parse JSON"]
+    style n4_ParseJSON fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ExtractFieldsRegex["Extract Fields (Regex)"]
+    style n5_ExtractFieldsRegex fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CountEvents["Count Events"]
+    style n6_CountEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CalculateRiskScores["Calculate Risk Scores"]
+    style n7_CalculateRiskScores fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_GenerateCSVReport["Generate CSV Report"]
+    style n8_GenerateCSVReport fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_AnalystReview["Analyst Review"]
+    style n9_AnalystReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityLogs --> n3_ReadFiles
+    n3_ReadFiles --> n4_ParseJSON
+    n4_ParseJSON --> n5_ExtractFieldsRegex
+    n5_ExtractFieldsRegex --> n6_CountEvents
+    n6_CountEvents --> n7_CalculateRiskScores
+    n7_CalculateRiskScores --> n8_GenerateCSVReport
+    n8_GenerateCSVReport --> n9_AnalystReview

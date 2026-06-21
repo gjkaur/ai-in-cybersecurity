@@ -1,0 +1,24 @@
+flowchart TB
+    n1_VisualDiagramforWhiteboa["Visual Diagram for Whiteboard"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_VisualDiagramforWhiteboa fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_YourLaptop["Your Laptop"]
+    style n2_YourLaptop fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_PrivateKey["Private Key"]
+    style n3_PrivateKey fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_mykeypem["(mykey.pem)"]
+    style n4_mykeypem fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SSH["SSH"]
+    style n5_SSH fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_EC2Server["EC2 Server"]
+    style n6_EC2Server fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_PublicKey["Public Key"]
+    style n7_PublicKey fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_authorizedkeys["authorized_keys"]
+    style n8_authorizedkeys fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_YourLaptop --> n3_PrivateKey
+    n3_PrivateKey --> n4_mykeypem
+    n4_mykeypem --> n5_SSH
+    n5_SSH --> n6_EC2Server
+    n6_EC2Server --> n7_PublicKey
+    n7_PublicKey --> n8_authorizedkeys

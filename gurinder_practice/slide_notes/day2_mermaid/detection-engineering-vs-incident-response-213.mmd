@@ -1,0 +1,18 @@
+flowchart TB
+    n1_TypicalWorkflow["Typical Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TypicalWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_testattacker["testattacker"]
+    style n2_testattacker fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_attemptssudo["attempts sudo"]
+    style n3_attemptssudo fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_fails["fails"]
+    style n4_fails fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_auditdlogsevent["auditd logs event"]
+    style n5_auditdlogsevent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CloudWatchdetectsevent["CloudWatch detects event"]
+    style n6_CloudWatchdetectsevent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_testattacker --> n3_attemptssudo
+    n3_attemptssudo --> n4_fails
+    n4_fails --> n5_auditdlogsevent
+    n5_auditdlogsevent --> n6_CloudWatchdetectsevent

@@ -1,0 +1,18 @@
+flowchart TB
+    n1_HowLambdaExecutionRolesW["How Lambda Execution Roles Work"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HowLambdaExecutionRolesW fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LambdaFunction["Lambda Function"]
+    style n2_LambdaFunction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_RoleOrderProcessorRole["Role: OrderProcessorRole"]
+    style n3_RoleOrderProcessorRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_s3GetObject["├── s3:GetObject"]
+    style n4_s3GetObject fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_dynamodbPutItem["├── dynamodb:PutItem"]
+    style n5_dynamodbPutItem fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_logsPutLogEvents["└── logs:PutLogEvents"]
+    style n6_logsPutLogEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LambdaFunction --> n3_RoleOrderProcessorRole
+    n3_RoleOrderProcessorRole --> n4_s3GetObject
+    n4_s3GetObject --> n5_dynamodbPutItem
+    n5_dynamodbPutItem --> n6_logsPutLogEvents

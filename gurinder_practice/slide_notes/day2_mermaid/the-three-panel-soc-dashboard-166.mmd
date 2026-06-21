@@ -1,0 +1,15 @@
+flowchart TB
+    n1_TheDetectionEngineeringM["The Detection Engineering Mindset"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TheDetectionEngineeringM fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_WriteRule["Write Rule"]
+    style n2_WriteRule fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_TestRule["Test Rule"]
+    style n3_TestRule fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ValidateOutput["Validate Output"]
+    style n4_ValidateOutput fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Deploy["Deploy"]
+    style n5_Deploy fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_WriteRule --> n3_TestRule
+    n3_TestRule --> n4_ValidateOutput
+    n4_ValidateOutput --> n5_Deploy

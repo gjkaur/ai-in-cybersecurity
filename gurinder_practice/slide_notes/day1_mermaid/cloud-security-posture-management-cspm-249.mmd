@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Step1DocumenttheCurrentS["Step 1: Document the Current State"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step1DocumenttheCurrentS fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_BaselineEstablished["Baseline Established"]
+    style n2_BaselineEstablished fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EasyComparison["Easy Comparison"]
+    style n3_EasyComparison fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RollbackPossible["Rollback Possible"]
+    style n4_RollbackPossible fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_BaselineEstablished --> n3_EasyComparison
+    n3_EasyComparison --> n4_RollbackPossible

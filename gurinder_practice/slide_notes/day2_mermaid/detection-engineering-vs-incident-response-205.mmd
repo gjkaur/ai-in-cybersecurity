@@ -1,0 +1,18 @@
+flowchart TB
+    n1_TraditionalSOC["Traditional SOC"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TraditionalSOC fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Alert["Alert"]
+    style n2_Alert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Openlogs["Open logs"]
+    style n3_Openlogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Searchmanually["Search manually"]
+    style n4_Searchmanually fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Collectevidence["Collect evidence"]
+    style n5_Collectevidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Formhypothesis["Form hypothesis"]
+    style n6_Formhypothesis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Alert --> n3_Openlogs
+    n3_Openlogs --> n4_Searchmanually
+    n4_Searchmanually --> n5_Collectevidence
+    n5_Collectevidence --> n6_Formhypothesis

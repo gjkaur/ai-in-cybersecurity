@@ -1,0 +1,18 @@
+flowchart TB
+    n1_WhyControlledRemediation["Why Controlled Remediation Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyControlledRemediation fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityFinding["Security Finding"]
+    style n2_SecurityFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_RiskAssessment["Risk Assessment"]
+    style n3_RiskAssessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Testing["Testing"]
+    style n4_Testing fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ControlledDeployment["Controlled Deployment"]
+    style n5_ControlledDeployment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Validation["Validation"]
+    style n6_Validation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityFinding --> n3_RiskAssessment
+    n3_RiskAssessment --> n4_Testing
+    n4_Testing --> n5_ControlledDeployment
+    n5_ControlledDeployment --> n6_Validation

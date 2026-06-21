@@ -1,0 +1,12 @@
+flowchart TB
+    n1_NetworkLogs["Network Logs"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_NetworkLogs fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_InternalServer["Internal Server"]
+    style n2_InternalServer fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_UnknownRussianIP["Unknown Russian IP"]
+    style n3_UnknownRussianIP fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_500GBtransferred["500 GB transferred"]
+    style n4_500GBtransferred fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_InternalServer --> n3_UnknownRussianIP
+    n3_UnknownRussianIP --> n4_500GBtransferred

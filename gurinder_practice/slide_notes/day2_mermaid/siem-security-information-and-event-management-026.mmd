@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ExampleAWSSIEMWorkflow["Example AWS SIEM Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleAWSSIEMWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudTrail["CloudTrail"]
+    style n2_CloudTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchLogs["CloudWatch Logs"]
+    style n3_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityHub["Security Hub"]
+    style n4_SecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CorrelationRules["Correlation Rules"]
+    style n5_CorrelationRules fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CloudWatchAlarms["CloudWatch Alarms"]
+    style n6_CloudWatchAlarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SOCDashboard["SOC Dashboard"]
+    style n7_SOCDashboard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_SecurityAnalyst["Security Analyst"]
+    style n8_SecurityAnalyst fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudTrail --> n3_CloudWatchLogs
+    n3_CloudWatchLogs --> n4_SecurityHub
+    n4_SecurityHub --> n5_CorrelationRules
+    n5_CorrelationRules --> n6_CloudWatchAlarms
+    n6_CloudWatchAlarms --> n7_SOCDashboard
+    n7_SOCDashboard --> n8_SecurityAnalyst

@@ -1,0 +1,14 @@
+flowchart TB
+    n1_EndpointDetection["Endpoint Detection"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EndpointDetection fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Laptop["Laptop"]
+    style n3_Laptop fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Desktop["Desktop"]
+    style n4_Desktop fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Server["Server"]
+    style n5_Server fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Laptop --> n4_Desktop
+        n4_Desktop --> n5_Server
+    end

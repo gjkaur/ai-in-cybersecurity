@@ -1,0 +1,18 @@
+flowchart TB
+    n1_TraditionalInvestigation["Traditional Investigation Approach"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TraditionalInvestigation fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_10MillionLogs["10 Million Logs"]
+    style n2_10MillionLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ManualSearches["Manual Searches"]
+    style n3_ManualSearches fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ManualFiltering["Manual Filtering"]
+    style n4_ManualFiltering fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ManualCorrelation["Manual Correlation"]
+    style n5_ManualCorrelation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_PotentialFinding["Potential Finding"]
+    style n6_PotentialFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_10MillionLogs --> n3_ManualSearches
+    n3_ManualSearches --> n4_ManualFiltering
+    n4_ManualFiltering --> n5_ManualCorrelation
+    n5_ManualCorrelation --> n6_PotentialFinding

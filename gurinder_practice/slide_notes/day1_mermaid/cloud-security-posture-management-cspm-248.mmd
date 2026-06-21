@@ -1,0 +1,27 @@
+flowchart TB
+    n1_TheSafeRemediationWorkfl["The Safe Remediation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TheSafeRemediationWorkfl fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityFinding["Security Finding"]
+    style n2_SecurityFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DocumentCurrentState["Document Current State"]
+    style n3_DocumentCurrentState fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PlanMinimalChange["Plan Minimal Change"]
+    style n4_PlanMinimalChange fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ImplementChange["Implement Change"]
+    style n5_ImplementChange fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_TestFunctionality["Test Functionality"]
+    style n6_TestFunctionality fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_VerifySecurityFix["Verify Security Fix"]
+    style n7_VerifySecurityFix fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_DocumentResults["Document Results"]
+    style n8_DocumentResults fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_CloseFinding["Close Finding"]
+    style n9_CloseFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityFinding --> n3_DocumentCurrentState
+    n3_DocumentCurrentState --> n4_PlanMinimalChange
+    n4_PlanMinimalChange --> n5_ImplementChange
+    n5_ImplementChange --> n6_TestFunctionality
+    n6_TestFunctionality --> n7_VerifySecurityFix
+    n7_VerifySecurityFix --> n8_DocumentResults
+    n8_DocumentResults --> n9_CloseFinding

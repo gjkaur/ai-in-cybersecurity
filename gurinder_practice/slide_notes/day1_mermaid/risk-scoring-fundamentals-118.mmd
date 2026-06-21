@@ -1,0 +1,18 @@
+flowchart TB
+    n1_RecommendedWorkflow["Recommended Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RecommendedWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AskAI["Ask AI"]
+    style n2_AskAI fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ReviewCode["Review Code"]
+    style n3_ReviewCode fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TestSafely["Test Safely"]
+    style n4_TestSafely fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SecurityValidation["Security Validation"]
+    style n5_SecurityValidation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Deploy["Deploy"]
+    style n6_Deploy fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AskAI --> n3_ReviewCode
+    n3_ReviewCode --> n4_TestSafely
+    n4_TestSafely --> n5_SecurityValidation
+    n5_SecurityValidation --> n6_Deploy

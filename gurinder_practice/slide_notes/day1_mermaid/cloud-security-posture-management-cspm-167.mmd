@@ -1,0 +1,27 @@
+flowchart TB
+    n1_CSPMInvestigationWorkflo["CSPM Investigation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CSPMInvestigationWorkflo fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_DiscoverResources["Discover Resources"]
+    style n2_DiscoverResources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EvaluateConfigurations["Evaluate Configurations"]
+    style n3_EvaluateConfigurations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_IdentifyFindings["Identify Findings"]
+    style n4_IdentifyFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_MaptoComplianceControls["Map to Compliance Controls"]
+    style n5_MaptoComplianceControls fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_PrioritizeRisk["Prioritize Risk"]
+    style n6_PrioritizeRisk fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Remediate["Remediate"]
+    style n7_Remediate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_ValidateFix["Validate Fix"]
+    style n8_ValidateFix fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_ContinuousMonitoring["Continuous Monitoring"]
+    style n9_ContinuousMonitoring fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_DiscoverResources --> n3_EvaluateConfigurations
+    n3_EvaluateConfigurations --> n4_IdentifyFindings
+    n4_IdentifyFindings --> n5_MaptoComplianceControls
+    n5_MaptoComplianceControls --> n6_PrioritizeRisk
+    n6_PrioritizeRisk --> n7_Remediate
+    n7_Remediate --> n8_ValidateFix
+    n8_ValidateFix --> n9_ContinuousMonitoring

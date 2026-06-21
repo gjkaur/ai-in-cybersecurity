@@ -1,0 +1,20 @@
+flowchart TB
+    n1_Example["Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Example fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Server["Server"]
+    style n3_Server fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_authorizedkeys["authorized_keys"]
+    style n4_authorizedkeys fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AlicePublicKey["├── Alice Public Key"]
+    style n5_AlicePublicKey fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_BobPublicKey["├── Bob Public Key"]
+    style n6_BobPublicKey fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AdminPublicKey["└── Admin Public Key"]
+    style n7_AdminPublicKey fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Server --> n4_authorizedkeys
+        n4_authorizedkeys --> n5_AlicePublicKey
+        n5_AlicePublicKey --> n6_BobPublicKey
+        n6_BobPublicKey --> n7_AdminPublicKey
+    end

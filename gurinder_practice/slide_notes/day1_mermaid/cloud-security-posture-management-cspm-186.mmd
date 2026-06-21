@@ -1,0 +1,15 @@
+flowchart TB
+    n1_AvoidDailyUse["Avoid Daily Use"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AvoidDailyUse fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_RootAccount["Root Account"]
+    style n2_RootAccount fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Creates["Creates"]
+    style n3_Creates fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AdministratorIAMUser["Administrator IAM User"]
+    style n4_AdministratorIAMUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_DailyOperations["Daily Operations"]
+    style n5_DailyOperations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_RootAccount --> n3_Creates
+    n3_Creates --> n4_AdministratorIAMUser
+    n4_AdministratorIAMUser --> n5_DailyOperations

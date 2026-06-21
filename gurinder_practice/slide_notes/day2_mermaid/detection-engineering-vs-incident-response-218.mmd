@@ -1,0 +1,18 @@
+flowchart TB
+    n1_IdentifyingaDetectionGap["Identifying a Detection Gap"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_IdentifyingaDetectionGap fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ATTCKTechnique["ATT&CK Technique"]
+    style n2_ATTCKTechnique fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_NoLogSource["No Log Source"]
+    style n3_NoLogSource fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_OR["OR"]
+    style n4_OR fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_NoDetectionRule["No Detection Rule"]
+    style n5_NoDetectionRule fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_NoAlert["No Alert"]
+    style n6_NoAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ATTCKTechnique --> n3_NoLogSource
+    n3_NoLogSource --> n4_OR
+    n4_OR --> n5_NoDetectionRule
+    n5_NoDetectionRule --> n6_NoAlert

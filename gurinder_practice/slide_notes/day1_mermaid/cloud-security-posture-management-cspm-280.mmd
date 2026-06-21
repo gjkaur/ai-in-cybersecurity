@@ -1,0 +1,24 @@
+flowchart TB
+    n1_SecurityFindingsLifecycl["Security Findings Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SecurityFindingsLifecycl fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Assessment["Assessment"]
+    style n2_Assessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Baseline["Baseline"]
+    style n3_Baseline fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Remediation["Remediation"]
+    style n4_Remediation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Reassessment["Reassessment"]
+    style n5_Reassessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Comparison["Comparison"]
+    style n6_Comparison fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_NewBaseline["New Baseline"]
+    style n7_NewBaseline fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_ContinuousImprovement["Continuous Improvement"]
+    style n8_ContinuousImprovement fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Assessment --> n3_Baseline
+    n3_Baseline --> n4_Remediation
+    n4_Remediation --> n5_Reassessment
+    n5_Reassessment --> n6_Comparison
+    n6_Comparison --> n7_NewBaseline
+    n7_NewBaseline --> n8_ContinuousImprovement

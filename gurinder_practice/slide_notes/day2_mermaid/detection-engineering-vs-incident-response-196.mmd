@@ -1,0 +1,21 @@
+flowchart TB
+    n1_ThreattoDetectionWorkflo["Threat-to-Detection Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ThreattoDetectionWorkflo fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ThreatTechnique["Threat Technique"]
+    style n2_ThreatTechnique fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AuditSignal["Audit Signal"]
+    style n3_AuditSignal fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_MetricFilter["Metric Filter"]
+    style n4_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Metric["Metric"]
+    style n5_Metric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Alarm["Alarm"]
+    style n6_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Investigation["Investigation"]
+    style n7_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ThreatTechnique --> n3_AuditSignal
+    n3_AuditSignal --> n4_MetricFilter
+    n4_MetricFilter --> n5_Metric
+    n5_Metric --> n6_Alarm
+    n6_Alarm --> n7_Investigation

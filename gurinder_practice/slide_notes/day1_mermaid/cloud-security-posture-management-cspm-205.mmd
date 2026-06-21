@@ -1,0 +1,12 @@
+flowchart TB
+    n1_SecurityGroupReferencing["Security Group Referencing"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SecurityGroupReferencing fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_WebServerSG["Web Server SG"]
+    style n2_WebServerSG fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AllowsAccessTo["Allows Access To"]
+    style n3_AllowsAccessTo fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_DatabaseSG["Database SG"]
+    style n4_DatabaseSG fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_WebServerSG --> n3_AllowsAccessTo
+    n3_AllowsAccessTo --> n4_DatabaseSG

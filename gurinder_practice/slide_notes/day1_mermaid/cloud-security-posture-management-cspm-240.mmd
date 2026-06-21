@@ -1,0 +1,12 @@
+flowchart TB
+    n1_2MakeSmallChanges["2. Make Small Changes"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_2MakeSmallChanges fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_FixOneControl["Fix One Control"]
+    style n2_FixOneControl fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Validate["Validate"]
+    style n3_Validate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Proceed["Proceed"]
+    style n4_Proceed fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_FixOneControl --> n3_Validate
+    n3_Validate --> n4_Proceed

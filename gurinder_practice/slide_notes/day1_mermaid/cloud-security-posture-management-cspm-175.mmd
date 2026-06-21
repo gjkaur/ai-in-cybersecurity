@@ -1,0 +1,12 @@
+flowchart TB
+    n1_PortScanning["Port Scanning"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_PortScanning fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_EC2Instance["EC2 Instance"]
+    style n2_EC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ScanningHundredsofIPs["Scanning Hundreds of IPs"]
+    style n3_ScanningHundredsofIPs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ReconEC2Portscan["Recon:EC2/Portscan"]
+    style n4_ReconEC2Portscan fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_EC2Instance --> n3_ScanningHundredsofIPs
+    n3_ScanningHundredsofIPs --> n4_ReconEC2Portscan

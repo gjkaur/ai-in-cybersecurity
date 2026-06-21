@@ -1,0 +1,18 @@
+flowchart TB
+    n1_TypicalSSHAuthentication["Typical SSH Authentication Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TypicalSSHAuthentication fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Client["Client"]
+    style n2_Client fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SSHServersshd["SSH Server (sshd)"]
+    style n3_SSHServersshd fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AuthenticationAttempt["Authentication Attempt"]
+    style n4_AuthenticationAttempt fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SuccessorFailure["Success or Failure"]
+    style n5_SuccessorFailure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_LogGenerated["Log Generated"]
+    style n6_LogGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Client --> n3_SSHServersshd
+    n3_SSHServersshd --> n4_AuthenticationAttempt
+    n4_AuthenticationAttempt --> n5_SuccessorFailure
+    n5_SuccessorFailure --> n6_LogGenerated

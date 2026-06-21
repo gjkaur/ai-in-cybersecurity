@@ -1,0 +1,17 @@
+flowchart TB
+    n1_Step4CloudWatchCustomMet["Step 4 – CloudWatch Custom Metric"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step4CloudWatchCustomMet fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Event1Count1["Event #1 → Count = 1"]
+    style n3_Event1Count1 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Event2Count2["Event #2 → Count = 2"]
+    style n4_Event2Count2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Event3Count3["Event #3 → Count = 3"]
+    style n5_Event3Count3 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_node["..."]
+    style n6_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Event1Count1 --> n4_Event2Count2
+        n4_Event2Count2 --> n5_Event3Count3
+        n5_Event3Count3 --> n6_node
+    end

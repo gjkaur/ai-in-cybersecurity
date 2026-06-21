@@ -1,0 +1,85 @@
+flowchart TB
+    n1_CloudWatchArchitecture["CloudWatch Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CloudWatchArchitecture fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_AWSSERVICES["AWS SERVICES"]
+    style n3_AWSSERVICES fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_node["──────────────────────────"]
+    style n4_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_EC2["EC2"]
+    style n5_EC2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_S3["S3"]
+    style n6_S3 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_RDS["RDS"]
+    style n7_RDS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Lambda["Lambda"]
+    style n8_Lambda fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_VPC["VPC"]
+    style n9_VPC fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_CloudTrail["CloudTrail"]
+    style n10_CloudTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_GuardDuty["GuardDuty"]
+    style n11_GuardDuty fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n12_Config["Config"]
+    style n12_Config fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_AWSSERVICES --> n4_node
+        n4_node --> n5_EC2
+        n5_EC2 --> n6_S3
+        n6_S3 --> n7_RDS
+        n7_RDS --> n8_Lambda
+        n8_Lambda --> n9_VPC
+        n9_VPC --> n10_CloudTrail
+        n10_CloudTrail --> n11_GuardDuty
+        n11_GuardDuty --> n12_Config
+    end
+    n13_Config["Config"]
+    style n13_Config fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n14_MetricsLogs["│ Metrics & Logs"]
+    style n14_MetricsLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n15_AMAZONCLOUDWATCH["AMAZON CLOUDWATCH"]
+    style n15_AMAZONCLOUDWATCH fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n16_node["──────────────────────────"]
+    style n16_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n17_Metrics["Metrics"]
+    style n17_Metrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n18_Logs["Logs"]
+    style n18_Logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n19_Dashboards["Dashboards"]
+    style n19_Dashboards fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n20_Alarms["Alarms"]
+    style n20_Alarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n21_LogsInsights["Logs Insights"]
+    style n21_LogsInsights fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n22_AIOperations["AI Operations"]
+    style n22_AIOperations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n23_OPERATIONS["OPERATIONS"]
+    style n23_OPERATIONS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n24_node["──────────────────────────"]
+    style n24_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n25_Visualization["Visualization"]
+    style n25_Visualization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n26_Alerting["Alerting"]
+    style n26_Alerting fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n27_Investigation["Investigation"]
+    style n27_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n28_Automation["Automation"]
+    style n28_Automation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n29_IncidentResponse["Incident Response"]
+    style n29_IncidentResponse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n13_Config --> n14_MetricsLogs
+    n14_MetricsLogs --> n15_AMAZONCLOUDWATCH
+    n15_AMAZONCLOUDWATCH --> n16_node
+    n16_node --> n17_Metrics
+    n17_Metrics --> n18_Logs
+    n18_Logs --> n19_Dashboards
+    n19_Dashboards --> n20_Alarms
+    n20_Alarms --> n21_LogsInsights
+    n21_LogsInsights --> n22_AIOperations
+    n22_AIOperations --> n23_OPERATIONS
+    n23_OPERATIONS --> n24_node
+    n24_node --> n25_Visualization
+    n25_Visualization --> n26_Alerting
+    n26_Alerting --> n27_Investigation
+    n27_Investigation --> n28_Automation
+    n28_Automation --> n29_IncidentResponse

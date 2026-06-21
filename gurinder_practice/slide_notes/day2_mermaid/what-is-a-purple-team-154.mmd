@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhyDashboardsMatter["Why Dashboards Matter"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyDashboardsMatter fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Dashboard["Dashboard"]
+    style n2_Dashboard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_IdentifyAnomaly["Identify Anomaly"]
+    style n3_IdentifyAnomaly fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_DrillDown["Drill Down"]
+    style n4_DrillDown fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Investigate["Investigate"]
+    style n5_Investigate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Dashboard --> n3_IdentifyAnomaly
+    n3_IdentifyAnomaly --> n4_DrillDown
+    n4_DrillDown --> n5_Investigate

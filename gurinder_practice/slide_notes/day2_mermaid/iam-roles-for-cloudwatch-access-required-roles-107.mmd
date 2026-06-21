@@ -1,0 +1,15 @@
+flowchart TB
+    n1_TypicalSOCStrategy["Typical SOC Strategy"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TypicalSOCStrategy fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudWatchLogs["CloudWatch Logs"]
+    style n2_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_90Days["90 Days"]
+    style n3_90Days fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ArchivedtoS3["Archived to S3"]
+    style n4_ArchivedtoS3 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_17Years["1–7 Years"]
+    style n5_17Years fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudWatchLogs --> n3_90Days
+    n3_90Days --> n4_ArchivedtoS3
+    n4_ArchivedtoS3 --> n5_17Years

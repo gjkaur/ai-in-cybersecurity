@@ -1,0 +1,9 @@
+flowchart TB
+    n1_EnableMultiRegionTrails["Enable Multi-Region Trails"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EnableMultiRegionTrails fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AllAWSRegions["All AWS Regions"]
+    style n2_AllAWSRegions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SingleAuditTrail["Single Audit Trail"]
+    style n3_SingleAuditTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AllAWSRegions --> n3_SingleAuditTrail

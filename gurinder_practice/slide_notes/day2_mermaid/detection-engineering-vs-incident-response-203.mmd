@@ -1,0 +1,27 @@
+flowchart TB
+    n1_WhyThisSlideMatters["Why This Slide Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyThisSlideMatters fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LinuxActivity["Linux Activity"]
+    style n2_LinuxActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_auditdEvent["auditd Event"]
+    style n3_auditdEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchLog["CloudWatch Log"]
+    style n4_CloudWatchLog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_MetricFilter["Metric Filter"]
+    style n5_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CustomMetric["Custom Metric"]
+    style n6_CustomMetric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Alarm["Alarm"]
+    style n7_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_AIInvestigation["AI Investigation"]
+    style n8_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_SOCAnalyst["SOC Analyst"]
+    style n9_SOCAnalyst fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LinuxActivity --> n3_auditdEvent
+    n3_auditdEvent --> n4_CloudWatchLog
+    n4_CloudWatchLog --> n5_MetricFilter
+    n5_MetricFilter --> n6_CustomMetric
+    n6_CustomMetric --> n7_Alarm
+    n7_Alarm --> n8_AIInvestigation
+    n8_AIInvestigation --> n9_SOCAnalyst

@@ -1,0 +1,27 @@
+flowchart TB
+    n1_TheDetectionEngineeringW["The Detection Engineering Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TheDetectionEngineeringW fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ATTCKTechnique["ATT&CK Technique"]
+    style n2_ATTCKTechnique fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AttackerBehavior["Attacker Behavior"]
+    style n3_AttackerBehavior fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ObservableActivity["Observable Activity"]
+    style n4_ObservableActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_LogGeneration["Log Generation"]
+    style n5_LogGeneration fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_DetectionRule["Detection Rule"]
+    style n6_DetectionRule fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Metric["Metric"]
+    style n7_Metric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Alarm["Alarm"]
+    style n8_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Investigation["Investigation"]
+    style n9_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ATTCKTechnique --> n3_AttackerBehavior
+    n3_AttackerBehavior --> n4_ObservableActivity
+    n4_ObservableActivity --> n5_LogGeneration
+    n5_LogGeneration --> n6_DetectionRule
+    n6_DetectionRule --> n7_Metric
+    n7_Metric --> n8_Alarm
+    n8_Alarm --> n9_Investigation

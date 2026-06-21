@@ -1,0 +1,20 @@
+flowchart TB
+    n1_Virtualization["Virtualization"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Virtualization fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_PhysicalServer["Physical Server"]
+    style n3_PhysicalServer fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_VM1["├── VM1"]
+    style n4_VM1 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_VM2["├── VM2"]
+    style n5_VM2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_VM3["├── VM3"]
+    style n6_VM3 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_VM4["└── VM4"]
+    style n7_VM4 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_PhysicalServer --> n4_VM1
+        n4_VM1 --> n5_VM2
+        n5_VM2 --> n6_VM3
+        n6_VM3 --> n7_VM4
+    end

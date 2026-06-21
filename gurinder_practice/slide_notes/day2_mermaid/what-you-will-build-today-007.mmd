@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ProjectWorkflow["Project Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ProjectWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ChooseAttack["Choose Attack"]
+    style n2_ChooseAttack fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SimulateActivity["Simulate Activity"]
+    style n3_SimulateActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_GenerateLogs["Generate Logs"]
+    style n4_GenerateLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CreateDetectionLogic["Create Detection Logic"]
+    style n5_CreateDetectionLogic fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_TriggerAlert["Trigger Alert"]
+    style n6_TriggerAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_InvestigateEvidence["Investigate Evidence"]
+    style n7_InvestigateEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_WriteIncidentReport["Write Incident Report"]
+    style n8_WriteIncidentReport fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ChooseAttack --> n3_SimulateActivity
+    n3_SimulateActivity --> n4_GenerateLogs
+    n4_GenerateLogs --> n5_CreateDetectionLogic
+    n5_CreateDetectionLogic --> n6_TriggerAlert
+    n6_TriggerAlert --> n7_InvestigateEvidence
+    n7_InvestigateEvidence --> n8_WriteIncidentReport

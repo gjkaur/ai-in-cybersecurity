@@ -1,0 +1,12 @@
+flowchart TB
+    n1_RemoteWork["Remote Work"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RemoteWork fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Employee["Employee"]
+    style n2_Employee fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_HomeWiFi["Home WiFi"]
+    style n3_HomeWiFi fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudApplications["Cloud Applications"]
+    style n4_CloudApplications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Employee --> n3_HomeWiFi
+    n3_HomeWiFi --> n4_CloudApplications

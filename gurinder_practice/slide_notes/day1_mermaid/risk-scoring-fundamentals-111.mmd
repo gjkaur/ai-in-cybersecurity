@@ -1,0 +1,30 @@
+flowchart TB
+    n1_HumanintheLoopSecurity["Human-in-the-Loop Security"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HumanintheLoopSecurity fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AI["AI"]
+    style n2_AI fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Detect["Detect"]
+    style n3_Detect fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Analyze["Analyze"]
+    style n4_Analyze fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Prioritize["Prioritize"]
+    style n5_Prioritize fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_HumanAnalyst["Human Analyst"]
+    style n6_HumanAnalyst fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Validate["Validate"]
+    style n7_Validate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Investigate["Investigate"]
+    style n8_Investigate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Decide["Decide"]
+    style n9_Decide fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_Respond["Respond"]
+    style n10_Respond fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AI --> n3_Detect
+    n3_Detect --> n4_Analyze
+    n4_Analyze --> n5_Prioritize
+    n5_Prioritize --> n6_HumanAnalyst
+    n6_HumanAnalyst --> n7_Validate
+    n7_Validate --> n8_Investigate
+    n8_Investigate --> n9_Decide
+    n9_Decide --> n10_Respond

@@ -1,0 +1,27 @@
+flowchart TB
+    n1_PracticalLeastPrivilegeW["Practical Least-Privilege Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_PracticalLeastPrivilegeW fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CreateUserRole["Create User/Role"]
+    style n2_CreateUserRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_GrantMinimalAccess["Grant Minimal Access"]
+    style n3_GrantMinimalAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TestApplication["Test Application"]
+    style n4_TestApplication fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_MonitorUsage["Monitor Usage"]
+    style n5_MonitorUsage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_IdentifyUnusedPermission["Identify Unused Permissions"]
+    style n6_IdentifyUnusedPermission fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_RemoveExcessAccess["Remove Excess Access"]
+    style n7_RemoveExcessAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_PeriodicReview["Periodic Review"]
+    style n8_PeriodicReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Repeat["Repeat"]
+    style n9_Repeat fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CreateUserRole --> n3_GrantMinimalAccess
+    n3_GrantMinimalAccess --> n4_TestApplication
+    n4_TestApplication --> n5_MonitorUsage
+    n5_MonitorUsage --> n6_IdentifyUnusedPermission
+    n6_IdentifyUnusedPermission --> n7_RemoveExcessAccess
+    n7_RemoveExcessAccess --> n8_PeriodicReview
+    n8_PeriodicReview --> n9_Repeat

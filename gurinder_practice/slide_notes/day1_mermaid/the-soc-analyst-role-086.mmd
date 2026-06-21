@@ -1,0 +1,18 @@
+flowchart TB
+    n1_Logs["Logs"]
+    style n1_Logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SIEM["SIEM"]
+    style n2_SIEM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Tier1["Tier 1"]
+    style n3_Tier1 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Tier2["Tier 2"]
+    style n4_Tier2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Tier3["Tier 3"]
+    style n5_Tier3 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Response["Response"]
+    style n6_Response fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_Logs --> n2_SIEM
+    n2_SIEM --> n3_Tier1
+    n3_Tier1 --> n4_Tier2
+    n4_Tier2 --> n5_Tier3
+    n5_Tier3 --> n6_Response

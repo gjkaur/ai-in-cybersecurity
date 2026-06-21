@@ -1,0 +1,27 @@
+flowchart TB
+    n1_InvestigationWorkflowOve["Investigation Workflow Overview"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_InvestigationWorkflowOve fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AlertorEvent["Alert or Event"]
+    style n2_AlertorEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DefineInvestigationScope["Define Investigation Scope"]
+    style n3_DefineInvestigationScope fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CollectRelevantEvidence["Collect Relevant Evidence"]
+    style n4_CollectRelevantEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_GenerateHypotheses["Generate Hypotheses"]
+    style n5_GenerateHypotheses fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AnalyzeandCorrelateData["Analyze and Correlate Data"]
+    style n6_AnalyzeandCorrelateData fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_RankFindings["Rank Findings"]
+    style n7_RankFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_ProduceInvestigationRepo["Produce Investigation Report"]
+    style n8_ProduceInvestigationRepo fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_AnalystReviewandDecision["Analyst Review and Decision"]
+    style n9_AnalystReviewandDecision fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AlertorEvent --> n3_DefineInvestigationScope
+    n3_DefineInvestigationScope --> n4_CollectRelevantEvidence
+    n4_CollectRelevantEvidence --> n5_GenerateHypotheses
+    n5_GenerateHypotheses --> n6_AnalyzeandCorrelateData
+    n6_AnalyzeandCorrelateData --> n7_RankFindings
+    n7_RankFindings --> n8_ProduceInvestigationRepo
+    n8_ProduceInvestigationRepo --> n9_AnalystReviewandDecision

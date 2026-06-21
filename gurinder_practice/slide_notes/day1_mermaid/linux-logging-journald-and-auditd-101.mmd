@@ -1,0 +1,20 @@
+flowchart TB
+    n1_SystemServices["System Services"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SystemServices fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_nginx["nginx"]
+    style n3_nginx fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_apache["apache"]
+    style n4_apache fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_docker["docker"]
+    style n5_docker fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_cron["cron"]
+    style n6_cron fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_firewalld["firewalld"]
+    style n7_firewalld fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_nginx --> n4_apache
+        n4_apache --> n5_docker
+        n5_docker --> n6_cron
+        n6_cron --> n7_firewalld
+    end

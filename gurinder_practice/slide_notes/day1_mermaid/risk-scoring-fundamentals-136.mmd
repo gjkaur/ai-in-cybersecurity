@@ -1,0 +1,15 @@
+flowchart TB
+    n1_Step1StartwithZeroPermis["Step 1: Start with Zero Permissions"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step1StartwithZeroPermis fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_NoAccess["No Access"]
+    style n2_NoAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AddRequiredPermissions["Add Required Permissions"]
+    style n3_AddRequiredPermissions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TestFunctionality["Test Functionality"]
+    style n4_TestFunctionality fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AddOnlyWhatIsMissing["Add Only What Is Missing"]
+    style n5_AddOnlyWhatIsMissing fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_NoAccess --> n3_AddRequiredPermissions
+    n3_AddRequiredPermissions --> n4_TestFunctionality
+    n4_TestFunctionality --> n5_AddOnlyWhatIsMissing

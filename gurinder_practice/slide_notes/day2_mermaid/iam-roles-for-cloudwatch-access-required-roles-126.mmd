@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhyThisArchitectureMatte["Why This Architecture Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyThisArchitectureMatte fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Logs["Logs"]
+    style n2_Logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Metrics["Metrics"]
+    style n3_Metrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Alarms["Alarms"]
+    style n4_Alarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Alerts["Alerts"]
+    style n5_Alerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Logs --> n3_Metrics
+    n3_Metrics --> n4_Alarms
+    n4_Alarms --> n5_Alerts

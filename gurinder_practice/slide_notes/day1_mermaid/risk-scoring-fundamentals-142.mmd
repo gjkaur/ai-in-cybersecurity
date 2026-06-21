@@ -1,0 +1,21 @@
+flowchart TB
+    n1_BetterDesign["Better Design"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_BetterDesign fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_OrderProcessorRole["OrderProcessorRole"]
+    style n2_OrderProcessorRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_OrderProcessorLambda["OrderProcessor Lambda"]
+    style n3_OrderProcessorLambda fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PaymentRole["PaymentRole"]
+    style n4_PaymentRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_PaymentLambda["Payment Lambda"]
+    style n5_PaymentLambda fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_ReportingRole["ReportingRole"]
+    style n6_ReportingRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ReportingLambda["Reporting Lambda"]
+    style n7_ReportingLambda fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_OrderProcessorRole --> n3_OrderProcessorLambda
+    n3_OrderProcessorLambda --> n4_PaymentRole
+    n4_PaymentRole --> n5_PaymentLambda
+    n5_PaymentLambda --> n6_ReportingRole
+    n6_ReportingRole --> n7_ReportingLambda

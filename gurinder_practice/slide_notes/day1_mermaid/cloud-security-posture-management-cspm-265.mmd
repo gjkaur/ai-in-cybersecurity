@@ -1,0 +1,22 @@
+flowchart TB
+    n1_CrossRegionMonitoring["Cross-Region Monitoring"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CrossRegionMonitoring fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_useast1["us-east-1"]
+    style n3_useast1 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_uswest2["us-west-2"]
+    style n4_uswest2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_cacentral1["ca-central-1"]
+    style n5_cacentral1 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_euwest1["eu-west-1"]
+    style n6_euwest1 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_useast1 --> n4_uswest2
+        n4_uswest2 --> n5_cacentral1
+        n5_cacentral1 --> n6_euwest1
+    end
+    n7_euwest1["eu-west-1"]
+    style n7_euwest1 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_CentralSecurityHub["Central Security Hub"]
+    style n8_CentralSecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_euwest1 --> n8_CentralSecurityHub

@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhyDocumentationMatters["Why Documentation Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyDocumentationMatters fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Alert["Alert"]
+    style n2_Alert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Runbook["Runbook"]
+    style n3_Runbook fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Investigation["Investigation"]
+    style n4_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Response["Response"]
+    style n5_Response fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Alert --> n3_Runbook
+    n3_Runbook --> n4_Investigation
+    n4_Investigation --> n5_Response

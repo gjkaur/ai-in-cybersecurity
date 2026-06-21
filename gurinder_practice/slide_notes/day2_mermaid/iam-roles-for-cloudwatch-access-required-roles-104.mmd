@@ -1,0 +1,12 @@
+flowchart TB
+    n1_CostControl["Cost Control"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CostControl fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_StorageGrowth["Storage Growth"]
+    style n2_StorageGrowth fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_HigherCosts["Higher Costs"]
+    style n3_HigherCosts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ReducedEfficiency["Reduced Efficiency"]
+    style n4_ReducedEfficiency fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_StorageGrowth --> n3_HigherCosts
+    n3_HigherCosts --> n4_ReducedEfficiency

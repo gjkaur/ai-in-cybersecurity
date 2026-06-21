@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyCreateaThreatCatalog["Why Create a Threat Catalog?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyCreateaThreatCatalog fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_KnownThreats["Known Threats"]
+    style n2_KnownThreats fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_KnownSignals["Known Signals"]
+    style n3_KnownSignals fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TargetedDetections["Targeted Detections"]
+    style n4_TargetedDetections fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_KnownThreats --> n3_KnownSignals
+    n3_KnownSignals --> n4_TargetedDetections

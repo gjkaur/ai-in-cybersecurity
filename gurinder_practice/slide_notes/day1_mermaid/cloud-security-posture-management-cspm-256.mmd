@@ -1,0 +1,27 @@
+flowchart TB
+    n1_RemediationLifecycle["Remediation Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RemediationLifecycle fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Identify["Identify"]
+    style n2_Identify fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Document["Document"]
+    style n3_Document fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Plan["Plan"]
+    style n4_Plan fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Implement["Implement"]
+    style n5_Implement fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Test["Test"]
+    style n6_Test fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Verify["Verify"]
+    style n7_Verify fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Record["Record"]
+    style n8_Record fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Close["Close"]
+    style n9_Close fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Identify --> n3_Document
+    n3_Document --> n4_Plan
+    n4_Plan --> n5_Implement
+    n5_Implement --> n6_Test
+    n6_Test --> n7_Verify
+    n7_Verify --> n8_Record
+    n8_Record --> n9_Close

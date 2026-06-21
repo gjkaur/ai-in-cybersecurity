@@ -1,0 +1,17 @@
+flowchart TB
+    n1_Definition["Definition"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Definition fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Whocanattackus["Who can attack us?"]
+    style n3_Whocanattackus fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Whatcantheyattack["What can they attack?"]
+    style n4_Whatcantheyattack fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Howcantheyattack["How can they attack?"]
+    style n5_Howcantheyattack fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Whywouldtheyattack["Why would they attack?"]
+    style n6_Whywouldtheyattack fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Whocanattackus --> n4_Whatcantheyattack
+        n4_Whatcantheyattack --> n5_Howcantheyattack
+        n5_Howcantheyattack --> n6_Whywouldtheyattack
+    end

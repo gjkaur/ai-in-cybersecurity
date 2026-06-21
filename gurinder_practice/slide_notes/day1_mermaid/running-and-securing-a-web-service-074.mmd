@@ -1,0 +1,20 @@
+flowchart TB
+    n1_WhatInformationIsLogged["What Information Is Logged?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatInformationIsLogged fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_IPAddress["IP Address"]
+    style n3_IPAddress fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Time["Time"]
+    style n4_Time fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_URL["URL"]
+    style n5_URL fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_HTTPMethod["HTTP Method"]
+    style n6_HTTPMethod fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ResponseCode["Response Code"]
+    style n7_ResponseCode fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_IPAddress --> n4_Time
+        n4_Time --> n5_URL
+        n5_URL --> n6_HTTPMethod
+        n6_HTTPMethod --> n7_ResponseCode
+    end

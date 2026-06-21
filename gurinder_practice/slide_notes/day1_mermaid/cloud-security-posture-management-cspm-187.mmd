@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyCredentialHygieneMatt["Why Credential Hygiene Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyCredentialHygieneMatt fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ExposedAccessKey["Exposed Access Key"]
+    style n2_ExposedAccessKey fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_UnauthorizedAWSAccess["Unauthorized AWS Access"]
+    style n3_UnauthorizedAWSAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_DataTheftResourceAbuse["Data Theft / Resource Abuse"]
+    style n4_DataTheftResourceAbuse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ExposedAccessKey --> n3_UnauthorizedAWSAccess
+    n3_UnauthorizedAWSAccess --> n4_DataTheftResourceAbuse

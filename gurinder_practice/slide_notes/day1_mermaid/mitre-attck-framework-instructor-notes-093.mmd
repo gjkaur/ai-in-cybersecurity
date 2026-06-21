@@ -1,0 +1,12 @@
+flowchart TB
+    n1_CoreConcept["Core Concept"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CoreConcept fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Tactics["Tactics"]
+    style n2_Tactics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Techniques["Techniques"]
+    style n3_Techniques fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Procedures["Procedures"]
+    style n4_Procedures fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Tactics --> n3_Techniques
+    n3_Techniques --> n4_Procedures

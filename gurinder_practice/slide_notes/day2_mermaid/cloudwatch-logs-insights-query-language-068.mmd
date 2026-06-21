@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhyAWSAddedAIQueryGenera["Why AWS Added AI Query Generation"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyAWSAddedAIQueryGenera fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ThreatQuestion["Threat Question"]
+    style n2_ThreatQuestion fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_NaturalLanguagePrompt["Natural Language Prompt"]
+    style n3_NaturalLanguagePrompt fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AIGeneratesQuery["AI Generates Query"]
+    style n4_AIGeneratesQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ReviewRun["Review & Run"]
+    style n5_ReviewRun fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ThreatQuestion --> n3_NaturalLanguagePrompt
+    n3_NaturalLanguagePrompt --> n4_AIGeneratesQuery
+    n4_AIGeneratesQuery --> n5_ReviewRun

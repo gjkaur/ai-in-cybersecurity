@@ -1,0 +1,12 @@
+flowchart TB
+    n1_NormalUser["Normal User"]
+    style n1_NormalUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_RunsProgram["Runs Program"]
+    style n2_RunsProgram fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ProgramExecutesAsRoot["Program Executes As Root"]
+    style n3_ProgramExecutesAsRoot fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AccessToProtectedResourc["Access To Protected Resources"]
+    style n4_AccessToProtectedResourc fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_NormalUser --> n2_RunsProgram
+    n2_RunsProgram --> n3_ProgramExecutesAsRoot
+    n3_ProgramExecutesAsRoot --> n4_AccessToProtectedResourc

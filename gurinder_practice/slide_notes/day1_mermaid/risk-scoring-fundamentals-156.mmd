@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Reality["Reality"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Reality fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_GeneratedCode["Generated Code"]
+    style n2_GeneratedCode fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LooksCorrect["Looks Correct"]
+    style n3_LooksCorrect fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_FailsinProduction["Fails in Production"]
+    style n4_FailsinProduction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_GeneratedCode --> n3_LooksCorrect
+    n3_LooksCorrect --> n4_FailsinProduction

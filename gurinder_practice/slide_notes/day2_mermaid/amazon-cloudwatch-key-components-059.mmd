@@ -1,0 +1,15 @@
+flowchart TB
+    n1_LogStream["Log Stream"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_LogStream fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_soclabsecure["/soc-lab/secure"]
+    style n2_soclabsecure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_i0123456789abcdef["├── i-0123456789abcdef"]
+    style n3_i0123456789abcdef fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_i0987654321abcdef["├── i-0987654321abcdef"]
+    style n4_i0987654321abcdef fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_i0456789123abcdef["└── i-0456789123abcdef"]
+    style n5_i0456789123abcdef fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_soclabsecure --> n3_i0123456789abcdef
+    n3_i0123456789abcdef --> n4_i0987654321abcdef
+    n4_i0987654321abcdef --> n5_i0456789123abcdef

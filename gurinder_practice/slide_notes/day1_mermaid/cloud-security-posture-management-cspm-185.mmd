@@ -1,0 +1,12 @@
+flowchart TB
+    n1_NeverCreateRootAccessKey["Never Create Root Access Keys"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_NeverCreateRootAccessKey fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_RootUser["Root User"]
+    style n2_RootUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AccessKey["Access Key"]
+    style n3_AccessKey fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ProgrammaticFullAccess["Programmatic Full Access"]
+    style n4_ProgrammaticFullAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_RootUser --> n3_AccessKey
+    n3_AccessKey --> n4_ProgrammaticFullAccess

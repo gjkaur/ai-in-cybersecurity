@@ -1,0 +1,33 @@
+flowchart TB
+    n1_CloudWatchComponentRelat["CloudWatch Component Relationship"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CloudWatchComponentRelat fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogSources["Log Sources"]
+    style n2_LogSources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LogGroups["Log Groups"]
+    style n3_LogGroups fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_LogStreams["Log Streams"]
+    style n4_LogStreams fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_LogEvents["Log Events"]
+    style n5_LogEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_MetricFilters["Metric Filters"]
+    style n6_MetricFilters fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Metrics["Metrics"]
+    style n7_Metrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Alarms["Alarms"]
+    style n8_Alarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Notifications["Notifications"]
+    style n9_Notifications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_MetricsLogs["Metrics + Logs"]
+    style n10_MetricsLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_Dashboards["Dashboards"]
+    style n11_Dashboards fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogSources --> n3_LogGroups
+    n3_LogGroups --> n4_LogStreams
+    n4_LogStreams --> n5_LogEvents
+    n5_LogEvents --> n6_MetricFilters
+    n6_MetricFilters --> n7_Metrics
+    n7_Metrics --> n8_Alarms
+    n8_Alarms --> n9_Notifications
+    n9_Notifications --> n10_MetricsLogs
+    n10_MetricsLogs --> n11_Dashboards

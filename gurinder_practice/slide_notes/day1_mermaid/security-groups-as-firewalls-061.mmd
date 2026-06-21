@@ -1,0 +1,15 @@
+flowchart TB
+    n1_RealWorldAnalogy["Real-World Analogy"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RealWorldAnalogy fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_MainDoor["Main Door"]
+    style n2_MainDoor fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SecurityGuard["Security Guard"]
+    style n3_SecurityGuard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_EmployeeBadge["Employee Badge?"]
+    style n4_EmployeeBadge fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AllowedIn["Allowed In"]
+    style n5_AllowedIn fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_MainDoor --> n3_SecurityGuard
+    n3_SecurityGuard --> n4_EmployeeBadge
+    n4_EmployeeBadge --> n5_AllowedIn

@@ -1,0 +1,18 @@
+flowchart TB
+    n1_ReRunSecurityChecks["Re-Run Security Checks"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ReRunSecurityChecks fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_BeforeChange["Before Change"]
+    style n2_BeforeChange fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_FindingExists["Finding Exists"]
+    style n3_FindingExists fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ApplyFix["Apply Fix"]
+    style n4_ApplyFix fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ReRunScan["Re-Run Scan"]
+    style n5_ReRunScan fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_FindingRemoved["Finding Removed"]
+    style n6_FindingRemoved fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_BeforeChange --> n3_FindingExists
+    n3_FindingExists --> n4_ApplyFix
+    n4_ApplyFix --> n5_ReRunScan
+    n5_ReRunScan --> n6_FindingRemoved

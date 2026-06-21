@@ -1,0 +1,21 @@
+flowchart TB
+    n1_TheSOCWorkflow["The SOC Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TheSOCWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CollectData["Collect Data"]
+    style n2_CollectData fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_GenerateAlerts["Generate Alerts"]
+    style n3_GenerateAlerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Investigate["Investigate"]
+    style n4_Investigate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Respond["Respond"]
+    style n5_Respond fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Recover["Recover"]
+    style n6_Recover fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ImproveDefenses["Improve Defenses"]
+    style n7_ImproveDefenses fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CollectData --> n3_GenerateAlerts
+    n3_GenerateAlerts --> n4_Investigate
+    n4_Investigate --> n5_Respond
+    n5_Respond --> n6_Recover
+    n6_Recover --> n7_ImproveDefenses

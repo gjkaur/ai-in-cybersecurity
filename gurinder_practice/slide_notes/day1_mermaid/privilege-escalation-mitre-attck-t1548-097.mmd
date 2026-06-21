@@ -1,0 +1,21 @@
+flowchart TB
+    n1_RealWorldAttackFlow["Real-World Attack Flow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RealWorldAttackFlow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_PhishingEmail["Phishing Email"]
+    style n2_PhishingEmail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_UserClicksLink["User Clicks Link"]
+    style n3_UserClicksLink fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AttackerGetsUserAccess["Attacker Gets User Access"]
+    style n4_AttackerGetsUserAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_PrivilegeEscalation["Privilege Escalation"]
+    style n5_PrivilegeEscalation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RootAccess["Root Access"]
+    style n6_RootAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_DataTheftRansomware["Data Theft / Ransomware"]
+    style n7_DataTheftRansomware fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_PhishingEmail --> n3_UserClicksLink
+    n3_UserClicksLink --> n4_AttackerGetsUserAccess
+    n4_AttackerGetsUserAccess --> n5_PrivilegeEscalation
+    n5_PrivilegeEscalation --> n6_RootAccess
+    n6_RootAccess --> n7_DataTheftRansomware

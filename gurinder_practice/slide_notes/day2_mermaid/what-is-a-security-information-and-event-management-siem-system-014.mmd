@@ -1,0 +1,21 @@
+flowchart TB
+    n1_SIEMintheSOCWorkflow["SIEM in the SOC Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SIEMintheSOCWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Collect["Collect"]
+    style n2_Collect fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Normalize["Normalize"]
+    style n3_Normalize fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Correlate["Correlate"]
+    style n4_Correlate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Alert["Alert"]
+    style n5_Alert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Investigate["Investigate"]
+    style n6_Investigate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Respond["Respond"]
+    style n7_Respond fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Collect --> n3_Normalize
+    n3_Normalize --> n4_Correlate
+    n4_Correlate --> n5_Alert
+    n5_Alert --> n6_Investigate
+    n6_Investigate --> n7_Respond

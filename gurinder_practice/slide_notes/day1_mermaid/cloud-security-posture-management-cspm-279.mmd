@@ -1,0 +1,15 @@
+flowchart TB
+    n1_TrendTrackingOverTime["Trend Tracking Over Time"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TrendTrackingOverTime fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_JanuaryBaseline["January Baseline"]
+    style n2_JanuaryBaseline fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MarchBaseline["March Baseline"]
+    style n3_MarchBaseline fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_JuneBaseline["June Baseline"]
+    style n4_JuneBaseline fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SeptemberBaseline["September Baseline"]
+    style n5_SeptemberBaseline fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_JanuaryBaseline --> n3_MarchBaseline
+    n3_MarchBaseline --> n4_JuneBaseline
+    n4_JuneBaseline --> n5_SeptemberBaseline

@@ -1,0 +1,12 @@
+flowchart TB
+    n1_RegularHygieneTask5Prefe["Regular Hygiene Task #5: Prefer IAM Roles"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RegularHygieneTask5Prefe fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Application["Application"]
+    style n2_Application fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_IAMRole["IAM Role"]
+    style n3_IAMRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TemporaryCredentials["Temporary Credentials"]
+    style n4_TemporaryCredentials fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Application --> n3_IAMRole
+    n3_IAMRole --> n4_TemporaryCredentials

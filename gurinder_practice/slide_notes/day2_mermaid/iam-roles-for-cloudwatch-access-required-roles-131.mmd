@@ -1,0 +1,9 @@
+flowchart TB
+    n1_AutoScaling["Auto Scaling"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AutoScaling fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CPU80["CPU > 80%"]
+    style n2_CPU80 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LaunchNewEC2Instance["Launch New EC2 Instance"]
+    style n3_LaunchNewEC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CPU80 --> n3_LaunchNewEC2Instance

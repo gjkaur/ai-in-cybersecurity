@@ -1,0 +1,27 @@
+flowchart TB
+    n1_EndtoEndDetectionFlow["End-to-End Detection Flow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EndtoEndDetectionFlow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ATTCKTechnique["ATT&CK Technique"]
+    style n2_ATTCKTechnique fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_suAbuse["su Abuse"]
+    style n3_suAbuse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_FailedAuthentication["Failed Authentication"]
+    style n4_FailedAuthentication fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_auditdLog["auditd Log"]
+    style n5_auditdLog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_MetricFilter["Metric Filter"]
+    style n6_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SuAbuseMetric["SuAbuse Metric"]
+    style n7_SuAbuseMetric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_CloudWatchAlarm["CloudWatch Alarm"]
+    style n8_CloudWatchAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_SOCInvestigation["SOC Investigation"]
+    style n9_SOCInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ATTCKTechnique --> n3_suAbuse
+    n3_suAbuse --> n4_FailedAuthentication
+    n4_FailedAuthentication --> n5_auditdLog
+    n5_auditdLog --> n6_MetricFilter
+    n6_MetricFilter --> n7_SuAbuseMetric
+    n7_SuAbuseMetric --> n8_CloudWatchAlarm
+    n8_CloudWatchAlarm --> n9_SOCInvestigation

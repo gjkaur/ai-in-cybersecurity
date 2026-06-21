@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ExampleClosureWorkflow["Example Closure Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleClosureWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AlertGenerated["Alert Generated"]
+    style n2_AlertGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_InvestigationPerformed["Investigation Performed"]
+    style n3_InvestigationPerformed fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_EvidenceCollected["Evidence Collected"]
+    style n4_EvidenceCollected fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AnalystDecision["Analyst Decision"]
+    style n5_AnalystDecision fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_DocumentationCreated["Documentation Created"]
+    style n6_DocumentationCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CaseClosed["Case Closed"]
+    style n7_CaseClosed fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_DetectionImprovementsIde["Detection Improvements Identified"]
+    style n8_DetectionImprovementsIde fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AlertGenerated --> n3_InvestigationPerformed
+    n3_InvestigationPerformed --> n4_EvidenceCollected
+    n4_EvidenceCollected --> n5_AnalystDecision
+    n5_AnalystDecision --> n6_DocumentationCreated
+    n6_DocumentationCreated --> n7_CaseClosed
+    n7_CaseClosed --> n8_DetectionImprovementsIde

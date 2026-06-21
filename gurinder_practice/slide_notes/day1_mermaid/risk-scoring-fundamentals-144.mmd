@@ -1,0 +1,21 @@
+flowchart TB
+    n1_RealWorldAttackScenario["Real-World Attack Scenario"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RealWorldAttackScenario fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_VulnerableLambdaFunction["Vulnerable Lambda Function"]
+    style n2_VulnerableLambdaFunction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CommandInjection["Command Injection"]
+    style n3_CommandInjection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AttackerExecutesCode["Attacker Executes Code"]
+    style n4_AttackerExecutesCode fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_StealsTemporaryCredentia["Steals Temporary Credentials"]
+    style n5_StealsTemporaryCredentia fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_UsesExecutionRolePermiss["Uses Execution Role Permissions"]
+    style n6_UsesExecutionRolePermiss fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AccessesSensitiveAWSReso["Accesses Sensitive AWS Resources"]
+    style n7_AccessesSensitiveAWSReso fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_VulnerableLambdaFunction --> n3_CommandInjection
+    n3_CommandInjection --> n4_AttackerExecutesCode
+    n4_AttackerExecutesCode --> n5_StealsTemporaryCredentia
+    n5_StealsTemporaryCredentia --> n6_UsesExecutionRolePermiss
+    n6_UsesExecutionRolePermiss --> n7_AccessesSensitiveAWSReso

@@ -1,0 +1,24 @@
+flowchart TB
+    n1_SOCIncidentResponseLifec["SOC Incident Response Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SOCIncidentResponseLifec fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Preparation["Preparation"]
+    style n2_Preparation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Detection["Detection"]
+    style n3_Detection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Analysis["Analysis"]
+    style n4_Analysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Containment["Containment"]
+    style n5_Containment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Eradication["Eradication"]
+    style n6_Eradication fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Recovery["Recovery"]
+    style n7_Recovery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_LessonsLearned["Lessons Learned"]
+    style n8_LessonsLearned fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Preparation --> n3_Detection
+    n3_Detection --> n4_Analysis
+    n4_Analysis --> n5_Containment
+    n5_Containment --> n6_Eradication
+    n6_Eradication --> n7_Recovery
+    n7_Recovery --> n8_LessonsLearned

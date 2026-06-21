@@ -1,0 +1,18 @@
+flowchart TB
+    n1_IterativePrompting["Iterative Prompting"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_IterativePrompting fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_InitialPrompt["Initial Prompt"]
+    style n2_InitialPrompt fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ReviewOutput["Review Output"]
+    style n3_ReviewOutput fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_IdentifyIssues["Identify Issues"]
+    style n4_IdentifyIssues fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RefinePrompt["Refine Prompt"]
+    style n5_RefinePrompt fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_GenerateImprovedVersion["Generate Improved Version"]
+    style n6_GenerateImprovedVersion fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_InitialPrompt --> n3_ReviewOutput
+    n3_ReviewOutput --> n4_IdentifyIssues
+    n4_IdentifyIssues --> n5_RefinePrompt
+    n5_RefinePrompt --> n6_GenerateImprovedVersion

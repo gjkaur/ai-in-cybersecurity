@@ -1,0 +1,24 @@
+flowchart TB
+    n1_Internet["Internet"]
+    style n1_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityGroup["Security Group"]
+    style n2_SecurityGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EC2["EC2"]
+    style n3_EC2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Allow["Allow:"]
+    style n4_Allow fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_22AdminIP["22 (Admin IP)"]
+    style n5_22AdminIP fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_443Everyone["443 (Everyone)"]
+    style n6_443Everyone fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Deny["Deny:"]
+    style n7_Deny fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_EverythingElse["Everything Else"]
+    style n8_EverythingElse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_Internet --> n2_SecurityGroup
+    n2_SecurityGroup --> n3_EC2
+    n3_EC2 --> n4_Allow
+    n4_Allow --> n5_22AdminIP
+    n5_22AdminIP --> n6_443Everyone
+    n6_443Everyone --> n7_Deny
+    n7_Deny --> n8_EverythingElse

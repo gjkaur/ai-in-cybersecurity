@@ -1,0 +1,21 @@
+flowchart TB
+    n1_ProfessionalDetectionEng["Professional Detection Engineering Mindset"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ProfessionalDetectionEng fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Plan["Plan"]
+    style n2_Plan fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Execute["Execute"]
+    style n3_Execute fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Observe["Observe"]
+    style n4_Observe fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Validate["Validate"]
+    style n5_Validate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Document["Document"]
+    style n6_Document fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CleanUp["Clean Up"]
+    style n7_CleanUp fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Plan --> n3_Execute
+    n3_Execute --> n4_Observe
+    n4_Observe --> n5_Validate
+    n5_Validate --> n6_Document
+    n6_Document --> n7_CleanUp

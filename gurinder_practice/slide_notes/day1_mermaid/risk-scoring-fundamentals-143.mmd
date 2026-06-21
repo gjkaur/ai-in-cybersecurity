@@ -1,0 +1,23 @@
+flowchart TB
+    n1_CombiningMultipleWorkloa["Combining Multiple Workloads"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CombiningMultipleWorkloa fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Onerole["One role"]
+    style n3_Onerole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_S3Access["├── S3 Access"]
+    style n4_S3Access fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_DynamoDBAccess["├── DynamoDB Access"]
+    style n5_DynamoDBAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_SNSAccess["├── SNS Access"]
+    style n6_SNSAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_IAMAccess["├── IAM Access"]
+    style n7_IAMAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_EC2Access["└── EC2 Access"]
+    style n8_EC2Access fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Onerole --> n4_S3Access
+        n4_S3Access --> n5_DynamoDBAccess
+        n5_DynamoDBAccess --> n6_SNSAccess
+        n6_SNSAccess --> n7_IAMAccess
+        n7_IAMAccess --> n8_EC2Access
+    end

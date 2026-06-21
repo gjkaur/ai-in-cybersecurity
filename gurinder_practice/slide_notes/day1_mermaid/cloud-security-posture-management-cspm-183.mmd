@@ -1,0 +1,15 @@
+flowchart TB
+    n1_HowMFAWorks["How MFA Works"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HowMFAWorks fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_UsernamePassword["Username + Password"]
+    style n2_UsernamePassword fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_IdentityVerified["Identity Verified"]
+    style n3_IdentityVerified fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_EnterMFACode["Enter MFA Code"]
+    style n4_EnterMFACode fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AccessGranted["Access Granted"]
+    style n5_AccessGranted fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_UsernamePassword --> n3_IdentityVerified
+    n3_IdentityVerified --> n4_EnterMFACode
+    n4_EnterMFACode --> n5_AccessGranted

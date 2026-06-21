@@ -1,0 +1,12 @@
+flowchart TB
+    n1_TraditionalAttack["Traditional Attack"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TraditionalAttack fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Infection["Infection"]
+    style n2_Infection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_FilesEncrypted["Files Encrypted"]
+    style n3_FilesEncrypted fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RansomNote["Ransom Note"]
+    style n4_RansomNote fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Infection --> n3_FilesEncrypted
+    n3_FilesEncrypted --> n4_RansomNote

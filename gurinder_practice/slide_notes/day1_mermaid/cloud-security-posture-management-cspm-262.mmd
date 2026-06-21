@@ -1,0 +1,18 @@
+flowchart TB
+    n1_AWSConfigEvaluationModel["AWS Config Evaluation Model"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AWSConfigEvaluationModel fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ResourceChange["Resource Change"]
+    style n2_ResourceChange fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ConfigDetectsChange["Config Detects Change"]
+    style n3_ConfigDetectsChange fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RuleEvaluation["Rule Evaluation"]
+    style n4_RuleEvaluation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ComplianceResult["Compliance Result"]
+    style n5_ComplianceResult fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AlertRemediation["Alert / Remediation"]
+    style n6_AlertRemediation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ResourceChange --> n3_ConfigDetectsChange
+    n3_ConfigDetectsChange --> n4_RuleEvaluation
+    n4_RuleEvaluation --> n5_ComplianceResult
+    n5_ComplianceResult --> n6_AlertRemediation

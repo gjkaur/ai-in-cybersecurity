@@ -1,0 +1,21 @@
+flowchart TB
+    n1_ContinuousImprovementCyc["Continuous Improvement Cycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ContinuousImprovementCyc fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_BuildDetection["Build Detection"]
+    style n2_BuildDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ValidateDetection["Validate Detection"]
+    style n3_ValidateDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_MeasureCoverage["Measure Coverage"]
+    style n4_MeasureCoverage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_IdentifyGaps["Identify Gaps"]
+    style n5_IdentifyGaps fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CreateNewDetection["Create New Detection"]
+    style n6_CreateNewDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_MeasureAgain["Measure Again"]
+    style n7_MeasureAgain fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_BuildDetection --> n3_ValidateDetection
+    n3_ValidateDetection --> n4_MeasureCoverage
+    n4_MeasureCoverage --> n5_IdentifyGaps
+    n5_IdentifyGaps --> n6_CreateNewDetection
+    n6_CreateNewDetection --> n7_MeasureAgain

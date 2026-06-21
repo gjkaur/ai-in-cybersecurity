@@ -1,0 +1,21 @@
+flowchart TB
+    n1_ExampleSOCWorkflow["Example SOC Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleSOCWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityEvent["Security Event"]
+    style n2_SecurityEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AnalystInvestigation["Analyst Investigation"]
+    style n3_AnalystInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_NeedCustomScript["Need Custom Script"]
+    style n4_NeedCustomScript fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AIAssistantGeneratesDraf["AI Assistant Generates Draft"]
+    style n5_AIAssistantGeneratesDraf fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AnalystReviewsTests["Analyst Reviews & Tests"]
+    style n6_AnalystReviewsTests fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ProductionUse["Production Use"]
+    style n7_ProductionUse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityEvent --> n3_AnalystInvestigation
+    n3_AnalystInvestigation --> n4_NeedCustomScript
+    n4_NeedCustomScript --> n5_AIAssistantGeneratesDraf
+    n5_AIAssistantGeneratesDraf --> n6_AnalystReviewsTests
+    n6_AnalystReviewsTests --> n7_ProductionUse

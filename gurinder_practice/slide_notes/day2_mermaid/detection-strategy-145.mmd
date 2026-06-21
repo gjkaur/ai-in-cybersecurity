@@ -1,0 +1,21 @@
+flowchart TB
+    n1_Day2LearningJourney["Day 2 Learning Journey"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Day2LearningJourney fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityFindings["Security Findings"]
+    style n2_SecurityFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_GuardDutyAlerts["GuardDuty Alerts"]
+    style n3_GuardDutyAlerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudTrailEvidence["CloudTrail Evidence"]
+    style n4_CloudTrailEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AIAssistedInvestigation["AI-Assisted Investigation"]
+    style n5_AIAssistedInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RootCauseIdentification["Root Cause Identification"]
+    style n6_RootCauseIdentification fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ResponseRecommendations["Response Recommendations"]
+    style n7_ResponseRecommendations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityFindings --> n3_GuardDutyAlerts
+    n3_GuardDutyAlerts --> n4_CloudTrailEvidence
+    n4_CloudTrailEvidence --> n5_AIAssistedInvestigation
+    n5_AIAssistedInvestigation --> n6_RootCauseIdentification
+    n6_RootCauseIdentification --> n7_ResponseRecommendations

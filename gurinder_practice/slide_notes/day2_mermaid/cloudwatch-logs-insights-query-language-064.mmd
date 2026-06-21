@@ -1,0 +1,15 @@
+flowchart TB
+    n1_HowLogsInsightsWorks["How Logs Insights Works"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HowLogsInsightsWorks fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudWatchLogGroups["CloudWatch Log Groups"]
+    style n2_CloudWatchLogGroups fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchLogsInsights["CloudWatch Logs Insights"]
+    style n3_CloudWatchLogsInsights fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_QueryEngine["Query Engine"]
+    style n4_QueryEngine fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ResultsChartsDashboards["Results / Charts / Dashboards"]
+    style n5_ResultsChartsDashboards fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudWatchLogGroups --> n3_CloudWatchLogsInsights
+    n3_CloudWatchLogsInsights --> n4_QueryEngine
+    n4_QueryEngine --> n5_ResultsChartsDashboards

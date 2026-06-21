@@ -1,0 +1,12 @@
+flowchart TB
+    n1_TraditionalScanner["Traditional Scanner"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TraditionalScanner fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Scanner["Scanner"]
+    style n2_Scanner fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_NetworkConnection["Network Connection"]
+    style n3_NetworkConnection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TargetSystem["Target System"]
+    style n4_TargetSystem fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Scanner --> n3_NetworkConnection
+    n3_NetworkConnection --> n4_TargetSystem

@@ -1,0 +1,40 @@
+flowchart TB
+    n1_TypicalSIEMArchitecture["Typical SIEM Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TypicalSIEMArchitecture fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_CloudTrail["CloudTrail"]
+    style n3_CloudTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_WindowsLogs["Windows Logs"]
+    style n4_WindowsLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_LinuxLogs["Linux Logs"]
+    style n5_LinuxLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_FirewallLogs["Firewall Logs"]
+    style n6_FirewallLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ApplicationLogs["Application Logs"]
+    style n7_ApplicationLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_CloudTrail --> n4_WindowsLogs
+        n4_WindowsLogs --> n5_LinuxLogs
+        n5_LinuxLogs --> n6_FirewallLogs
+        n6_FirewallLogs --> n7_ApplicationLogs
+    end
+    n8_ApplicationLogs["Application Logs"]
+    style n8_ApplicationLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_LogCollectionLayer["Log Collection Layer"]
+    style n9_LogCollectionLayer fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_Normalization["Normalization"]
+    style n10_Normalization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_Storage["Storage"]
+    style n11_Storage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n12_CorrelationRules["Correlation Rules"]
+    style n12_CorrelationRules fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n13_Alerts["Alerts"]
+    style n13_Alerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n14_SOCAnalysts["SOC Analysts"]
+    style n14_SOCAnalysts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_ApplicationLogs --> n9_LogCollectionLayer
+    n9_LogCollectionLayer --> n10_Normalization
+    n10_Normalization --> n11_Storage
+    n11_Storage --> n12_CorrelationRules
+    n12_CorrelationRules --> n13_Alerts
+    n13_Alerts --> n14_SOCAnalysts

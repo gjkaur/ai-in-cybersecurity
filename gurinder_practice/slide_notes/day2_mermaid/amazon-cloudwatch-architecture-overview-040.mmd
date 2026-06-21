@@ -1,0 +1,14 @@
+flowchart TB
+    n1_MetricsNumericalTimeSeri["Metrics (Numerical Time-Series Data)"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_MetricsNumericalTimeSeri fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_1200PMCPU25["12:00 PM → CPU = 25%"]
+    style n3_1200PMCPU25 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_1205PMCPU40["12:05 PM → CPU = 40%"]
+    style n4_1205PMCPU40 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_1210PMCPU85["12:10 PM → CPU = 85%"]
+    style n5_1210PMCPU85 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_1200PMCPU25 --> n4_1205PMCPU40
+        n4_1205PMCPU40 --> n5_1210PMCPU85
+    end

@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyContinuousMonitoringM["Why Continuous Monitoring Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyContinuousMonitoringM fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Environment["Environment"]
+    style n2_Environment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Assessment["Assessment"]
+    style n3_Assessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SnapshotinTime["Snapshot in Time"]
+    style n4_SnapshotinTime fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Environment --> n3_Assessment
+    n3_Assessment --> n4_SnapshotinTime

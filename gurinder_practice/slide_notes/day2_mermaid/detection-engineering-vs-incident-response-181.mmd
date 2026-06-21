@@ -1,0 +1,15 @@
+flowchart TB
+    n1_TestingDetectionRules["Testing Detection Rules"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TestingDetectionRules fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AttackActivity["Attack Activity"]
+    style n2_AttackActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LogGenerated["Log Generated"]
+    style n3_LogGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RuleMatches["Rule Matches"]
+    style n4_RuleMatches fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AlertFires["Alert Fires"]
+    style n5_AlertFires fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AttackActivity --> n3_LogGenerated
+    n3_LogGenerated --> n4_RuleMatches
+    n4_RuleMatches --> n5_AlertFires

@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Example["Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Example fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_InvestigationCreated["Investigation Created"]
+    style n2_InvestigationCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Storedfor30Days["Stored for 30 Days"]
+    style n3_Storedfor30Days fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AutomaticallyRemoved["Automatically Removed"]
+    style n4_AutomaticallyRemoved fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_InvestigationCreated --> n3_Storedfor30Days
+    n3_Storedfor30Days --> n4_AutomaticallyRemoved

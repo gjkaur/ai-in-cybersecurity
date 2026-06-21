@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Step4["Step 4"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step4 fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogGroup["Log Group"]
+    style n2_LogGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LogStream["Log Stream"]
+    style n3_LogStream fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_LogEvents["Log Events"]
+    style n4_LogEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogGroup --> n3_LogStream
+    n3_LogStream --> n4_LogEvents

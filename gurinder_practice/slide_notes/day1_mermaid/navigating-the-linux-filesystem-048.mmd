@@ -1,0 +1,36 @@
+flowchart TB
+    n1_TypicalIncidentInvestiga["Typical Incident Investigation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TypicalIncidentInvestiga fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AlertReceived["Alert Received"]
+    style n2_AlertReceived fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CheckLogs["Check Logs"]
+    style n3_CheckLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_varlog["(/var/log)"]
+    style n4_varlog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CheckUsers["Check Users"]
+    style n5_CheckUsers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_home["(/home)"]
+    style n6_home fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CheckConfigurations["Check Configurations"]
+    style n7_CheckConfigurations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_etc["(/etc)"]
+    style n8_etc fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_CheckRunningProcesses["Check Running Processes"]
+    style n9_CheckRunningProcesses fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_proc["(/proc)"]
+    style n10_proc fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_CheckTemporaryFiles["Check Temporary Files"]
+    style n11_CheckTemporaryFiles fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n12_tmp["(/tmp)"]
+    style n12_tmp fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AlertReceived --> n3_CheckLogs
+    n3_CheckLogs --> n4_varlog
+    n4_varlog --> n5_CheckUsers
+    n5_CheckUsers --> n6_home
+    n6_home --> n7_CheckConfigurations
+    n7_CheckConfigurations --> n8_etc
+    n8_etc --> n9_CheckRunningProcesses
+    n9_CheckRunningProcesses --> n10_proc
+    n10_proc --> n11_CheckTemporaryFiles
+    n11_CheckTemporaryFiles --> n12_tmp

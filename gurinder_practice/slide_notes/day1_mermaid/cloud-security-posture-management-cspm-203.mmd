@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Bad["Bad"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Bad fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_00000["0.0.0.0/0"]
+    style n2_00000 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DatabasePort["Database Port"]
+    style n3_DatabasePort fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RDSInstance["RDS Instance"]
+    style n4_RDSInstance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_00000 --> n3_DatabasePort
+    n3_DatabasePort --> n4_RDSInstance

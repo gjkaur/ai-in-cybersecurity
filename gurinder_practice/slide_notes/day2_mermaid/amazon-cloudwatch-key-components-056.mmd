@@ -1,0 +1,23 @@
+flowchart TB
+    n1_WhyLogIngestionMatters["Why Log Ingestion Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyLogIngestionMatters fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_EC2Instance["EC2 Instance"]
+    style n3_EC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AuthenticationLogs["├─ Authentication Logs"]
+    style n4_AuthenticationLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SystemLogs["├─ System Logs"]
+    style n5_SystemLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_ApplicationLogs["├─ Application Logs"]
+    style n6_ApplicationLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SecurityEvents["└─ Security Events"]
+    style n7_SecurityEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_NotVisible["(Not Visible)"]
+    style n8_NotVisible fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_EC2Instance --> n4_AuthenticationLogs
+        n4_AuthenticationLogs --> n5_SystemLogs
+        n5_SystemLogs --> n6_ApplicationLogs
+        n6_ApplicationLogs --> n7_SecurityEvents
+        n7_SecurityEvents --> n8_NotVisible
+    end

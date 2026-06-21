@@ -1,0 +1,24 @@
+flowchart TB
+    n1_EndtoEndArchitectureBuil["End-to-End Architecture Built During Day 2"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EndtoEndArchitectureBuil fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AttackSimulation["Attack Simulation"]
+    style n2_AttackSimulation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudTrailLogging["CloudTrail Logging"]
+    style n3_CloudTrailLogging fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchAnalysis["CloudWatch Analysis"]
+    style n4_CloudWatchAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AIInvestigation["AI Investigation"]
+    style n5_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AlertGeneration["Alert Generation"]
+    style n6_AlertGeneration fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SOCDashboard["SOC Dashboard"]
+    style n7_SOCDashboard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_IncidentReport["Incident Report"]
+    style n8_IncidentReport fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AttackSimulation --> n3_CloudTrailLogging
+    n3_CloudTrailLogging --> n4_CloudWatchAnalysis
+    n4_CloudWatchAnalysis --> n5_AIInvestigation
+    n5_AIInvestigation --> n6_AlertGeneration
+    n6_AlertGeneration --> n7_SOCDashboard
+    n7_SOCDashboard --> n8_IncidentReport

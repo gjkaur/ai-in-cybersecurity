@@ -1,0 +1,30 @@
+flowchart TB
+    n1_RiskBasedRemediationProc["Risk-Based Remediation Process"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RiskBasedRemediationProc fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Finding["Finding"]
+    style n2_Finding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SeverityAssessment["Severity Assessment"]
+    style n3_SeverityAssessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_BusinessImpactReview["Business Impact Review"]
+    style n4_BusinessImpactReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RemediationPlan["Remediation Plan"]
+    style n5_RemediationPlan fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Testing["Testing"]
+    style n6_Testing fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Approval["Approval"]
+    style n7_Approval fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Implementation["Implementation"]
+    style n8_Implementation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Validation["Validation"]
+    style n9_Validation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_Closure["Closure"]
+    style n10_Closure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Finding --> n3_SeverityAssessment
+    n3_SeverityAssessment --> n4_BusinessImpactReview
+    n4_BusinessImpactReview --> n5_RemediationPlan
+    n5_RemediationPlan --> n6_Testing
+    n6_Testing --> n7_Approval
+    n7_Approval --> n8_Implementation
+    n8_Implementation --> n9_Validation
+    n9_Validation --> n10_Closure

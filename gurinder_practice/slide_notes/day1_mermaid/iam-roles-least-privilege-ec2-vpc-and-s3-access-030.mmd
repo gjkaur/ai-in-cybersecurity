@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyUsePrivateSubnets["Why Use Private Subnets?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyUsePrivateSubnets fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Internet["Internet"]
+    style n2_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ApplicationLayer["Application Layer"]
+    style n3_ApplicationLayer fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PrivateServer["Private Server"]
+    style n4_PrivateServer fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Internet --> n3_ApplicationLayer
+    n3_ApplicationLayer --> n4_PrivateServer

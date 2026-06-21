@@ -1,0 +1,12 @@
+flowchart TB
+    n1_SupplyChainAttack["Supply Chain Attack"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SupplyChainAttack fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Attacker["Attacker"]
+    style n2_Attacker fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Vendor["Vendor"]
+    style n3_Vendor fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Company["Company"]
+    style n4_Company fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Attacker --> n3_Vendor
+    n3_Vendor --> n4_Company

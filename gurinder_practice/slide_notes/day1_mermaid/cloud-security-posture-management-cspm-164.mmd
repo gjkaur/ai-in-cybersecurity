@@ -1,0 +1,12 @@
+flowchart TB
+    n1_CSPM["CSPM"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CSPM fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudAPIs["Cloud APIs"]
+    style n2_CloudAPIs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ConfigurationMetadata["Configuration Metadata"]
+    style n3_ConfigurationMetadata fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityEvaluation["Security Evaluation"]
+    style n4_SecurityEvaluation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudAPIs --> n3_ConfigurationMetadata
+    n3_ConfigurationMetadata --> n4_SecurityEvaluation

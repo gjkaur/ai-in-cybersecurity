@@ -1,0 +1,18 @@
+flowchart TB
+    n1_IAMAuthorizationProcess["IAM Authorization Process"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_IAMAuthorizationProcess fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_UserRole["User / Role"]
+    style n2_UserRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AWSAPIRequest["AWS API Request"]
+    style n3_AWSAPIRequest fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_IAMEvaluation["IAM Evaluation"]
+    style n4_IAMEvaluation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AlloworDeny["Allow or Deny"]
+    style n5_AlloworDeny fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AWSService["AWS Service"]
+    style n6_AWSService fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_UserRole --> n3_AWSAPIRequest
+    n3_AWSAPIRequest --> n4_IAMEvaluation
+    n4_IAMEvaluation --> n5_AlloworDeny
+    n5_AlloworDeny --> n6_AWSService

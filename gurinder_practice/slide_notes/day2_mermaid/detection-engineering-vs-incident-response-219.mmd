@@ -1,0 +1,48 @@
+flowchart TB
+    n1_CoverageMatrixExample["Coverage Matrix Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CoverageMatrixExample fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Technique["Technique"]
+    n3_Status["Status"]
+    style n2_Technique fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n3_Status fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Technique --- n3_Status
+    n4_SSHBruteForce["SSH Brute Force"]
+    n5_Covered["Covered"]
+    style n4_SSHBruteForce fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n5_Covered fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Status --> n4_SSHBruteForce
+    n3_Status --> n5_Covered
+    n6_SensitiveFileReads["Sensitive File Reads"]
+    n7_Covered["Covered"]
+    style n6_SensitiveFileReads fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n7_Covered fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n4_SSHBruteForce --> n6_SensitiveFileReads
+    n5_Covered --> n7_Covered
+    n8_AccountCreation["Account Creation"]
+    n9_Covered["Covered"]
+    style n8_AccountCreation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n9_Covered fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_AccountCreation --- n9_Covered
+    n10_CronPersistence["Cron Persistence"]
+    n11_Partial["Partial"]
+    style n10_CronPersistence fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n11_Partial fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n8_AccountCreation --> n10_CronPersistence
+    n9_Covered --> n11_Partial
+    n12_ServiceCreation["Service Creation"]
+    n13_Partial["Partial"]
+    style n12_ServiceCreation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n13_Partial fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n12_ServiceCreation --- n13_Partial
+    n14_DataExfiltration["Data Exfiltration"]
+    n15_NotCovered["Not Covered"]
+    style n14_DataExfiltration fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n15_NotCovered fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n12_ServiceCreation --> n14_DataExfiltration
+    n13_Partial --> n15_NotCovered
+    n16_LateralMovement["Lateral Movement"]
+    n17_NotCovered["Not Covered"]
+    style n16_LateralMovement fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n17_NotCovered fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n16_LateralMovement --- n17_NotCovered

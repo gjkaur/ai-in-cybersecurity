@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhySIEMSystemsExist["Why SIEM Systems Exist"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhySIEMSystemsExist fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ThousandsofLogs["Thousands of Logs"]
+    style n2_ThousandsofLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MultipleLocations["Multiple Locations"]
+    style n3_MultipleLocations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_NoCorrelation["No Correlation"]
+    style n4_NoCorrelation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_MissedThreats["Missed Threats"]
+    style n5_MissedThreats fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ThousandsofLogs --> n3_MultipleLocations
+    n3_MultipleLocations --> n4_NoCorrelation
+    n4_NoCorrelation --> n5_MissedThreats

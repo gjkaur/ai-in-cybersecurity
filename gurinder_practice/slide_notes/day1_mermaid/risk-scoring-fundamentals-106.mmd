@@ -1,0 +1,21 @@
+flowchart TB
+    n1_RiskScoreLifecycle["Risk Score Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RiskScoreLifecycle fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityEvent["Security Event"]
+    style n2_SecurityEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DetectionRule["Detection Rule"]
+    style n3_DetectionRule fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AssignRiskPoints["Assign Risk Points"]
+    style n4_AssignRiskPoints fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AggregateScores["Aggregate Scores"]
+    style n5_AggregateScores fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_GenerateAlert["Generate Alert"]
+    style n6_GenerateAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AnalystInvestigation["Analyst Investigation"]
+    style n7_AnalystInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityEvent --> n3_DetectionRule
+    n3_DetectionRule --> n4_AssignRiskPoints
+    n4_AssignRiskPoints --> n5_AggregateScores
+    n5_AggregateScores --> n6_GenerateAlert
+    n6_GenerateAlert --> n7_AnalystInvestigation

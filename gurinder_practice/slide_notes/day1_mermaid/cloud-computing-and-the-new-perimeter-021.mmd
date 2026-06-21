@@ -1,0 +1,27 @@
+flowchart TB
+    n1_Traditional["Traditional"]
+    style n1_Traditional fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Firewall["Firewall"]
+    style n2_Firewall fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CompanyNetwork["Company Network"]
+    style n3_CompanyNetwork fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Trust["Trust"]
+    style n4_Trust fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Modern["Modern"]
+    style n5_Modern fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Identity["Identity"]
+    style n6_Identity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Authentication["Authentication"]
+    style n7_Authentication fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Authorization["Authorization"]
+    style n8_Authorization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Access["Access"]
+    style n9_Access fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_Traditional --> n2_Firewall
+    n2_Firewall --> n3_CompanyNetwork
+    n3_CompanyNetwork --> n4_Trust
+    n4_Trust --> n5_Modern
+    n5_Modern --> n6_Identity
+    n6_Identity --> n7_Authentication
+    n7_Authentication --> n8_Authorization
+    n8_Authorization --> n9_Access

@@ -1,0 +1,91 @@
+flowchart TB
+    n1_SIEMArchitecture["SIEM Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SIEMArchitecture fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_DATASOURCES["DATA SOURCES"]
+    style n3_DATASOURCES fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_node["─────────────────────"]
+    style n4_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CloudTrail["CloudTrail"]
+    style n5_CloudTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_VPCFlowLogs["VPC Flow Logs"]
+    style n6_VPCFlowLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_WindowsLogs["Windows Logs"]
+    style n7_WindowsLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_LinuxLogs["Linux Logs"]
+    style n8_LinuxLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Firewalls["Firewalls"]
+    style n9_Firewalls fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_Applications["Applications"]
+    style n10_Applications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_IAM["IAM"]
+    style n11_IAM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_DATASOURCES --> n4_node
+        n4_node --> n5_CloudTrail
+        n5_CloudTrail --> n6_VPCFlowLogs
+        n6_VPCFlowLogs --> n7_WindowsLogs
+        n7_WindowsLogs --> n8_LinuxLogs
+        n8_LinuxLogs --> n9_Firewalls
+        n9_Firewalls --> n10_Applications
+        n10_Applications --> n11_IAM
+    end
+    n12_IAM["IAM"]
+    style n12_IAM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n13_SIEMPLATFORM["SIEM PLATFORM"]
+    style n13_SIEMPLATFORM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n14_node["─────────────────────"]
+    style n14_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n15_Collection["Collection"]
+    style n15_Collection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n16_Storage["Storage"]
+    style n16_Storage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n17_Normalization["Normalization"]
+    style n17_Normalization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n18_Indexing["Indexing"]
+    style n18_Indexing fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n19_ANALYTICSCORRELATION["ANALYTICS & CORRELATION"]
+    style n19_ANALYTICSCORRELATION fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n20_node["─────────────────────"]
+    style n20_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n21_Rules["Rules"]
+    style n21_Rules fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n22_ThreatIntelligence["Threat Intelligence"]
+    style n22_ThreatIntelligence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n23_MachineLearning["Machine Learning"]
+    style n23_MachineLearning fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n24_BehaviorAnalytics["Behavior Analytics"]
+    style n24_BehaviorAnalytics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n25_ACTIONRESPONSE["ACTION & RESPONSE"]
+    style n25_ACTIONRESPONSE fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n26_node["─────────────────────"]
+    style n26_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n27_Alerts["Alerts"]
+    style n27_Alerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n28_Dashboards["Dashboards"]
+    style n28_Dashboards fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n29_Investigations["Investigations"]
+    style n29_Investigations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n30_IncidentResponse["Incident Response"]
+    style n30_IncidentResponse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n31_Reports["Reports"]
+    style n31_Reports fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n12_IAM --> n13_SIEMPLATFORM
+    n13_SIEMPLATFORM --> n14_node
+    n14_node --> n15_Collection
+    n15_Collection --> n16_Storage
+    n16_Storage --> n17_Normalization
+    n17_Normalization --> n18_Indexing
+    n18_Indexing --> n19_ANALYTICSCORRELATION
+    n19_ANALYTICSCORRELATION --> n20_node
+    n20_node --> n21_Rules
+    n21_Rules --> n22_ThreatIntelligence
+    n22_ThreatIntelligence --> n23_MachineLearning
+    n23_MachineLearning --> n24_BehaviorAnalytics
+    n24_BehaviorAnalytics --> n25_ACTIONRESPONSE
+    n25_ACTIONRESPONSE --> n26_node
+    n26_node --> n27_Alerts
+    n27_Alerts --> n28_Dashboards
+    n28_Dashboards --> n29_Investigations
+    n29_Investigations --> n30_IncidentResponse
+    n30_IncidentResponse --> n31_Reports

@@ -1,0 +1,30 @@
+flowchart TB
+    n1_ExampleEndtoEndScenario["Example End-to-End Scenario"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleEndtoEndScenario fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_FailedSSHLoginAlert["Failed SSH Login Alert"]
+    style n2_FailedSSHLoginAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIInvestigationStarts["AI Investigation Starts"]
+    style n3_AIInvestigationStarts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AuthenticationLogsReview["Authentication Logs Reviewed"]
+    style n4_AuthenticationLogsReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CloudTrailActivityCorrel["CloudTrail Activity Correlated"]
+    style n5_CloudTrailActivityCorrel fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_SourceIPAnalyzed["Source IP Analyzed"]
+    style n6_SourceIPAnalyzed fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_HistoricalPatternChecked["Historical Pattern Checked"]
+    style n7_HistoricalPatternChecked fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_HypothesisGenerated["Hypothesis Generated"]
+    style n8_HypothesisGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_AnalystReviewsEvidence["Analyst Reviews Evidence"]
+    style n9_AnalystReviewsEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_AcceptRejectEscalate["Accept / Reject / Escalate"]
+    style n10_AcceptRejectEscalate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_FailedSSHLoginAlert --> n3_AIInvestigationStarts
+    n3_AIInvestigationStarts --> n4_AuthenticationLogsReview
+    n4_AuthenticationLogsReview --> n5_CloudTrailActivityCorrel
+    n5_CloudTrailActivityCorrel --> n6_SourceIPAnalyzed
+    n6_SourceIPAnalyzed --> n7_HistoricalPatternChecked
+    n7_HistoricalPatternChecked --> n8_HypothesisGenerated
+    n8_HypothesisGenerated --> n9_AnalystReviewsEvidence
+    n9_AnalystReviewsEvidence --> n10_AcceptRejectEscalate

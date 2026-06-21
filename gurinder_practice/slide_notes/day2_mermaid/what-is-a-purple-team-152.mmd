@@ -1,0 +1,27 @@
+flowchart TB
+    n1_ExpectedDetectionFlow["Expected Detection Flow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExpectedDetectionFlow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AttackerAccount["Attacker Account"]
+    style n2_AttackerAccount fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SuspiciousCommand["Suspicious Command"]
+    style n3_SuspiciousCommand fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AuditLog["Audit Log"]
+    style n4_AuditLog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CloudWatchLogs["CloudWatch Logs"]
+    style n5_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_MetricFilter["Metric Filter"]
+    style n6_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CloudWatchAlarm["CloudWatch Alarm"]
+    style n7_CloudWatchAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_AIInvestigation["AI Investigation"]
+    style n8_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_SOCReview["SOC Review"]
+    style n9_SOCReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AttackerAccount --> n3_SuspiciousCommand
+    n3_SuspiciousCommand --> n4_AuditLog
+    n4_AuditLog --> n5_CloudWatchLogs
+    n5_CloudWatchLogs --> n6_MetricFilter
+    n6_MetricFilter --> n7_CloudWatchAlarm
+    n7_CloudWatchAlarm --> n8_AIInvestigation
+    n8_AIInvestigation --> n9_SOCReview

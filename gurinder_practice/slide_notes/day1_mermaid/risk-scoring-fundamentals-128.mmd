@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhatisanIAMPolicy["What is an IAM Policy?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatisanIAMPolicy fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_DeveloperUser["Developer User"]
+    style n2_DeveloperUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Canperform["Can perform"]
+    style n3_Canperform fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_s3GetObject["s3:GetObject"]
+    style n4_s3GetObject fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_OnSecurityLogsBucket["On Security Logs Bucket"]
+    style n5_OnSecurityLogsBucket fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_DeveloperUser --> n3_Canperform
+    n3_Canperform --> n4_s3GetObject
+    n4_s3GetObject --> n5_OnSecurityLogsBucket

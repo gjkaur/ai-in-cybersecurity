@@ -1,0 +1,14 @@
+flowchart TB
+    n1_CanIShareMyPublicKey["Can I Share My Public Key?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CanIShareMyPublicKey fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_GitHub["GitHub"]
+    style n3_GitHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Servers["Servers"]
+    style n4_Servers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CloudSystems["Cloud Systems"]
+    style n5_CloudSystems fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_GitHub --> n4_Servers
+        n4_Servers --> n5_CloudSystems
+    end

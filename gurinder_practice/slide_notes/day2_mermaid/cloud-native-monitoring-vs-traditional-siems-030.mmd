@@ -1,0 +1,34 @@
+flowchart TB
+    n1_TypicalWorkflow["Typical Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TypicalWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Servers["Servers"]
+    style n3_Servers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Firewalls["Firewalls"]
+    style n4_Firewalls fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_NetworkDevices["Network Devices"]
+    style n5_NetworkDevices fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Applications["Applications"]
+    style n6_Applications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Endpoints["Endpoints"]
+    style n7_Endpoints fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Servers --> n4_Firewalls
+        n4_Firewalls --> n5_NetworkDevices
+        n5_NetworkDevices --> n6_Applications
+        n6_Applications --> n7_Endpoints
+    end
+    n8_Endpoints["Endpoints"]
+    style n8_Endpoints fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_LogCollectorsAgents["Log Collectors / Agents"]
+    style n9_LogCollectorsAgents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_CentralSIEMPlatform["Central SIEM Platform"]
+    style n10_CentralSIEMPlatform fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_CorrelationRules["Correlation Rules"]
+    style n11_CorrelationRules fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n12_AlertsInvestigations["Alerts & Investigations"]
+    style n12_AlertsInvestigations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Endpoints --> n9_LogCollectorsAgents
+    n9_LogCollectorsAgents --> n10_CentralSIEMPlatform
+    n10_CentralSIEMPlatform --> n11_CorrelationRules
+    n11_CorrelationRules --> n12_AlertsInvestigations

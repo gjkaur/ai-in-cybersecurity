@@ -1,0 +1,18 @@
+flowchart TB
+    n1_CloudTrailEventFlow["CloudTrail Event Flow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CloudTrailEventFlow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_IAMUserRole["IAM User / Role"]
+    style n2_IAMUserRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AWSAPICall["AWS API Call"]
+    style n3_AWSAPICall fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudTrailRecordsEvent["CloudTrail Records Event"]
+    style n4_CloudTrailRecordsEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_S3CloudWatchLogs["S3 / CloudWatch Logs"]
+    style n5_S3CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_InvestigationMonitoring["Investigation & Monitoring"]
+    style n6_InvestigationMonitoring fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_IAMUserRole --> n3_AWSAPICall
+    n3_AWSAPICall --> n4_CloudTrailRecordsEvent
+    n4_CloudTrailRecordsEvent --> n5_S3CloudWatchLogs
+    n5_S3CloudWatchLogs --> n6_InvestigationMonitoring

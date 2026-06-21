@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhyControlledRemediation["Why Controlled Remediation Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyControlledRemediation fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityFinding["Security Finding"]
+    style n2_SecurityFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ImmediateProductionChang["Immediate Production Change"]
+    style n3_ImmediateProductionChang fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ApplicationFailure["Application Failure"]
+    style n4_ApplicationFailure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_BusinessOutage["Business Outage"]
+    style n5_BusinessOutage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityFinding --> n3_ImmediateProductionChang
+    n3_ImmediateProductionChang --> n4_ApplicationFailure
+    n4_ApplicationFailure --> n5_BusinessOutage

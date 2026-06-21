@@ -1,0 +1,27 @@
+flowchart TB
+    n1_ContinuousMonitoringWork["Continuous Monitoring Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ContinuousMonitoringWork fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ResourceCreated["Resource Created"]
+    style n2_ResourceCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AWSConfigRecords["AWS Config Records"]
+    style n3_AWSConfigRecords fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ComplianceEvaluation["Compliance Evaluation"]
+    style n4_ComplianceEvaluation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SecurityHubFinding["Security Hub Finding"]
+    style n5_SecurityHubFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AlertGenerated["Alert Generated"]
+    style n6_AlertGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Investigation["Investigation"]
+    style n7_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Remediation["Remediation"]
+    style n8_Remediation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_ComplianceRestored["Compliance Restored"]
+    style n9_ComplianceRestored fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ResourceCreated --> n3_AWSConfigRecords
+    n3_AWSConfigRecords --> n4_ComplianceEvaluation
+    n4_ComplianceEvaluation --> n5_SecurityHubFinding
+    n5_SecurityHubFinding --> n6_AlertGenerated
+    n6_AlertGenerated --> n7_Investigation
+    n7_Investigation --> n8_Remediation
+    n8_Remediation --> n9_ComplianceRestored

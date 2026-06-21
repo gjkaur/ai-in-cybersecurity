@@ -1,0 +1,18 @@
+flowchart TB
+    n1_WhyDashboardsMatter["Why Dashboards Matter"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyDashboardsMatter fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Analyst["Analyst"]
+    style n2_Analyst fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_WriteQuery["Write Query"]
+    style n3_WriteQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ReviewResults["Review Results"]
+    style n4_ReviewResults fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_WriteAnotherQuery["Write Another Query"]
+    style n5_WriteAnotherQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Investigate["Investigate"]
+    style n6_Investigate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Analyst --> n3_WriteQuery
+    n3_WriteQuery --> n4_ReviewResults
+    n4_ReviewResults --> n5_WriteAnotherQuery
+    n5_WriteAnotherQuery --> n6_Investigate

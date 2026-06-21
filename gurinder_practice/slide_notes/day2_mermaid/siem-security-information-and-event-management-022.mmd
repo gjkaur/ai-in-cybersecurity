@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Step2Analyze["Step 2: Analyze"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step2Analyze fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_VPNLogin["VPN Login"]
+    style n2_VPNLogin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_NewGeographicLocation["New Geographic Location"]
+    style n3_NewGeographicLocation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PrivilegeEscalation["Privilege Escalation"]
+    style n4_PrivilegeEscalation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_VPNLogin --> n3_NewGeographicLocation
+    n3_NewGeographicLocation --> n4_PrivilegeEscalation

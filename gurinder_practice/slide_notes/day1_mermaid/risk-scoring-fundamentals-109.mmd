@@ -1,0 +1,24 @@
+flowchart TB
+    n1_SOCInvestigationWorkflow["SOC Investigation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SOCInvestigationWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AlertGenerated["Alert Generated"]
+    style n2_AlertGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CollectEvidence["Collect Evidence"]
+    style n3_CollectEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ValidateEvents["Validate Events"]
+    style n4_ValidateEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AssignRiskScore["Assign Risk Score"]
+    style n5_AssignRiskScore fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_WriteTriageNote["Write Triage Note"]
+    style n6_WriteTriageNote fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_DetermineNextPivot["Determine Next Pivot"]
+    style n7_DetermineNextPivot fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_EscalateorClose["Escalate or Close"]
+    style n8_EscalateorClose fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AlertGenerated --> n3_CollectEvidence
+    n3_CollectEvidence --> n4_ValidateEvents
+    n4_ValidateEvents --> n5_AssignRiskScore
+    n5_AssignRiskScore --> n6_WriteTriageNote
+    n6_WriteTriageNote --> n7_DetermineNextPivot
+    n7_DetermineNextPivot --> n8_EscalateorClose

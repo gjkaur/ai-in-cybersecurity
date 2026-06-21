@@ -1,0 +1,15 @@
+flowchart TB
+    n1_Alerting["Alerting"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Alerting fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Logs["Logs"]
+    style n2_Logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Metrics["Metrics"]
+    style n3_Metrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Alarms["Alarms"]
+    style n4_Alarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Notifications["Notifications"]
+    style n5_Notifications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Logs --> n3_Metrics
+    n3_Metrics --> n4_Alarms
+    n4_Alarms --> n5_Notifications

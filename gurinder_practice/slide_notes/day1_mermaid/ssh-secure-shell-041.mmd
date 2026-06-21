@@ -1,0 +1,20 @@
+flowchart TB
+    n1_WhatisaPort["What is a Port?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatisaPort fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Port80["Port 80"]
+    n3_Website["→ Website"]
+    style n2_Port80 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n3_Website fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Port80 --- n3_Website
+    n4_Port443["Port 443"]
+    n5_SecureWebsite["→ Secure Website"]
+    style n4_Port443 fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n5_SecureWebsite fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n2_Port80 --> n4_Port443
+    n3_Website --> n5_SecureWebsite
+    n6_Port22["Port 22"]
+    n7_SSH["→ SSH"]
+    style n6_Port22 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n7_SSH fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Port22 --- n7_SSH

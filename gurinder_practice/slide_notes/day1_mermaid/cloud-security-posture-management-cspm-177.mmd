@@ -1,0 +1,9 @@
+flowchart TB
+    n1_PublicS3Exposure["Public S3 Exposure"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_PublicS3Exposure fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SensitiveBucket["Sensitive Bucket"]
+    style n2_SensitiveBucket fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_PublicAccessEnabled["Public Access Enabled"]
+    style n3_PublicAccessEnabled fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SensitiveBucket --> n3_PublicAccessEnabled

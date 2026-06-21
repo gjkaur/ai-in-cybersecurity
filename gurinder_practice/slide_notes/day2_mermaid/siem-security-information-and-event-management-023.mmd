@@ -1,0 +1,9 @@
+flowchart TB
+    n1_Step3Alert["Step 3: Alert"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step3Alert fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_RuleTriggered["Rule Triggered"]
+    style n2_RuleTriggered fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AlertGenerated["Alert Generated"]
+    style n3_AlertGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_RuleTriggered --> n3_AlertGenerated

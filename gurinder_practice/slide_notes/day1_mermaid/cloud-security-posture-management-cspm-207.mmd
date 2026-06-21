@@ -1,0 +1,18 @@
+flowchart TB
+    n1_ExampleSecureArchitectur["Example Secure Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleSecureArchitectur fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Internet["Internet"]
+    style n2_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LoadBalancer443["Load Balancer (443)"]
+    style n3_LoadBalancer443 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_WebServers["Web Servers"]
+    style n4_WebServers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ApplicationServers["Application Servers"]
+    style n5_ApplicationServers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Database["Database"]
+    style n6_Database fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Internet --> n3_LoadBalancer443
+    n3_LoadBalancer443 --> n4_WebServers
+    n4_WebServers --> n5_ApplicationServers
+    n5_ApplicationServers --> n6_Database

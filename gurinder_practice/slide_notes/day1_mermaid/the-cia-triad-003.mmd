@@ -1,0 +1,21 @@
+flowchart TB
+    n1_WhatistheCIATriad["What is the CIA Triad?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatistheCIATriad fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Cybersecurity["Cybersecurity"]
+    style n2_Cybersecurity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_node["┌──────────────┼──────────────┐"]
+    style n3_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_node["│              │              │"]
+    style n4_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Cybersecurity --> n3_node
+    n3_node --> n4_node
+    n5_Confidentiality["Confidentiality"]
+    n6_Integrity["Integrity"]
+    n7_Availability["Availability"]
+    style n5_Confidentiality fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n6_Integrity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n7_Availability fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_node --> n5_Confidentiality
+    n4_node --> n6_Integrity
+    n4_node --> n7_Availability

@@ -1,0 +1,18 @@
+flowchart TB
+    n1_CloudNativeSIEMonAWS["Cloud-Native SIEM on AWS"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CloudNativeSIEMonAWS fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudTrail["CloudTrail"]
+    style n2_CloudTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchLogs["CloudWatch Logs"]
+    style n3_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityHub["Security Hub"]
+    style n4_SecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_GuardDuty["GuardDuty"]
+    style n5_GuardDuty fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Investigation["Investigation"]
+    style n6_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudTrail --> n3_CloudWatchLogs
+    n3_CloudWatchLogs --> n4_SecurityHub
+    n4_SecurityHub --> n5_GuardDuty
+    n5_GuardDuty --> n6_Investigation

@@ -1,0 +1,36 @@
+flowchart TB
+    n1_ExampleSOCDashboard["Example SOC Dashboard"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleSOCDashboard fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_node["┌────────────────────────────┐"]
+    style n2_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_FailedLogins["│ Failed Logins"]
+    n4_node["│"]
+    style n3_FailedLogins fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n4_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_node --> n3_FailedLogins
+    n2_node --> n4_node
+    n5_SSHAttempts["│ SSH Attempts"]
+    n6_node["│"]
+    style n5_SSHAttempts fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n6_node fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n3_FailedLogins --> n5_SSHAttempts
+    n4_node --> n6_node
+    n7_CPUUsage["│ CPU Usage"]
+    n8_node["│"]
+    style n7_CPUUsage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n8_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CPUUsage --- n8_node
+    n9_SecurityFindings["│ Security Findings"]
+    n10_node["│"]
+    style n9_SecurityFindings fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n10_node fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n7_CPUUsage --> n9_SecurityFindings
+    n8_node --> n10_node
+    n11_ActiveAlarms["│ Active Alarms"]
+    n12_node["│"]
+    style n11_ActiveAlarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n12_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_ActiveAlarms --- n12_node
+    n13_node["└────────────────────────────┘"]
+    style n13_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A

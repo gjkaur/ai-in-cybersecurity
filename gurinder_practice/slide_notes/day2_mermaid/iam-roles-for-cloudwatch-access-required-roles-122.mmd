@@ -1,0 +1,18 @@
+flowchart TB
+    n1_EndtoEndDetectionFlow["End-to-End Detection Flow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EndtoEndDetectionFlow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Logs["Logs"]
+    style n2_Logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MetricFilter["Metric Filter"]
+    style n3_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Metric["Metric"]
+    style n4_Metric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Alarm["Alarm"]
+    style n5_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Alert["Alert"]
+    style n6_Alert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Logs --> n3_MetricFilter
+    n3_MetricFilter --> n4_Metric
+    n4_Metric --> n5_Alarm
+    n5_Alarm --> n6_Alert

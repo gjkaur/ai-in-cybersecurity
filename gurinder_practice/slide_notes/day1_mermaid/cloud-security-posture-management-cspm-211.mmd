@@ -1,0 +1,12 @@
+flowchart TB
+    n1_HighRiskMisconfiguration["High-Risk Misconfiguration #1: SSH Open to the Internet"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HighRiskMisconfiguration fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AdministratorIP["Administrator IP"]
+    style n2_AdministratorIP fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Port22["Port 22"]
+    style n3_Port22 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_EC2Instance["EC2 Instance"]
+    style n4_EC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AdministratorIP --> n3_Port22
+    n3_Port22 --> n4_EC2Instance

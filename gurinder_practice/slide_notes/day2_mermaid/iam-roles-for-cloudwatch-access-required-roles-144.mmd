@@ -1,0 +1,18 @@
+flowchart TB
+    n1_WhyPrivilegeEscalationMa["Why Privilege Escalation Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyPrivilegeEscalationMa fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_InitialAccess["Initial Access"]
+    style n2_InitialAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_UserAccountCompromise["User Account Compromise"]
+    style n3_UserAccountCompromise fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PrivilegeEscalation["Privilege Escalation"]
+    style n4_PrivilegeEscalation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Persistence["Persistence"]
+    style n5_Persistence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_DataTheftDestruction["Data Theft / Destruction"]
+    style n6_DataTheftDestruction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_InitialAccess --> n3_UserAccountCompromise
+    n3_UserAccountCompromise --> n4_PrivilegeEscalation
+    n4_PrivilegeEscalation --> n5_Persistence
+    n5_Persistence --> n6_DataTheftDestruction

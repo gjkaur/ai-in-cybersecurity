@@ -1,0 +1,14 @@
+flowchart TB
+    n1_sudo["sudo"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_sudo fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_PrivilegeRequests["Privilege Requests"]
+    style n3_PrivilegeRequests fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AdministrativeCommands["Administrative Commands"]
+    style n4_AdministrativeCommands fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_FailedsudoAttempts["Failed sudo Attempts"]
+    style n5_FailedsudoAttempts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_PrivilegeRequests --> n4_AdministrativeCommands
+        n4_AdministrativeCommands --> n5_FailedsudoAttempts
+    end

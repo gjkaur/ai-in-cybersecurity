@@ -1,0 +1,27 @@
+flowchart TB
+    n1_TheSOCInvestigationLifec["The SOC Investigation Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TheSOCInvestigationLifec fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Alert["Alert"]
+    style n2_Alert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CaptureEvidence["Capture Evidence"]
+    style n3_CaptureEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ParseData["Parse Data"]
+    style n4_ParseData fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_FilterNoise["Filter Noise"]
+    style n5_FilterNoise fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CorrelateEvents["Correlate Events"]
+    style n6_CorrelateEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_BuildTimeline["Build Timeline"]
+    style n7_BuildTimeline fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_DocumentFindings["Document Findings"]
+    style n8_DocumentFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_EscalateorClose["Escalate or Close"]
+    style n9_EscalateorClose fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Alert --> n3_CaptureEvidence
+    n3_CaptureEvidence --> n4_ParseData
+    n4_ParseData --> n5_FilterNoise
+    n5_FilterNoise --> n6_CorrelateEvents
+    n6_CorrelateEvents --> n7_BuildTimeline
+    n7_BuildTimeline --> n8_DocumentFindings
+    n8_DocumentFindings --> n9_EscalateorClose

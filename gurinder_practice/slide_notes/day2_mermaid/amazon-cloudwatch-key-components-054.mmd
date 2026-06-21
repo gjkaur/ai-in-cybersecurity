@@ -1,0 +1,21 @@
+flowchart TB
+    n1_DetectionPipeline["Detection Pipeline"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_DetectionPipeline fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AuthenticationLog["Authentication Log"]
+    style n2_AuthenticationLog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchAgent["CloudWatch Agent"]
+    style n3_CloudWatchAgent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchLogs["CloudWatch Logs"]
+    style n4_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_MetricFilter["Metric Filter"]
+    style n5_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Alarm["Alarm"]
+    style n6_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SOCAlert["SOC Alert"]
+    style n7_SOCAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AuthenticationLog --> n3_CloudWatchAgent
+    n3_CloudWatchAgent --> n4_CloudWatchLogs
+    n4_CloudWatchLogs --> n5_MetricFilter
+    n5_MetricFilter --> n6_Alarm
+    n6_Alarm --> n7_SOCAlert

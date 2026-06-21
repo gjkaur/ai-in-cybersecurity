@@ -1,0 +1,15 @@
+flowchart TB
+    n1_SSHConnectionProcess["SSH Connection Process"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SSHConnectionProcess fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Client["Client"]
+    style n2_Client fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_KeyExchange["Key Exchange"]
+    style n3_KeyExchange fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_EncryptionKeysCreated["Encryption Keys Created"]
+    style n4_EncryptionKeysCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_EncryptedSession["Encrypted Session"]
+    style n5_EncryptedSession fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Client --> n3_KeyExchange
+    n3_KeyExchange --> n4_EncryptionKeysCreated
+    n4_EncryptionKeysCreated --> n5_EncryptedSession

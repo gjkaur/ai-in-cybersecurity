@@ -1,0 +1,18 @@
+flowchart TB
+    n1_Internet["Internet"]
+    style n1_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityGroup["Security Group"]
+    style n2_SecurityGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Nginx["Nginx"]
+    style n3_Nginx fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Application["Application"]
+    style n4_Application fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Logs["Logs"]
+    style n5_Logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_accesslog["(access.log)"]
+    style n6_accesslog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_Internet --> n2_SecurityGroup
+    n2_SecurityGroup --> n3_Nginx
+    n3_Nginx --> n4_Application
+    n4_Application --> n5_Logs
+    n5_Logs --> n6_accesslog

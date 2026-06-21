@@ -1,0 +1,21 @@
+flowchart TB
+    n1_IncidentResponse["Incident Response"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_IncidentResponse fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Detect["Detect"]
+    style n2_Detect fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Investigate["Investigate"]
+    style n3_Investigate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Contain["Contain"]
+    style n4_Contain fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Eradicate["Eradicate"]
+    style n5_Eradicate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Recover["Recover"]
+    style n6_Recover fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_LessonsLearned["Lessons Learned"]
+    style n7_LessonsLearned fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Detect --> n3_Investigate
+    n3_Investigate --> n4_Contain
+    n4_Contain --> n5_Eradicate
+    n5_Eradicate --> n6_Recover
+    n6_Recover --> n7_LessonsLearned

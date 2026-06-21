@@ -1,0 +1,9 @@
+flowchart TB
+    n1_2PrivilegeLevel["2. Privilege Level"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_2PrivilegeLevel fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AdministratorAccess["Administrator Access"]
+    style n2_AdministratorAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_HigherRisk["Higher Risk"]
+    style n3_HigherRisk fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AdministratorAccess --> n3_HigherRisk

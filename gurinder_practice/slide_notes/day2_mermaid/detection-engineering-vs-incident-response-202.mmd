@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ExampleDetectionLogic["Example Detection Logic"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleDetectionLogic fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_auditdrecordsaccess["auditd records access"]
+    style n2_auditdrecordsaccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchreceivesevent["CloudWatch receives event"]
+    style n3_CloudWatchreceivesevent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Metricfiltermatches["Metric filter matches"]
+    style n4_Metricfiltermatches fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Metricincrements["Metric increments"]
+    style n5_Metricincrements fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Alarmtriggers["Alarm triggers"]
+    style n6_Alarmtriggers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AIOperationsinvestigatio["AI Operations investigation created"]
+    style n7_AIOperationsinvestigatio fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_SOCanalystreviewsalert["SOC analyst reviews alert"]
+    style n8_SOCanalystreviewsalert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_auditdrecordsaccess --> n3_CloudWatchreceivesevent
+    n3_CloudWatchreceivesevent --> n4_Metricfiltermatches
+    n4_Metricfiltermatches --> n5_Metricincrements
+    n5_Metricincrements --> n6_Alarmtriggers
+    n6_Alarmtriggers --> n7_AIOperationsinvestigatio
+    n7_AIOperationsinvestigatio --> n8_SOCanalystreviewsalert

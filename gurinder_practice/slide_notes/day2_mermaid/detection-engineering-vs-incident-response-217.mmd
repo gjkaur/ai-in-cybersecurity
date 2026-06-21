@@ -1,0 +1,24 @@
+flowchart TB
+    n1_AIHumanAnalystModel["AI + Human Analyst Model"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AIHumanAnalystModel fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Logs["Logs"]
+    style n2_Logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Detection["Detection"]
+    style n3_Detection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AIInvestigation["AI Investigation"]
+    style n4_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_HypothesesGenerated["Hypotheses Generated"]
+    style n5_HypothesesGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_HumanValidation["Human Validation"]
+    style n6_HumanValidation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_FinalDecision["Final Decision"]
+    style n7_FinalDecision fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_IncidentReport["Incident Report"]
+    style n8_IncidentReport fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Logs --> n3_Detection
+    n3_Detection --> n4_AIInvestigation
+    n4_AIInvestigation --> n5_HypothesesGenerated
+    n5_HypothesesGenerated --> n6_HumanValidation
+    n6_HumanValidation --> n7_FinalDecision
+    n7_FinalDecision --> n8_IncidentReport

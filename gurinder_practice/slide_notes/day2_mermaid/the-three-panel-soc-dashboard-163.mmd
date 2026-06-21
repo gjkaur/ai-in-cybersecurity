@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Step3CloudWatchAgentShip["Step 3 – CloudWatch Agent Ships Logs"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step3CloudWatchAgentShip fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_auditlog["audit.log"]
+    style n2_auditlog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchAgent["CloudWatch Agent"]
+    style n3_CloudWatchAgent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchLogs["CloudWatch Logs"]
+    style n4_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_auditlog --> n3_CloudWatchAgent
+    n3_CloudWatchAgent --> n4_CloudWatchLogs

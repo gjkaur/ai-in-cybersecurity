@@ -1,0 +1,12 @@
+flowchart TB
+    n1_LambdaInvocation["Lambda Invocation"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_LambdaInvocation fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Alarm["Alarm"]
+    style n2_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Lambda["Lambda"]
+    style n3_Lambda fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_BlockIPAddress["Block IP Address"]
+    style n4_BlockIPAddress fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Alarm --> n3_Lambda
+    n3_Lambda --> n4_BlockIPAddress

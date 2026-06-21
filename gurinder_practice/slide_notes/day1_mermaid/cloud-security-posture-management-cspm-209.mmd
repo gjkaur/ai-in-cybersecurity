@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyOpenPortsAreDangerous["Why Open Ports Are Dangerous"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyOpenPortsAreDangerous fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AnyoneontheInternet["Anyone on the Internet"]
+    style n2_AnyoneontheInternet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CanAttemptConnection["Can Attempt Connection"]
+    style n3_CanAttemptConnection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TargetService["Target Service"]
+    style n4_TargetService fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AnyoneontheInternet --> n3_CanAttemptConnection
+    n3_CanAttemptConnection --> n4_TargetService

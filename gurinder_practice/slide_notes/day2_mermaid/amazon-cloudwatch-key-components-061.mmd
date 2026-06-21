@@ -1,0 +1,17 @@
+flowchart TB
+    n1_SearchingAcrossMultipleS["Searching Across Multiple Servers"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SearchingAcrossMultipleS fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_soclabsecure["/soc-lab/secure"]
+    style n3_soclabsecure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ServerA["├── Server A"]
+    style n4_ServerA fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ServerB["├── Server B"]
+    style n5_ServerB fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_ServerC["└── Server C"]
+    style n6_ServerC fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_soclabsecure --> n4_ServerA
+        n4_ServerA --> n5_ServerB
+        n5_ServerB --> n6_ServerC
+    end

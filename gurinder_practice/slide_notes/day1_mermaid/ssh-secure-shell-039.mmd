@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyWasTelnetDangerous["Why Was Telnet Dangerous?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyWasTelnetDangerous fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Laptop["Laptop"]
+    style n2_Laptop fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Internet["Internet"]
+    style n3_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Server["Server"]
+    style n4_Server fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Laptop --> n3_Internet
+    n3_Internet --> n4_Server

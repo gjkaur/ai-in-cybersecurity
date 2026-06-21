@@ -1,0 +1,23 @@
+flowchart TB
+    n1_OneMetricCanFeedMultiple["One Metric Can Feed Multiple Services"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_OneMetricCanFeedMultiple fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Metric["Metric"]
+    style n3_Metric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Dashboard["├── Dashboard"]
+    style n4_Dashboard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Alarm["├── Alarm"]
+    style n5_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Reporting["├── Reporting"]
+    style n6_Reporting fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_TrendAnalysis["├── Trend Analysis"]
+    style n7_TrendAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Automation["└── Automation"]
+    style n8_Automation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Metric --> n4_Dashboard
+        n4_Dashboard --> n5_Alarm
+        n5_Alarm --> n6_Reporting
+        n6_Reporting --> n7_TrendAnalysis
+        n7_TrendAnalysis --> n8_Automation
+    end

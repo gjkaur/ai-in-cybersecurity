@@ -1,0 +1,27 @@
+flowchart TB
+    n1_ConnectingEverythingToge["Connecting Everything Together"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ConnectingEverythingToge fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Region["Region"]
+    style n2_Region fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AZ1["├── AZ-1"]
+    style n3_AZ1 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AZ2["├── AZ-2"]
+    style n4_AZ2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AZ3["└── AZ-3"]
+    style n5_AZ3 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_VPC["VPC"]
+    style n6_VPC fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_EC2Server["EC2 Server"]
+    style n7_EC2Server fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_IAM["IAM"]
+    style n8_IAM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_User["User"]
+    style n9_User fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Region --> n3_AZ1
+    n3_AZ1 --> n4_AZ2
+    n4_AZ2 --> n5_AZ3
+    n5_AZ3 --> n6_VPC
+    n6_VPC --> n7_EC2Server
+    n7_EC2Server --> n8_IAM
+    n8_IAM --> n9_User

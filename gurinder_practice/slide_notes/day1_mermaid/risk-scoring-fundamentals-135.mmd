@@ -1,0 +1,12 @@
+flowchart TB
+    n1_PermissionCreep["Permission Creep"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_PermissionCreep fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_NewPermissionsAdded["New Permissions Added"]
+    style n2_NewPermissionsAdded fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_NeverRemoved["Never Removed"]
+    style n3_NeverRemoved fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RoleBecomesExcessive["Role Becomes Excessive"]
+    style n4_RoleBecomesExcessive fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_NewPermissionsAdded --> n3_NeverRemoved
+    n3_NeverRemoved --> n4_RoleBecomesExcessive

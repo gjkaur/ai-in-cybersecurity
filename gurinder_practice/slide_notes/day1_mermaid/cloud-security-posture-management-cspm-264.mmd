@@ -1,0 +1,25 @@
+flowchart TB
+    n1_MultiAccountComplianceMo["Multi-Account Compliance Monitoring"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_MultiAccountComplianceMo fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_AccountA["Account A"]
+    style n3_AccountA fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AccountB["Account B"]
+    style n4_AccountB fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AccountC["Account C"]
+    style n5_AccountC fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AccountD["Account D"]
+    style n6_AccountD fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_AccountA --> n4_AccountB
+        n4_AccountB --> n5_AccountC
+        n5_AccountC --> n6_AccountD
+    end
+    n7_AccountD["Account D"]
+    style n7_AccountD fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_SecurityHubAggregator["Security Hub Aggregator"]
+    style n8_SecurityHubAggregator fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_CentralDashboard["Central Dashboard"]
+    style n9_CentralDashboard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AccountD --> n8_SecurityHubAggregator
+    n8_SecurityHubAggregator --> n9_CentralDashboard

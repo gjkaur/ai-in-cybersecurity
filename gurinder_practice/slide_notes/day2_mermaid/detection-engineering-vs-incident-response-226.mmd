@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ReflectonWhatYouBuilt["Reflect on What You Built"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ReflectonWhatYouBuilt fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LinuxEndpoint["Linux Endpoint"]
+    style n2_LinuxEndpoint fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_auditdTelemetry["auditd Telemetry"]
+    style n3_auditdTelemetry fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchLogs["CloudWatch Logs"]
+    style n4_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_MetricFilters["Metric Filters"]
+    style n5_MetricFilters fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CloudWatchAlarms["CloudWatch Alarms"]
+    style n6_CloudWatchAlarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AIOperationsInvestigatio["AI Operations Investigation"]
+    style n7_AIOperationsInvestigatio fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_SOCAnalystReview["SOC Analyst Review"]
+    style n8_SOCAnalystReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LinuxEndpoint --> n3_auditdTelemetry
+    n3_auditdTelemetry --> n4_CloudWatchLogs
+    n4_CloudWatchLogs --> n5_MetricFilters
+    n5_MetricFilters --> n6_CloudWatchAlarms
+    n6_CloudWatchAlarms --> n7_AIOperationsInvestigatio
+    n7_AIOperationsInvestigatio --> n8_SOCAnalystReview

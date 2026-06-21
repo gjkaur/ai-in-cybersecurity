@@ -1,0 +1,17 @@
+flowchart TB
+    n1_ThreePermissionGroups["Three Permission Groups"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ThreePermissionGroups fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_rwx["rwx"]
+    n3_rx["r-x"]
+    n4_r["r--"]
+    style n2_rwx fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n3_rx fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n4_r fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_rwx --- n3_rx
+    n3_rx --- n4_r
+    n5_node["│     │     │"]
+    style n5_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_OwnerGroupOthers["Owner Group Others"]
+    style n6_OwnerGroupOthers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_node --> n6_OwnerGroupOthers

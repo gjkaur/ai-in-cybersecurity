@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhatIsaThreatCatalog["What Is a Threat Catalog?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatIsaThreatCatalog fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Threat["Threat"]
+    style n2_Threat fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Evidence["Evidence"]
+    style n3_Evidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Detection["Detection"]
+    style n4_Detection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Response["Response"]
+    style n5_Response fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Threat --> n3_Evidence
+    n3_Evidence --> n4_Detection
+    n4_Detection --> n5_Response

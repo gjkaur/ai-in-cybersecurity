@@ -1,0 +1,18 @@
+flowchart TB
+    n1_BuildingaDetection["Building a Detection"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_BuildingaDetection fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogSource["Log Source"]
+    style n2_LogSource fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DetectionLogic["Detection Logic"]
+    style n3_DetectionLogic fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Metric["Metric"]
+    style n4_Metric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Alert["Alert"]
+    style n5_Alert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Investigation["Investigation"]
+    style n6_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogSource --> n3_DetectionLogic
+    n3_DetectionLogic --> n4_Metric
+    n4_Metric --> n5_Alert
+    n5_Alert --> n6_Investigation

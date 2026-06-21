@@ -1,0 +1,17 @@
+flowchart TB
+    n1_Group["Group"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Group fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_DevelopersGroup["Developers Group"]
+    style n3_DevelopersGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Alice["├── Alice"]
+    style n4_Alice fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Bob["├── Bob"]
+    style n5_Bob fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Charlie["└── Charlie"]
+    style n6_Charlie fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_DevelopersGroup --> n4_Alice
+        n4_Alice --> n5_Bob
+        n5_Bob --> n6_Charlie
+    end

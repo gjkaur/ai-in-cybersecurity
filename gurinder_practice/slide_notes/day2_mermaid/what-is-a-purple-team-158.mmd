@@ -1,0 +1,17 @@
+flowchart TB
+    n1_BottomRow["Bottom Row"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_BottomRow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Users["Users"]
+    style n3_Users fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Hosts["Hosts"]
+    style n4_Hosts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SourceIPs["Source IPs"]
+    style n5_SourceIPs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_LogDrilldowns["Log Drilldowns"]
+    style n6_LogDrilldowns fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Users --> n4_Hosts
+        n4_Hosts --> n5_SourceIPs
+        n5_SourceIPs --> n6_LogDrilldowns
+    end

@@ -1,0 +1,21 @@
+flowchart TB
+    n1_HowCSPMWorks["How CSPM Works"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HowCSPMWorks fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudResources["Cloud Resources"]
+    style n2_CloudResources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ConfigurationCollection["Configuration Collection"]
+    style n3_ConfigurationCollection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PolicyEvaluation["Policy Evaluation"]
+    style n4_PolicyEvaluation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RiskDetection["Risk Detection"]
+    style n5_RiskDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RemediationRecommendatio["Remediation Recommendations"]
+    style n6_RemediationRecommendatio fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ContinuousMonitoring["Continuous Monitoring"]
+    style n7_ContinuousMonitoring fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudResources --> n3_ConfigurationCollection
+    n3_ConfigurationCollection --> n4_PolicyEvaluation
+    n4_PolicyEvaluation --> n5_RiskDetection
+    n5_RiskDetection --> n6_RemediationRecommendatio
+    n6_RemediationRecommendatio --> n7_ContinuousMonitoring

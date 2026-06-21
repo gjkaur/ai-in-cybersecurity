@@ -1,0 +1,9 @@
+flowchart TB
+    n1_SecurityGroupA["Security Group A"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SecurityGroupA fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SSH22MyIPOnly["SSH (22) → My IP Only"]
+    style n2_SSH22MyIPOnly fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_HTTPS443Everyone["HTTPS (443) → Everyone"]
+    style n3_HTTPS443Everyone fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SSH22MyIPOnly --> n3_HTTPS443Everyone

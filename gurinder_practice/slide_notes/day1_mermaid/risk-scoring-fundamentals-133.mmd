@@ -1,0 +1,15 @@
+flowchart TB
+    n1_LeastPrivilegeExample["Least-Privilege Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_LeastPrivilegeExample fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_DeveloperRole["Developer Role"]
+    style n2_DeveloperRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_s3GetObject["s3:GetObject"]
+    style n3_s3GetObject fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_s3PutObject["s3:PutObject"]
+    style n4_s3PutObject fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Onlyspecificbucket["Only specific bucket"]
+    style n5_Onlyspecificbucket fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_DeveloperRole --> n3_s3GetObject
+    n3_s3GetObject --> n4_s3PutObject
+    n4_s3PutObject --> n5_Onlyspecificbucket

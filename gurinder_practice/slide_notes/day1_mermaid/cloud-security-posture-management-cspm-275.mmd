@@ -1,0 +1,18 @@
+flowchart TB
+    n1_WhyaBaselineMatters["Why a Baseline Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyaBaselineMatters fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_InitialAssessment["Initial Assessment"]
+    style n2_InitialAssessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_BaselineCreated["Baseline Created"]
+    style n3_BaselineCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RemediationActivities["Remediation Activities"]
+    style n4_RemediationActivities fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Reassessment["Reassessment"]
+    style n5_Reassessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CompareResults["Compare Results"]
+    style n6_CompareResults fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_InitialAssessment --> n3_BaselineCreated
+    n3_BaselineCreated --> n4_RemediationActivities
+    n4_RemediationActivities --> n5_Reassessment
+    n5_Reassessment --> n6_CompareResults

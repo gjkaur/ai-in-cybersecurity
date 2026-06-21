@@ -1,0 +1,9 @@
+flowchart TB
+    n1_EnableMFAImmediately["Enable MFA Immediately"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EnableMFAImmediately fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_RootAccount["Root Account"]
+    style n2_RootAccount fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MFAEnabled["MFA Enabled"]
+    style n3_MFAEnabled fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_RootAccount --> n3_MFAEnabled

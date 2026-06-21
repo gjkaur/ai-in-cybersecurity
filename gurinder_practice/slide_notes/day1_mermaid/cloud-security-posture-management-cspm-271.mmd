@@ -1,0 +1,15 @@
+flowchart TB
+    n1_MFAMonitoring["MFA Monitoring"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_MFAMonitoring fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_IAMUserCreated["IAM User Created"]
+    style n2_IAMUserCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MFANotEnabled["MFA Not Enabled"]
+    style n3_MFANotEnabled fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ComplianceViolation["Compliance Violation"]
+    style n4_ComplianceViolation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RemediationTicketGenerat["Remediation Ticket Generated"]
+    style n5_RemediationTicketGenerat fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_IAMUserCreated --> n3_MFANotEnabled
+    n3_MFANotEnabled --> n4_ComplianceViolation
+    n4_ComplianceViolation --> n5_RemediationTicketGenerat

@@ -1,0 +1,21 @@
+flowchart TB
+    n1_WhatDataDoesGuardDutyAna["What Data Does GuardDuty Analyze?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatDataDoesGuardDutyAna fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudTrailLogs["CloudTrail Logs"]
+    style n2_CloudTrailLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_VPCFlowLogs["VPC Flow Logs"]
+    style n3_VPCFlowLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_DNSQueryLogs["DNS Query Logs"]
+    style n4_DNSQueryLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_S3DataEvents["S3 Data Events"]
+    style n5_S3DataEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_EKSAuditLogs["EKS Audit Logs"]
+    style n6_EKSAuditLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_GuardDutyDetectionEngine["GuardDuty Detection Engine"]
+    style n7_GuardDutyDetectionEngine fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudTrailLogs --> n3_VPCFlowLogs
+    n3_VPCFlowLogs --> n4_DNSQueryLogs
+    n4_DNSQueryLogs --> n5_S3DataEvents
+    n5_S3DataEvents --> n6_EKSAuditLogs
+    n6_EKSAuditLogs --> n7_GuardDutyDetectionEngine

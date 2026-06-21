@@ -1,0 +1,27 @@
+flowchart TB
+    n1_ContinuousDetectionImpro["Continuous Detection Improvement"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ContinuousDetectionImpro fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_IdentifyThreats["Identify Threats"]
+    style n2_IdentifyThreats fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MeasureCoverage["Measure Coverage"]
+    style n3_MeasureCoverage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_FindGaps["Find Gaps"]
+    style n4_FindGaps fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CollectData["Collect Data"]
+    style n5_CollectData fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_BuildDetection["Build Detection"]
+    style n6_BuildDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_TestDetection["Test Detection"]
+    style n7_TestDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_TuneDetection["Tune Detection"]
+    style n8_TuneDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Repeat["Repeat"]
+    style n9_Repeat fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_IdentifyThreats --> n3_MeasureCoverage
+    n3_MeasureCoverage --> n4_FindGaps
+    n4_FindGaps --> n5_CollectData
+    n5_CollectData --> n6_BuildDetection
+    n6_BuildDetection --> n7_TestDetection
+    n7_TestDetection --> n8_TuneDetection
+    n8_TuneDetection --> n9_Repeat

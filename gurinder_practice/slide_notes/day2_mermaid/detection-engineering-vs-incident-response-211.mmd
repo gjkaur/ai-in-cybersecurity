@@ -1,0 +1,15 @@
+flowchart TB
+    n1_DetectionEngineeringPrin["Detection Engineering Principle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_DetectionEngineeringPrin fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ATTCKTechnique["ATT&CK Technique"]
+    style n2_ATTCKTechnique fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ObservableBehavior["Observable Behavior"]
+    style n3_ObservableBehavior fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ReliableLogSignal["Reliable Log Signal"]
+    style n4_ReliableLogSignal fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_DetectionLogic["Detection Logic"]
+    style n5_DetectionLogic fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ATTCKTechnique --> n3_ObservableBehavior
+    n3_ObservableBehavior --> n4_ReliableLogSignal
+    n4_ReliableLogSignal --> n5_DetectionLogic

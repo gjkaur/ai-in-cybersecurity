@@ -1,0 +1,21 @@
+flowchart TB
+    n1_PolicyEvaluationLogic["Policy Evaluation Logic"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_PolicyEvaluationLogic fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Request["Request"]
+    style n2_Request fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AuthenticateIdentity["Authenticate Identity"]
+    style n3_AuthenticateIdentity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CollectApplicablePolicie["Collect Applicable Policies"]
+    style n4_CollectApplicablePolicie fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CheckExplicitDeny["Check Explicit Deny"]
+    style n5_CheckExplicitDeny fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CheckAllow["Check Allow"]
+    style n6_CheckAllow fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AlloworDeny["Allow or Deny"]
+    style n7_AlloworDeny fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Request --> n3_AuthenticateIdentity
+    n3_AuthenticateIdentity --> n4_CollectApplicablePolicie
+    n4_CollectApplicablePolicie --> n5_CheckExplicitDeny
+    n5_CheckExplicitDeny --> n6_CheckAllow
+    n6_CheckAllow --> n7_AlloworDeny

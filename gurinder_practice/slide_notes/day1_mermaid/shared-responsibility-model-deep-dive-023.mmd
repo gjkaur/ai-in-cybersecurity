@@ -1,0 +1,45 @@
+flowchart TB
+    subgraph n1_panel [ ]
+    n2_AWSResponsibility["AWS Responsibility"]
+    style n2_AWSResponsibility fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_PhysicalSecurity["Physical Security"]
+    style n3_PhysicalSecurity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Servers["Servers"]
+    style n4_Servers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_StorageHardware["Storage Hardware"]
+    style n5_StorageHardware fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Networking["Networking"]
+    style n6_Networking fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Hypervisor["Hypervisor"]
+    style n7_Hypervisor fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n2_AWSResponsibility --> n3_PhysicalSecurity
+        n3_PhysicalSecurity --> n4_Servers
+        n4_Servers --> n5_StorageHardware
+        n5_StorageHardware --> n6_Networking
+        n6_Networking --> n7_Hypervisor
+    end
+    subgraph n8_panel [ ]
+    n9_CustomerResponsibility["Customer Responsibility"]
+    style n9_CustomerResponsibility fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_Data["Data"]
+    style n10_Data fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_Applications["Applications"]
+    style n11_Applications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n12_OS["OS"]
+    style n12_OS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n13_IAM["IAM"]
+    style n13_IAM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n14_Permissions["Permissions"]
+    style n14_Permissions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n15_FirewallRules["Firewall Rules"]
+    style n15_FirewallRules fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n16_Encryption["Encryption"]
+    style n16_Encryption fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n9_CustomerResponsibility --> n10_Data
+        n10_Data --> n11_Applications
+        n11_Applications --> n12_OS
+        n12_OS --> n13_IAM
+        n13_IAM --> n14_Permissions
+        n14_Permissions --> n15_FirewallRules
+        n15_FirewallRules --> n16_Encryption
+    end

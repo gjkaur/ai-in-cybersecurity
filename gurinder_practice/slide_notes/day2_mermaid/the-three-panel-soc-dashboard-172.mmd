@@ -1,0 +1,21 @@
+flowchart TB
+    n1_ValidationWorkflow["Validation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ValidationWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_GenerateEvent["Generate Event"]
+    style n2_GenerateEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_VerifyLog["Verify Log"]
+    style n3_VerifyLog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_VerifyMetric["Verify Metric"]
+    style n4_VerifyMetric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_VerifyAlarm["Verify Alarm"]
+    style n5_VerifyAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_VerifyInvestigation["Verify Investigation"]
+    style n6_VerifyInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CleanUp["Clean Up"]
+    style n7_CleanUp fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_GenerateEvent --> n3_VerifyLog
+    n3_VerifyLog --> n4_VerifyMetric
+    n4_VerifyMetric --> n5_VerifyAlarm
+    n5_VerifyAlarm --> n6_VerifyInvestigation
+    n6_VerifyInvestigation --> n7_CleanUp

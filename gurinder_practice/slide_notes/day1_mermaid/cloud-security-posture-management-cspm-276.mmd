@@ -1,0 +1,21 @@
+flowchart TB
+    n1_BaselineCreationWorkflow["Baseline Creation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_BaselineCreationWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityAssessment["Security Assessment"]
+    style n2_SecurityAssessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CollectFindings["Collect Findings"]
+    style n3_CollectFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_NormalizeData["Normalize Data"]
+    style n4_NormalizeData fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AssignSeverity["Assign Severity"]
+    style n5_AssignSeverity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_StoreBaseline["Store Baseline"]
+    style n6_StoreBaseline fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_BeginRemediation["Begin Remediation"]
+    style n7_BeginRemediation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityAssessment --> n3_CollectFindings
+    n3_CollectFindings --> n4_NormalizeData
+    n4_NormalizeData --> n5_AssignSeverity
+    n5_AssignSeverity --> n6_StoreBaseline
+    n6_StoreBaseline --> n7_BeginRemediation

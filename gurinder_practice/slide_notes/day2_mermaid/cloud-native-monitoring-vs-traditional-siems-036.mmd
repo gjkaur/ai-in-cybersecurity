@@ -1,0 +1,12 @@
+flowchart TB
+    n1_CloudNativeMonitoring["Cloud-Native Monitoring"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CloudNativeMonitoring fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_MoreLogs["More Logs"]
+    style n2_MoreLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AutomaticScaling["Automatic Scaling"]
+    style n3_AutomaticScaling fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ContinuousAvailability["Continuous Availability"]
+    style n4_ContinuousAvailability fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_MoreLogs --> n3_AutomaticScaling
+    n3_AutomaticScaling --> n4_ContinuousAvailability

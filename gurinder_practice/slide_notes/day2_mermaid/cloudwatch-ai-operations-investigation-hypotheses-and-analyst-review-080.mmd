@@ -1,0 +1,33 @@
+flowchart TB
+    n1_HighLevelInvestigationPi["High-Level Investigation Pipeline"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HighLevelInvestigationPi fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityEvent["Security Event"]
+    style n2_SecurityEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_InvestigationTriggered["Investigation Triggered"]
+    style n3_InvestigationTriggered fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_DefineScope["Define Scope"]
+    style n4_DefineScope fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CollectEvidence["Collect Evidence"]
+    style n5_CollectEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_GenerateHypotheses["Generate Hypotheses"]
+    style n6_GenerateHypotheses fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AnalyzeEvidence["Analyze Evidence"]
+    style n7_AnalyzeEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_RankFindings["Rank Findings"]
+    style n8_RankFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_GenerateSummary["Generate Summary"]
+    style n9_GenerateSummary fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_AnalystReview["Analyst Review"]
+    style n10_AnalystReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_AcceptRejectEscalate["Accept / Reject / Escalate"]
+    style n11_AcceptRejectEscalate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityEvent --> n3_InvestigationTriggered
+    n3_InvestigationTriggered --> n4_DefineScope
+    n4_DefineScope --> n5_CollectEvidence
+    n5_CollectEvidence --> n6_GenerateHypotheses
+    n6_GenerateHypotheses --> n7_AnalyzeEvidence
+    n7_AnalyzeEvidence --> n8_RankFindings
+    n8_RankFindings --> n9_GenerateSummary
+    n9_GenerateSummary --> n10_AnalystReview
+    n10_AnalystReview --> n11_AcceptRejectEscalate

@@ -1,0 +1,12 @@
+flowchart TB
+    n1_AmazonEventBridge["Amazon EventBridge"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AmazonEventBridge fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_RootLoginEvent["Root Login Event"]
+    style n2_RootLoginEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EventBridgeRule["EventBridge Rule"]
+    style n3_EventBridgeRule fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityNotification["Security Notification"]
+    style n4_SecurityNotification fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_RootLoginEvent --> n3_EventBridgeRule
+    n3_EventBridgeRule --> n4_SecurityNotification

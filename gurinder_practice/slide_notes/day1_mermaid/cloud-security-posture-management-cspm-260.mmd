@@ -1,0 +1,21 @@
+flowchart TB
+    n1_ConfigurationDrift["Configuration Drift"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ConfigurationDrift fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Day1["Day 1"]
+    style n2_Day1 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_S3BucketPrivate["S3 Bucket Private"]
+    style n3_S3BucketPrivate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Day20["Day 20"]
+    style n4_Day20 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_DeveloperChangesPolicy["Developer Changes Policy"]
+    style n5_DeveloperChangesPolicy fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_BucketBecomesPublic["Bucket Becomes Public"]
+    style n6_BucketBecomesPublic fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SecurityFindingReappears["Security Finding Reappears"]
+    style n7_SecurityFindingReappears fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Day1 --> n3_S3BucketPrivate
+    n3_S3BucketPrivate --> n4_Day20
+    n4_Day20 --> n5_DeveloperChangesPolicy
+    n5_DeveloperChangesPolicy --> n6_BucketBecomesPublic
+    n6_BucketBecomesPublic --> n7_SecurityFindingReappears

@@ -1,0 +1,9 @@
+flowchart TB
+    n1_NoAlerting["No Alerting"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_NoAlerting fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_FindingExists["Finding Exists"]
+    style n2_FindingExists fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_NobodyNotified["Nobody Notified"]
+    style n3_NobodyNotified fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_FindingExists --> n3_NobodyNotified

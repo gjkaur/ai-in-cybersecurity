@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Example["Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Example fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Metric["Metric"]
+    style n2_Metric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Alarm["Alarm"]
+    style n3_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Notification["Notification"]
+    style n4_Notification fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Metric --> n3_Alarm
+    n3_Alarm --> n4_Notification

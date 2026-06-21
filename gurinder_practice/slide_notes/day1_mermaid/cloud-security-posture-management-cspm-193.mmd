@@ -1,0 +1,12 @@
+flowchart TB
+    n1_RegularHygieneTask4Enfor["Regular Hygiene Task #4: Enforce MFA"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RegularHygieneTask4Enfor fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_PasswordTheft["Password Theft"]
+    style n2_PasswordTheft fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MFAChallenge["MFA Challenge"]
+    style n3_MFAChallenge fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AccessBlocked["Access Blocked"]
+    style n4_AccessBlocked fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_PasswordTheft --> n3_MFAChallenge
+    n3_MFAChallenge --> n4_AccessBlocked

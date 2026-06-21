@@ -1,0 +1,15 @@
+flowchart TB
+    n1_CryptocurrencyMiningDete["Cryptocurrency Mining Detection"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CryptocurrencyMiningDete fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_EC2Instance["EC2 Instance"]
+    style n2_EC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Communication["Communication"]
+    style n3_Communication fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_KnownMiningPool["Known Mining Pool"]
+    style n4_KnownMiningPool fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CryptoCurrencyEC2["CryptoCurrency:EC2"]
+    style n5_CryptoCurrencyEC2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_EC2Instance --> n3_Communication
+    n3_Communication --> n4_KnownMiningPool
+    n4_KnownMiningPool --> n5_CryptoCurrencyEC2

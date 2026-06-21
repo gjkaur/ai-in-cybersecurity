@@ -1,0 +1,18 @@
+flowchart TB
+    n1_HowauditdWorks["How auditd Works"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HowauditdWorks fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_UserAction["User Action"]
+    style n2_UserAction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LinuxKernel["Linux Kernel"]
+    style n3_LinuxKernel fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_auditsubsystem["audit subsystem"]
+    style n4_auditsubsystem fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_auditd["auditd"]
+    style n5_auditd fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_varlogauditauditlog["/var/log/audit/audit.log"]
+    style n6_varlogauditauditlog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_UserAction --> n3_LinuxKernel
+    n3_LinuxKernel --> n4_auditsubsystem
+    n4_auditsubsystem --> n5_auditd
+    n5_auditd --> n6_varlogauditauditlog

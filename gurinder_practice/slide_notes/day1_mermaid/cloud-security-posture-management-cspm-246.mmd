@@ -1,0 +1,18 @@
+flowchart TB
+    n1_Finding["Finding"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Finding fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_IdentifyConsumers["Identify Consumers"]
+    style n2_IdentifyConsumers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ReviewAccessLogs["Review Access Logs"]
+    style n3_ReviewAccessLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ImplementReplacementAcce["Implement Replacement Access"]
+    style n4_ImplementReplacementAcce fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_EnableBlockPublicAccess["Enable Block Public Access"]
+    style n5_EnableBlockPublicAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_ValidateFunctionality["Validate Functionality"]
+    style n6_ValidateFunctionality fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_IdentifyConsumers --> n3_ReviewAccessLogs
+    n3_ReviewAccessLogs --> n4_ImplementReplacementAcce
+    n4_ImplementReplacementAcce --> n5_EnableBlockPublicAccess
+    n5_EnableBlockPublicAccess --> n6_ValidateFunctionality

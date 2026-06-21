@@ -1,0 +1,12 @@
+flowchart TB
+    n1_AIOperationsInvestigatio["AI Operations Investigation"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AIOperationsInvestigatio fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_FailedSSHAlarm["Failed SSH Alarm"]
+    style n2_FailedSSHAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIInvestigation["AI Investigation"]
+    style n3_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_HypothesisGeneration["Hypothesis Generation"]
+    style n4_HypothesisGeneration fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_FailedSSHAlarm --> n3_AIInvestigation
+    n3_AIInvestigation --> n4_HypothesisGeneration

@@ -1,0 +1,15 @@
+flowchart TB
+    n1_LeastPrivilegeRole["Least-Privilege Role"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_LeastPrivilegeRole fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CompromisedLambda["Compromised Lambda"]
+    style n2_CompromisedLambda fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_s3GetObjecton["s3:GetObject on"]
+    style n3_s3GetObjecton fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_invoicebucket["invoice-bucket/*"]
+    style n4_invoicebucket fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Onlyonedatasetexposed["Only one dataset exposed"]
+    style n5_Onlyonedatasetexposed fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CompromisedLambda --> n3_s3GetObjecton
+    n3_s3GetObjecton --> n4_invoicebucket
+    n4_invoicebucket --> n5_Onlyonedatasetexposed

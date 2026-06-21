@@ -67,7 +67,7 @@ Use CloudWatch AI Operations and natural language queries to analyze cloud secur
 
 #### What You Will Build
 
-<img src="day2_diagrams/what-you-will-build-today-005.svg" width="144" alt="What You Will Build">
+<img src="day2_diagrams/what-you-will-build-today-005.svg" width="420" alt="What You Will Build">
 
 #### Activities
 
@@ -96,7 +96,7 @@ Create a Security Operations Center (SOC) dashboard capable of monitoring cloud 
 
 #### Architecture
 
-<img src="day2_diagrams/what-you-will-build-today-006.svg" width="144" alt="Architecture">
+<img src="day2_diagrams/what-you-will-build-today-006.svg" width="420" alt="Architecture">
 
 #### Activities
 
@@ -134,7 +134,7 @@ Design and implement a complete detection and investigation pipeline independent
 
 #### Project Workflow
 
-<img src="day2_diagrams/what-you-will-build-today-007.svg" width="144" alt="Project Workflow">
+<img src="day2_diagrams/what-you-will-build-today-007.svg" width="420" alt="Project Workflow">
 
 #### Example Attack Scenarios
 
@@ -176,7 +176,7 @@ Each participant will produce a professional incident report containing:
 
 ### End-to-End Architecture Built During Day 2
 
-<img src="day2_diagrams/what-you-will-build-today-008.svg" width="144" alt="End-to-End Architecture Built During Day 2">
+<img src="day2_diagrams/what-you-will-build-today-008.svg" width="420" alt="End-to-End Architecture Built During Day 2">
 
 ---
 
@@ -203,10 +203,10 @@ SIEM solutions form the operational backbone of modern Security Operations Cente
 
 Modern organizations generate millions of events every day. Firewalls, Endpoints, Servers, Applications, Cloud Services, Identity Systems, and Network Devices.
 Without a SIEM:
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-009.svg" width="144" alt="Why SIEM Systems Exist">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-009.svg" width="420" alt="Why SIEM Systems Exist">
 
 With a SIEM:
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-010.svg" width="144" alt="Why SIEM Systems Exist">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-010.svg" width="420" alt="Why SIEM Systems Exist">
 
 ### Core SIEM Functions
 
@@ -214,7 +214,7 @@ With a SIEM:
 
 Collect logs from many sources.
 Example sources: CloudTrail, VPC Flow Logs, Windows Event Logs, Linux Syslog, Firewalls, Web Servers, and Endpoint Detection Tools.
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-011.svg" width="144" alt="1. Log Aggregation">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-011.svg" width="420" alt="1. Log Aggregation">
 
 ---
 
@@ -252,7 +252,7 @@ Correlation combines multiple events to identify suspicious activity.
 
 #### Correlated Sequence
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-012.svg" width="144" alt="Correlated Sequence">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-012.svg" width="420" alt="Correlated Sequence">
 
 This pattern may indicate compromise.
 ---
@@ -278,7 +278,7 @@ Example queries:
 
 ### Typical SIEM Architecture
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-013.svg" width="144" alt="Typical SIEM Architecture">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-013.svg" width="420" alt="Typical SIEM Architecture">
 
 ---
 
@@ -311,7 +311,7 @@ Together:
 
 ### SIEM in the SOC Workflow
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-014.svg" width="144" alt="SIEM in the SOC Workflow">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-014.svg" width="420" alt="SIEM in the SOC Workflow">
 
 Security analysts spend much of their day working within this workflow.
 
@@ -388,7 +388,7 @@ The SIEM identifies meaningful events from millions of records.
 * Anomaly detection
 
 Example:
-<img src="day2_diagrams/siem-security-information-and-event-management-020.svg" width="144" alt="Event Processing">
+<img src="day2_diagrams/siem-security-information-and-event-management-020.svg" width="420" alt="Event Processing">
 
 Potential account compromise.
 ---
@@ -406,7 +406,7 @@ Manages security operations and response workflows.
 * Compliance reporting
 
 Example:
-<img src="day2_diagrams/siem-security-information-and-event-management-021.svg" width="144" alt="Management Functions">
+<img src="day2_diagrams/siem-security-information-and-event-management-021.svg" width="420" alt="Management Functions">
 
 ---
 
@@ -418,7 +418,7 @@ As organizations move workloads from on-premises data centers to the cloud, secu
 
 ### SIEM Architecture
 
-<img src="day2_diagrams/siem-security-information-and-event-management-025.svg" width="144" alt="SIEM Architecture">
+<img src="day2_diagrams/siem-security-information-and-event-management-025.svg" width="420" alt="SIEM Architecture">
 
 ### Cloud-Native Monitoring Architecture
 
@@ -426,7 +426,7 @@ Cloud-native monitoring services are integrated directly into cloud infrastructu
 
 #### AWS Example
 
-<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-031.svg" width="144" alt="AWS Example">
+<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-031.svg" width="420" alt="AWS Example">
 
 #### Characteristics
 
@@ -462,7 +462,7 @@ Examples:
 * RDS connections
 
 Example:
-<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-040.svg" width="144" alt="Metrics (Numerical Time-Series Data)">
+<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-040.svg" width="420" alt="Metrics (Numerical Time-Series Data)">
 
 Metrics are optimized for: Performance monitoring, Capacity planning, Trend analysis, and Alerting.
 
@@ -474,7 +474,7 @@ Logs are optimized for: Troubleshooting, Security investigations, Root cause ana
 
 ### CloudWatch Architecture
 
-<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-041.svg" width="144" alt="CloudWatch Architecture">
+<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-041.svg" width="420" alt="CloudWatch Architecture">
 
 ### Data Sources
 
@@ -557,7 +557,7 @@ Use Cases: Security investigations, Troubleshooting, Threat hunting, and Inciden
 
 Dashboards visualize: Metrics, Logs, Alarms, and Custom KPIs.
 Example SOC Dashboard:
-<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-042.svg" width="144" alt="4. CloudWatch Dashboards">
+<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-042.svg" width="420" alt="4. CloudWatch Dashboards">
 
 Benefits: Single-pane visibility, Executive reporting, and Security monitoring.
 ---
@@ -573,7 +573,7 @@ Possible actions: Send SNS notification, Trigger Lambda, Open ticket, and Execut
 
 ### Step 1: Collect
 
-<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-043.svg" width="144" alt="Step 1: Collect">
+<img src="day2_diagrams/amazon-cloudwatch-architecture-overview-043.svg" width="420" alt="Step 1: Collect">
 
 ---
 
@@ -631,7 +631,7 @@ CloudWatch can automatically collect metrics from many AWS services, but it cann
 ### Why the CloudWatch Agent Exists
 
 Without the CloudWatch Agent:
-<img src="day2_diagrams/amazon-cloudwatch-key-components-050.svg" width="144" alt="Why the CloudWatch Agent Exists">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-050.svg" width="420" alt="Why the CloudWatch Agent Exists">
 
 CloudWatch only receives: EC2 infrastructure metrics, AWS service metrics, and Cloud-managed service telemetry.
 It cannot access: Linux log files, Windows Event Logs, Application logs, Security logs, and Custom performance counters.
@@ -671,12 +671,12 @@ CloudWatch Agent monitors the log file. `/var/log/secure`
 #### Step 3
 
 Agent forwards new log entries.
-<img src="day2_diagrams/amazon-cloudwatch-key-components-052.svg" width="144" alt="Step 3">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-052.svg" width="420" alt="Step 3">
 
 #### Step 4
 
 CloudWatch stores the logs.
-<img src="day2_diagrams/amazon-cloudwatch-key-components-053.svg" width="144" alt="Step 4">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-053.svg" width="420" alt="Step 4">
 
 #### Step 5
 
@@ -703,13 +703,13 @@ Example:
 Another server:
 `i-0987654321abcdef`
 Structure:
-<img src="day2_diagrams/amazon-cloudwatch-key-components-059.svg" width="144" alt="Log Stream">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-059.svg" width="420" alt="Log Stream">
 
 ### Benefits of Centralized Log Ingestion
 
 #### Unified Visibility
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-062.svg" width="144" alt="Unified Visibility">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-062.svg" width="420" alt="Unified Visibility">
 
 #### Faster Investigations
 
@@ -725,7 +725,7 @@ Structure:
 
 #### Alerting
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-063.svg" width="144" alt="Alerting">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-063.svg" width="420" alt="Alerting">
 
 ---
 
@@ -808,10 +808,10 @@ fields @timestamp,@message
 
 Many analysts understand security investigations but are not experts in query languages.
 Traditional workflow:
-<img src="day2_diagrams/cloudwatch-logs-insights-query-language-067.svg" width="144" alt="Why AWS Added AI Query Generation">
+<img src="day2_diagrams/cloudwatch-logs-insights-query-language-067.svg" width="420" alt="Why AWS Added AI Query Generation">
 
 AI-assisted workflow:
-<img src="day2_diagrams/cloudwatch-logs-insights-query-language-068.svg" width="144" alt="Why AWS Added AI Query Generation">
+<img src="day2_diagrams/cloudwatch-logs-insights-query-language-068.svg" width="420" alt="Why AWS Added AI Query Generation">
 
 Result: Faster investigations, Reduced learning curve, Improved productivity, and More focus on analysis rather than syntax.
 
@@ -833,7 +833,7 @@ fields @timestamp,@message
 
 ### Human-in-the-Loop Model
 
-<img src="day2_diagrams/cloudwatch-logs-insights-query-language-070.svg" width="144" alt="Human-in-the-Loop Model">
+<img src="day2_diagrams/cloudwatch-logs-insights-query-language-070.svg" width="420" alt="Human-in-the-Loop Model">
 
 The analyst remains responsible for the final investigation.
 
@@ -986,7 +986,7 @@ For example, if multiple failed SSH logins are detected:
 
 ### AI Investigation Process
 
-<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-077.svg" width="144" alt="AI Investigation Process">
+<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-077.svg" width="420" alt="AI Investigation Process">
 
 Instead of showing only logs, AI provides possible explanations supported by evidence.
 
@@ -999,13 +999,13 @@ Instead of showing only logs, AI provides possible explanations supported by evi
 ### The Traditional Investigation Problem
 
 When an alert occurs, analysts typically perform a series of manual steps:
-<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-079.svg" width="144" alt="The Traditional Investigation Problem">
+<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-079.svg" width="420" alt="The Traditional Investigation Problem">
 
 This process can take minutes or hours depending on the volume of data and complexity of the incident.
 
 ### High-Level Investigation Pipeline
 
-<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-080.svg" width="144" alt="High-Level Investigation Pipeline">
+<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-080.svg" width="420" alt="High-Level Investigation Pipeline">
 
 ### Step 1: Define the Scope
 
@@ -1202,11 +1202,11 @@ CloudWatch AI Operations can automatically:
 
 #### Group Similar Events
 
-<img src="day2_diagrams/investigation-lifecycle-089.svg" width="144" alt="Group Similar Events">
+<img src="day2_diagrams/investigation-lifecycle-089.svg" width="420" alt="Group Similar Events">
 
 #### Detect Anomalies
 
-<img src="day2_diagrams/investigation-lifecycle-090.svg" width="144" alt="Detect Anomalies">
+<img src="day2_diagrams/investigation-lifecycle-090.svg" width="420" alt="Detect Anomalies">
 
 #### Identify Patterns
 
@@ -1599,7 +1599,7 @@ Malicious modification:
 Amazon CloudWatch is a managed service, but it still requires authorization to: Collect logs, Publish metrics, Read log data, Run investigations, Create alarms, and Access dashboards.
 AWS Identity and Access Management (IAM) controls who and what can perform these actions.
 Without the correct IAM permissions:
-<img src="day2_diagrams/signal-vs-noise-in-log-data-common-sources-of-noise-094.svg" width="144" alt="Why IAM Matters for CloudWatch">
+<img src="day2_diagrams/signal-vs-noise-in-log-data-common-sources-of-noise-094.svg" width="420" alt="Why IAM Matters for CloudWatch">
 
 ---
 
@@ -1625,7 +1625,7 @@ The CloudWatch Agent running on an EC2 instance requires permission to write log
 
 #### Typical Flow
 
-<img src="day2_diagrams/signal-vs-noise-in-log-data-common-sources-of-noise-095.svg" width="144" alt="Typical Flow">
+<img src="day2_diagrams/signal-vs-noise-in-log-data-common-sources-of-noise-095.svg" width="420" alt="Typical Flow">
 
 #### Required Permissions
 
@@ -1714,7 +1714,7 @@ Only the permissions needed for investigations.
 
 ### Example SOC Architecture
 
-<img src="day2_diagrams/signal-vs-noise-in-log-data-common-sources-of-noise-096.svg" width="144" alt="Example SOC Architecture">
+<img src="day2_diagrams/signal-vs-noise-in-log-data-common-sources-of-noise-096.svg" width="420" alt="Example SOC Architecture">
 
 Each component has its own permissions boundary.
 ---
@@ -1788,10 +1788,10 @@ Allows the CloudWatch Agent running on the server to: Create Log Streams, Write 
 
 #### Architecture
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-097.svg" width="144" alt="Architecture">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-097.svg" width="420" alt="Architecture">
 
 Without this role:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-098.svg" width="144" alt="Architecture">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-098.svg" width="420" alt="Architecture">
 
 ### Example Permissions
 
@@ -1820,7 +1820,7 @@ CloudWatch assumes this role during investigations to: Read Logs, Read Metrics, 
 
 #### Investigation Flow
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-099.svg" width="144" alt="Investigation Flow">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-099.svg" width="420" alt="Investigation Flow">
 
 ---
 
@@ -1851,11 +1851,11 @@ CloudWatch assumes this role during investigations to: Read Logs, Read Metrics, 
 
 #### Correct Design
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-100.svg" width="144" alt="Correct Design">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-100.svg" width="420" alt="Correct Design">
 
 #### Incorrect Design
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-101.svg" width="144" alt="Incorrect Design">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-101.svg" width="420" alt="Incorrect Design">
 
 This creates unnecessary security risk.
 ---
@@ -1896,7 +1896,7 @@ For training and lab environments:
 
 #### Recommended Approach
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-102.svg" width="144" alt="Recommended Approach">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-102.svg" width="420" alt="Recommended Approach">
 
 Benefits: Faster setup, Reduced configuration errors, Consistent permissions, and Simplified troubleshooting.
 ---
@@ -1979,7 +1979,7 @@ Log retention determines how long CloudWatch stores log events before automatica
 
 #### Example
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-103.svg" width="144" alt="Example">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-103.svg" width="420" alt="Example">
 
 ---
 
@@ -1991,7 +1991,7 @@ CloudWatch charges for: Log ingestion, Log storage, and Query execution.
 Large environments may generate:
 `Millions of Events per Day`
 Without retention controls:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-104.svg" width="144" alt="Cost Control">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-104.svg" width="420" alt="Cost Control">
 
 ---
 
@@ -2004,7 +2004,7 @@ An investigation contains: Hypotheses generated by AI, Evidence references, Anal
 
 #### Example
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-105.svg" width="144" alt="Example">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-105.svg" width="420" alt="Example">
 
 while underlying logs may remain available longer.
 ---
@@ -2040,7 +2040,7 @@ Different industries often require longer retention periods.
 
 ### Investigation Lifecycle
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-106.svg" width="144" alt="Investigation Lifecycle">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-106.svg" width="420" alt="Investigation Lifecycle">
 
 ---
 
@@ -2229,7 +2229,7 @@ Current alert state. (Alarm Status Widget)
 ---
 
 This provides:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-160.svg" width="144" alt="Panel 3">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-160.svg" width="420" alt="Panel 3">
 
 ---
 
@@ -2252,7 +2252,7 @@ Another error arrives:
 Metric becomes:
 `ErrorCount +2`
 The metric filter is acting like a translator:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-123.svg" width="144" alt="Diagram 123">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-123.svg" width="420" alt="Diagram 123">
 
 ### Why Metric Filter Design Matters
 
@@ -2586,7 +2586,7 @@ Example:
 ### Automated AI Workflow
 
 With AI Operations:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-140.svg" width="144" alt="Automated AI Workflow">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-140.svg" width="420" alt="Automated AI Workflow">
 
 The investigation begins immediately when the alarm triggers.
 By the time the analyst opens the alert: Relevant logs are already analyzed, Hypotheses are already generated, and Evidence is already cited.
@@ -2594,7 +2594,7 @@ By the time the analyst opens the alert: Relevant logs are already analyzed, Hyp
 ### Why Connect Alarms to AI Operations?
 
 Traditional SOC workflow:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-139.svg" width="144" alt="Why Connect Alarms to AI Operations?">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-139.svg" width="420" alt="Why Connect Alarms to AI Operations?">
 
 The problem:
 * Investigation starts only after a human notices the alert
@@ -2944,14 +2944,14 @@ Work through the activity on this slide and check your understanding before movi
 ### The Detection Engineering Mindset
 
 Detection engineering follows the same principle as software development:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-166.svg" width="144" alt="The Detection Engineering Mindset">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-166.svg" width="420" alt="The Detection Engineering Mindset">
 
 A rule without testing is equivalent to software that was never executed.
 
 ### Professional Detection Engineering Mindset
 
 Every simulation should follow this cycle:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-214.svg" width="144" alt="Professional Detection Engineering Mindset">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-214.svg" width="420" alt="Professional Detection Engineering Mindset">
 
 Skipping any step reduces the quality of the validation.
 
@@ -2971,7 +2971,7 @@ Builds the alarm.
 
 Responds to the alarm.
 Example:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-174.svg" width="144" alt="Incident Response">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-174.svg" width="420" alt="Incident Response">
 
 One creates visibility; the other acts on it.
 
@@ -3042,7 +3042,7 @@ Without measurement, detection programs become reactive rather than strategic.
 
 Security events do not magically become alerts.
 A detection pipeline converts:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-162.svg" width="144" alt="Why Detection Pipelines Matter">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-162.svg" width="420" alt="Why Detection Pipelines Matter">
 
 Every stage has a specific purpose. If any stage fails, the entire detection process breaks.
 
@@ -3068,7 +3068,7 @@ If you cannot answer those questions, coverage is unknown.
 A threat catalog is a structured inventory of: Threat techniques, Expected attacker behavior, Detection signals, ATT&CK mappings, and Investigation priorities.
 Think of it as the detection engineer's roadmap.
 Instead of randomly building alerts, we first identify:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-193.svg" width="144" alt="What Is a Threat Catalog?">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-193.svg" width="420" alt="What Is a Threat Catalog?">
 
 ---
 
@@ -3146,7 +3146,7 @@ Monitoring permission changes provides valuable security visibility.
 
 Creating a rule is only the first step.
 Detection engineers must verify that:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-181.svg" width="144" alt="Testing Detection Rules">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-181.svg" width="420" alt="Testing Detection Rules">
 
 If any stage fails, the detection is ineffective.
 
@@ -3162,7 +3162,7 @@ Metric filter matches:
 ---
 
 Pipeline:
-<img src="day2_diagrams/detection-strategy-148.svg" width="144" alt="Example Detection Workflow">
+<img src="day2_diagrams/detection-strategy-148.svg" width="420" alt="Example Detection Workflow">
 
 ---
 
@@ -3204,7 +3204,7 @@ A typical security investigation often starts here.
 ### auditd and CloudWatch
 
 In our lab architecture:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-198.svg" width="144" alt="auditd and CloudWatch">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-198.svg" width="420" alt="auditd and CloudWatch">
 
 Everything begins with auditd generating reliable security telemetry.
 
@@ -3424,21 +3424,21 @@ Example:
 
 ### Traditional Workflow
 
-<img src="day2_diagrams/cloudwatch-ai-operations-what-it-is-073.svg" width="144" alt="Traditional Workflow">
+<img src="day2_diagrams/cloudwatch-ai-operations-what-it-is-073.svg" width="420" alt="Traditional Workflow">
 
 Human effort required at every step.
 ---
 
 ### AI Operations Workflow
 
-<img src="day2_diagrams/cloudwatch-ai-operations-what-it-is-074.svg" width="144" alt="AI Operations Workflow">
+<img src="day2_diagrams/cloudwatch-ai-operations-what-it-is-074.svg" width="420" alt="AI Operations Workflow">
 
 The analyst reviews findings instead of manually gathering evidence.
 
 ### Traditional Investigation Approach
 
 Without AI assistance:
-<img src="day2_diagrams/investigation-lifecycle-088.svg" width="144" alt="Traditional Investigation Approach">
+<img src="day2_diagrams/investigation-lifecycle-088.svg" width="420" alt="Traditional Investigation Approach">
 
 Analysts spend significant effort reducing noise before actual investigation begins.
 
@@ -3513,7 +3513,7 @@ Large SIEM deployments face several challenges:
 
 #### Alert Fatigue
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-015.svg" width="144" alt="Alert Fatigue">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-015.svg" width="420" alt="Alert Fatigue">
 
 #### Data Volume
 
@@ -3531,23 +3531,23 @@ Log storage and processing can become expensive.
 ### Cloud-Native SIEM on AWS
 
 AWS services can collectively provide SIEM capabilities:
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-016.svg" width="144" alt="Cloud-Native SIEM on AWS">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-016.svg" width="420" alt="Cloud-Native SIEM on AWS">
 
 AWS-native SIEM-style workflows often include: CloudTrail, CloudWatch Logs, CloudWatch Alarms, Security Hub, GuardDuty, and OpenSearch.
 
 ### Modern AI-Enhanced SIEM
 
 Traditional workflow:
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-017.svg" width="144" alt="Modern AI-Enhanced SIEM">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-017.svg" width="420" alt="Modern AI-Enhanced SIEM">
 
 AI-enhanced workflow:
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-018.svg" width="144" alt="Modern AI-Enhanced SIEM">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-018.svg" width="420" alt="Modern AI-Enhanced SIEM">
 
 AI can help: Summarize logs, Explain alerts, Identify patterns, Generate incident reports, and Recommend next investigative steps.
 
 ### Example Security Event Lifecycle
 
-<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-019.svg" width="144" alt="Example Security Event Lifecycle">
+<img src="day2_diagrams/what-is-a-security-information-and-event-management-siem-system-019.svg" width="420" alt="Example Security Event Lifecycle">
 
 ### Key Takeaway
 
@@ -3571,7 +3571,7 @@ SIEM gathers logs from multiple sources. Servers, Firewalls, Cloud Logs, Applica
 
 The SIEM analyzes and correlates data.
 Example:
-<img src="day2_diagrams/siem-security-information-and-event-management-022.svg" width="144" alt="Step 2: Analyze">
+<img src="day2_diagrams/siem-security-information-and-event-management-022.svg" width="420" alt="Step 2: Analyze">
 
 ↓ `Suspicious Activity Detected`
 ---
@@ -3579,7 +3579,7 @@ Example:
 ### Step 3: Alert
 
 When predefined conditions are met:
-<img src="day2_diagrams/siem-security-information-and-event-management-023.svg" width="144" alt="Step 3: Alert">
+<img src="day2_diagrams/siem-security-information-and-event-management-023.svg" width="420" alt="Step 3: Alert">
 
 Example:
 - Severity: High
@@ -3590,7 +3590,7 @@ Example:
 ### Step 4: Respond
 
 Security analysts investigate and remediate.
-<img src="day2_diagrams/siem-security-information-and-event-management-024.svg" width="144" alt="Step 4: Respond">
+<img src="day2_diagrams/siem-security-information-and-event-management-024.svg" width="420" alt="Step 4: Respond">
 
 ### Key SIEM Capabilities
 
@@ -3607,7 +3607,7 @@ Security analysts investigate and remediate.
 
 ### Example AWS SIEM Workflow
 
-<img src="day2_diagrams/siem-security-information-and-event-management-026.svg" width="144" alt="Example AWS SIEM Workflow">
+<img src="day2_diagrams/siem-security-information-and-event-management-026.svg" width="420" alt="Example AWS SIEM Workflow">
 
 ### Real Security Example
 
@@ -3617,7 +3617,7 @@ Security analysts investigate and remediate.
 
 #### Correlated View
 
-<img src="day2_diagrams/siem-security-information-and-event-management-027.svg" width="144" alt="Correlated View">
+<img src="day2_diagrams/siem-security-information-and-event-management-027.svg" width="420" alt="Correlated View">
 
 ↓ `Possible Account Compromise` A SIEM identifies this pattern automatically.
 
@@ -3656,10 +3656,10 @@ Structured workflows for analysts.
 ### Modern AI-Enhanced SIEM
 
 Traditional SIEM:
-<img src="day2_diagrams/siem-security-information-and-event-management-028.svg" width="144" alt="Modern AI-Enhanced SIEM">
+<img src="day2_diagrams/siem-security-information-and-event-management-028.svg" width="420" alt="Modern AI-Enhanced SIEM">
 
 AI-Enhanced SIEM:
-<img src="day2_diagrams/siem-security-information-and-event-management-029.svg" width="144" alt="Modern AI-Enhanced SIEM">
+<img src="day2_diagrams/siem-security-information-and-event-management-029.svg" width="420" alt="Modern AI-Enhanced SIEM">
 
 AI can help: Summarize large log volumes, Explain alerts, Correlate evidence, Recommend response actions, and Generate investigation reports.
 
@@ -3673,7 +3673,7 @@ Traditional SIEMs were originally designed for enterprise data centers.
 
 #### Typical Workflow
 
-<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-030.svg" width="144" alt="Typical Workflow">
+<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-030.svg" width="420" alt="Typical Workflow">
 
 #### Characteristics
 
@@ -3709,18 +3709,18 @@ Traditional SIEMs were originally designed for enterprise data centers.
 
 ### Traditional SIEM
 
-<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-032.svg" width="144" alt="Traditional SIEM">
+<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-032.svg" width="420" alt="Traditional SIEM">
 
 Challenges: Agent installation, Version management, Network configuration, and Resource overhead.
 ---
 
 ### AWS Cloud-Native
 
-<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-033.svg" width="144" alt="AWS Cloud-Native">
+<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-033.svg" width="420" alt="AWS Cloud-Native">
 
-<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-034.svg" width="144" alt="AWS Cloud-Native">
+<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-034.svg" width="420" alt="AWS Cloud-Native">
 
-<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-035.svg" width="144" alt="AWS Cloud-Native">
+<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-035.svg" width="420" alt="AWS Cloud-Native">
 
 Benefits: Minimal configuration, Native integration, and Reduced operational overhead.
 
@@ -3735,7 +3735,7 @@ Required actions: Capacity planning, Hardware procurement, and Infrastructure up
 ### Cloud-Native Monitoring
 
 When log volume increases:
-<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-036.svg" width="144" alt="Cloud-Native Monitoring">
+<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-036.svg" width="420" alt="Cloud-Native Monitoring">
 
 Benefits: No hardware procurement, Elastic growth, and Faster adoption.
 
@@ -3786,7 +3786,7 @@ Usually requires: Additional licensing, Third-party integrations, and Custom con
 
 ### AWS Cloud-Native Monitoring
 
-<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-037.svg" width="144" alt="AWS Cloud-Native Monitoring">
+<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-037.svg" width="420" alt="AWS Cloud-Native Monitoring">
 
 Capabilities include: AI-generated queries, Log summarization, Root cause guidance, and Investigation acceleration.
 
@@ -3794,13 +3794,13 @@ Capabilities include: AI-generated queries, Log summarization, Root cause guidan
 
 ### Traditional SOC Workflow
 
-<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-038.svg" width="144" alt="Traditional SOC Workflow">
+<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-038.svg" width="420" alt="Traditional SOC Workflow">
 
 ---
 
 ### Cloud-Native SOC Workflow
 
-<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-039.svg" width="144" alt="Cloud-Native SOC Workflow">
+<img src="day2_diagrams/cloud-native-monitoring-vs-traditional-siems-039.svg" width="420" alt="Cloud-Native SOC Workflow">
 
 Example:
 - Show failed SSH logins
@@ -3896,7 +3896,7 @@ A **Log Group** is a logical container that organizes related log streams.
 
 #### Example Structure
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-044.svg" width="144" alt="Example Structure">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-044.svg" width="420" alt="Example Structure">
 
 Think of a Log Group as a folder containing related logs.
 ---
@@ -3911,7 +3911,7 @@ A log stream may represent: One EC2 instance, One Lambda execution environment, 
 
 #### Example
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-045.svg" width="144" alt="Example">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-045.svg" width="420" alt="Example">
 
 Log Events:
 `User login successful` `Failed password attempt` `sudo command executed` `Service restarted`
@@ -3953,7 +3953,7 @@ CloudWatch Alarms continuously evaluate metrics against defined thresholds.
 
 `CPU > 80%`
 When threshold is exceeded:
-<img src="day2_diagrams/amazon-cloudwatch-key-components-046.svg" width="144" alt="Example">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-046.svg" width="420" alt="Example">
 
 #### Security Examples
 
@@ -3981,7 +3981,7 @@ Dashboards provide visual monitoring of metrics and logs.
 
 #### Example SOC Dashboard
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-047.svg" width="144" alt="Example SOC Dashboard">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-047.svg" width="420" alt="Example SOC Dashboard">
 
 #### Dashboard Benefits
 
@@ -3996,13 +3996,13 @@ Dashboards provide visual monitoring of metrics and logs.
 
 #### Example Security Workflow
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-048.svg" width="144" alt="Example Security Workflow">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-048.svg" width="420" alt="Example Security Workflow">
 
 ---
 
 ### CloudWatch Component Relationship
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-049.svg" width="144" alt="CloudWatch Component Relationship">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-049.svg" width="420" alt="CloudWatch Component Relationship">
 
 ---
 
@@ -4037,7 +4037,7 @@ Dashboards provide visual monitoring of metrics and logs.
 
 ### CloudWatch Agent Architecture
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-051.svg" width="144" alt="CloudWatch Agent Architecture">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-051.svg" width="420" alt="CloudWatch Agent Architecture">
 
 ### Security Monitoring Example
 
@@ -4050,7 +4050,7 @@ Sample events:
 
 #### Detection Pipeline
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-054.svg" width="144" alt="Detection Pipeline">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-054.svg" width="420" alt="Detection Pipeline">
 
 ### Common Security Logs Collected
 
@@ -4124,7 +4124,7 @@ The CloudWatch Agent provides:
 
 #### Centralized Monitoring
 
-<img src="day2_diagrams/amazon-cloudwatch-key-components-055.svg" width="144" alt="Centralized Monitoring">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-055.svg" width="420" alt="Centralized Monitoring">
 
 ### Agent vs No Agent
 
@@ -4150,7 +4150,7 @@ The CloudWatch Agent continuously monitors configured log files on a server and 
 
 Security investigations depend on collecting evidence from servers.
 Without log ingestion:
-<img src="day2_diagrams/amazon-cloudwatch-key-components-056.svg" width="144" alt="Why Log Ingestion Matters">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-056.svg" width="420" alt="Why Log Ingestion Matters">
 
 SOC analysts cannot: Detect attacks, Investigate incidents, Build dashboards, and Create alerts.
 
@@ -4159,7 +4159,7 @@ SOC analysts cannot: Detect attacks, Investigate incidents, Build dashboards, an
 Authentication attempt:
 `Failed password for ubuntu`
 Workflow:
-<img src="day2_diagrams/amazon-cloudwatch-key-components-060.svg" width="144" alt="Example End-to-End Flow">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-060.svg" width="420" alt="Example End-to-End Flow">
 
 ### Searching Across Multiple Servers
 
@@ -4167,7 +4167,7 @@ Suppose: Server A, Server B, and Server C.
 All write to:
 `/soc-lab/secure`
 CloudWatch stores:
-<img src="day2_diagrams/amazon-cloudwatch-key-components-061.svg" width="144" alt="Searching Across Multiple Servers">
+<img src="day2_diagrams/amazon-cloudwatch-key-components-061.svg" width="420" alt="Searching Across Multiple Servers">
 
 Logs Insights can query them together.
 Example:
@@ -4230,7 +4230,7 @@ Result: All Failed Logins and Across All Servers.
 
 ### How Logs Insights Works
 
-<img src="day2_diagrams/cloudwatch-logs-insights-query-language-064.svg" width="144" alt="How Logs Insights Works">
+<img src="day2_diagrams/cloudwatch-logs-insights-query-language-064.svg" width="420" alt="How Logs Insights Works">
 
 Analysts write queries against one or more log groups and receive results within seconds.
 
@@ -4243,7 +4243,7 @@ fields @timestamp,@message
 ```
 
 Output:
-<img src="day2_diagrams/cloudwatch-logs-insights-query-language-065.svg" width="158" alt="Command 1 — fields">
+<img src="day2_diagrams/cloudwatch-logs-insights-query-language-065.svg" width="420" alt="Command 1 — fields">
 
 Common fields:
 | Field      | Purpose                |
@@ -4436,7 +4436,7 @@ Useful for SOC dashboards.
 
 ### Threat Hunting Workflow
 
-<img src="day2_diagrams/cloudwatch-logs-insights-query-language-066.svg" width="144" alt="Threat Hunting Workflow">
+<img src="day2_diagrams/cloudwatch-logs-insights-query-language-066.svg" width="420" alt="Threat Hunting Workflow">
 
 ### Comparison with SQL
 
@@ -4508,7 +4508,7 @@ stats count() by sourceIP
 ### How AI Query Generation Works
 
 CloudWatch AI uses:
-<img src="day2_diagrams/cloudwatch-logs-insights-query-language-069.svg" width="144" alt="How AI Query Generation Works">
+<img src="day2_diagrams/cloudwatch-logs-insights-query-language-069.svg" width="420" alt="How AI Query Generation Works">
 
 The AI translates the analyst's intent into valid Logs Insights commands.
 
@@ -4765,7 +4765,7 @@ Once validated:
 
 ### Query Execution Flow
 
-<img src="day2_diagrams/cloudwatch-logs-insights-query-language-072.svg" width="144" alt="Query Execution Flow">
+<img src="day2_diagrams/cloudwatch-logs-insights-query-language-072.svg" width="420" alt="Query Execution Flow">
 
 ### Result Types
 
@@ -4864,7 +4864,7 @@ Instead of simply displaying logs and metrics, it performs AI-assisted investiga
 
 ### Investigation Lifecycle
 
-<img src="day2_diagrams/investigation-lifecycle-075.svg" width="144" alt="Diagram 75">
+<img src="day2_diagrams/investigation-lifecycle-075.svg" width="420" alt="Diagram 75">
 
 ### Example Security Investigation
 
@@ -4908,7 +4908,7 @@ Without AI, CloudTrail, CloudWatch Logs, VPC Logs, and GuardDuty must be reviewe
 ---
 
 With AI Operations:
-<img src="day2_diagrams/investigation-lifecycle-076.svg" width="144" alt="Multi-Source Correlation Example">
+<img src="day2_diagrams/investigation-lifecycle-076.svg" width="420" alt="Multi-Source Correlation Example">
 
 ### Security Operations Benefits
 
@@ -5107,7 +5107,7 @@ Benign events can be identified quickly.
 
 ### Example End-to-End Scenario
 
-<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-078.svg" width="144" alt="Example End-to-End Scenario">
+<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-078.svg" width="420" alt="Example End-to-End Scenario">
 
 ### Key Takeaway
 
@@ -5210,7 +5210,7 @@ Typical contents:
 
 #### AI Actions
 
-<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-081.svg" width="144" alt="AI Actions">
+<img src="day2_diagrams/cloudwatch-ai-operations-investigation-hypotheses-and-analyst-review-081.svg" width="420" alt="AI Actions">
 
 #### Result
 
@@ -5250,7 +5250,7 @@ Analysts provide:
 
 ### Investigation Workflow Overview
 
-<img src="day2_diagrams/investigation-workflow-overview-082.svg" width="144" alt="Diagram 82">
+<img src="day2_diagrams/investigation-workflow-overview-082.svg" width="420" alt="Diagram 82">
 
 The AI performs the analysis, but the analyst remains responsible for the final decision.
 
@@ -5310,7 +5310,7 @@ This allows analysts to focus first on the most probable cause.
 
 ### Investigation Lifecycle
 
-<img src="day2_diagrams/investigation-lifecycle-084.svg" width="144" alt="Diagram 84">
+<img src="day2_diagrams/investigation-lifecycle-084.svg" width="420" alt="Diagram 84">
 
 Each stage contributes to building confidence in the final outcome.
 
@@ -5346,7 +5346,7 @@ A properly defined scope ensures the investigation remains focused and efficient
 Once the scope is established, AI Operations performs analysis across the selected data.
 The AI automatically: Executes log queries, Searches relevant events, Identifies recurring patterns, Detects anomalies, and Correlates related activities.
 Example:
-<img src="day2_diagrams/investigation-lifecycle-085.svg" width="144" alt="Step 2 — Automated Analysis">
+<img src="day2_diagrams/investigation-lifecycle-085.svg" width="420" alt="Step 2 — Automated Analysis">
 
 The analyst is no longer required to manually sift through thousands of records.
 
@@ -5396,7 +5396,7 @@ The AI links specific log entries and events to its conclusions. This makes inve
 
 ### Example Evidence Chain
 
-<img src="day2_diagrams/investigation-lifecycle-086.svg" width="144" alt="Example Evidence Chain">
+<img src="day2_diagrams/investigation-lifecycle-086.svg" width="420" alt="Example Evidence Chain">
 
 Analysts can review every step in the reasoning process.
 
@@ -5467,7 +5467,7 @@ Example:
 
 #### Evidence Ranking
 
-<img src="day2_diagrams/investigation-lifecycle-087.svg" width="144" alt="Evidence Ranking">
+<img src="day2_diagrams/investigation-lifecycle-087.svg" width="420" alt="Evidence Ranking">
 
 #### Analyst Decision
 
@@ -5677,7 +5677,7 @@ Most Security Operations Centers use a tiered approach:
 
 **Long-term retention:** Export or archive logs to Amazon S3, Lower storage costs, and Supports compliance and audit requirements.
 Example:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-107.svg" width="144" alt="Typical SOC Strategy">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-107.svg" width="420" alt="Typical SOC Strategy">
 
 This provides a balance between investigation speed and storage cost optimization.
 
@@ -5731,7 +5731,7 @@ That distinction is critical.
 #### AI Hypothesis = Starting Point
 
 Think of an AI-generated hypothesis as:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-108.svg" width="144" alt="AI Hypothesis = Starting Point">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-108.svg" width="420" alt="AI Hypothesis = Starting Point">
 
 The AI helps narrow the search space and accelerate investigations, but the analyst must determine whether the explanation is correct.
 
@@ -5810,7 +5810,7 @@ Example:
 
 #### Human-in-the-Loop Security Model
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-109.svg" width="144" alt="Human-in-the-Loop Security Model">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-109.svg" width="420" alt="Human-in-the-Loop Security Model">
 
 The analyst remains the final authority.
 
@@ -5892,7 +5892,7 @@ The analyst may possess critical context unavailable to the AI.
 ### Investigation Scope Matters
 
 Think of AI Operations as operating inside a boundary:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-110.svg" width="144" alt="Investigation Scope Matters">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-110.svg" width="420" alt="Investigation Scope Matters">
 
 Anything outside that boundary is invisible. This is why human review remains essential.
 ---
@@ -5939,7 +5939,7 @@ Additional findings: Approved maintenance window, Known VPN exit node, and Autho
 
 ### Human-in-the-Loop Principle
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-111.svg" width="144" alt="Human-in-the-Loop Principle">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-111.svg" width="420" alt="Human-in-the-Loop Principle">
 
 The AI assists. The analyst decides.
 ---
@@ -5965,7 +5965,7 @@ This demonstrates why evidence plus context is required for effective security i
 A Security Operations Center (SOC) dashboard is a centralized visual interface that displays security information from multiple sources in real time.
 Instead of manually running queries every few minutes, analysts can immediately see: Active security alerts, Suspicious activity, System health, Threat trends, Investigation status, and Incident response metrics.
 Think of it as:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-112.svg" width="144" alt="Diagram 112">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-112.svg" width="420" alt="Diagram 112">
 
 ---
 
@@ -6038,7 +6038,7 @@ A dashboard full of information can still provide little insight.
 
 ### Example SOC Workflow
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-113.svg" width="144" alt="Example SOC Workflow">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-113.svg" width="420" alt="Example SOC Workflow">
 
 The dashboard becomes the starting point for the investigation.
 ---
@@ -6125,7 +6125,7 @@ High-level summaries: Critical Alerts: 5, Open Investigations: 3, and Active Inc
 
 Clicking a widget should reveal: Alert Details, Source IP, Affected User, Evidence, and Timeline.
 This follows a natural workflow:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-114.svg" width="144" alt="Analyst Drill-Down">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-114.svg" width="420" alt="Analyst Drill-Down">
 
 ---
 
@@ -6133,10 +6133,10 @@ This follows a natural workflow:
 
 Critical alarms should appear directly on the dashboard.
 Analysts should not have to:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-115.svg" width="144" alt="Principle 4: Alert Integration">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-115.svg" width="420" alt="Principle 4: Alert Integration">
 
 Instead:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-116.svg" width="144" alt="Principle 4: Alert Integration">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-116.svg" width="420" alt="Principle 4: Alert Integration">
 
 This reduces detection and response time.
 ---
@@ -6223,7 +6223,7 @@ A metric filter continuously scans incoming log events.
 When it finds a matching pattern:
 `authentication failure` it increments a counter.
 Example:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-117.svg" width="144" alt="What a Metric Filter Does">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-117.svg" width="420" alt="What a Metric Filter Does">
 
 After multiple matches:
 `Failure Count = 15` Now CloudWatch has a metric it can graph, monitor, and alarm on.
@@ -6231,7 +6231,7 @@ After multiple matches:
 
 ### Visualization
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-118.svg" width="144" alt="Visualization">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-118.svg" width="420" alt="Visualization">
 
 This is the fundamental detection pipeline.
 ---
@@ -6246,10 +6246,10 @@ Examples:
 
 All alarm conditions require metrics.
 Without metric filters:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-119.svg" width="144" alt="Why Raw Logs Cannot Trigger Alarms">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-119.svg" width="420" alt="Why Raw Logs Cannot Trigger Alarms">
 
 With metric filters:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-120.svg" width="144" alt="Why Raw Logs Cannot Trigger Alarms">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-120.svg" width="420" alt="Why Raw Logs Cannot Trigger Alarms">
 
 ---
 
@@ -6314,7 +6314,7 @@ Metric:
 
 A common misconception is that a metric filter only supports alarms.
 Actually:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-121.svg" width="204" alt="One Metric Filter, Multiple Consumers">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-121.svg" width="420" alt="One Metric Filter, Multiple Consumers">
 
 One metric can support many monitoring functions.
 ---
@@ -6373,7 +6373,7 @@ This reinforces the central concept of the slide.
 
 ### End-to-End Detection Flow
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-122.svg" width="144" alt="End-to-End Detection Flow">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-122.svg" width="420" alt="End-to-End Detection Flow">
 
 Think of this as the CloudWatch security monitoring assembly line.
 
@@ -6465,23 +6465,23 @@ Failed SSH Login Detection
 
 `Email SOC Team`
 Full pipeline:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-124.svg" width="144" alt="Alert">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-124.svg" width="420" alt="Alert">
 
 ### Why This Architecture Matters
 
 Without metric filters:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-125.svg" width="144" alt="Why This Architecture Matters">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-125.svg" width="420" alt="Why This Architecture Matters">
 
 Analysts must manually search.
 With metric filters:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-126.svg" width="144" alt="Why This Architecture Matters">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-126.svg" width="420" alt="Why This Architecture Matters">
 
 CloudWatch becomes proactive instead of reactive.
 
 ### One Metric Can Feed Multiple Services
 
 A single metric can power:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-127.svg" width="144" alt="One Metric Can Feed Multiple Services">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-127.svg" width="420" alt="One Metric Can Feed Multiple Services">
 
 This makes metric design extremely important.
 
@@ -6617,7 +6617,7 @@ Expected answer:
 ### Where Alarms Fit
 
 Recall the monitoring pipeline:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-128.svg" width="144" alt="Where Alarms Fit">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-128.svg" width="420" alt="Where Alarms Fit">
 
 Metrics collect information.
 Alarms evaluate that information and determine:
@@ -6691,7 +6691,7 @@ When an alarm enters ALARM state, CloudWatch can perform actions automatically.
 ### SNS Notification
 
 Most common.
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-129.svg" width="144" alt="SNS Notification">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-129.svg" width="420" alt="SNS Notification">
 
 ---
 
@@ -6699,21 +6699,21 @@ Most common.
 
 CloudWatch can execute code.
 Example:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-130.svg" width="144" alt="Lambda Invocation">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-130.svg" width="420" alt="Lambda Invocation">
 
 ---
 
 ### Auto Scaling
 
 Example:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-131.svg" width="144" alt="Auto Scaling">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-131.svg" width="420" alt="Auto Scaling">
 
 ---
 
 ### AI Operations Investigation
 
 Example:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-132.svg" width="144" alt="AI Operations Investigation">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-132.svg" width="420" alt="AI Operations Investigation">
 
 CloudWatch begins an automated analysis.
 
@@ -6868,14 +6868,14 @@ This is arguably the most important setting. An alarm without an action is usele
 ### Email Notification
 
 Most common.
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-133.svg" width="144" alt="Email Notification">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-133.svg" width="420" alt="Email Notification">
 
 ---
 
 ### Slack / Teams
 
 Modern SOC environments often use:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-134.svg" width="144" alt="Slack / Teams">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-134.svg" width="420" alt="Slack / Teams">
 
 for faster visibility.
 ---
@@ -6883,7 +6883,7 @@ for faster visibility.
 ### Lambda Function
 
 Example:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-135.svg" width="144" alt="Lambda Function">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-135.svg" width="420" alt="Lambda Function">
 
 Automatic response.
 ---
@@ -6891,7 +6891,7 @@ Automatic response.
 ### AI Operations Investigation
 
 Example:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-136.svg" width="144" alt="AI Operations Investigation">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-136.svg" width="420" alt="AI Operations Investigation">
 
 CloudWatch automatically starts an investigation.
 
@@ -7009,7 +7009,7 @@ Examples:
 
 ### Example Validation Checklist
 
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-137.svg" width="144" alt="Example Validation Checklist">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-137.svg" width="420" alt="Example Validation Checklist">
 
 ### Runbook Section 4: Remediation Guidance
 
@@ -7079,7 +7079,7 @@ This helps analysts avoid unnecessary escalations.
 
 AI-generated investigations can enhance runbooks.
 Example:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-138.svg" width="144" alt="Runbooks and AI Operations">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-138.svg" width="420" alt="Runbooks and AI Operations">
 
 AI provides context. Runbooks provide process. Analysts provide judgment. All three work together.
 
@@ -7176,7 +7176,7 @@ When exceeded:
 #### Step 4: AI Investigation Starts
 
 Instead of only sending an email notification:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-141.svg" width="144" alt="Step 4: AI Investigation Starts">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-141.svg" width="420" alt="Step 4: AI Investigation Starts">
 
 CloudWatch automatically launches an investigation.
 The AI immediately begins analyzing: Logs, Metrics, Related events, Temporal patterns, and Environmental context.
@@ -7217,7 +7217,7 @@ Imagine:
 An attacker performs:
 `20 Failed SSH Logins`
 The workflow becomes:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-142.svg" width="144" alt="Example Scenario">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-142.svg" width="420" alt="Example Scenario">
 
 Before the analyst even opens the ticket, the investigation already contains: Suspected attack type, Source IP, Evidence, Related events, and MITRE ATT&CK mappings.
 
@@ -7264,7 +7264,7 @@ Continuously improve alarm definitions and query scopes.
 Many organizations think:
 `More Alarms = Better Security` Not true.
 Poor-quality alarms generate:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-143.svg" width="144" alt="Common Mistake">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-143.svg" width="420" alt="Common Mistake">
 
 The goal is: Fewer, Higher-Quality, and Actionable Alerts.
 
@@ -7291,7 +7291,7 @@ This demonstrates the complete end-to-end security automation pipeline.
 
 Most attackers do not start with administrative privileges.
 Typical attack progression:
-<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-144.svg" width="144" alt="Why Privilege Escalation Matters">
+<img src="day2_diagrams/iam-roles-for-cloudwatch-access-required-roles-144.svg" width="420" alt="Why Privilege Escalation Matters">
 
 Without elevated privileges, attackers are often limited in what they can do.
 With root access, they can: Disable security controls, Modify system files, Create backdoor accounts, Access sensitive data, and Move laterally through the environment.
@@ -7363,7 +7363,7 @@ This is highly suspicious. Even if some commands fail, the activity warrants inv
 ### Detection Strategy
 
 A common SOC pipeline:
-<img src="day2_diagrams/detection-strategy-145.svg" width="144" alt="Diagram 145">
+<img src="day2_diagrams/detection-strategy-145.svg" width="420" alt="Diagram 145">
 
 This provides automatic detection and triage.
 
@@ -7426,7 +7426,7 @@ with an incorrect password.
 Observe:
 `Authentication failure` in the logs.
 Then show:
-<img src="day2_diagrams/detection-strategy-146.svg" width="144" alt="Instructor Demonstration">
+<img src="day2_diagrams/detection-strategy-146.svg" width="420" alt="Instructor Demonstration">
 
 You will see the complete detection workflow.
 
@@ -7528,7 +7528,7 @@ These require elevated privileges to function correctly.
 ### Why Attackers Love SetUID
 
 If a vulnerable SetUID binary exists:
-<img src="day2_diagrams/detection-strategy-147.svg" width="144" alt="Why Attackers Love SetUID">
+<img src="day2_diagrams/detection-strategy-147.svg" width="420" alt="Why Attackers Love SetUID">
 
 Instant privilege escalation.
 
@@ -7596,7 +7596,7 @@ Enter an incorrect password.
 Observe:
 `res=failed`
 Then show:
-<img src="day2_diagrams/detection-strategy-149.svg" width="144" alt="Instructor Demonstration">
+<img src="day2_diagrams/detection-strategy-149.svg" width="420" alt="Instructor Demonstration">
 
 You can see how privilege escalation attempts become actionable security detections.
 
@@ -7846,7 +7846,7 @@ and attempts to obtain:
 ### Real Attack Lifecycle
 
 A typical attack follows:
-<img src="day2_diagrams/what-is-a-purple-team-150.svg" width="144" alt="Real Attack Lifecycle">
+<img src="day2_diagrams/what-is-a-purple-team-150.svg" width="420" alt="Real Attack Lifecycle">
 
 The test attacker account represents the starting point.
 
@@ -7870,7 +7870,7 @@ These activities are most visible when performed by non-administrative users.
 
 A Red Team rarely starts with administrator privileges.
 Instead they:
-<img src="day2_diagrams/what-is-a-purple-team-151.svg" width="144" alt="Red Team Perspective">
+<img src="day2_diagrams/what-is-a-purple-team-151.svg" width="420" alt="Red Team Perspective">
 
 Our attacker account mimics this process.
 
@@ -7926,7 +7926,7 @@ cat /etc/shadow
 
 ### Expected Detection Flow
 
-<img src="day2_diagrams/what-is-a-purple-team-152.svg" width="144" alt="Expected Detection Flow">
+<img src="day2_diagrams/what-is-a-purple-team-152.svg" width="420" alt="Expected Detection Flow">
 
 This is the complete detection pipeline you will validate.
 
@@ -7965,13 +7965,13 @@ Analysts should be able to quickly determine: What is happening?, Where is it ha
 ### Why Dashboards Matter
 
 Without dashboards:
-<img src="day2_diagrams/what-is-a-purple-team-153.svg" width="144" alt="Why Dashboards Matter">
+<img src="day2_diagrams/what-is-a-purple-team-153.svg" width="420" alt="Why Dashboards Matter">
 
 This consumes valuable time.
 ---
 
 With dashboards:
-<img src="day2_diagrams/what-is-a-purple-team-154.svg" width="144" alt="Why Dashboards Matter">
+<img src="day2_diagrams/what-is-a-purple-team-154.svg" width="420" alt="Why Dashboards Matter">
 
 Much faster.
 
@@ -7998,7 +7998,7 @@ Detailed analysis occurs afterward.
 
 ### Example Dashboard Architecture
 
-<img src="day2_diagrams/what-is-a-purple-team-155.svg" width="144" alt="Example Dashboard Architecture">
+<img src="day2_diagrams/what-is-a-purple-team-155.svg" width="420" alt="Example Dashboard Architecture">
 
 This prevents information overload.
 
@@ -8071,17 +8071,17 @@ Dashboard widgets can highlight: Investigation Count, Open Investigations, High-
 #### Top Row
 
 Security health overview.
-<img src="day2_diagrams/what-is-a-purple-team-156.svg" width="144" alt="Top Row">
+<img src="day2_diagrams/what-is-a-purple-team-156.svg" width="420" alt="Top Row">
 
 #### Middle Row
 
 Trend analysis.
-<img src="day2_diagrams/what-is-a-purple-team-157.svg" width="144" alt="Middle Row">
+<img src="day2_diagrams/what-is-a-purple-team-157.svg" width="420" alt="Middle Row">
 
 #### Bottom Row
 
 Investigation details.
-<img src="day2_diagrams/what-is-a-purple-team-158.svg" width="144" alt="Bottom Row">
+<img src="day2_diagrams/what-is-a-purple-team-158.svg" width="420" alt="Bottom Row">
 
 ### Common Dashboard Mistakes
 
@@ -8297,7 +8297,7 @@ Detailed context. Top Source IPs, Recent Events, and Investigation Links.
 ### Relationship Between Widgets
 
 The workflow should be:
-<img src="day2_diagrams/what-is-a-purple-team-159.svg" width="144" alt="Relationship Between Widgets">
+<img src="day2_diagrams/what-is-a-purple-team-159.svg" width="420" alt="Relationship Between Widgets">
 
 Each widget supports the next step.
 
@@ -8544,7 +8544,7 @@ Choose the widget that best answers the question:
 
 ### CloudWatch SOC Dashboard Example
 
-<img src="day2_diagrams/the-three-panel-soc-dashboard-161.svg" width="144" alt="CloudWatch SOC Dashboard Example">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-161.svg" width="420" alt="CloudWatch SOC Dashboard Example">
 
 This creates a complete detection workflow.
 
@@ -8590,7 +8590,7 @@ This record contains the evidence needed for detection.
 
 The CloudWatch Agent continuously reads log files. It forwards entries to AWS.
 Process:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-163.svg" width="144" alt="Step 3 – CloudWatch Agent Ships Logs">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-163.svg" width="420" alt="Step 3 – CloudWatch Agent Ships Logs">
 
 ### Why This Step Is Important
 
@@ -8620,7 +8620,7 @@ When a match occurs:
 
 CloudWatch Alarms cannot directly monitor raw log text. They require metrics.
 Metric filters perform the conversion:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-164.svg" width="144" alt="Why Metric Filters Exist">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-164.svg" width="420" alt="Why Metric Filters Exist">
 
 ### Example Metric
 
@@ -8690,7 +8690,7 @@ If no:
 
 ### End-to-End Pipeline Flow
 
-<img src="day2_diagrams/the-three-panel-soc-dashboard-165.svg" width="144" alt="End-to-End Pipeline Flow">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-165.svg" width="420" alt="End-to-End Pipeline Flow">
 
 ### Troubleshooting the Pipeline
 
@@ -9031,7 +9031,7 @@ Every component must be verified.
 
 ### End-to-End Validation Process
 
-<img src="day2_diagrams/the-three-panel-soc-dashboard-167.svg" width="144" alt="End-to-End Validation Process">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-167.svg" width="420" alt="End-to-End Validation Process">
 
 Testing stops only when the entire chain succeeds.
 
@@ -9135,7 +9135,7 @@ Result: Alert generated and Response absent.
 ### Positive Testing
 
 Positive testing verifies:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-168.svg" width="144" alt="Positive Testing">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-168.svg" width="420" alt="Positive Testing">
 
 Example:
 ```bash
@@ -9149,7 +9149,7 @@ Expected:
 ### Negative Testing
 
 Negative testing verifies:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-169.svg" width="144" alt="Negative Testing">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-169.svg" width="420" alt="Negative Testing">
 
 Example:
 ```bash
@@ -9172,7 +9172,7 @@ Analysts quickly become overwhelmed. This contributes to alert fatigue.
 ### Testing for False Positives
 
 A false positive occurs when:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-170.svg" width="144" alt="Testing for False Positives">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-170.svg" width="420" alt="Testing for False Positives">
 
 Example:
 A system administrator performing routine maintenance triggers an attack detection. Validation helps identify these problems before production deployment.
@@ -9180,7 +9180,7 @@ A system administrator performing routine maintenance triggers an attack detecti
 ### Testing for False Negatives
 
 A false negative occurs when:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-171.svg" width="144" alt="Testing for False Negatives">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-171.svg" width="420" alt="Testing for False Negatives">
 
 This is often more dangerous than a false positive. Validation helps uncover detection blind spots.
 
@@ -9226,7 +9226,7 @@ Validation requires testing the entire workflow.
 ### Validation Workflow
 
 The recommended validation process is:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-172.svg" width="144" alt="Validation Workflow">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-172.svg" width="420" alt="Validation Workflow">
 
 Each step should be documented.
 
@@ -9294,7 +9294,7 @@ If the metric does not increment, alarms cannot fire.
 
 The next step is confirming alarm evaluation.
 Expected transition:
-<img src="day2_diagrams/the-three-panel-soc-dashboard-173.svg" width="144" alt="Step 4 – Verify Alarm State">
+<img src="day2_diagrams/the-three-panel-soc-dashboard-173.svg" width="420" alt="Step 4 – Verify Alarm State">
 
 after the threshold is exceeded.
 
@@ -9444,14 +9444,14 @@ These components collectively form the organization's detection capability.
 ### Detection Engineering in the SOC
 
 Detection engineering sits between:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-175.svg" width="144" alt="Detection Engineering in the SOC">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-175.svg" width="420" alt="Detection Engineering in the SOC">
 
 Threat intelligence identifies attacker techniques. Detection engineering converts those techniques into detections. SOC analysts investigate the resulting alerts.
 
 ### Building a Detection
 
 A typical detection includes:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-176.svg" width="144" alt="Building a Detection">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-176.svg" width="420" alt="Building a Detection">
 
 Each stage must function correctly for the detection to provide value.
 
@@ -9460,10 +9460,10 @@ Each stage must function correctly for the detection to provide value.
 Organizations collect enormous amounts of telemetry.
 Examples include: Authentication logs, System logs, Audit logs, Network logs, Cloud logs, and Application logs.
 Without detection engineering:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-177.svg" width="144" alt="Why Detection Engineering Exists">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-177.svg" width="420" alt="Why Detection Engineering Exists">
 
 With detection engineering:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-178.svg" width="144" alt="Why Detection Engineering Exists">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-178.svg" width="420" alt="Why Detection Engineering Exists">
 
 ### The Three Major Inputs
 
@@ -9536,7 +9536,7 @@ Detection engineers continuously balance both risks.
 ### Detection Lifecycle
 
 A mature detection follows a lifecycle:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-179.svg" width="144" alt="Detection Lifecycle">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-179.svg" width="420" alt="Detection Lifecycle">
 
 Detection engineering manages the entire lifecycle.
 
@@ -9580,7 +9580,7 @@ Threat intelligence tells us: What attackers are doing, Which techniques they us
 However, intelligence alone does not stop attacks.
 A detection engineer converts intelligence into: Detection rules, Log queries, Correlation logic, Metrics, and Alerts.
 Example:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-180.svg" width="144" alt="Translating Threat Intelligence into Detections">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-180.svg" width="420" alt="Translating Threat Intelligence into Detections">
 
 This conversion process is one of the most important responsibilities of a detection engineer.
 
@@ -9618,7 +9618,7 @@ The goal is not simply detecting attacks. The goal is detecting attacks **withou
 ### Understanding False Positives
 
 False Positive:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-182.svg" width="144" alt="Understanding False Positives">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-182.svg" width="420" alt="Understanding False Positives">
 
 Example:
 A system administrator performs an approved sudo action and the rule incorrectly generates a high-priority alert.
@@ -9627,7 +9627,7 @@ Excessive false positives reduce operational effectiveness.
 ### Understanding False Negatives
 
 False Negative:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-183.svg" width="144" alt="Understanding False Negatives">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-183.svg" width="420" alt="Understanding False Negatives">
 
 Example:
 An attacker successfully escalates privileges but the detection never fires. False negatives are often more dangerous because attacks remain invisible.
@@ -9692,7 +9692,7 @@ Example:
 
 Without documentation, Analysts waste time, Investigations become inconsistent, and Knowledge is lost when employees leave.
 Good documentation enables:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-184.svg" width="144" alt="Why Documentation Matters">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-184.svg" width="420" alt="Why Documentation Matters">
 
 This improves SOC efficiency significantly.
 
@@ -9711,7 +9711,7 @@ Both roles work closely together.
 ### In Our Lab Environment
 
 The detection engineer creates:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-185.svg" width="144" alt="In Our Lab Environment">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-185.svg" width="420" alt="In Our Lab Environment">
 
 The SOC analyst then reviews and validates the investigation results.
 
@@ -9729,7 +9729,7 @@ One of the first lessons in detection engineering is:
 > You cannot detect everything.
 Modern environments generate: Millions of log events, Thousands of potential attack paths, Hundreds of ATT&CK techniques, and Continuous infrastructure changes.
 Attempting to detect every possible threat usually creates:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-186.svg" width="144" alt="The Reality of Detection Engineering">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-186.svg" width="420" alt="The Reality of Detection Engineering">
 
 Successful detection programs focus on quality over quantity.
 
@@ -9789,7 +9789,7 @@ These activities can lead to complete system compromise.
 
 Can you actually observe the activity? Detection requires telemetry.
 Example:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-187.svg" width="144" alt="Factor 3: Visibility">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-187.svg" width="420" alt="Factor 3: Visibility">
 
 A technique may be important, but if the environment lacks visibility, detection becomes extremely difficult.
 
@@ -9941,10 +9941,10 @@ These may indicate suspicious activity, but they also occur during normal operat
 ### Why Fidelity Matters
 
 Poor fidelity creates:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-188.svg" width="144" alt="Why Fidelity Matters">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-188.svg" width="420" alt="Why Fidelity Matters">
 
 High fidelity creates:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-189.svg" width="144" alt="Why Fidelity Matters">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-189.svg" width="420" alt="Why Fidelity Matters">
 
 The SOC should spend time investigating threats—not filtering noise.
 
@@ -9990,13 +9990,13 @@ Detection engineering isn't only about building new detections. It is also about
 ### Understanding Detection Gaps
 
 A detection gap exists when:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-190.svg" width="144" alt="Understanding Detection Gaps">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-190.svg" width="420" alt="Understanding Detection Gaps">
 
 or
-<img src="day2_diagrams/detection-engineering-vs-incident-response-191.svg" width="144" alt="Understanding Detection Gaps">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-191.svg" width="420" alt="Understanding Detection Gaps">
 
 or
-<img src="day2_diagrams/detection-engineering-vs-incident-response-192.svg" width="144" alt="Understanding Detection Gaps">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-192.svg" width="420" alt="Understanding Detection Gaps">
 
 All three situations represent risk.
 
@@ -10109,10 +10109,10 @@ This progression delivers value quickly while steadily improving coverage.
 ### Why Create a Threat Catalog?
 
 Without a threat catalog:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-194.svg" width="144" alt="Why Create a Threat Catalog?">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-194.svg" width="420" alt="Why Create a Threat Catalog?">
 
 With a threat catalog:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-195.svg" width="144" alt="Why Create a Threat Catalog?">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-195.svg" width="420" alt="Why Create a Threat Catalog?">
 
 This creates a more systematic security program.
 
@@ -10292,7 +10292,7 @@ Without ATT&CK mapping, coverage becomes difficult to evaluate.
 ### Threat-to-Detection Workflow
 
 Each catalog entry follows the same process:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-196.svg" width="144" alt="Threat-to-Detection Workflow">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-196.svg" width="420" alt="Threat-to-Detection Workflow">
 
 This creates consistency across all detections.
 
@@ -10346,7 +10346,7 @@ For security monitoring, the additional detail is often worth the complexity.
 ### How auditd Works
 
 The workflow looks like this:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-197.svg" width="144" alt="How auditd Works">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-197.svg" width="420" alt="How auditd Works">
 
 Example:
 ```bash
@@ -10570,7 +10570,7 @@ Without auditd running, no audit records will be generated.
 ### Integration with CloudWatch
 
 In our lab architecture:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-199.svg" width="144" alt="Integration with CloudWatch">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-199.svg" width="420" alt="Integration with CloudWatch">
 
 The CloudWatch Agent continuously forwards audit records to AWS. This allows centralized monitoring and alerting.
 
@@ -10633,7 +10633,7 @@ chmod u+s /usr/bin/bash
 
 This creates a setUID-enabled executable.
 If successful:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-200.svg" width="144" alt="Why Attackers Abuse setUID">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-200.svg" width="420" alt="Why Attackers Abuse setUID">
 
 This is a classic privilege escalation technique.
 
@@ -10680,7 +10680,7 @@ Unexpected access should be investigated immediately.
 ### Detecting Credential Harvesting
 
 Credential harvesting typically follows this sequence:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-201.svg" width="144" alt="Detecting Credential Harvesting">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-201.svg" width="420" alt="Detecting Credential Harvesting">
 
 Monitoring sensitive file access helps detect attackers before they move deeper into the environment.
 
@@ -10699,7 +10699,7 @@ cat /etc/shadow
 ```
 
 Detection workflow:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-202.svg" width="144" alt="Example Detection Logic">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-202.svg" width="420" alt="Example Detection Logic">
 
 This turns a single command into a complete detection pipeline.
 
@@ -10733,7 +10733,7 @@ Each activity creates a detectable audit trail.
 
 Everything we have covered so far comes together here.
 This is the complete journey:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-203.svg" width="144" alt="Why This Slide Matters">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-203.svg" width="420" alt="Why This Slide Matters">
 
 This is the foundation of modern automated security monitoring.
 
@@ -10774,7 +10774,7 @@ The metric filter creates:
 
 Every matching event increments the metric.
 Example:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-204.svg" width="144" alt="Step 4 – CloudWatch Custom Metric">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-204.svg" width="420" alt="Step 4 – CloudWatch Custom Metric">
 
 Over time the graph shows activity trends.
 
@@ -10814,11 +10814,11 @@ This significantly reduces analyst triage time.
 
 #### Traditional SOC
 
-<img src="day2_diagrams/detection-engineering-vs-incident-response-205.svg" width="144" alt="Traditional SOC">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-205.svg" width="420" alt="Traditional SOC">
 
 #### AI Operations
 
-<img src="day2_diagrams/detection-engineering-vs-incident-response-206.svg" width="144" alt="AI Operations">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-206.svg" width="420" alt="AI Operations">
 
 The analyst starts much further ahead.
 
@@ -10890,7 +10890,7 @@ chmod 777 /etc/shadow
 ```
 
 Workflow:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-207.svg" width="144" alt="Real-World Example">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-207.svg" width="420" alt="Real-World Example">
 
 Detection occurs within minutes.
 
@@ -10912,7 +10912,7 @@ Instead, detection engineering should start with:
 ### The Detection Engineering Workflow
 
 The process follows a simple chain:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-208.svg" width="144" alt="The Detection Engineering Workflow">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-208.svg" width="420" alt="The Detection Engineering Workflow">
 
 Every effective detection follows this pattern.
 
@@ -11195,7 +11195,7 @@ This is why detections typically move from logs to metrics.
 The alarm threshold is:
 `>= 1 event in 1 minute`
 When the threshold is crossed:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-209.svg" width="144" alt="Step 6 – Configure an Alarm">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-209.svg" width="420" alt="Step 6 – Configure an Alarm">
 
 The security team is notified.
 
@@ -11210,7 +11210,7 @@ Threshold selection depends on Environment size, User behavior, Noise levels, an
 ### End-to-End Detection Flow
 
 The entire detection chain becomes:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-210.svg" width="144" alt="End-to-End Detection Flow">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-210.svg" width="420" alt="End-to-End Detection Flow">
 
 This is the exact workflow used by modern detection engineering teams.
 
@@ -11235,7 +11235,7 @@ The alert starts the investigation. The investigation determines whether the act
 A detection rule should never be:
 `Random log matching`
 It should always be:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-211.svg" width="144" alt="Detection Engineering Principle">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-211.svg" width="420" alt="Detection Engineering Principle">
 
 That process ensures the rule is meaningful, testable, and aligned with real attacker behavior.
 
@@ -11447,7 +11447,7 @@ A common mistake is testing only part of the pipeline.
 For example:
 `I saw the log.` That is not enough.
 A successful validation proves:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-212.svg" width="144" alt="Common Mistake">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-212.svg" width="420" alt="Common Mistake">
 
 Every stage must work.
 
@@ -11517,7 +11517,7 @@ If everything is performed as root:
 ### Typical Workflow
 
 Example:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-213.svg" width="144" alt="Typical Workflow">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-213.svg" width="420" alt="Typical Workflow">
 
 This sequence is impossible if we start as root.
 
@@ -11840,7 +11840,7 @@ rather than:
 ### Detection Engineer Workflow
 
 For every new technique:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-215.svg" width="144" alt="Detection Engineer Workflow">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-215.svg" width="420" alt="Detection Engineer Workflow">
 
 This process is repeated for every ATT&CK technique.
 
@@ -12614,7 +12614,7 @@ A permanent record for future review.
 ### Real-World SOC Workflow
 
 The complete process represented in this report is:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-216.svg" width="144" alt="Real-World SOC Workflow">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-216.svg" width="420" alt="Real-World SOC Workflow">
 
 This is the operational workflow followed by many modern security operations centers.
 
@@ -12782,7 +12782,7 @@ Future analysts should understand why the decision was made.
 ### AI + Human Analyst Model
 
 The most effective SOC workflow is:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-217.svg" width="144" alt="AI + Human Analyst Model">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-217.svg" width="420" alt="AI + Human Analyst Model">
 
 AI accelerates analysis. Humans provide accountability and judgment.
 
@@ -12915,7 +12915,7 @@ These remain potential blind spots.
 ### Identifying a Detection Gap
 
 A detection gap exists when:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-218.svg" width="144" alt="Identifying a Detection Gap">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-218.svg" width="420" alt="Identifying a Detection Gap">
 
 The first step is determining why the gap exists.
 
@@ -12961,7 +12961,7 @@ Coverage improved.
 
 ### Coverage Matrix Example
 
-<img src="day2_diagrams/detection-engineering-vs-incident-response-219.svg" width="144" alt="Coverage Matrix Example">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-219.svg" width="420" alt="Coverage Matrix Example">
 
 This type of matrix helps prioritize future work.
 
@@ -12989,7 +12989,7 @@ Can false positives be managed?
 ### Continuous Improvement Cycle
 
 Detection engineering is a continuous process:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-220.svg" width="144" alt="Continuous Improvement Cycle">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-220.svg" width="420" alt="Continuous Improvement Cycle">
 
 This cycle never ends. As environments change, new gaps appear.
 
@@ -13034,7 +13034,7 @@ Testing converts theoretical coverage into verified coverage.
 ### Why Testing Matters
 
 Consider this example:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-221.svg" width="144" alt="Why Testing Matters">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-221.svg" width="420" alt="Why Testing Matters">
 
 The organization believes it is protected. In reality, the detection is broken. This creates a false sense of security.
 
@@ -13067,7 +13067,7 @@ Coverage alone is not enough. A detection that generates thousands of alerts per
 ### Understanding False Positives
 
 False positives occur when:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-222.svg" width="144" alt="Understanding False Positives">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-222.svg" width="420" alt="Understanding False Positives">
 
 Examples include: Administrators performing maintenance, Developers running scripts, Automated system processes, and Scheduled operational tasks.
 
@@ -13077,7 +13077,7 @@ Security teams often calculate:
 
 #### Precision
 
-<img src="day2_diagrams/detection-engineering-vs-incident-response-223.svg" width="144" alt="Precision">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-223.svg" width="420" alt="Precision">
 
 Higher precision means less noise.
 
@@ -13146,7 +13146,7 @@ This transforms gap analysis into actionable work.
 ### Continuous Detection Improvement
 
 Detection engineering should follow a cycle:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-224.svg" width="144" alt="Continuous Detection Improvement">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-224.svg" width="420" alt="Continuous Detection Improvement">
 
 Organizations that continuously repeat this cycle steadily improve visibility and reduce attacker opportunities.
 
@@ -13314,7 +13314,7 @@ The reasoning is often more valuable than the final label.
 
 ### Example Closure Workflow
 
-<img src="day2_diagrams/detection-engineering-vs-incident-response-225.svg" width="144" alt="Example Closure Workflow">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-225.svg" width="420" alt="Example Closure Workflow">
 
 This creates a continuous improvement cycle for the SOC.
 
@@ -13335,7 +13335,7 @@ Poor documentation can create compliance issues even when the investigation itse
 
 At the beginning of the course, we started with a simple Linux EC2 instance. By the end of the program, that instance became a complete security monitoring environment.
 You successfully connected:
-<img src="day2_diagrams/detection-engineering-vs-incident-response-226.svg" width="144" alt="Reflect on What You Built">
+<img src="day2_diagrams/detection-engineering-vs-incident-response-226.svg" width="420" alt="Reflect on What You Built">
 
 This is the same fundamental architecture used by many enterprise detection programs.
 

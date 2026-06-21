@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhySIEMSystemsExist["Why SIEM Systems Exist"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhySIEMSystemsExist fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_MultipleLogSources["Multiple Log Sources"]
+    style n2_MultipleLogSources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CentralCollection["Central Collection"]
+    style n3_CentralCollection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CorrelationEngine["Correlation Engine"]
+    style n4_CorrelationEngine fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AlertsInvestigations["Alerts & Investigations"]
+    style n5_AlertsInvestigations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_MultipleLogSources --> n3_CentralCollection
+    n3_CentralCollection --> n4_CorrelationEngine
+    n4_CorrelationEngine --> n5_AlertsInvestigations

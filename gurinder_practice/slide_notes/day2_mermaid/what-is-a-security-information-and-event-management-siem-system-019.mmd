@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ExampleSecurityEventLife["Example Security Event Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleSecurityEventLife fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudTrailEvent["CloudTrail Event"]
+    style n2_CloudTrailEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SIEMIngestion["SIEM Ingestion"]
+    style n3_SIEMIngestion fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CorrelationRule["Correlation Rule"]
+    style n4_CorrelationRule fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AlertCreated["Alert Created"]
+    style n5_AlertCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AnalystInvestigation["Analyst Investigation"]
+    style n6_AnalystInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_IncidentResponse["Incident Response"]
+    style n7_IncidentResponse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_LessonsLearned["Lessons Learned"]
+    style n8_LessonsLearned fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudTrailEvent --> n3_SIEMIngestion
+    n3_SIEMIngestion --> n4_CorrelationRule
+    n4_CorrelationRule --> n5_AlertCreated
+    n5_AlertCreated --> n6_AnalystInvestigation
+    n6_AnalystInvestigation --> n7_IncidentResponse
+    n7_IncidentResponse --> n8_LessonsLearned

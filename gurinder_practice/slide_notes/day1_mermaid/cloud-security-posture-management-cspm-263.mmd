@@ -1,0 +1,15 @@
+flowchart TB
+    n1_AWSSecurityHub["AWS Security Hub"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AWSSecurityHub fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_IssueDetected["Issue Detected"]
+    style n2_IssueDetected fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_FindingOpen["Finding Open"]
+    style n3_FindingOpen fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_IssueFixed["Issue Fixed"]
+    style n4_IssueFixed fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_FindingResolved["Finding Resolved"]
+    style n5_FindingResolved fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_IssueDetected --> n3_FindingOpen
+    n3_FindingOpen --> n4_IssueFixed
+    n4_IssueFixed --> n5_FindingResolved

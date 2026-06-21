@@ -1,0 +1,21 @@
+flowchart TB
+    n1_HumanintheLoopSecurityMo["Human-in-the-Loop Security Model"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HumanintheLoopSecurityMo fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogsMetrics["Logs & Metrics"]
+    style n2_LogsMetrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchAIOperations["CloudWatch AI Operations"]
+    style n3_CloudWatchAIOperations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Hypothesis["Hypothesis"]
+    style n4_Hypothesis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AnalystReview["Analyst Review"]
+    style n5_AnalystReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AcceptRejectEscalate["Accept / Reject / Escalate"]
+    style n6_AcceptRejectEscalate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ResponseAction["Response Action"]
+    style n7_ResponseAction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogsMetrics --> n3_CloudWatchAIOperations
+    n3_CloudWatchAIOperations --> n4_Hypothesis
+    n4_Hypothesis --> n5_AnalystReview
+    n5_AnalystReview --> n6_AcceptRejectEscalate
+    n6_AcceptRejectEscalate --> n7_ResponseAction

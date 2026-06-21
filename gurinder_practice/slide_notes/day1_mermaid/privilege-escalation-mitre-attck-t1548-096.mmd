@@ -1,0 +1,18 @@
+flowchart TB
+    n1_PRIVILEGEESCALATIONMITRE["PRIVILEGE ESCALATION (MITRE ATT&CK T1548)"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_PRIVILEGEESCALATIONMITRE fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_InitialAccess["Initial Access"]
+    style n2_InitialAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LowPrivilegeUser["Low Privilege User"]
+    style n3_LowPrivilegeUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PrivilegeEscalation["Privilege Escalation"]
+    style n4_PrivilegeEscalation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AdministratorRoot["Administrator / Root"]
+    style n5_AdministratorRoot fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_FullSystemControl["Full System Control"]
+    style n6_FullSystemControl fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_InitialAccess --> n3_LowPrivilegeUser
+    n3_LowPrivilegeUser --> n4_PrivilegeEscalation
+    n4_PrivilegeEscalation --> n5_AdministratorRoot
+    n5_AdministratorRoot --> n6_FullSystemControl

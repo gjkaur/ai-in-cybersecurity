@@ -1,0 +1,12 @@
+flowchart TB
+    n1_TreatingAllFindingsEqual["Treating All Findings Equally"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TreatingAllFindingsEqual fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_100Findings["100 Findings"]
+    style n2_100Findings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_NoPrioritization["No Prioritization"]
+    style n3_NoPrioritization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CriticalIssuesMissed["Critical Issues Missed"]
+    style n4_CriticalIssuesMissed fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_100Findings --> n3_NoPrioritization
+    n3_NoPrioritization --> n4_CriticalIssuesMissed

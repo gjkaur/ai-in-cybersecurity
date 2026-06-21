@@ -1,0 +1,18 @@
+flowchart TB
+    n1_TestingBeforeDeployment["Testing Before Deployment"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TestingBeforeDeployment fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CodeReview["Code Review"]
+    style n2_CodeReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LabTesting["Lab Testing"]
+    style n3_LabTesting fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityReview["Security Review"]
+    style n4_SecurityReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_PeerValidation["Peer Validation"]
+    style n5_PeerValidation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_ProductionDeployment["Production Deployment"]
+    style n6_ProductionDeployment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CodeReview --> n3_LabTesting
+    n3_LabTesting --> n4_SecurityReview
+    n4_SecurityReview --> n5_PeerValidation
+    n5_PeerValidation --> n6_ProductionDeployment

@@ -1,0 +1,18 @@
+flowchart TB
+    n1_CommonMistake["Common Mistake"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CommonMistake fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Attack["Attack"]
+    style n2_Attack fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Log["Log"]
+    style n3_Log fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Metric["Metric"]
+    style n4_Metric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Alarm["Alarm"]
+    style n5_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Investigation["Investigation"]
+    style n6_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Attack --> n3_Log
+    n3_Log --> n4_Metric
+    n4_Metric --> n5_Alarm
+    n5_Alarm --> n6_Investigation

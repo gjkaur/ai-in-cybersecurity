@@ -1,0 +1,9 @@
+flowchart TB
+    n1_WhatInformationIsLogged["What Information Is Logged?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatInformationIsLogged fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_GETlogin["GET /login"]
+    style n2_GETlogin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_POSTadmin["POST /admin"]
+    style n3_POSTadmin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_GETlogin --> n3_POSTadmin

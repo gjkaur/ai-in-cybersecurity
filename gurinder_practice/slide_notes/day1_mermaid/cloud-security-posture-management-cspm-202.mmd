@@ -1,0 +1,15 @@
+flowchart TB
+    n1_EliminateSSHwithSessionM["Eliminate SSH with Session Manager"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EliminateSSHwithSessionM fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Administrator["Administrator"]
+    style n2_Administrator fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AWSSystemsManager["AWS Systems Manager"]
+    style n3_AWSSystemsManager fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SessionManager["Session Manager"]
+    style n4_SessionManager fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_EC2Instance["EC2 Instance"]
+    style n5_EC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Administrator --> n3_AWSSystemsManager
+    n3_AWSSystemsManager --> n4_SessionManager
+    n4_SessionManager --> n5_EC2Instance

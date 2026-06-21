@@ -1,0 +1,24 @@
+flowchart TB
+    n1_RealWorldExample["Real-World Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RealWorldExample fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_auditdlogsevent["auditd logs event"]
+    style n2_auditdlogsevent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Metricfiltermatches["Metric filter matches"]
+    style n3_Metricfiltermatches fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Metricincrements["Metric increments"]
+    style n4_Metricincrements fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Alarmtriggers["Alarm triggers"]
+    style n5_Alarmtriggers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Investigationopens["Investigation opens"]
+    style n6_Investigationopens fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SOCanalystnotified["SOC analyst notified"]
+    style n7_SOCanalystnotified fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Incidentresponsebegins["Incident response begins"]
+    style n8_Incidentresponsebegins fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_auditdlogsevent --> n3_Metricfiltermatches
+    n3_Metricfiltermatches --> n4_Metricincrements
+    n4_Metricincrements --> n5_Alarmtriggers
+    n5_Alarmtriggers --> n6_Investigationopens
+    n6_Investigationopens --> n7_SOCanalystnotified
+    n7_SOCanalystnotified --> n8_Incidentresponsebegins

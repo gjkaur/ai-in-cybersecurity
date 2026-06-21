@@ -1,0 +1,15 @@
+flowchart TB
+    n1_Example["Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Example fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SOCLogGroup["SOC Log Group"]
+    style n2_SOCLogGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Retention90Days["Retention = 90 Days"]
+    style n3_Retention90Days fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_LogsOlderThan90Days["Logs Older Than 90 Days"]
+    style n4_LogsOlderThan90Days fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AutomaticallyDeleted["Automatically Deleted"]
+    style n5_AutomaticallyDeleted fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SOCLogGroup --> n3_Retention90Days
+    n3_Retention90Days --> n4_LogsOlderThan90Days
+    n4_LogsOlderThan90Days --> n5_AutomaticallyDeleted

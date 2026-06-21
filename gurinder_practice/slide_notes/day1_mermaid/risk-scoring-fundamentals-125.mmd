@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Role["Role"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Role fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_EC2Instance["EC2 Instance"]
+    style n2_EC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AssumeRole["Assume Role"]
+    style n3_AssumeRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AccessS3Bucket["Access S3 Bucket"]
+    style n4_AccessS3Bucket fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_EC2Instance --> n3_AssumeRole
+    n3_AssumeRole --> n4_AccessS3Bucket

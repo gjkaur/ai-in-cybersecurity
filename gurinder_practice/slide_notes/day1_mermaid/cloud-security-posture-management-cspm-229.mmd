@@ -1,0 +1,21 @@
+flowchart TB
+    n1_CloudTrailInvestigationW["CloudTrail Investigation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CloudTrailInvestigationW fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityAlert["Security Alert"]
+    style n2_SecurityAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudTrailSearch["CloudTrail Search"]
+    style n3_CloudTrailSearch fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_IdentifyUser["Identify User"]
+    style n4_IdentifyUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ReviewAPIActivity["Review API Activity"]
+    style n5_ReviewAPIActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_DetermineImpact["Determine Impact"]
+    style n6_DetermineImpact fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ContainIncident["Contain Incident"]
+    style n7_ContainIncident fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityAlert --> n3_CloudTrailSearch
+    n3_CloudTrailSearch --> n4_IdentifyUser
+    n4_IdentifyUser --> n5_ReviewAPIActivity
+    n5_ReviewAPIActivity --> n6_DetermineImpact
+    n6_DetermineImpact --> n7_ContainIncident

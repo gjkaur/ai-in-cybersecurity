@@ -1,0 +1,15 @@
+flowchart TB
+    n1_CorrectDesign["Correct Design"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CorrectDesign fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudWatchAgent["CloudWatch Agent"]
+    style n2_CloudWatchAgent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_WriteAccessOnly["Write Access Only"]
+    style n3_WriteAccessOnly fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AIOperations["AI Operations"]
+    style n4_AIOperations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ReadAccessOnly["Read Access Only"]
+    style n5_ReadAccessOnly fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudWatchAgent --> n3_WriteAccessOnly
+    n3_WriteAccessOnly --> n4_AIOperations
+    n4_AIOperations --> n5_ReadAccessOnly

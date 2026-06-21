@@ -1,0 +1,9 @@
+flowchart TB
+    n1_MonitoringOnlyDuringAudi["Monitoring Only During Audits"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_MonitoringOnlyDuringAudi fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AnnualAudit["Annual Audit"]
+    style n2_AnnualAudit fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_11MonthsWithoutVisibilit["11 Months Without Visibility"]
+    style n3_11MonthsWithoutVisibilit fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AnnualAudit --> n3_11MonthsWithoutVisibilit

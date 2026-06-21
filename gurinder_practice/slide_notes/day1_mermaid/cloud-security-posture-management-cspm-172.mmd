@@ -1,0 +1,18 @@
+flowchart TB
+    n1_Step5["Step 5"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step5 fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Detection["Detection"]
+    style n2_Detection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Aggregation["Aggregation"]
+    style n3_Aggregation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Prioritization["Prioritization"]
+    style n4_Prioritization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Investigation["Investigation"]
+    style n5_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Remediation["Remediation"]
+    style n6_Remediation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Detection --> n3_Aggregation
+    n3_Aggregation --> n4_Prioritization
+    n4_Prioritization --> n5_Investigation
+    n5_Investigation --> n6_Remediation

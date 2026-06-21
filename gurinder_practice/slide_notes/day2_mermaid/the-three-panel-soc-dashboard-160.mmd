@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Panel3["Panel 3"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Panel3 fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Trend["Trend"]
+    style n2_Trend fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Evidence["Evidence"]
+    style n3_Evidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AlertStatus["Alert Status"]
+    style n4_AlertStatus fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Trend --> n3_Evidence
+    n3_Evidence --> n4_AlertStatus

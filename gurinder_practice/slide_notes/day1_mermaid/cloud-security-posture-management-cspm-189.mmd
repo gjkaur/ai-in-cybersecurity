@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyCredentialHygieneMatt["Why Credential Hygiene Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyCredentialHygieneMatt fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ExcessivePermissions["Excessive Permissions"]
+    style n2_ExcessivePermissions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_PrivilegeEscalation["Privilege Escalation"]
+    style n3_PrivilegeEscalation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AccountWideImpact["Account-Wide Impact"]
+    style n4_AccountWideImpact fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ExcessivePermissions --> n3_PrivilegeEscalation
+    n3_PrivilegeEscalation --> n4_AccountWideImpact

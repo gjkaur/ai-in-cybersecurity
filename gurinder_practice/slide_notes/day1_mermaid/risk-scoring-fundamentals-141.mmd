@@ -1,0 +1,20 @@
+flowchart TB
+    n1_BadDesign["Bad Design"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_BadDesign fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_SharedRole["SharedRole"]
+    style n3_SharedRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_LambdaA["├── Lambda A"]
+    style n4_LambdaA fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_LambdaB["├── Lambda B"]
+    style n5_LambdaB fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_LambdaC["├── Lambda C"]
+    style n6_LambdaC fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_LambdaD["└── Lambda D"]
+    style n7_LambdaD fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_SharedRole --> n4_LambdaA
+        n4_LambdaA --> n5_LambdaB
+        n5_LambdaB --> n6_LambdaC
+        n6_LambdaC --> n7_LambdaD
+    end

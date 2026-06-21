@@ -1,0 +1,15 @@
+flowchart TB
+    n1_StoringCloudTrailLogs["Storing CloudTrail Logs"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_StoringCloudTrailLogs fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudTrail["CloudTrail"]
+    style n2_CloudTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DedicatedS3Bucket["Dedicated S3 Bucket"]
+    style n3_DedicatedS3Bucket fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_EncryptionEnabled["Encryption Enabled"]
+    style n4_EncryptionEnabled fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RestrictedAccess["Restricted Access"]
+    style n5_RestrictedAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudTrail --> n3_DedicatedS3Bucket
+    n3_DedicatedS3Bucket --> n4_EncryptionEnabled
+    n4_EncryptionEnabled --> n5_RestrictedAccess

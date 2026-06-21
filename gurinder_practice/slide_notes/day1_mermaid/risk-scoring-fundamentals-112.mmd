@@ -1,0 +1,21 @@
+flowchart TB
+    n1_ExampleWorkflow["Example Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityEvents["Security Events"]
+    style n2_SecurityEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIDetectionEngine["AI Detection Engine"]
+    style n3_AIDetectionEngine fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RiskScoring["Risk Scoring"]
+    style n4_RiskScoring fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AlertPrioritization["Alert Prioritization"]
+    style n5_AlertPrioritization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AnalystReview["Analyst Review"]
+    style n6_AnalystReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_IncidentResponse["Incident Response"]
+    style n7_IncidentResponse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityEvents --> n3_AIDetectionEngine
+    n3_AIDetectionEngine --> n4_RiskScoring
+    n4_RiskScoring --> n5_AlertPrioritization
+    n5_AlertPrioritization --> n6_AnalystReview
+    n6_AnalystReview --> n7_IncidentResponse

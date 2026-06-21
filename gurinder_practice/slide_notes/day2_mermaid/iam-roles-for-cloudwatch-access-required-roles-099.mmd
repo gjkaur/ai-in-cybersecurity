@@ -1,0 +1,15 @@
+flowchart TB
+    n1_InvestigationFlow["Investigation Flow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_InvestigationFlow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudWatchAIOperations["CloudWatch AI Operations"]
+    style n2_CloudWatchAIOperations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AssumeServiceRole["Assume Service Role"]
+    style n3_AssumeServiceRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ReadEvidence["Read Evidence"]
+    style n4_ReadEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_GenerateInvestigation["Generate Investigation"]
+    style n5_GenerateInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudWatchAIOperations --> n3_AssumeServiceRole
+    n3_AssumeServiceRole --> n4_ReadEvidence
+    n4_ReadEvidence --> n5_GenerateInvestigation

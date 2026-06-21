@@ -1,0 +1,18 @@
+flowchart TB
+    n1_DetectingCredentialHarve["Detecting Credential Harvesting"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_DetectingCredentialHarve fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_InitialAccess["Initial Access"]
+    style n2_InitialAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_PrivilegeEscalation["Privilege Escalation"]
+    style n3_PrivilegeEscalation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ReadCredentialFiles["Read Credential Files"]
+    style n4_ReadCredentialFiles fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ExtractPasswordHashes["Extract Password Hashes"]
+    style n5_ExtractPasswordHashes fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_LateralMovement["Lateral Movement"]
+    style n6_LateralMovement fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_InitialAccess --> n3_PrivilegeEscalation
+    n3_PrivilegeEscalation --> n4_ReadCredentialFiles
+    n4_ReadCredentialFiles --> n5_ExtractPasswordHashes
+    n5_ExtractPasswordHashes --> n6_LateralMovement

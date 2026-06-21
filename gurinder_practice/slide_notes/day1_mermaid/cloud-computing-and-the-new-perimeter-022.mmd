@@ -1,0 +1,33 @@
+flowchart TB
+    n1_AWS["AWS"]
+    style n1_AWS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AWSSecures["AWS Secures:"]
+    style n2_AWSSecures fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Servers["Servers"]
+    style n3_Servers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Storage["Storage"]
+    style n4_Storage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Network["Network"]
+    style n5_Network fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_DataCenters["Data Centers"]
+    style n6_DataCenters fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CustomerSecures["Customer Secures:"]
+    style n7_CustomerSecures fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Users["Users"]
+    style n8_Users fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Data["Data"]
+    style n9_Data fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_Applications["Applications"]
+    style n10_Applications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_Permissions["Permissions"]
+    style n11_Permissions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_AWS --> n2_AWSSecures
+    n2_AWSSecures --> n3_Servers
+    n3_Servers --> n4_Storage
+    n4_Storage --> n5_Network
+    n5_Network --> n6_DataCenters
+    n6_DataCenters --> n7_CustomerSecures
+    n7_CustomerSecures --> n8_Users
+    n8_Users --> n9_Data
+    n9_Data --> n10_Applications
+    n10_Applications --> n11_Permissions

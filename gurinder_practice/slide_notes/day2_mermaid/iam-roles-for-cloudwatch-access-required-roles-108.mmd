@@ -1,0 +1,15 @@
+flowchart TB
+    n1_AIHypothesisStartingPoin["AI Hypothesis = Starting Point"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AIHypothesisStartingPoin fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Evidence["Evidence"]
+    style n2_Evidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIInterpretation["AI Interpretation"]
+    style n3_AIInterpretation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AnalystValidation["Analyst Validation"]
+    style n4_AnalystValidation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_FinalDecision["Final Decision"]
+    style n5_FinalDecision fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Evidence --> n3_AIInterpretation
+    n3_AIInterpretation --> n4_AnalystValidation
+    n4_AnalystValidation --> n5_FinalDecision

@@ -1,0 +1,24 @@
+flowchart TB
+    n1_InvestigationLifecycle["Investigation Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_InvestigationLifecycle fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_IncidentDetected["Incident Detected"]
+    style n2_IncidentDetected fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CollectEvidence["Collect Evidence"]
+    style n3_CollectEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AnalyzeRelationships["Analyze Relationships"]
+    style n4_AnalyzeRelationships fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_GenerateHypotheses["Generate Hypotheses"]
+    style n5_GenerateHypotheses fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RankPossibleCauses["Rank Possible Causes"]
+    style n6_RankPossibleCauses fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_PresentFindings["Present Findings"]
+    style n7_PresentFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_AnalystReview["Analyst Review"]
+    style n8_AnalystReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_IncidentDetected --> n3_CollectEvidence
+    n3_CollectEvidence --> n4_AnalyzeRelationships
+    n4_AnalyzeRelationships --> n5_GenerateHypotheses
+    n5_GenerateHypotheses --> n6_RankPossibleCauses
+    n6_RankPossibleCauses --> n7_PresentFindings
+    n7_PresentFindings --> n8_AnalystReview

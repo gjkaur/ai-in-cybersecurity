@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhyisitCalledaKillChain["Why is it Called a Kill Chain?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyisitCalledaKillChain fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_FindTarget["Find Target"]
+    style n2_FindTarget fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_PrepareWeapon["Prepare Weapon"]
+    style n3_PrepareWeapon fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_LaunchAttack["Launch Attack"]
+    style n4_LaunchAttack fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AchieveObjective["Achieve Objective"]
+    style n5_AchieveObjective fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_FindTarget --> n3_PrepareWeapon
+    n3_PrepareWeapon --> n4_LaunchAttack
+    n4_LaunchAttack --> n5_AchieveObjective

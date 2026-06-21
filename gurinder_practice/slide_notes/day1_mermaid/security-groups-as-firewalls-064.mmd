@@ -1,0 +1,9 @@
+flowchart TB
+    n1_DefaultDeny["Default Deny"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_DefaultDeny fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_IfNotExplicitlyAllowed["If Not Explicitly Allowed"]
+    style n2_IfNotExplicitlyAllowed fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Denied["Denied"]
+    style n3_Denied fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_IfNotExplicitlyAllowed --> n3_Denied

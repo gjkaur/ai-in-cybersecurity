@@ -1,0 +1,26 @@
+flowchart TB
+    n1_filetxt["file.txt"]
+    style n1_filetxt fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Owner["Owner"]
+    n3_Group["Group"]
+    n4_Others["Others"]
+    style n2_Owner fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n3_Group fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n4_Others fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_filetxt --> n2_Owner
+    n1_filetxt --> n3_Group
+    n1_filetxt --> n4_Others
+    n5_rwx["rwx"]
+    n6_rx["r-x"]
+    n7_r["r--"]
+    style n5_rwx fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n6_rx fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n7_r fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n2_Owner --> n5_rwx
+    n3_Group --> n6_rx
+    n4_Others --> n7_r
+    n8_754["7        5       4"]
+    style n8_754 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Permission754["Permission = 754"]
+    style n9_Permission754 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_754 --> n9_Permission754

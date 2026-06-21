@@ -1,0 +1,17 @@
+flowchart TB
+    n1_Example["Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Example fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_LogGroup["Log Group"]
+    style n3_LogGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_soclabsecure["└── /soc-lab/secure"]
+    style n4_soclabsecure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_LogStream["Log Stream:"]
+    style n5_LogStream fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_EC2ProdWeb01["EC2-Prod-Web01"]
+    style n6_EC2ProdWeb01 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_LogGroup --> n4_soclabsecure
+        n4_soclabsecure --> n5_LogStream
+        n5_LogStream --> n6_EC2ProdWeb01
+    end

@@ -1,0 +1,18 @@
+flowchart TB
+    n1_UnderstandingARNs["Understanding ARNs"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_UnderstandingARNs fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_arn["arn"]
+    style n2_arn fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_aws["aws"]
+    style n3_aws fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_s3["s3"]
+    style n4_s3 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_securitylogsbucket["security-logs bucket"]
+    style n5_securitylogsbucket fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_allobjects["all objects (*)"]
+    style n6_allobjects fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_arn --> n3_aws
+    n3_aws --> n4_s3
+    n4_s3 --> n5_securitylogsbucket
+    n5_securitylogsbucket --> n6_allobjects

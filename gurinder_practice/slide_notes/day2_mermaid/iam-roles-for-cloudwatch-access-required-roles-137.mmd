@@ -1,0 +1,24 @@
+flowchart TB
+    n1_Day2FocusAreas["Day 2 Focus Areas"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Day2FocusAreas fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityEvent["Security Event"]
+    style n2_SecurityEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Detection["Detection"]
+    style n3_Detection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AlertGeneration["Alert Generation"]
+    style n4_AlertGeneration fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Investigation["Investigation"]
+    style n5_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_EvidenceCollection["Evidence Collection"]
+    style n6_EvidenceCollection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_RootCauseAnalysis["Root Cause Analysis"]
+    style n7_RootCauseAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_ResponseActions["Response Actions"]
+    style n8_ResponseActions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityEvent --> n3_Detection
+    n3_Detection --> n4_AlertGeneration
+    n4_AlertGeneration --> n5_Investigation
+    n5_Investigation --> n6_EvidenceCollection
+    n6_EvidenceCollection --> n7_RootCauseAnalysis
+    n7_RootCauseAnalysis --> n8_ResponseActions

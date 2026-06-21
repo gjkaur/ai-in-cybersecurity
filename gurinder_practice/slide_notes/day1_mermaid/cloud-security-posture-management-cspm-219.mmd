@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhyCloudTrailMatters["Why CloudTrail Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyCloudTrailMatters fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityIncident["Security Incident"]
+    style n2_SecurityIncident fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudTrailLogs["CloudTrail Logs"]
+    style n3_CloudTrailLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_TimelineReconstruction["Timeline Reconstruction"]
+    style n4_TimelineReconstruction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RootCauseAnalysis["Root Cause Analysis"]
+    style n5_RootCauseAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityIncident --> n3_CloudTrailLogs
+    n3_CloudTrailLogs --> n4_TimelineReconstruction
+    n4_TimelineReconstruction --> n5_RootCauseAnalysis

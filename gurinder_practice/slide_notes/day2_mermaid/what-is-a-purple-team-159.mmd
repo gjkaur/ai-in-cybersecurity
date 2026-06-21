@@ -1,0 +1,21 @@
+flowchart TB
+    n1_RelationshipBetweenWidge["Relationship Between Widgets"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RelationshipBetweenWidge fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_EventVolumeSpike["Event Volume Spike"]
+    style n2_EventVolumeSpike fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_FailedAuthSource["Failed Auth Source"]
+    style n3_FailedAuthSource fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PrivilegeEscalationActiv["Privilege Escalation Activity"]
+    style n4_PrivilegeEscalationActiv fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ActiveAlarm["Active Alarm"]
+    style n5_ActiveAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RecentRawEvents["Recent Raw Events"]
+    style n6_RecentRawEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Investigation["Investigation"]
+    style n7_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_EventVolumeSpike --> n3_FailedAuthSource
+    n3_FailedAuthSource --> n4_PrivilegeEscalationActiv
+    n4_PrivilegeEscalationActiv --> n5_ActiveAlarm
+    n5_ActiveAlarm --> n6_RecentRawEvents
+    n6_RecentRawEvents --> n7_Investigation

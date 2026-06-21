@@ -1,0 +1,12 @@
+flowchart TB
+    n1_AuditReadiness["Audit Readiness"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AuditReadiness fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Finding["Finding"]
+    style n2_Finding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Action["Action"]
+    style n3_Action fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Verification["Verification"]
+    style n4_Verification fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Finding --> n3_Action
+    n3_Action --> n4_Verification

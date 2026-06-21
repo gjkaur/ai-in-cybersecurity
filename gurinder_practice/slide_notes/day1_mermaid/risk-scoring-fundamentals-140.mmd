@@ -1,0 +1,18 @@
+flowchart TB
+    n1_WhyAdministratorAccessis["Why AdministratorAccess is Dangerous"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyAdministratorAccessis fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CodeInjection["Code Injection"]
+    style n2_CodeInjection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CompromiseLambdaRuntime["Compromise Lambda Runtime"]
+    style n3_CompromiseLambdaRuntime fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_StealTemporaryCredential["Steal Temporary Credentials"]
+    style n4_StealTemporaryCredential fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_UseRolePermissions["Use Role Permissions"]
+    style n5_UseRolePermissions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AccountCompromise["Account Compromise"]
+    style n6_AccountCompromise fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CodeInjection --> n3_CompromiseLambdaRuntime
+    n3_CompromiseLambdaRuntime --> n4_StealTemporaryCredential
+    n4_StealTemporaryCredential --> n5_UseRolePermissions
+    n5_UseRolePermissions --> n6_AccountCompromise

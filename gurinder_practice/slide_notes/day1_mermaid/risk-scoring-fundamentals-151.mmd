@@ -1,0 +1,9 @@
+flowchart TB
+    n1_8MissingMFAforPrivileged["8. Missing MFA for Privileged Users"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_8MissingMFAforPrivileged fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_PasswordLeak["Password Leak"]
+    style n2_PasswordLeak fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DirectConsoleAccess["Direct Console Access"]
+    style n3_DirectConsoleAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_PasswordLeak --> n3_DirectConsoleAccess

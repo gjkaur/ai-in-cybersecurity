@@ -1,0 +1,33 @@
+flowchart TB
+    n1_EndtoEndPipelineFlow["End-to-End Pipeline Flow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EndtoEndPipelineFlow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_EC2Activity["EC2 Activity"]
+    style n2_EC2Activity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_auditd["auditd"]
+    style n3_auditd fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_auditlog["audit.log"]
+    style n4_auditlog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CloudWatchAgent["CloudWatch Agent"]
+    style n5_CloudWatchAgent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CloudWatchLogGroup["CloudWatch Log Group"]
+    style n6_CloudWatchLogGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_MetricFilter["Metric Filter"]
+    style n7_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Metric["Metric"]
+    style n8_Metric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_CloudWatchAlarm["CloudWatch Alarm"]
+    style n9_CloudWatchAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_AIInvestigation["AI Investigation"]
+    style n10_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_SOCAnalyst["SOC Analyst"]
+    style n11_SOCAnalyst fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_EC2Activity --> n3_auditd
+    n3_auditd --> n4_auditlog
+    n4_auditlog --> n5_CloudWatchAgent
+    n5_CloudWatchAgent --> n6_CloudWatchLogGroup
+    n6_CloudWatchLogGroup --> n7_MetricFilter
+    n7_MetricFilter --> n8_Metric
+    n8_Metric --> n9_CloudWatchAlarm
+    n9_CloudWatchAlarm --> n10_AIInvestigation
+    n10_AIInvestigation --> n11_SOCAnalyst

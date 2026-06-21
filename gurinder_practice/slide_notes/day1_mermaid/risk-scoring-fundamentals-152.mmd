@@ -1,0 +1,12 @@
+flowchart TB
+    n1_8MissingMFAforPrivileged["8. Missing MFA for Privileged Users"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_8MissingMFAforPrivileged fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_PasswordLeak["Password Leak"]
+    style n2_PasswordLeak fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MFAChallenge["MFA Challenge"]
+    style n3_MFAChallenge fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AttackBlocked["Attack Blocked"]
+    style n4_AttackBlocked fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_PasswordLeak --> n3_MFAChallenge
+    n3_MFAChallenge --> n4_AttackBlocked

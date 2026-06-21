@@ -1,0 +1,12 @@
+flowchart TB
+    n1_ModernRansomware["Modern Ransomware"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ModernRansomware fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_StealData["Steal Data"]
+    style n2_StealData fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EncryptData["Encrypt Data"]
+    style n3_EncryptData fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_DemandPayment["Demand Payment"]
+    style n4_DemandPayment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_StealData --> n3_EncryptData
+    n3_EncryptData --> n4_DemandPayment

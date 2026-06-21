@@ -1,0 +1,30 @@
+flowchart TB
+    n1_ExampleSOCArchitecture["Example SOC Architecture"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleSOCArchitecture fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SOCAnalyst["SOC Analyst"]
+    style n2_SOCAnalyst fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_IAMAnalystRole["IAM Analyst Role"]
+    style n3_IAMAnalystRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchLogs["CloudWatch Logs"]
+    style n4_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_EC2Instance["EC2 Instance"]
+    style n5_EC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_IAMAgentRole["IAM Agent Role"]
+    style n6_IAMAgentRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CloudWatchLogGroup["CloudWatch Log Group"]
+    style n7_CloudWatchLogGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_CloudWatchAIOperations["CloudWatch AI Operations"]
+    style n8_CloudWatchAIOperations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_ServiceRole["Service Role"]
+    style n9_ServiceRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_InvestigationData["Investigation Data"]
+    style n10_InvestigationData fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SOCAnalyst --> n3_IAMAnalystRole
+    n3_IAMAnalystRole --> n4_CloudWatchLogs
+    n4_CloudWatchLogs --> n5_EC2Instance
+    n5_EC2Instance --> n6_IAMAgentRole
+    n6_IAMAgentRole --> n7_CloudWatchLogGroup
+    n7_CloudWatchLogGroup --> n8_CloudWatchAIOperations
+    n8_CloudWatchAIOperations --> n9_ServiceRole
+    n9_ServiceRole --> n10_InvestigationData

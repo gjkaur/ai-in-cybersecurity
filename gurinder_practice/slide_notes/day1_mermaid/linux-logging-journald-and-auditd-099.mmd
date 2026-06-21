@@ -1,0 +1,14 @@
+flowchart TB
+    n1_SSH["SSH"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SSH fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_LoginSuccess["Login Success"]
+    style n3_LoginSuccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_LoginFailure["Login Failure"]
+    style n4_LoginFailure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_DisconnectedSessions["Disconnected Sessions"]
+    style n5_DisconnectedSessions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_LoginSuccess --> n4_LoginFailure
+        n4_LoginFailure --> n5_DisconnectedSessions
+    end

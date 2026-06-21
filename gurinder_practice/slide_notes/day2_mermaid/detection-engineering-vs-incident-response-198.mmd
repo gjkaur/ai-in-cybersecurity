@@ -1,0 +1,24 @@
+flowchart TB
+    n1_auditdandCloudWatch["auditd and CloudWatch"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_auditdandCloudWatch fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_auditd["auditd"]
+    style n2_auditd fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_auditlog["audit.log"]
+    style n3_auditlog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchAgent["CloudWatch Agent"]
+    style n4_CloudWatchAgent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CloudWatchLogs["CloudWatch Logs"]
+    style n5_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_MetricFilters["Metric Filters"]
+    style n6_MetricFilters fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_CloudWatchAlarms["CloudWatch Alarms"]
+    style n7_CloudWatchAlarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_AIOperationsInvestigatio["AI Operations Investigation"]
+    style n8_AIOperationsInvestigatio fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_auditd --> n3_auditlog
+    n3_auditlog --> n4_CloudWatchAgent
+    n4_CloudWatchAgent --> n5_CloudWatchLogs
+    n5_CloudWatchLogs --> n6_MetricFilters
+    n6_MetricFilters --> n7_CloudWatchAlarms
+    n7_CloudWatchAlarms --> n8_AIOperationsInvestigatio

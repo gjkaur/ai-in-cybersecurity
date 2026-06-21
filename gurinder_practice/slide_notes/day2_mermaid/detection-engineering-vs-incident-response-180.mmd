@@ -1,0 +1,28 @@
+flowchart TB
+    n1_TranslatingThreatIntelli["Translating Threat Intelligence into Detections"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TranslatingThreatIntelli fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_MITREATTCK["MITRE ATT&CK:"]
+    style n3_MITREATTCK fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_T1548003["T1548.003"]
+    style n4_T1548003 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AbuseElevationControlMec["Abuse Elevation Control Mechanism"]
+    style n5_AbuseElevationControlMec fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_MITREATTCK --> n4_T1548003
+        n4_T1548003 --> n5_AbuseElevationControlMec
+    end
+    n6_AbuseElevationControlMec["Abuse Elevation Control Mechanism"]
+    style n6_AbuseElevationControlMec fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_DetectionLogic["Detection Logic:"]
+    style n7_DetectionLogic fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_exeusrbinsudo["exe=#quot;/usr/bin/sudo#quot;"]
+    style n8_exeusrbinsudo fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_resfailed["res=failed"]
+    style n9_resfailed fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_AlertGenerated["Alert Generated"]
+    style n10_AlertGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AbuseElevationControlMec --> n7_DetectionLogic
+    n7_DetectionLogic --> n8_exeusrbinsudo
+    n8_exeusrbinsudo --> n9_resfailed
+    n9_resfailed --> n10_AlertGenerated

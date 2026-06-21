@@ -1,0 +1,15 @@
+flowchart TB
+    n1_CorrelatedView["Correlated View"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CorrelatedView fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_20FailedLogins["20 Failed Logins"]
+    style n2_20FailedLogins fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SuccessfulLogin["Successful Login"]
+    style n3_SuccessfulLogin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AdministratorPolicyAttac["Administrator Policy Attached"]
+    style n4_AdministratorPolicyAttac fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_NewAccessKeyCreated["New Access Key Created"]
+    style n5_NewAccessKeyCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_20FailedLogins --> n3_SuccessfulLogin
+    n3_SuccessfulLogin --> n4_AdministratorPolicyAttac
+    n4_AdministratorPolicyAttac --> n5_NewAccessKeyCreated

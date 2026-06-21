@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhyTestingMatters["Why Testing Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyTestingMatters fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_DetectionRuleExists["Detection Rule Exists"]
+    style n2_DetectionRuleExists fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_FilterPatternIncorrect["Filter Pattern Incorrect"]
+    style n3_FilterPatternIncorrect fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_MetricNeverIncrements["Metric Never Increments"]
+    style n4_MetricNeverIncrements fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AlarmNeverFires["Alarm Never Fires"]
+    style n5_AlarmNeverFires fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_DetectionRuleExists --> n3_FilterPatternIncorrect
+    n3_FilterPatternIncorrect --> n4_MetricNeverIncrements
+    n4_MetricNeverIncrements --> n5_AlarmNeverFires

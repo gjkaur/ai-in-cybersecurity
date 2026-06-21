@@ -1,0 +1,17 @@
+flowchart TB
+    subgraph n1_panel [ ]
+    n2_LeastPrivilege["Least Privilege"]
+    style n2_LeastPrivilege fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_node["+"]
+    style n3_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RestrictedAccess["Restricted Access"]
+    style n4_RestrictedAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_node["="]
+    style n5_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_ReducedRisk["Reduced Risk"]
+    style n6_ReducedRisk fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n2_LeastPrivilege --> n3_node
+        n3_node --> n4_RestrictedAccess
+        n4_RestrictedAccess --> n5_node
+        n5_node --> n6_ReducedRisk
+    end

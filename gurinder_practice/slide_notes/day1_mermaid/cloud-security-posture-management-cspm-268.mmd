@@ -1,0 +1,12 @@
+flowchart TB
+    n1_AlertingandNotification["Alerting and Notification"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AlertingandNotification fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityHub["Security Hub"]
+    style n2_SecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SOARPlatform["SOAR Platform"]
+    style n3_SOARPlatform fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AutomatedResponse["Automated Response"]
+    style n4_AutomatedResponse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityHub --> n3_SOARPlatform
+    n3_SOARPlatform --> n4_AutomatedResponse

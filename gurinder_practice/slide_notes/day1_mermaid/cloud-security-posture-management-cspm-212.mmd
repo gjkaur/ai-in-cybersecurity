@@ -1,0 +1,15 @@
+flowchart TB
+    n1_HighRiskMisconfiguration["High-Risk Misconfiguration #2: RDP Open to the Internet"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HighRiskMisconfiguration fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Internet["Internet"]
+    style n2_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Port3389Open["Port 3389 Open"]
+    style n3_Port3389Open fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RDPLoginAttempts["RDP Login Attempts"]
+    style n4_RDPLoginAttempts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CompromisedWindowsServer["Compromised Windows Server"]
+    style n5_CompromisedWindowsServer fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Internet --> n3_Port3389Open
+    n3_Port3389Open --> n4_RDPLoginAttempts
+    n4_RDPLoginAttempts --> n5_CompromisedWindowsServer

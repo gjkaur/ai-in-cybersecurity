@@ -1,0 +1,33 @@
+flowchart TB
+    n1_WhatIstheRootAccount["What Is the Root Account?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatIstheRootAccount fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AWSAccount["AWS Account"]
+    style n2_AWSAccount fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_RootUser["Root User"]
+    style n3_RootUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Billing["├── Billing"]
+    style n4_Billing fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_IAM["├── IAM"]
+    style n5_IAM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_S3["├── S3"]
+    style n6_S3 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_EC2["├── EC2"]
+    style n7_EC2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_RDS["├── RDS"]
+    style n8_RDS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Lambda["├── Lambda"]
+    style n9_Lambda fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_Organizations["├── Organizations"]
+    style n10_Organizations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_AccountClosure["└── Account Closure"]
+    style n11_AccountClosure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AWSAccount --> n3_RootUser
+    n3_RootUser --> n4_Billing
+    n4_Billing --> n5_IAM
+    n5_IAM --> n6_S3
+    n6_S3 --> n7_EC2
+    n7_EC2 --> n8_RDS
+    n8_RDS --> n9_Lambda
+    n9_Lambda --> n10_Organizations
+    n10_Organizations --> n11_AccountClosure

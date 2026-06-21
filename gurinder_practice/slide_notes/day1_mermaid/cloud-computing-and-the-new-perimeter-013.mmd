@@ -1,0 +1,15 @@
+flowchart TB
+    n1_TraditionalOffice["Traditional Office"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TraditionalOffice fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_OfficeBuilding["Office Building"]
+    style n2_OfficeBuilding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EmployeesInside["Employees Inside"]
+    style n3_EmployeesInside fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CompanyServersInside["Company Servers Inside"]
+    style n4_CompanyServersInside fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_FirewallAroundEverything["Firewall Around Everything"]
+    style n5_FirewallAroundEverything fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_OfficeBuilding --> n3_EmployeesInside
+    n3_EmployeesInside --> n4_CompanyServersInside
+    n4_CompanyServersInside --> n5_FirewallAroundEverything

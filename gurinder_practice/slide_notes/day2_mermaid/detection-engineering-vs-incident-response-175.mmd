@@ -1,0 +1,12 @@
+flowchart TB
+    n1_DetectionEngineeringinth["Detection Engineering in the SOC"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_DetectionEngineeringinth fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ThreatIntelligence["Threat Intelligence"]
+    style n2_ThreatIntelligence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DetectionEngineering["Detection Engineering"]
+    style n3_DetectionEngineering fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SOCOperations["SOC Operations"]
+    style n4_SOCOperations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ThreatIntelligence --> n3_DetectionEngineering
+    n3_DetectionEngineering --> n4_SOCOperations

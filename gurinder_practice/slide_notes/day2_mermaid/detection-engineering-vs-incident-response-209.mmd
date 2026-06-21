@@ -1,0 +1,9 @@
+flowchart TB
+    n1_Step6ConfigureanAlarm["Step 6 – Configure an Alarm"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step6ConfigureanAlarm fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudWatchAlarm["CloudWatch Alarm"]
+    style n2_CloudWatchAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_InAlarmState["→ In Alarm State"]
+    style n3_InAlarmState fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudWatchAlarm --> n3_InAlarmState

@@ -1,0 +1,9 @@
+flowchart TB
+    n1_TestingforFalsePositives["Testing for False Positives"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TestingforFalsePositives fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_BenignActivity["Benign Activity"]
+    style n2_BenignActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SecurityAlert["Security Alert"]
+    style n3_SecurityAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_BenignActivity --> n3_SecurityAlert

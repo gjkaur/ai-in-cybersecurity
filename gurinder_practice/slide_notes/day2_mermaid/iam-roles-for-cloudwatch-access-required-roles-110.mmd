@@ -1,0 +1,12 @@
+flowchart TB
+    n1_InvestigationScopeMatter["Investigation Scope Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_InvestigationScopeMatter fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SelectedLogs["Selected Logs"]
+    style n2_SelectedLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIAnalysis["AI Analysis"]
+    style n3_AIAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Hypothesis["Hypothesis"]
+    style n4_Hypothesis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SelectedLogs --> n3_AIAnalysis
+    n3_AIAnalysis --> n4_Hypothesis

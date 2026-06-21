@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyRawLogsCannotTriggerA["Why Raw Logs Cannot Trigger Alarms"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyRawLogsCannotTriggerA fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogEntry["Log Entry"]
+    style n2_LogEntry fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Metric["Metric"]
+    style n3_Metric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Alert["Alert"]
+    style n4_Alert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogEntry --> n3_Metric
+    n3_Metric --> n4_Alert

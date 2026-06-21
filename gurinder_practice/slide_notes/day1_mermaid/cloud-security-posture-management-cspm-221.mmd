@@ -1,0 +1,12 @@
+flowchart TB
+    n1_3InsightsEvents["3. Insights Events"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_3InsightsEvents fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_NormalAPIUsage["Normal API Usage"]
+    style n2_NormalAPIUsage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SuddenSpike["Sudden Spike"]
+    style n3_SuddenSpike fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudTrailInsight["CloudTrail Insight"]
+    style n4_CloudTrailInsight fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_NormalAPIUsage --> n3_SuddenSpike
+    n3_SuddenSpike --> n4_CloudTrailInsight

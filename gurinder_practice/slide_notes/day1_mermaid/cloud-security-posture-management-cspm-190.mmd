@@ -1,0 +1,15 @@
+flowchart TB
+    n1_RegularHygieneTask2Rotat["Regular Hygiene Task #2: Rotate Access Keys"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RegularHygieneTask2Rotat fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CreateNewKey["Create New Key"]
+    style n2_CreateNewKey fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_UpdateApplications["Update Applications"]
+    style n3_UpdateApplications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_VerifyFunctionality["Verify Functionality"]
+    style n4_VerifyFunctionality fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_DeleteOldKey["Delete Old Key"]
+    style n5_DeleteOldKey fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CreateNewKey --> n3_UpdateApplications
+    n3_UpdateApplications --> n4_VerifyFunctionality
+    n4_VerifyFunctionality --> n5_DeleteOldKey

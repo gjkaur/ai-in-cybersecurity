@@ -1,0 +1,15 @@
+flowchart TB
+    n1_Diagram110["Diagram 110"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Diagram110 fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_50000Alerts["50,000 Alerts"]
+    style n2_50000Alerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIPrioritization["AI Prioritization"]
+    style n3_AIPrioritization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_200HighRiskAlerts["200 High-Risk Alerts"]
+    style n4_200HighRiskAlerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AnalystInvestigation["Analyst Investigation"]
+    style n5_AnalystInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_50000Alerts --> n3_AIPrioritization
+    n3_AIPrioritization --> n4_200HighRiskAlerts
+    n4_200HighRiskAlerts --> n5_AnalystInvestigation

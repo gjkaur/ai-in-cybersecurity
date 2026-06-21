@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ContinuousComplianceLife["Continuous Compliance Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ContinuousComplianceLife fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_DefineControls["Define Controls"]
+    style n2_DefineControls fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MonitorContinuously["Monitor Continuously"]
+    style n3_MonitorContinuously fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_DetectViolations["Detect Violations"]
+    style n4_DetectViolations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AlertTeams["Alert Teams"]
+    style n5_AlertTeams fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RemediateIssues["Remediate Issues"]
+    style n6_RemediateIssues fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_VerifyCompliance["Verify Compliance"]
+    style n7_VerifyCompliance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_MonitorAgain["Monitor Again"]
+    style n8_MonitorAgain fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_DefineControls --> n3_MonitorContinuously
+    n3_MonitorContinuously --> n4_DetectViolations
+    n4_DetectViolations --> n5_AlertTeams
+    n5_AlertTeams --> n6_RemediateIssues
+    n6_RemediateIssues --> n7_VerifyCompliance
+    n7_VerifyCompliance --> n8_MonitorAgain

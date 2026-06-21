@@ -1,0 +1,21 @@
+flowchart TB
+    n1_WhyDetectionPipelinesMat["Why Detection Pipelines Matter"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyDetectionPipelinesMat fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SystemActivity["System Activity"]
+    style n2_SystemActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Logs["Logs"]
+    style n3_Logs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Metrics["Metrics"]
+    style n4_Metrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Alarms["Alarms"]
+    style n5_Alarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Investigations["Investigations"]
+    style n6_Investigations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AnalystAction["Analyst Action"]
+    style n7_AnalystAction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SystemActivity --> n3_Logs
+    n3_Logs --> n4_Metrics
+    n4_Metrics --> n5_Alarms
+    n5_Alarms --> n6_Investigations
+    n6_Investigations --> n7_AnalystAction

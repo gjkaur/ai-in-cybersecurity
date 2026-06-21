@@ -1,0 +1,27 @@
+flowchart TB
+    n1_EC2Server["EC2 Server"]
+    style n1_EC2Server fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_IAMRole["IAM Role"]
+    style n2_IAMRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ReadOnly["(Read Only)"]
+    style n3_ReadOnly fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_S3Bucket["S3 Bucket"]
+    style n4_S3Bucket fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ReadData["(Read Data)"]
+    style n5_ReadData fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Denied["Denied:"]
+    style n6_Denied fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Delete["- Delete"]
+    style n7_Delete fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Modify["- Modify"]
+    style n8_Modify fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Admin["- Admin"]
+    style n9_Admin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_EC2Server --> n2_IAMRole
+    n2_IAMRole --> n3_ReadOnly
+    n3_ReadOnly --> n4_S3Bucket
+    n4_S3Bucket --> n5_ReadData
+    n5_ReadData --> n6_Denied
+    n6_Denied --> n7_Delete
+    n7_Delete --> n8_Modify
+    n8_Modify --> n9_Admin

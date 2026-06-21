@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyCreateaThreatCatalog["Why Create a Threat Catalog?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyCreateaThreatCatalog fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogsCollected["Logs Collected"]
+    style n2_LogsCollected fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_RandomAlerts["Random Alerts"]
+    style n3_RandomAlerts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PoorCoverage["Poor Coverage"]
+    style n4_PoorCoverage fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogsCollected --> n3_RandomAlerts
+    n3_RandomAlerts --> n4_PoorCoverage

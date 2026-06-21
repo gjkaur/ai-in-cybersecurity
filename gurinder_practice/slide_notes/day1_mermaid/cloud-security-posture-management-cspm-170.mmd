@@ -1,0 +1,24 @@
+flowchart TB
+    n1_TypicalSOCWorkflow["Typical SOC Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TypicalSOCWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AWSResourceActivity["AWS Resource Activity"]
+    style n2_AWSResourceActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudTrailLogging["CloudTrail Logging"]
+    style n3_CloudTrailLogging fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_GuardDutyDetection["GuardDuty Detection"]
+    style n4_GuardDutyDetection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_InspectorAssessment["Inspector Assessment"]
+    style n5_InspectorAssessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_SecurityHubAlert["Security Hub Alert"]
+    style n6_SecurityHubAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SecurityAnalystInvestiga["Security Analyst Investigation"]
+    style n7_SecurityAnalystInvestiga fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Remediation["Remediation"]
+    style n8_Remediation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AWSResourceActivity --> n3_CloudTrailLogging
+    n3_CloudTrailLogging --> n4_GuardDutyDetection
+    n4_GuardDutyDetection --> n5_InspectorAssessment
+    n5_InspectorAssessment --> n6_SecurityHubAlert
+    n6_SecurityHubAlert --> n7_SecurityAnalystInvestiga
+    n7_SecurityAnalystInvestiga --> n8_Remediation

@@ -1,0 +1,21 @@
+flowchart TB
+    n1_HumanintheLoopPrinciple["Human-in-the-Loop Principle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HumanintheLoopPrinciple fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogsMetrics["Logs & Metrics"]
+    style n2_LogsMetrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIAnalysis["AI Analysis"]
+    style n3_AIAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Hypothesis["Hypothesis"]
+    style n4_Hypothesis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_EvidenceReview["Evidence Review"]
+    style n5_EvidenceReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_ContextValidation["Context Validation"]
+    style n6_ContextValidation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AnalystDecision["Analyst Decision"]
+    style n7_AnalystDecision fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogsMetrics --> n3_AIAnalysis
+    n3_AIAnalysis --> n4_Hypothesis
+    n4_Hypothesis --> n5_EvidenceReview
+    n5_EvidenceReview --> n6_ContextValidation
+    n6_ContextValidation --> n7_AnalystDecision

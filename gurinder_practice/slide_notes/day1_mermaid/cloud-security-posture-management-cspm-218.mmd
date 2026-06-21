@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyCloudTrailMatters["Why CloudTrail Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyCloudTrailMatters fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityIncident["Security Incident"]
+    style n2_SecurityIncident fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_NoEvidence["No Evidence"]
+    style n3_NoEvidence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_NoInvestigation["No Investigation"]
+    style n4_NoInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityIncident --> n3_NoEvidence
+    n3_NoEvidence --> n4_NoInvestigation

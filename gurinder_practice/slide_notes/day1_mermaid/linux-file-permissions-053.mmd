@@ -1,0 +1,14 @@
+flowchart TB
+    n1_QWhatdoesrwxmean["Q: What does rwx mean?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_QWhatdoesrwxmean fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Read["Read"]
+    style n3_Read fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Write["Write"]
+    style n4_Write fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Execute["Execute"]
+    style n5_Execute fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Read --> n4_Write
+        n4_Write --> n5_Execute
+    end

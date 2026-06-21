@@ -1,0 +1,15 @@
+flowchart TB
+    n1_ConfigurationDrift["Configuration Drift"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ConfigurationDrift fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecureConfiguration["Secure Configuration"]
+    style n2_SecureConfiguration fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ManualChange["Manual Change"]
+    style n3_ManualChange fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityControlRemoved["Security Control Removed"]
+    style n4_SecurityControlRemoved fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ComplianceViolation["Compliance Violation"]
+    style n5_ComplianceViolation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecureConfiguration --> n3_ManualChange
+    n3_ManualChange --> n4_SecurityControlRemoved
+    n4_SecurityControlRemoved --> n5_ComplianceViolation

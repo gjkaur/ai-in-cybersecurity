@@ -1,0 +1,22 @@
+flowchart TB
+    n1_Step1Collect["Step 1: Collect"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step1Collect fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_EC2["EC2"]
+    style n3_EC2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Lambda["Lambda"]
+    style n4_Lambda fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CloudTrail["CloudTrail"]
+    style n5_CloudTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Applications["Applications"]
+    style n6_Applications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_EC2 --> n4_Lambda
+        n4_Lambda --> n5_CloudTrail
+        n5_CloudTrail --> n6_Applications
+    end
+    n7_Applications["Applications"]
+    style n7_Applications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_CloudWatch["CloudWatch"]
+    style n8_CloudWatch fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Applications --> n8_CloudWatch

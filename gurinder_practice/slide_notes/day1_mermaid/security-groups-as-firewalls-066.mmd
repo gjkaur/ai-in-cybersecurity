@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhatDoesStatefulMean["What Does Stateful Mean?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatDoesStatefulMean fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_EC2["EC2"]
+    style n2_EC2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_HTTPSResponse["HTTPS Response"]
+    style n3_HTTPSResponse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_YourLaptop["Your Laptop"]
+    style n4_YourLaptop fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_EC2 --> n3_HTTPSResponse
+    n3_HTTPSResponse --> n4_YourLaptop

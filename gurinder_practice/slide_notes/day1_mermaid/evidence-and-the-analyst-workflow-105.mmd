@@ -1,0 +1,14 @@
+flowchart TB
+    n1_ExampleCorrelation["Example Correlation"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleCorrelation fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Userloggedin["User logged in"]
+    style n3_Userloggedin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Becameroot["→ Became root"]
+    style n4_Becameroot fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Accessedsensitivefiles["→ Accessed sensitive files"]
+    style n5_Accessedsensitivefiles fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Userloggedin --> n4_Becameroot
+        n4_Becameroot --> n5_Accessedsensitivefiles
+    end

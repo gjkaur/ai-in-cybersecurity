@@ -1,0 +1,15 @@
+flowchart TB
+    n1_Internet["Internet"]
+    style n1_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityGroup["Security Group"]
+    style n2_SecurityGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EC2Server["EC2 Server"]
+    style n3_EC2Server fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_OperatingSystem["Operating System"]
+    style n4_OperatingSystem fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Application["Application"]
+    style n5_Application fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_Internet --> n2_SecurityGroup
+    n2_SecurityGroup --> n3_EC2Server
+    n3_EC2Server --> n4_OperatingSystem
+    n4_OperatingSystem --> n5_Application

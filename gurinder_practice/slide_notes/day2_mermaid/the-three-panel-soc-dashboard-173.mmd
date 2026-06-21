@@ -1,0 +1,9 @@
+flowchart TB
+    n1_Step4VerifyAlarmState["Step 4 – Verify Alarm State"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step4VerifyAlarmState fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_OK["OK"]
+    style n2_OK fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ALARM["ALARM"]
+    style n3_ALARM fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_OK --> n3_ALARM

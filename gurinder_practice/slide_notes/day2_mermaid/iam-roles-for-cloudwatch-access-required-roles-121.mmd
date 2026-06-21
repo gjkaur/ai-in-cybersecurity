@@ -1,0 +1,26 @@
+flowchart TB
+    n1_OneMetricFilterMultipleC["One Metric Filter, Multiple Consumers"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_OneMetricFilterMultipleC fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_MetricFilter["Metric Filter"]
+    style n2_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CustomMetric["Custom Metric"]
+    style n3_CustomMetric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_node["┌─────────────┬─────────────┬─────────────┐"]
+    style n4_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_MetricFilter --> n3_CustomMetric
+    n3_CustomMetric --> n4_node
+    n5_Alarm["│ Alarm"]
+    n6_Dashboard["│ Dashboard"]
+    n7_Reports["│ Reports"]
+    n8_node["│"]
+    style n5_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n6_Dashboard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n7_Reports fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n8_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_node --> n5_Alarm
+    n4_node --> n6_Dashboard
+    n4_node --> n7_Reports
+    n4_node --> n8_node
+    n9_node["└─────────────┴─────────────┴─────────────┘"]
+    style n9_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A

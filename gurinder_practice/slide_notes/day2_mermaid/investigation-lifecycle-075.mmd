@@ -1,0 +1,18 @@
+flowchart TB
+    n1_Day1Foundation["Day 1 Foundation"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Day1Foundation fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_EC2Instance["EC2 Instance"]
+    style n2_EC2Instance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudLogs["Cloud Logs"]
+    style n3_CloudLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityMonitoring["Security Monitoring"]
+    style n4_SecurityMonitoring fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SecurityFindings["Security Findings"]
+    style n5_SecurityFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_BaselineReport["Baseline Report"]
+    style n6_BaselineReport fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_EC2Instance --> n3_CloudLogs
+    n3_CloudLogs --> n4_SecurityMonitoring
+    n4_SecurityMonitoring --> n5_SecurityFindings
+    n5_SecurityFindings --> n6_BaselineReport

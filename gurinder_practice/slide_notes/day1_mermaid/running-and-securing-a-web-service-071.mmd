@@ -1,0 +1,18 @@
+flowchart TB
+    n1_WebTrafficFlow["Web Traffic Flow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WebTrafficFlow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Browser["Browser"]
+    style n2_Browser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Internet["Internet"]
+    style n3_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityGroup["Security Group"]
+    style n4_SecurityGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Nginx["Nginx"]
+    style n5_Nginx fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Response["Response"]
+    style n6_Response fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Browser --> n3_Internet
+    n3_Internet --> n4_SecurityGroup
+    n4_SecurityGroup --> n5_Nginx
+    n5_Nginx --> n6_Response

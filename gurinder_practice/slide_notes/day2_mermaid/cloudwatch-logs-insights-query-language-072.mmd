@@ -1,0 +1,21 @@
+flowchart TB
+    n1_QueryExecutionFlow["Query Execution Flow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_QueryExecutionFlow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AnalystPrompt["Analyst Prompt"]
+    style n2_AnalystPrompt fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIGeneratesQuery["AI Generates Query"]
+    style n3_AIGeneratesQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AnalystReviewsQuery["Analyst Reviews Query"]
+    style n4_AnalystReviewsQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RunQuery["Run Query"]
+    style n5_RunQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CloudWatchSearchesLogs["CloudWatch Searches Logs"]
+    style n6_CloudWatchSearchesLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ResultsReturned["Results Returned"]
+    style n7_ResultsReturned fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AnalystPrompt --> n3_AIGeneratesQuery
+    n3_AIGeneratesQuery --> n4_AnalystReviewsQuery
+    n4_AnalystReviewsQuery --> n5_RunQuery
+    n5_RunQuery --> n6_CloudWatchSearchesLogs
+    n6_CloudWatchSearchesLogs --> n7_ResultsReturned

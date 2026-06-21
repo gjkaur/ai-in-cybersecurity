@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhyPrioritizationMatters["Why Prioritization Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyPrioritizationMatters fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_100SecurityFindings["100 Security Findings"]
+    style n2_100SecurityFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_RiskAssessment["Risk Assessment"]
+    style n3_RiskAssessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SeverityClassification["Severity Classification"]
+    style n4_SeverityClassification fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_FocusedRemediation["Focused Remediation"]
+    style n5_FocusedRemediation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_100SecurityFindings --> n3_RiskAssessment
+    n3_RiskAssessment --> n4_SeverityClassification
+    n4_SeverityClassification --> n5_FocusedRemediation

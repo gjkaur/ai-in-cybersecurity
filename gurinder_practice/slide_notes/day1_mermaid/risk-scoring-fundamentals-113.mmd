@@ -1,0 +1,15 @@
+flowchart TB
+    n1_Diagram113["Diagram 113"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Diagram113 fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_10MillionLogEvents["10 Million Log Events"]
+    style n2_10MillionLogEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIAnalysis["AI Analysis"]
+    style n3_AIAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_15SuspiciousPatterns["15 Suspicious Patterns"]
+    style n4_15SuspiciousPatterns fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AnalystInvestigation["Analyst Investigation"]
+    style n5_AnalystInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_10MillionLogEvents --> n3_AIAnalysis
+    n3_AIAnalysis --> n4_15SuspiciousPatterns
+    n4_15SuspiciousPatterns --> n5_AnalystInvestigation

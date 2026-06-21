@@ -1,0 +1,27 @@
+flowchart TB
+    n1_HowGuardDutyWorks["How GuardDuty Works"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HowGuardDutyWorks fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AWSActivity["AWS Activity"]
+    style n2_AWSActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LogCollection["Log Collection"]
+    style n3_LogCollection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ThreatIntelligence["Threat Intelligence"]
+    style n4_ThreatIntelligence fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_node["+"]
+    style n5_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_BehaviorAnalytics["Behavior Analytics"]
+    style n6_BehaviorAnalytics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_node["+"]
+    style n7_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_MachineLearning["Machine Learning"]
+    style n8_MachineLearning fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_GuardDutyFindings["GuardDuty Findings"]
+    style n9_GuardDutyFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AWSActivity --> n3_LogCollection
+    n3_LogCollection --> n4_ThreatIntelligence
+    n4_ThreatIntelligence --> n5_node
+    n5_node --> n6_BehaviorAnalytics
+    n6_BehaviorAnalytics --> n7_node
+    n7_node --> n8_MachineLearning
+    n8_MachineLearning --> n9_GuardDutyFindings

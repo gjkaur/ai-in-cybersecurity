@@ -1,0 +1,18 @@
+flowchart TB
+    n1_Alert["Alert"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Alert fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Failedpassword["Failed password"]
+    style n2_Failedpassword fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MetricFilter["Metric Filter"]
+    style n3_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SSHFailedLogins["SSHFailedLogins"]
+    style n4_SSHFailedLogins fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Alarm["Alarm"]
+    style n5_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_SOCNotification["SOC Notification"]
+    style n6_SOCNotification fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Failedpassword --> n3_MetricFilter
+    n3_MetricFilter --> n4_SSHFailedLogins
+    n4_SSHFailedLogins --> n5_Alarm
+    n5_Alarm --> n6_SOCNotification

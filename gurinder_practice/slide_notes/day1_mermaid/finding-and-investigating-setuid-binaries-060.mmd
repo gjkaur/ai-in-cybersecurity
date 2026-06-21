@@ -1,0 +1,26 @@
+flowchart TB
+    n1_SecurityAudit["Security Audit"]
+    style n1_SecurityAudit fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_FindSetUIDFiles["Find SetUID Files"]
+    style n2_FindSetUIDFiles fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Expected["Expected?"]
+    style n3_Expected fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_node["/      \"]
+    style n4_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_SecurityAudit --> n2_FindSetUIDFiles
+    n2_FindSetUIDFiles --> n3_Expected
+    n3_Expected --> n4_node
+    n5_Yes["Yes"]
+    n6_No["No"]
+    style n5_Yes fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n6_No fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_node --> n5_Yes
+    n4_node --> n6_No
+    n7_Ignore["Ignore"]
+    n8_Investigate["Investigate"]
+    style n7_Ignore fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n8_Investigate fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n5_Yes --> n7_Ignore
+    n6_No --> n8_Investigate
+    n9_PossibleBackdoor["Possible Backdoor"]
+    style n9_PossibleBackdoor fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A

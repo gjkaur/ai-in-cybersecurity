@@ -1,0 +1,14 @@
+flowchart TB
+    n1_AttackerGoal["Attacker Goal"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AttackerGoal fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_Planning["Planning"]
+    style n3_Planning fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Research["Research"]
+    style n4_Research fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_IntelligenceGathering["Intelligence Gathering"]
+    style n5_IntelligenceGathering fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_Planning --> n4_Research
+        n4_Research --> n5_IntelligenceGathering
+    end

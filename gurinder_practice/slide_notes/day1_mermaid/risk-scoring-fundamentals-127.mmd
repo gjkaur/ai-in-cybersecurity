@@ -1,0 +1,15 @@
+flowchart TB
+    n1_WhatisanIAMPolicy["What is an IAM Policy?"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatisanIAMPolicy fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Who["Who?"]
+    style n2_Who fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Canperform["Can perform"]
+    style n3_Canperform fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_WhatAction["What Action?"]
+    style n4_WhatAction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_OnWhichResource["On Which Resource?"]
+    style n5_OnWhichResource fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Who --> n3_Canperform
+    n3_Canperform --> n4_WhatAction
+    n4_WhatAction --> n5_OnWhichResource

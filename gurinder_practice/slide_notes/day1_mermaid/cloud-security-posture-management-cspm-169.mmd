@@ -1,0 +1,18 @@
+flowchart TB
+    n1_Step5["Step 5"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step5 fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudTrail["CloudTrail"]
+    style n2_CloudTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_GuardDuty["GuardDuty"]
+    style n3_GuardDuty fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Inspector["Inspector"]
+    style n4_Inspector fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Config["Config"]
+    style n5_Config fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_SecurityHub["Security Hub"]
+    style n6_SecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudTrail --> n3_GuardDuty
+    n3_GuardDuty --> n4_Inspector
+    n4_Inspector --> n5_Config
+    n5_Config --> n6_SecurityHub

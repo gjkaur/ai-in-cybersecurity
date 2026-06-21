@@ -1,0 +1,24 @@
+flowchart TB
+    n1_TheCSPMLifecycle["The CSPM Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TheCSPMLifecycle fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudResources["Cloud Resources"]
+    style n2_CloudResources fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ContinuousDiscovery["Continuous Discovery"]
+    style n3_ContinuousDiscovery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ConfigurationAssessment["Configuration Assessment"]
+    style n4_ConfigurationAssessment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RiskPrioritization["Risk Prioritization"]
+    style n5_RiskPrioritization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Remediation["Remediation"]
+    style n6_Remediation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Validation["Validation"]
+    style n7_Validation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_ContinuousMonitoring["Continuous Monitoring"]
+    style n8_ContinuousMonitoring fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudResources --> n3_ContinuousDiscovery
+    n3_ContinuousDiscovery --> n4_ConfigurationAssessment
+    n4_ConfigurationAssessment --> n5_RiskPrioritization
+    n5_RiskPrioritization --> n6_Remediation
+    n6_Remediation --> n7_Validation
+    n7_Validation --> n8_ContinuousMonitoring

@@ -1,0 +1,18 @@
+flowchart TB
+    n1_AutomatedAIWorkflow["Automated AI Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AutomatedAIWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LogEvent["Log Event"]
+    style n2_LogEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MetricFilter["Metric Filter"]
+    style n3_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchAlarm["CloudWatch Alarm"]
+    style n4_CloudWatchAlarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AIInvestigation["AI Investigation"]
+    style n5_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AnalystReview["Analyst Review"]
+    style n6_AnalystReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LogEvent --> n3_MetricFilter
+    n3_MetricFilter --> n4_CloudWatchAlarm
+    n4_CloudWatchAlarm --> n5_AIInvestigation
+    n5_AIInvestigation --> n6_AnalystReview

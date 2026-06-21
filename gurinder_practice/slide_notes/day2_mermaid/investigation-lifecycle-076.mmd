@@ -1,0 +1,21 @@
+flowchart TB
+    n1_MultiSourceCorrelationEx["Multi-Source Correlation Example"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_MultiSourceCorrelationEx fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudTrail["CloudTrail"]
+    style n2_CloudTrail fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchLogs["CloudWatch Logs"]
+    style n3_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_GuardDuty["GuardDuty"]
+    style n4_GuardDuty fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_VPCFlowLogs["VPC Flow Logs"]
+    style n5_VPCFlowLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Metrics["Metrics"]
+    style n6_Metrics fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_SingleInvestigationView["Single Investigation View"]
+    style n7_SingleInvestigationView fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudTrail --> n3_CloudWatchLogs
+    n3_CloudWatchLogs --> n4_GuardDuty
+    n4_GuardDuty --> n5_VPCFlowLogs
+    n5_VPCFlowLogs --> n6_Metrics
+    n6_Metrics --> n7_SingleInvestigationView

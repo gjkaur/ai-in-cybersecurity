@@ -1,0 +1,9 @@
+flowchart TB
+    n1_DetectAnomalies["Detect Anomalies"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_DetectAnomalies fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Normalbehavior["Normal behavior"]
+    style n2_Normalbehavior fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Unusualdeviation["Unusual deviation"]
+    style n3_Unusualdeviation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Normalbehavior --> n3_Unusualdeviation

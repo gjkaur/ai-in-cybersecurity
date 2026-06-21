@@ -1,0 +1,15 @@
+flowchart TB
+    n1_RunbooksandAIOperations["Runbooks and AI Operations"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RunbooksandAIOperations fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Alarm["Alarm"]
+    style n2_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIInvestigation["AI Investigation"]
+    style n3_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_HypothesisGenerated["Hypothesis Generated"]
+    style n4_HypothesisGenerated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AnalystFollowsRunbook["Analyst Follows Runbook"]
+    style n5_AnalystFollowsRunbook fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Alarm --> n3_AIInvestigation
+    n3_AIInvestigation --> n4_HypothesisGenerated
+    n4_HypothesisGenerated --> n5_AnalystFollowsRunbook

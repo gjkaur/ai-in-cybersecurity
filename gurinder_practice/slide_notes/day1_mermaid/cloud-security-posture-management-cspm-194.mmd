@@ -1,0 +1,12 @@
+flowchart TB
+    n1_MFAEnforcementStrategies["MFA Enforcement Strategies"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_MFAEnforcementStrategies fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ConsoleLogin["Console Login"]
+    style n2_ConsoleLogin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_MFARequired["MFA Required"]
+    style n3_MFARequired fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AccessGranted["Access Granted"]
+    style n4_AccessGranted fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ConsoleLogin --> n3_MFARequired
+    n3_MFARequired --> n4_AccessGranted

@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ExampleRiskScoringWorkfl["Example Risk Scoring Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleRiskScoringWorkfl fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityEvents["Security Events"]
+    style n2_SecurityEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_DetectionRules["Detection Rules"]
+    style n3_DetectionRules fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AssignEventWeights["Assign Event Weights"]
+    style n4_AssignEventWeights fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AggregatebyEntity["Aggregate by Entity"]
+    style n5_AggregatebyEntity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CalculateTotalScore["Calculate Total Score"]
+    style n6_CalculateTotalScore fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ApplySeverityThreshold["Apply Severity Threshold"]
+    style n7_ApplySeverityThreshold fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_AnalystInvestigation["Analyst Investigation"]
+    style n8_AnalystInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityEvents --> n3_DetectionRules
+    n3_DetectionRules --> n4_AssignEventWeights
+    n4_AssignEventWeights --> n5_AggregatebyEntity
+    n5_AggregatebyEntity --> n6_CalculateTotalScore
+    n6_CalculateTotalScore --> n7_ApplySeverityThreshold
+    n7_ApplySeverityThreshold --> n8_AnalystInvestigation

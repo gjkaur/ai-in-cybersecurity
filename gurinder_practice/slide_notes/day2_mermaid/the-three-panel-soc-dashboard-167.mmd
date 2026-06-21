@@ -1,0 +1,27 @@
+flowchart TB
+    n1_EndtoEndValidationProces["End-to-End Validation Process"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EndtoEndValidationProces fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_GenerateEvent["Generate Event"]
+    style n2_GenerateEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LogCreated["Log Created"]
+    style n3_LogCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchReceivesEvent["CloudWatch Receives Event"]
+    style n4_CloudWatchReceivesEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_MetricFilterMatches["Metric Filter Matches"]
+    style n5_MetricFilterMatches fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_MetricIncrements["Metric Increments"]
+    style n6_MetricIncrements fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AlarmFires["Alarm Fires"]
+    style n7_AlarmFires fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_InvestigationStarts["Investigation Starts"]
+    style n8_InvestigationStarts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_AnalystReviews["Analyst Reviews"]
+    style n9_AnalystReviews fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_GenerateEvent --> n3_LogCreated
+    n3_LogCreated --> n4_CloudWatchReceivesEvent
+    n4_CloudWatchReceivesEvent --> n5_MetricFilterMatches
+    n5_MetricFilterMatches --> n6_MetricIncrements
+    n6_MetricIncrements --> n7_AlarmFires
+    n7_AlarmFires --> n8_InvestigationStarts
+    n8_InvestigationStarts --> n9_AnalystReviews

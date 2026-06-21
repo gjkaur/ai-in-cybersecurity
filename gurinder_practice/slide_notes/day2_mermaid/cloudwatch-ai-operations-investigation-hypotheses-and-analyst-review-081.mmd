@@ -1,0 +1,18 @@
+flowchart TB
+    n1_AIActions["AI Actions"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AIActions fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CollectAuthenticationLog["Collect Authentication Logs"]
+    style n2_CollectAuthenticationLog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AnalyzeSourceAddresses["Analyze Source Addresses"]
+    style n3_AnalyzeSourceAddresses fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ReviewHistoricalActivity["Review Historical Activity"]
+    style n4_ReviewHistoricalActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CheckCloudTrailEvents["Check CloudTrail Events"]
+    style n5_CheckCloudTrailEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_GenerateHypotheses["Generate Hypotheses"]
+    style n6_GenerateHypotheses fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CollectAuthenticationLog --> n3_AnalyzeSourceAddresses
+    n3_AnalyzeSourceAddresses --> n4_ReviewHistoricalActivity
+    n4_ReviewHistoricalActivity --> n5_CheckCloudTrailEvents
+    n5_CheckCloudTrailEvents --> n6_GenerateHypotheses

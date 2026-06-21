@@ -1,0 +1,24 @@
+flowchart TB
+    n1_InvestigationLifecycle["Investigation Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_InvestigationLifecycle fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityEventorAlert["Security Event or Alert"]
+    style n2_SecurityEventorAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_1ScopeDefinition["1. Scope Definition"]
+    style n3_1ScopeDefinition fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_2AutomatedAnalysis["2. Automated Analysis"]
+    style n4_2AutomatedAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_3HypothesisGeneration["3. Hypothesis Generation"]
+    style n5_3HypothesisGeneration fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_4EvidenceCorrelation["4. Evidence Correlation"]
+    style n6_4EvidenceCorrelation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_5AnalystReview["5. Analyst Review"]
+    style n7_5AnalystReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_6ConfirmChallengeEscalat["6. Confirm / Challenge / Escalate"]
+    style n8_6ConfirmChallengeEscalat fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityEventorAlert --> n3_1ScopeDefinition
+    n3_1ScopeDefinition --> n4_2AutomatedAnalysis
+    n4_2AutomatedAnalysis --> n5_3HypothesisGeneration
+    n5_3HypothesisGeneration --> n6_4EvidenceCorrelation
+    n6_4EvidenceCorrelation --> n7_5AnalystReview
+    n7_5AnalystReview --> n8_6ConfirmChallengeEscalat

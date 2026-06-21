@@ -1,0 +1,21 @@
+flowchart TB
+    n1_Command1fields["Command 1 — fields"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Command1fields fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Timestamp["Timestamp"]
+    n3_Message["Message"]
+    style n2_Timestamp fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n3_Message fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Timestamp --- n3_Message
+    n4_20260610120100["2026-06-10 12:01:00"]
+    n5_Failedpassword["Failed password..."]
+    style n4_20260610120100 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n5_Failedpassword fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Message --> n4_20260610120100
+    n3_Message --> n5_Failedpassword
+    n6_20260610120215["2026-06-10 12:02:15"]
+    n7_Failedpassword["Failed password..."]
+    style n6_20260610120215 fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n7_Failedpassword fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n4_20260610120100 --> n6_20260610120215
+    n5_Failedpassword --> n7_Failedpassword

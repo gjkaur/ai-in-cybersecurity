@@ -1,0 +1,33 @@
+flowchart TB
+    n1_RealWorldSOCWorkflow["Real-World SOC Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RealWorldSOCWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AttackActivity["Attack Activity"]
+    style n2_AttackActivity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_auditdLogs["auditd Logs"]
+    style n3_auditdLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchLogs["CloudWatch Logs"]
+    style n4_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_MetricFilter["Metric Filter"]
+    style n5_MetricFilter fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CustomMetric["Custom Metric"]
+    style n6_CustomMetric fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Alarm["Alarm"]
+    style n7_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_AIInvestigation["AI Investigation"]
+    style n8_AIInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_SOCAnalyst["SOC Analyst"]
+    style n9_SOCAnalyst fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n10_IncidentReport["Incident Report"]
+    style n10_IncidentReport fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n11_Closure["Closure"]
+    style n11_Closure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AttackActivity --> n3_auditdLogs
+    n3_auditdLogs --> n4_CloudWatchLogs
+    n4_CloudWatchLogs --> n5_MetricFilter
+    n5_MetricFilter --> n6_CustomMetric
+    n6_CustomMetric --> n7_Alarm
+    n7_Alarm --> n8_AIInvestigation
+    n8_AIInvestigation --> n9_SOCAnalyst
+    n9_SOCAnalyst --> n10_IncidentReport
+    n10_IncidentReport --> n11_Closure

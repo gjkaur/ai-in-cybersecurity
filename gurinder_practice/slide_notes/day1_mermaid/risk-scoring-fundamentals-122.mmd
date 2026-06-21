@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ExampleSecurityValidatio["Example Security Validation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleSecurityValidatio fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AIGeneratedScript["AI Generated Script"]
+    style n2_AIGeneratedScript fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ReadEntireScript["Read Entire Script"]
+    style n3_ReadEntireScript fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CheckLogic["Check Logic"]
+    style n4_CheckLogic fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CheckSecurity["Check Security"]
+    style n5_CheckSecurity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_TestWithSampleData["Test With Sample Data"]
+    style n6_TestWithSampleData fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ValidateOutput["Validate Output"]
+    style n7_ValidateOutput fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_ApproveforUse["Approve for Use"]
+    style n8_ApproveforUse fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AIGeneratedScript --> n3_ReadEntireScript
+    n3_ReadEntireScript --> n4_CheckLogic
+    n4_CheckLogic --> n5_CheckSecurity
+    n5_CheckSecurity --> n6_TestWithSampleData
+    n6_TestWithSampleData --> n7_ValidateOutput
+    n7_ValidateOutput --> n8_ApproveforUse

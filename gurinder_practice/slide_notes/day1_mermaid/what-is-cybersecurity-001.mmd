@@ -1,0 +1,21 @@
+flowchart TB
+    n1_Cybersecurity["Cybersecurity"]
+    style n1_Cybersecurity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Confidentiality["Confidentiality"]
+    n3_Integrity["Integrity"]
+    n4_Availability["Availability"]
+    style n2_Confidentiality fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n3_Integrity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n4_Availability fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_Cybersecurity --> n2_Confidentiality
+    n1_Cybersecurity --> n3_Integrity
+    n1_Cybersecurity --> n4_Availability
+    n5_PrivateData["Private Data"]
+    n6_AccurateData["Accurate Data"]
+    n7_AccessibleSystems["Accessible Systems"]
+    style n5_PrivateData fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n6_AccurateData fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n7_AccessibleSystems fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n2_Confidentiality --> n5_PrivateData
+    n3_Integrity --> n6_AccurateData
+    n4_Availability --> n7_AccessibleSystems

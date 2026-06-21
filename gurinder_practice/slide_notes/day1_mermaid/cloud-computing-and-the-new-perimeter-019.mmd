@@ -1,0 +1,15 @@
+flowchart TB
+    n1_IdentityistheNewFirewall["Identity is the New Firewall"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_IdentityistheNewFirewall fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_VerifyIdentity["Verify Identity"]
+    style n2_VerifyIdentity fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_VerifyDevice["Verify Device"]
+    style n3_VerifyDevice fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_VerifyPermissions["Verify Permissions"]
+    style n4_VerifyPermissions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_GrantAccess["Grant Access"]
+    style n5_GrantAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_VerifyIdentity --> n3_VerifyDevice
+    n3_VerifyDevice --> n4_VerifyPermissions
+    n4_VerifyPermissions --> n5_GrantAccess

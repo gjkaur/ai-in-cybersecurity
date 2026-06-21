@@ -1,0 +1,12 @@
+flowchart TB
+    n1_WhyCredentialHygieneMatt["Why Credential Hygiene Matters"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyCredentialHygieneMatt fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_InactiveIAMUser["Inactive IAM User"]
+    style n2_InactiveIAMUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CompromisedCredentials["Compromised Credentials"]
+    style n3_CompromisedCredentials fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_UndetectedAccountAccess["Undetected Account Access"]
+    style n4_UndetectedAccountAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_InactiveIAMUser --> n3_CompromisedCredentials
+    n3_CompromisedCredentials --> n4_UndetectedAccountAccess

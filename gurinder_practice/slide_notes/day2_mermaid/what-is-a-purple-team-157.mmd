@@ -1,0 +1,14 @@
+flowchart TB
+    n1_MiddleRow["Middle Row"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_MiddleRow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_FailedLogins["Failed Logins"]
+    style n3_FailedLogins fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PrivilegeEscalationAttem["Privilege Escalation Attempts"]
+    style n4_PrivilegeEscalationAttem fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_MITRETechniques["MITRE Techniques"]
+    style n5_MITRETechniques fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_FailedLogins --> n4_PrivilegeEscalationAttem
+        n4_PrivilegeEscalationAttem --> n5_MITRETechniques
+    end

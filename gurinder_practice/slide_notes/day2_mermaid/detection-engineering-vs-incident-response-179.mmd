@@ -1,0 +1,24 @@
+flowchart TB
+    n1_DetectionLifecycle["Detection Lifecycle"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_DetectionLifecycle fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ThreatIdentified["Threat Identified"]
+    style n2_ThreatIdentified fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_RuleCreated["Rule Created"]
+    style n3_RuleCreated fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RuleTested["Rule Tested"]
+    style n4_RuleTested fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RuleDeployed["Rule Deployed"]
+    style n5_RuleDeployed fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_RuleMonitored["Rule Monitored"]
+    style n6_RuleMonitored fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_RuleTuned["Rule Tuned"]
+    style n7_RuleTuned fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_RuleRetired["Rule Retired"]
+    style n8_RuleRetired fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ThreatIdentified --> n3_RuleCreated
+    n3_RuleCreated --> n4_RuleTested
+    n4_RuleTested --> n5_RuleDeployed
+    n5_RuleDeployed --> n6_RuleMonitored
+    n6_RuleMonitored --> n7_RuleTuned
+    n7_RuleTuned --> n8_RuleRetired

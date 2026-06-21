@@ -1,0 +1,18 @@
+flowchart TB
+    n1_WhatYouWillBuild["What You Will Build"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhatYouWillBuild fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudTrailLogs["CloudTrail Logs"]
+    style n2_CloudTrailLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchLogs["CloudWatch Logs"]
+    style n3_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_NaturalLanguageQuery["Natural Language Query"]
+    style n4_NaturalLanguageQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AIAnalysis["AI Analysis"]
+    style n5_AIAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_InvestigationFindings["Investigation Findings"]
+    style n6_InvestigationFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudTrailLogs --> n3_CloudWatchLogs
+    n3_CloudWatchLogs --> n4_NaturalLanguageQuery
+    n4_NaturalLanguageQuery --> n5_AIAnalysis
+    n5_AIAnalysis --> n6_InvestigationFindings

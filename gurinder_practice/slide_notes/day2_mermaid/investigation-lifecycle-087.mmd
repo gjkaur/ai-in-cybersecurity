@@ -1,0 +1,9 @@
+flowchart TB
+    n1_EvidenceRanking["Evidence Ranking"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EvidenceRanking fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_InternalSecurityScanHigh["Internal Security Scan → High Confidence"]
+    style n2_InternalSecurityScanHigh fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AttackActivityLowConfide["Attack Activity → Low Confidence"]
+    style n3_AttackActivityLowConfide fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_InternalSecurityScanHigh --> n3_AttackActivityLowConfide

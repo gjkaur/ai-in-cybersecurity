@@ -1,0 +1,21 @@
+flowchart TB
+    n1_AIOperationsWorkflow["AI Operations Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AIOperationsWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AlertTriggered["Alert Triggered"]
+    style n2_AlertTriggered fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIInvestigationStarts["AI Investigation Starts"]
+    style n3_AIInvestigationStarts fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_EvidenceCollection["Evidence Collection"]
+    style n4_EvidenceCollection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_PatternAnalysis["Pattern Analysis"]
+    style n5_PatternAnalysis fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_HypothesisGeneration["Hypothesis Generation"]
+    style n6_HypothesisGeneration fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_InvestigationSummary["Investigation Summary"]
+    style n7_InvestigationSummary fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AlertTriggered --> n3_AIInvestigationStarts
+    n3_AIInvestigationStarts --> n4_EvidenceCollection
+    n4_EvidenceCollection --> n5_PatternAnalysis
+    n5_PatternAnalysis --> n6_HypothesisGeneration
+    n6_HypothesisGeneration --> n7_InvestigationSummary

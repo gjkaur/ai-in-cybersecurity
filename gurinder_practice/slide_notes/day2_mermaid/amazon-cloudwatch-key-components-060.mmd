@@ -1,0 +1,18 @@
+flowchart TB
+    n1_ExampleEndtoEndFlow["Example End-to-End Flow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleEndtoEndFlow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_AuthenticationLog["Authentication Log"]
+    style n2_AuthenticationLog fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_CloudWatchAgent["CloudWatch Agent"]
+    style n3_CloudWatchAgent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_CloudWatchLogGroup["CloudWatch Log Group"]
+    style n4_CloudWatchLogGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_CloudWatchLogsInsights["CloudWatch Logs Insights"]
+    style n5_CloudWatchLogsInsights fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_SOCInvestigation["SOC Investigation"]
+    style n6_SOCInvestigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_AuthenticationLog --> n3_CloudWatchAgent
+    n3_CloudWatchAgent --> n4_CloudWatchLogGroup
+    n4_CloudWatchLogGroup --> n5_CloudWatchLogsInsights
+    n5_CloudWatchLogsInsights --> n6_SOCInvestigation

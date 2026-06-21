@@ -1,0 +1,21 @@
+flowchart TB
+    n1_GuardDutyInvestigationWo["GuardDuty Investigation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_GuardDutyInvestigationWo fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ActivityDetected["Activity Detected"]
+    style n2_ActivityDetected fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_GuardDutyFinding["GuardDuty Finding"]
+    style n3_GuardDutyFinding fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SecurityHub["Security Hub"]
+    style n4_SecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SecurityAnalyst["Security Analyst"]
+    style n5_SecurityAnalyst fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Investigation["Investigation"]
+    style n6_Investigation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Containment["Containment"]
+    style n7_Containment fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ActivityDetected --> n3_GuardDutyFinding
+    n3_GuardDutyFinding --> n4_SecurityHub
+    n4_SecurityHub --> n5_SecurityAnalyst
+    n5_SecurityAnalyst --> n6_Investigation
+    n6_Investigation --> n7_Containment

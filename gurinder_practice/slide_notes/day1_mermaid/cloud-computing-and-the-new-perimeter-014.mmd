@@ -1,0 +1,32 @@
+flowchart TB
+    n1_TraditionalOffice["Traditional Office"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_TraditionalOffice fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Firewall["Firewall"]
+    style n2_Firewall fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_node["|"]
+    n4_Servers["Servers"]
+    n5_node["|"]
+    style n3_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n4_Servers fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n5_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Firewall --> n3_node
+    n2_Firewall --> n4_Servers
+    n2_Firewall --> n5_node
+    n6_node["|"]
+    n7_Employees["Employees"]
+    n8_node["|"]
+    style n6_node fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n7_Employees fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n8_node fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n3_node --> n6_node
+    n4_Servers --> n7_Employees
+    n5_node --> n8_node
+    n9_node["|"]
+    n10_Applications["Applications"]
+    n11_node["|"]
+    style n9_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n10_Applications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n11_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_node --- n10_Applications
+    n10_Applications --- n11_node

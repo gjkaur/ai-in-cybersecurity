@@ -1,0 +1,24 @@
+flowchart TB
+    n1_CSPMInvestigationWorkflo["CSPM Investigation Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CSPMInvestigationWorkflo fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_DiscoverAssets["Discover Assets"]
+    style n2_DiscoverAssets fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_IdentifyMisconfiguration["Identify Misconfigurations"]
+    style n3_IdentifyMisconfiguration fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AssessRisk["Assess Risk"]
+    style n4_AssessRisk fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_PrioritizeFindings["Prioritize Findings"]
+    style n5_PrioritizeFindings fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_Remediate["Remediate"]
+    style n6_Remediate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_ValidateFix["Validate Fix"]
+    style n7_ValidateFix fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_MonitorContinuously["Monitor Continuously"]
+    style n8_MonitorContinuously fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_DiscoverAssets --> n3_IdentifyMisconfiguration
+    n3_IdentifyMisconfiguration --> n4_AssessRisk
+    n4_AssessRisk --> n5_PrioritizeFindings
+    n5_PrioritizeFindings --> n6_Remediate
+    n6_Remediate --> n7_ValidateFix
+    n7_ValidateFix --> n8_MonitorContinuously

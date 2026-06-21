@@ -1,0 +1,25 @@
+flowchart TB
+    n1_AWS["AWS"]
+    style n1_AWS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_EC2["EC2"]
+    n3_S3["S3"]
+    style n2_EC2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n3_S3 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_AWS --> n2_EC2
+    n1_AWS --> n3_S3
+    n4_IAM["IAM"]
+    n5_RDS["RDS"]
+    style n4_IAM fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n5_RDS fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n2_EC2 --> n4_IAM
+    n3_S3 --> n5_RDS
+    n6_VPC["VPC"]
+    n7_Lambda["Lambda"]
+    style n6_VPC fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n7_Lambda fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_VPC --- n7_Lambda
+    n8_Applications["Applications"]
+    style n8_Applications fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n9_Users["Users"]
+    style n9_Users fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Applications --> n9_Users

@@ -1,0 +1,12 @@
+flowchart TB
+    n1_ImportantRule["Important Rule"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ImportantRule fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_ExplicitDeny["Explicit Deny"]
+    style n2_ExplicitDeny fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AlwaysWins["Always Wins"]
+    style n3_AlwaysWins fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_OverAnyAllow["Over Any Allow"]
+    style n4_OverAnyAllow fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_ExplicitDeny --> n3_AlwaysWins
+    n3_AlwaysWins --> n4_OverAnyAllow

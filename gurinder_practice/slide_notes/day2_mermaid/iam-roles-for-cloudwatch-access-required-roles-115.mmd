@@ -1,0 +1,15 @@
+flowchart TB
+    n1_Principle4AlertIntegrati["Principle 4: Alert Integration"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Principle4AlertIntegrati fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Dashboard["Dashboard"]
+    style n2_Dashboard fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_OpenAnotherConsole["Open Another Console"]
+    style n3_OpenAnotherConsole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_OpenAlarms["Open Alarms"]
+    style n4_OpenAlarms fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_FindCriticalEvent["Find Critical Event"]
+    style n5_FindCriticalEvent fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Dashboard --> n3_OpenAnotherConsole
+    n3_OpenAnotherConsole --> n4_OpenAlarms
+    n4_OpenAlarms --> n5_FindCriticalEvent

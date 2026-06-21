@@ -1,0 +1,18 @@
+flowchart TB
+    n1_WhyIAMMisconfigurationsA["Why IAM Misconfigurations Are Dangerous"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_WhyIAMMisconfigurationsA fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CompromisedUserorApplica["Compromised User or Application"]
+    style n2_CompromisedUserorApplica fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_IAMPermissions["IAM Permissions"]
+    style n3_IAMPermissions fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_PrivilegeEscalation["Privilege Escalation"]
+    style n4_PrivilegeEscalation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_DataAccessorServiceContr["Data Access or Service Control"]
+    style n5_DataAccessorServiceContr fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_CloudAccountImpact["Cloud Account Impact"]
+    style n6_CloudAccountImpact fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CompromisedUserorApplica --> n3_IAMPermissions
+    n3_IAMPermissions --> n4_PrivilegeEscalation
+    n4_PrivilegeEscalation --> n5_DataAccessorServiceContr
+    n5_DataAccessorServiceContr --> n6_CloudAccountImpact

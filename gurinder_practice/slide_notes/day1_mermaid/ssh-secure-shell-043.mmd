@@ -1,0 +1,15 @@
+flowchart TB
+    n1_YourLaptop["Your Laptop"]
+    style n1_YourLaptop fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SSHClient["SSH Client"]
+    style n2_SSHClient fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EncryptedTunnel["Encrypted Tunnel"]
+    style n3_EncryptedTunnel fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_EC2Server["EC2 Server"]
+    style n4_EC2Server fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_LinuxShell["Linux Shell"]
+    style n5_LinuxShell fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_YourLaptop --> n2_SSHClient
+    n2_SSHClient --> n3_EncryptedTunnel
+    n3_EncryptedTunnel --> n4_EC2Server
+    n4_EC2Server --> n5_LinuxShell

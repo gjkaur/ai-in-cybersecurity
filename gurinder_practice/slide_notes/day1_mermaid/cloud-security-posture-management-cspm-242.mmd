@@ -1,0 +1,15 @@
+flowchart TB
+    n1_4TestinNonProductionFirs["4. Test in Non-Production First"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_4TestinNonProductionFirs fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Development["Development"]
+    style n2_Development fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Testing["Testing"]
+    style n3_Testing fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Staging["Staging"]
+    style n4_Staging fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Production["Production"]
+    style n5_Production fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Development --> n3_Testing
+    n3_Testing --> n4_Staging
+    n4_Staging --> n5_Production

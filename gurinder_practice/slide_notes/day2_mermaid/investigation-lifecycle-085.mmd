@@ -1,0 +1,12 @@
+flowchart TB
+    n1_Step2AutomatedAnalysis["Step 2 — Automated Analysis"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_Step2AutomatedAnalysis fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_100000logevents["100,000 log events"]
+    style n2_100000logevents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_250authenticationfailure["250 authentication failures"]
+    style n3_250authenticationfailure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_25suspiciousevents["25 suspicious events"]
+    style n4_25suspiciousevents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_100000logevents --> n3_250authenticationfailure
+    n3_250authenticationfailure --> n4_25suspiciousevents

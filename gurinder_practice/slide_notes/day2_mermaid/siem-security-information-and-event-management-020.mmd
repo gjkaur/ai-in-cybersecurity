@@ -1,0 +1,12 @@
+flowchart TB
+    n1_EventProcessing["Event Processing"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_EventProcessing fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_5FailedLogins["5 Failed Logins"]
+    style n2_5FailedLogins fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SuccessfulLogin["Successful Login"]
+    style n3_SuccessfulLogin fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AdminPrivilegeGranted["Admin Privilege Granted"]
+    style n4_AdminPrivilegeGranted fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_5FailedLogins --> n3_SuccessfulLogin
+    n3_SuccessfulLogin --> n4_AdminPrivilegeGranted

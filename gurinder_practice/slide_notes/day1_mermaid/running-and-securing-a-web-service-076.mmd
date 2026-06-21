@@ -1,0 +1,15 @@
+flowchart TB
+    n1_RealSOCWorkflow["Real SOC Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RealSOCWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_WebAlert["Web Alert"]
+    style n2_WebAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_ReviewAccessLogs["Review Access Logs"]
+    style n3_ReviewAccessLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_IdentifySourceIP["Identify Source IP"]
+    style n4_IdentifySourceIP fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_BlockAttacker["Block Attacker"]
+    style n5_BlockAttacker fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_WebAlert --> n3_ReviewAccessLogs
+    n3_ReviewAccessLogs --> n4_IdentifySourceIP
+    n4_IdentifySourceIP --> n5_BlockAttacker

@@ -1,0 +1,20 @@
+flowchart TB
+    n1_ExampleStructure["Example Structure"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ExampleStructure fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    subgraph n2_panel [ ]
+    n3_LogGroup["Log Group"]
+    style n3_LogGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_soclabsecure["└── /soc-lab/secure"]
+    style n4_soclabsecure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_EC2Server01["├── EC2-Server-01"]
+    style n5_EC2Server01 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_EC2Server02["├── EC2-Server-02"]
+    style n6_EC2Server02 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_EC2Server03["└── EC2-Server-03"]
+    style n7_EC2Server03 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+        n3_LogGroup --> n4_soclabsecure
+        n4_soclabsecure --> n5_EC2Server01
+        n5_EC2Server01 --> n6_EC2Server02
+        n6_EC2Server02 --> n7_EC2Server03
+    end

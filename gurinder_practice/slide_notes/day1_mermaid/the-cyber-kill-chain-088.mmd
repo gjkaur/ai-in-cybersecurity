@@ -1,0 +1,21 @@
+flowchart TB
+    n1_Recon["Recon"]
+    style n1_Recon fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Weaponization["Weaponization"]
+    style n2_Weaponization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Delivery["Delivery"]
+    style n3_Delivery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Exploitation["Exploitation"]
+    style n4_Exploitation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_Installation["Installation"]
+    style n5_Installation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_C2["C2"]
+    style n6_C2 fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_Objectives["Objectives"]
+    style n7_Objectives fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n1_Recon --> n2_Weaponization
+    n2_Weaponization --> n3_Delivery
+    n3_Delivery --> n4_Exploitation
+    n4_Exploitation --> n5_Installation
+    n5_Installation --> n6_C2
+    n6_C2 --> n7_Objectives

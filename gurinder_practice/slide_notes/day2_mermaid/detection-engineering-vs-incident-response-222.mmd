@@ -1,0 +1,12 @@
+flowchart TB
+    n1_UnderstandingFalsePositi["Understanding False Positives"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_UnderstandingFalsePositi fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_DetectionFires["Detection Fires"]
+    style n2_DetectionFires fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AnalystReviews["Analyst Reviews"]
+    style n3_AnalystReviews fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_ActivityIsLegitimate["Activity Is Legitimate"]
+    style n4_ActivityIsLegitimate fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_DetectionFires --> n3_AnalystReviews
+    n3_AnalystReviews --> n4_ActivityIsLegitimate

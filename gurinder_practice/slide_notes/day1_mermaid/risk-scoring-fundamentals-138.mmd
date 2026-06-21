@@ -1,0 +1,15 @@
+flowchart TB
+    n1_HowLambdaExecutionRolesW["How Lambda Execution Roles Work"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_HowLambdaExecutionRolesW fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_LambdaFunction["Lambda Function"]
+    style n2_LambdaFunction fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AssumeExecutionRole["Assume Execution Role"]
+    style n3_AssumeExecutionRole fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_IAMPolicyEvaluation["IAM Policy Evaluation"]
+    style n4_IAMPolicyEvaluation fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_AlloworDenyAWSAPICalls["Allow or Deny AWS API Calls"]
+    style n5_AlloworDenyAWSAPICalls fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_LambdaFunction --> n3_AssumeExecutionRole
+    n3_AssumeExecutionRole --> n4_IAMPolicyEvaluation
+    n4_IAMPolicyEvaluation --> n5_AlloworDenyAWSAPICalls

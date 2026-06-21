@@ -1,0 +1,15 @@
+flowchart TB
+    n1_OverPermissionedRole["Over-Permissioned Role"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_OverPermissionedRole fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CompromisedLambda["Compromised Lambda"]
+    style n2_CompromisedLambda fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_s3GetObjecton["s3:GetObject on *"]
+    style n3_s3GetObjecton fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_Readeverybucket["Read every bucket"]
+    style n4_Readeverybucket fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_SensitiveDataExposure["Sensitive Data Exposure"]
+    style n5_SensitiveDataExposure fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CompromisedLambda --> n3_s3GetObjecton
+    n3_s3GetObjecton --> n4_Readeverybucket
+    n4_Readeverybucket --> n5_SensitiveDataExposure

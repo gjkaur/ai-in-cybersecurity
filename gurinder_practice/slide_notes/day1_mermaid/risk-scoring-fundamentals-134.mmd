@@ -1,0 +1,15 @@
+flowchart TB
+    n1_RelationshiptoZeroTrust["Relationship to Zero Trust"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_RelationshiptoZeroTrust fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_NeverTrust["Never Trust"]
+    style n2_NeverTrust fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AlwaysVerify["Always Verify"]
+    style n3_AlwaysVerify fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_GrantMinimumAccess["Grant Minimum Access"]
+    style n4_GrantMinimumAccess fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_ContinuouslyMonitor["Continuously Monitor"]
+    style n5_ContinuouslyMonitor fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_NeverTrust --> n3_AlwaysVerify
+    n3_AlwaysVerify --> n4_GrantMinimumAccess
+    n4_GrantMinimumAccess --> n5_ContinuouslyMonitor

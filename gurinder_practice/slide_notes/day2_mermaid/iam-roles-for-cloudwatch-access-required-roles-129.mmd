@@ -1,0 +1,12 @@
+flowchart TB
+    n1_SNSNotification["SNS Notification"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_SNSNotification fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Alarm["Alarm"]
+    style n2_Alarm fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_SNSTopic["SNS Topic"]
+    style n3_SNSTopic fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_EmailSMSChat["Email / SMS / Chat"]
+    style n4_EmailSMSChat fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Alarm --> n3_SNSTopic
+    n3_SNSTopic --> n4_EmailSMSChat

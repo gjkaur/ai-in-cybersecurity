@@ -1,0 +1,15 @@
+flowchart TB
+    n1_AWSCloudNativeMonitoring["AWS Cloud-Native Monitoring"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AWSCloudNativeMonitoring fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_CloudWatchLogs["CloudWatch Logs"]
+    style n2_CloudWatchLogs fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_AIOperations["AI Operations"]
+    style n3_AIOperations fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_NaturalLanguageQueries["Natural Language Queries"]
+    style n4_NaturalLanguageQueries fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_InvestigationAssistance["Investigation Assistance"]
+    style n5_InvestigationAssistance fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_CloudWatchLogs --> n3_AIOperations
+    n3_AIOperations --> n4_NaturalLanguageQueries
+    n4_NaturalLanguageQueries --> n5_InvestigationAssistance

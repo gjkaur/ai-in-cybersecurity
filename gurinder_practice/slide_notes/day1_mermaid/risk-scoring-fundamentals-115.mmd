@@ -1,0 +1,24 @@
+flowchart TB
+    n1_AIWorkflowinaSOC["AI Workflow in a SOC"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AIWorkflowinaSOC fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityEvents["Security Events"]
+    style n2_SecurityEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_LogCollection["Log Collection"]
+    style n3_LogCollection fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_AICorrelationEngine["AI Correlation Engine"]
+    style n4_AICorrelationEngine fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_RiskScoring["Risk Scoring"]
+    style n5_RiskScoring fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_AlertPrioritization["Alert Prioritization"]
+    style n6_AlertPrioritization fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_AnalystReview["Analyst Review"]
+    style n7_AnalystReview fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_ResponseDecision["Response Decision"]
+    style n8_ResponseDecision fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityEvents --> n3_LogCollection
+    n3_LogCollection --> n4_AICorrelationEngine
+    n4_AICorrelationEngine --> n5_RiskScoring
+    n5_RiskScoring --> n6_AlertPrioritization
+    n6_AlertPrioritization --> n7_AnalystReview
+    n7_AnalystReview --> n8_ResponseDecision

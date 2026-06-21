@@ -1,0 +1,24 @@
+flowchart TB
+    n1_ThreatHuntingWorkflow["Threat Hunting Workflow"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_ThreatHuntingWorkflow fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SuspiciousAlert["Suspicious Alert"]
+    style n2_SuspiciousAlert fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_OpenLogGroup["Open Log Group"]
+    style n3_OpenLogGroup fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_RunLogsInsightsQuery["Run Logs Insights Query"]
+    style n4_RunLogsInsightsQuery fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_IdentifyEvents["Identify Events"]
+    style n5_IdentifyEvents fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n6_FindSourceIPUser["Find Source IP/User"]
+    style n6_FindSourceIPUser fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n7_DetermineScope["Determine Scope"]
+    style n7_DetermineScope fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Respond["Respond"]
+    style n8_Respond fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SuspiciousAlert --> n3_OpenLogGroup
+    n3_OpenLogGroup --> n4_RunLogsInsightsQuery
+    n4_RunLogsInsightsQuery --> n5_IdentifyEvents
+    n5_IdentifyEvents --> n6_FindSourceIPUser
+    n6_FindSourceIPUser --> n7_DetermineScope
+    n7_DetermineScope --> n8_Respond

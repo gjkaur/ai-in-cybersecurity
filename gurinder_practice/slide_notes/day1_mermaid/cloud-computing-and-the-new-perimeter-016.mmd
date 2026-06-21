@@ -1,0 +1,26 @@
+flowchart TB
+    n1_CastleandMoatSecurity["Castle-and-Moat Security"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_CastleandMoatSecurity fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_Internet["Internet"]
+    style n2_Internet fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Firewall["Firewall"]
+    style n3_Firewall fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_Internet --> n3_Firewall
+    n4_CompanyNetwork["| Company Network"]
+    n5_node["|"]
+    style n4_CompanyNetwork fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n5_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_Firewall --> n4_CompanyNetwork
+    n3_Firewall --> n5_node
+    n6_Servers["| Servers"]
+    n7_node["|"]
+    style n6_Servers fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    style n7_node fill:#ECFDF5,stroke:#86EFAC,stroke-width:2px,color:#0F172A
+    n4_CompanyNetwork --> n6_Servers
+    n5_node --> n7_node
+    n8_Employees["| Employees"]
+    n9_node["|"]
+    style n8_Employees fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    style n9_node fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n8_Employees --- n9_node

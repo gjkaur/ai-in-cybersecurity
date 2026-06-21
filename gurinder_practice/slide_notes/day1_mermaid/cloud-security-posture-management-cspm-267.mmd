@@ -1,0 +1,15 @@
+flowchart TB
+    n1_AlertingandNotification["Alerting and Notification"]
+    classDef titleNode fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    style n1_AlertingandNotification fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    n2_SecurityHub["Security Hub"]
+    style n2_SecurityHub fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n3_EventBridge["EventBridge"]
+    style n3_EventBridge fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n4_SNS["SNS"]
+    style n4_SNS fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n5_EmailTeamsSlack["Email / Teams / Slack"]
+    style n5_EmailTeamsSlack fill:#FFFFFF,stroke:#93C5FD,stroke-width:2px,color:#0F172A
+    n2_SecurityHub --> n3_EventBridge
+    n3_EventBridge --> n4_SNS
+    n4_SNS --> n5_EmailTeamsSlack
