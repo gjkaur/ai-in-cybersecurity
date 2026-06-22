@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" role="img" aria-label="Lab 1.1 architecture">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="920" height="320" rx="12" fill="url(#bg)"/>
+  <text x="460" y="34" text-anchor="middle" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Lab 1.1  Telemetry Foundation</text>
+  <text x="460" y="56" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="13">us-west-2 · EC2 · SSH · nginx</text>
+
+  <rect x="40" y="95" width="150" height="70" rx="8" fill="#1d4ed8" stroke="#60a5fa"/>
+  <text x="115" y="125" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">CloudShell</text>
+  <text x="115" y="145" text-anchor="middle" fill="#dbeafe" font-size="11">Create EC2 + SG</text>
+
+  <rect x="240" y="95" width="150" height="70" rx="8" fill="#0369a1" stroke="#38bdf8"/>
+  <text x="315" y="125" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">VS Code</text>
+  <text x="315" y="145" text-anchor="middle" fill="#e0f2fe" font-size="11">Remote SSH</text>
+
+  <rect x="440" y="80" width="180" height="100" rx="8" fill="#065f46" stroke="#34d399"/>
+  <text x="530" y="115" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">EC2 Instance</text>
+  <text x="530" y="135" text-anchor="middle" fill="#d1fae5" font-size="11">Amazon Linux 2023</text>
+  <text x="530" y="155" text-anchor="middle" fill="#d1fae5" font-size="11">auditd · sshd · nginx</text>
+
+  <rect x="680" y="95" width="180" height="70" rx="8" fill="#7c2d12" stroke="#fb923c"/>
+  <text x="770" y="125" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">Browser</text>
+  <text x="770" y="145" text-anchor="middle" fill="#ffedd5" font-size="11">http://PUBLIC_IP</text>
+
+  <line x1="190" y1="130" x2="240" y2="130" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="390" y1="130" x2="440" y2="130" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="620" y1="130" x2="680" y2="130" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="120" y="220" width="680" height="70" rx="8" fill="#312e81" stroke="#a5b4fc"/>
+  <text x="460" y="248" text-anchor="middle" fill="#eef2ff" font-size="13" font-weight="600">Outputs for later labs</text>
+  <text x="460" y="270" text-anchor="middle" fill="#c7d2fe" font-size="12">SSH access · nginx access.log · audit.log · security group (22, 80)</text>
+</svg>
