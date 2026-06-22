@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="Defender maturity progression">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#4ade80"/>
+    </marker>
+  </defs>
+  <rect width="720" height="520" rx="12" fill="url(#bg)"/>
+  <text x="360" y="36" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="18" font-weight="700">Defender Maturity Progression</text>
+
+  <rect x="120" y="60" width="480" height="58" rx="8" fill="#1e3a8a" stroke="#60a5fa"/>
+  <text x="140" y="84" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="600">Lab 1.1</text>
+  <text x="140" y="104" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="11">Telemetry exists - logs and services are running</text>
+
+  <rect x="120" y="130" width="480" height="58" rx="8" fill="#991b1b" stroke="#f87171"/>
+  <text x="140" y="154" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="600">Lab 1.2</text>
+  <text x="140" y="174" fill="#fecaca" font-family="Arial, sans-serif" font-size="11">Evidence collected - you know WHAT happened on the host</text>
+
+  <rect x="120" y="200" width="480" height="58" rx="8" fill="#581c87" stroke="#c084fc"/>
+  <text x="140" y="224" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="600">Lab 1.3</text>
+  <text x="140" y="244" fill="#e9d5ff" font-family="Arial, sans-serif" font-size="11">Cloud ML detects - AWS surfaces threats you may have missed</text>
+
+  <rect x="120" y="270" width="480" height="58" rx="8" fill="#065f46" stroke="#34d399"/>
+  <text x="140" y="294" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="600">Lab 2.1</text>
+  <text x="140" y="314" fill="#bbf7d0" font-family="Arial, sans-serif" font-size="11">Logs centralized - searchable in CloudWatch with AI</text>
+
+  <rect x="120" y="340" width="480" height="58" rx="8" fill="#312e81" stroke="#a78bfa"/>
+  <text x="140" y="364" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="600">Lab 2.2</text>
+  <text x="140" y="384" fill="#ddd6fe" font-family="Arial, sans-serif" font-size="11">Detection automated - alarms fire AI investigation</text>
+
+  <rect x="120" y="410" width="480" height="58" rx="8" fill="#78350f" stroke="#fbbf24"/>
+  <text x="140" y="434" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="600">Lab 2.3</text>
+  <text x="140" y="454" fill="#fde68a" font-family="Arial, sans-serif" font-size="11">You own the full loop - design, attack, detect, document, close</text>
+
+  <line x1="360" y1="118" x2="360" y2="130" stroke="#4ade80" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="188" x2="360" y2="200" stroke="#4ade80" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="258" x2="360" y2="270" stroke="#4ade80" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="328" x2="360" y2="340" stroke="#4ade80" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="398" x2="360" y2="410" stroke="#4ade80" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

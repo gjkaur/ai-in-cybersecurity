@@ -15,6 +15,9 @@ Each diagram has a source `.svg` and a rendered `.png`. Lab guides reference the
 | `lab-2.1-cloudwatch-pipeline.png` | `lab-2.1-cloudwatch-pipeline.svg` | 2.1 |
 | `lab-2.2-detection-pipeline.png` | `lab-2.2-detection-pipeline.svg` | 2.2 |
 | `lab-2.3-capstone-loop.png` | `lab-2.3-capstone-loop.svg` | 2.3 |
+| `lab-roadmap-overview.png` | `lab-roadmap-overview.svg` | labs/README.md |
+| `lab-defender-maturity.png` | `lab-defender-maturity.svg` | labs/README.md |
+| `lab-ai-layers.png` | `lab-ai-layers.svg` | labs/README.md |
 
 To regenerate PNGs after editing an SVG (from this directory):
 
