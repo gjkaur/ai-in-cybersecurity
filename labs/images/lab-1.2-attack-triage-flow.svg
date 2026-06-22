@@ -12,38 +12,38 @@
     </marker>
   </defs>
   <rect width="920" height="360" rx="12" fill="url(#bg)"/>
-  <text x="460" y="34" text-anchor="middle" fill="#f8fafc" font-size="18" font-weight="700">Lab 1.2  Simulate · Collect · Triage</text>
+  <text x="460" y="34" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="18" font-weight="700">Lab 1.2 - Simulate, Collect, Triage</text>
 
   <rect x="40" y="70" width="160" height="80" rx="8" fill="#991b1b" stroke="#f87171"/>
-  <text x="120" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">CloudShell</text>
-  <text x="120" y="120" text-anchor="middle" fill="#fecaca" font-size="11">Failed SSH (T1110)</text>
-  <text x="120" y="136" text-anchor="middle" fill="#fecaca" font-size="11">Web probes (T1190)</text>
+  <text x="120" y="100" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="600">CloudShell</text>
+  <text x="120" y="120" text-anchor="middle" fill="#fecaca" font-family="Arial, sans-serif" font-size="11">Failed SSH (T1110)</text>
+  <text x="120" y="136" text-anchor="middle" fill="#fecaca" font-family="Arial, sans-serif" font-size="11">Web probes (T1190)</text>
 
   <rect x="240" y="70" width="180" height="80" rx="8" fill="#065f46" stroke="#4ade80"/>
-  <text x="330" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">EC2 Instance</text>
-  <text x="330" y="120" text-anchor="middle" fill="#bbf7d0" font-size="11">sudoers backdoor (T1548)</text>
-  <text x="330" y="136" text-anchor="middle" fill="#bbf7d0" font-size="11">auditd sudoers_watch</text>
+  <text x="330" y="100" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="600">EC2 Instance</text>
+  <text x="330" y="120" text-anchor="middle" fill="#bbf7d0" font-family="Arial, sans-serif" font-size="11">sudoers backdoor (T1548)</text>
+  <text x="330" y="136" text-anchor="middle" fill="#bbf7d0" font-family="Arial, sans-serif" font-size="11">auditd sudoers_watch</text>
 
   <rect x="460" y="70" width="180" height="80" rx="8" fill="#1e3a8a" stroke="#60a5fa"/>
-  <text x="550" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Log Sources</text>
-  <text x="550" y="120" text-anchor="middle" fill="#bfdbfe" font-size="11">/var/log/audit/audit.log</text>
-  <text x="550" y="136" text-anchor="middle" fill="#bfdbfe" font-size="11">/var/log/nginx/access.log</text>
+  <text x="550" y="100" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="600">Log Sources</text>
+  <text x="550" y="120" text-anchor="middle" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="11">/var/log/audit/audit.log</text>
+  <text x="550" y="136" text-anchor="middle" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="11">/var/log/nginx/access.log</text>
 
   <rect x="680" y="70" width="200" height="80" rx="8" fill="#581c87" stroke="#c084fc"/>
-  <text x="780" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Amazon Bedrock</text>
-  <text x="780" y="120" text-anchor="middle" fill="#e9d5ff" font-size="11">soc_triage.py</text>
-  <text x="780" y="136" text-anchor="middle" fill="#e9d5ff" font-size="11">MITRE ATT&amp;CK analysis</text>
+  <text x="780" y="100" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="600">Amazon Bedrock</text>
+  <text x="780" y="120" text-anchor="middle" fill="#e9d5ff" font-family="Arial, sans-serif" font-size="11">soc_triage.py</text>
+  <text x="780" y="136" text-anchor="middle" fill="#e9d5ff" font-family="Arial, sans-serif" font-size="11">MITRE ATT&amp;CK analysis</text>
 
   <line x1="200" y1="110" x2="240" y2="110" stroke="#f87171" stroke-width="2" marker-end="url(#arrow)"/>
   <line x1="420" y1="110" x2="460" y2="110" stroke="#4ade80" stroke-width="2" marker-end="url(#arrow2)"/>
   <line x1="640" y1="110" x2="680" y2="110" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow2)"/>
 
   <rect x="80" y="200" width="760" height="120" rx="8" fill="#0f172a" stroke="#475569"/>
-  <text x="460" y="228" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="600">Defender workflow</text>
-  <text x="120" y="258" fill="#94a3b8" font-size="12">Part 1: Baseline logs</text>
-  <text x="120" y="280" fill="#94a3b8" font-size="12">Part 2: Generate events</text>
-  <text x="120" y="302" fill="#94a3b8" font-size="12">Part 3: auditd evidence</text>
-  <text x="480" y="258" fill="#94a3b8" font-size="12">Part 4: AI SOC triage</text>
-  <text x="480" y="280" fill="#94a3b8" font-size="12">Fallback: manual triage if quota limited</text>
-  <text x="480" y="302" fill="#94a3b8" font-size="12">Keep lab-backdoor for Lab 2.1</text>
+  <text x="460" y="228" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="14" font-weight="600">Defender workflow</text>
+  <text x="120" y="258" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">Part 1: Baseline logs</text>
+  <text x="120" y="280" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">Part 2: Generate events</text>
+  <text x="120" y="302" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">Part 3: auditd evidence</text>
+  <text x="480" y="258" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">Part 4: AI SOC triage</text>
+  <text x="480" y="280" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">Fallback: manual triage if quota limited</text>
+  <text x="480" y="302" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">Keep lab-backdoor for Lab 2.1</text>
 </svg>
