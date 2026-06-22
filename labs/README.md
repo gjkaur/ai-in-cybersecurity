@@ -37,7 +37,7 @@ You play **both attacker and defender**. On Day 1 you build the environment, gen
 
 ### [1.1 — Instance Setup](1.1-Instance-Setup.md)
 
-**Classroom alternative:** If EC2 launch fails with `t2.medium` / `us-west-2d`, use [1.1 Alternative Guide](1.1-Instance-Setup-Alternative.md) (subnet fix for training accounts).
+**Classroom alternative:** If EC2 launch fails with `t2.medium` / `us-west-2d`, use [1.1 Alternative Guide](1.1-Instance-Setup-Alternative.md) (subnet fix for training accounts). To **delete everything and rebuild**, use the [from-scratch reset script](1.1-Instance-Setup-Alternative.md#start-completely-from-scratch-delete-all--rebuild).
 
 **Role in roadmap:** Foundation. Nothing else works without a running host and logs.
 
