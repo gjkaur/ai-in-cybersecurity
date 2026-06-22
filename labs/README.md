@@ -37,6 +37,8 @@ You play **both attacker and defender**. On Day 1 you build the environment, gen
 
 ### [1.1 — Instance Setup](1.1-Instance-Setup.md)
 
+**Classroom alternative:** If EC2 launch fails with `t2.medium` / `us-west-2d`, use [1.1 Alternative Guide](1.1-Instance-Setup-Alternative.md) (subnet fix for training accounts).
+
 **Role in roadmap:** Foundation. Nothing else works without a running host and logs.
 
 | | |
@@ -214,7 +216,7 @@ See also: [Glossary](glossary.md) · [Lab images index](images/README.md)
 
 | Lab | Guide |
 |-----|-------|
-| 1.1 | [1.1-Instance-Setup.md](1.1-Instance-Setup.md) |
+| 1.1 | [1.1-Instance-Setup.md](1.1-Instance-Setup.md) · [Alternative (us-west-2d fix)](1.1-Instance-Setup-Alternative.md) |
 | 1.2 | [1.2-Suspicious-Activity-Simulation-and-AI-Triage.md](1.2-Suspicious-Activity-Simulation-and-AI-Triage.md) |
 | 1.3 | [1.3-AWS-AI-Powered-Threat-Detection.md](1.3-AWS-AI-Powered-Threat-Detection.md) |
 | 2.1 | [2.1-CloudWatch-Log-Streaming-and-AI-Investigation.md](2.1-CloudWatch-Log-Streaming-and-AI-Investigation.md) |
